@@ -7,6 +7,8 @@ A course taught by [Phill Conrad](http://www.cs.ucsb.edu/~pconrad) in the [Dept.
 
 Older materials can be found at the [56wiki](https://foo.cs.ucsb.edu/56wiki) site.
 
+This site is maintained in this github repo: <https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io>
+
 # Topics
 
 * [Jekyll](topics/jekyll)
