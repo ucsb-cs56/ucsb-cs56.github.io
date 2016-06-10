@@ -141,3 +141,11 @@ Under `_includes`, create the file `nav.html`.  This example uses absolute links
 </table>
 </nav>
 ~~~
+
+Then, edit the `_layouts/default.html` as shown to include this file:
+
+~~~
+<body id="page-top">
+  {% include nav.html %}
+  {{content}}
+~~~
