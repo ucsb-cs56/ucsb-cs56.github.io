@@ -12,6 +12,8 @@ Jekyll is a software package that can be used in conjunction with github.com to 
 
 # Jekyll tips
 
+## Creating pages
+
 * Create pages as index.md files in a directory with the name that you want the page to appear under.
  - For example, to make a page with the URL `site.github.io/topics/jekyll`, create the file `/topics/jeykll/index.md`
 * `.md` files must start with what Jekyll calls *Front Matter*.  
@@ -20,7 +22,28 @@ Jekyll is a software package that can be used in conjunction with github.com to 
  * The front matter can be used to configure things such as the title of the page, and many other things.
  * The format of the front matter is Yaml (a syntax for key/value associations that includes JSON as a subset).
 
-# Configuration
+## Nested lists
+
+* The default Markdown processor is [Kramdown](http://kramdown.gettalong.org/), which has [a few restrictions beyond standard Github-Flavored Markdown](http://kramdown.gettalong.org/syntax.html).
+* The one you may encounter first is that in standard Github-Flavored Markdown, examples of nested lists often use a different symbol for the second level, e.g.
+
+~~~
+* First level item 1
+ - Second level item a
+ - Seond level item b
+* First level item 2
+~~~
+
+In Kramdown, you must use the same symbol for each level:
+
+~~~
+* First level item 1
+ * Second level item a
+ * Seond level item b
+* First level item 2
+~~~
+
+## Configuration
 
 * The file `_config.yml` in the root of the repository can be used to configure various Jekyll properties
  * As an example, `markdown: rdiscount` specifies a different Markdown processor to use instead of the default.
