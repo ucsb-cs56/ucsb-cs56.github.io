@@ -83,8 +83,23 @@ Strictly speaking, layouts are optional.   It is possible to create a minimally 
 
 Layouts are created in the `_layouts` subdirectory of the root of the site repository.
 
-The jekyll documentation provides a good [tutorial on creating a `default.html` layout](http://jekyll.tips/guide/layouts/).  This is a good place to start, though your `default.html` layout can likely be much simpler than the one shown on that site.  Here is a much simpler example:
+The jekyll documentation provides a good [tutorial on creating a `default.html` layout](http://jekyll.tips/guide/layouts/).  This is a good place to start, though your `default.html` layout can likely be much simpler than the one shown on that site.  Here is a much simpler example.     Here is some insight into what it contains
+* The `<!DOCTYPE html>` is the latest HTML 5 compliant document type
+* In the `head` element:
+    * The `meta` elements provide for UTF-8 encoding, and proper scaling on small devices (e.g. mobile phone browsers).  
+    * The `title` element now references `{{page.title}}` which brings in the title from the [front matter](https://jekyllrb.com/docs/frontmatter/) of your `.md` file.
+* In the `body` element, the `{{ content }}` inserts the contents of your `.md` file. 
 
 ~~~
-TODO: Insert sample default.html here
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+  </head>
+  <body id="page-top">
+    {{ content }}
+  </body>
+</html>
 ~~~
