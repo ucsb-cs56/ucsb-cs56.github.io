@@ -122,3 +122,22 @@ defaults:
     values:
       layout: "default"
 ~~~
+
+# Includes
+
+You can factor out what are sometimes called "partials" in other web frameworks, i.e. something like a `#include` in C/C++.   To do that, you create a directory in the root of the repo called `_includes`.   
+
+The Jekyll documentation contains a [tutorial example](http://jekyll.tips/guide/navigation-and-includes/) of doing this, but again it is a bit complex.  So, here is a simpler example of creating some common navigation for a site.    This provides a link to the root of the site, and a link to the github repo where the site is hosted.
+
+Under `_includes`, create the file `nav.html`.  This example uses absolute links, but it would be possible to use relative links also.
+
+~~~
+<nav id="mainNav">
+<table border="1" style="width:auto;">
+ <tr>
+  <td><a href="https://UCSB-CS56-pconrad.github.io">home</a></td>
+  <td><a href="https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io/">github repo</a></td>
+ </tr>
+</table>
+</nav>
+~~~
