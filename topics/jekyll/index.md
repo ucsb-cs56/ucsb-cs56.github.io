@@ -94,7 +94,7 @@ The jekyll documentation provides a good [tutorial on creating a `default.html` 
     * The `meta` elements provide for UTF-8 encoding, and proper scaling on small devices (e.g. mobile phone browsers).  
     * The `title` element now references `{{page.title}}` which brings in the title from the [front matter](https://jekyllrb.com/docs/frontmatter/) of your `.md` file.
 * In the `body` element, the `{{ content }}` inserts the contents of your `.md` file. 
-* To actually use this, you must insert `layout: default` into the [front matter](https://jekyllrb.com/docs/frontmatter/) of your `.md` files.
+* To actually use this, you must insert `layout: default` into the [front matter](https://jekyllrb.com/docs/frontmatter/) of your `.md` files.   If you don't want to have to do this on every single .md file (and why would you?) you can specify this as a default in your `_config.yml` file (see below.)
 
 ~~~
 <!DOCTYPE html>
@@ -108,4 +108,17 @@ The jekyll documentation provides a good [tutorial on creating a `default.html` 
     {{ content }}
   </body>
 </html>
+~~~
+
+# Specify default layout in `_config.yml`
+
+Put this in your `_config.yml` to specify that `default` is the default layout for all `.md` files that don't specify a different layout.  That way, you can just use a minmal front matter that contains only the page title.
+
+~~~
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
 ~~~
