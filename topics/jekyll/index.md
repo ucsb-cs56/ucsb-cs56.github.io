@@ -1,7 +1,7 @@
 ---
 ---
 
-<table border="1"><tr><td>[web page](https://UCSB-CS56-pconrad.github.io/topics/jekyll)</td><td>[on github](https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io/edit/master/topics/jekyll/index.md)</td></tr></table>
+<table border="1"><tr><td><a href="https://UCSB-CS56-pconrad.github.io/topics/jekyll">web</a></td><td><a href="https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io/edit/master/topics/jekyll/index.md">github</a></td></tr></table>
 
 # Jekyll
 
