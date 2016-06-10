@@ -30,6 +30,21 @@ Jekyll is a software package that can be used in conjunction with github.com to 
     - The front matter can be used to configure things such as the title of the page, and many other things.
     - The format of the front matter is Yaml (a syntax for key/value associations that includes JSON as a subset).
 
+Example of minimal front matter:
+
+~~~
+---
+---
+~~~
+
+Example of just a title:
+
+~~~
+---
+title: Jekyll
+---
+~~~
+
 ## Nested lists
 
 * The default Markdown processor is [Kramdown](http://kramdown.gettalong.org/), which has [a few restrictions beyond standard Github-Flavored Markdown](http://kramdown.gettalong.org/syntax.html).
