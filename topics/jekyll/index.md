@@ -83,3 +83,8 @@ Strictly speaking, layouts are optional.   It is possible to create a minimally 
 
 Layouts are created in the `_layouts` subdirectory of the root of the site repository.
 
+The jekyll documentation provides a good [tutorial on creating a `default.html` layout](http://jekyll.tips/guide/layouts/).  This is a good place to start, though your `default.html` layout can likely be much simpler than the one shown on that site.  Here is a much simpler example:
+
+~~~
+TODO: Insert sample default.html here
+~~~
