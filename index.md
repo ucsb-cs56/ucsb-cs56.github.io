@@ -1,4 +1,5 @@
 ---
+title: UCSB CS56 pconrad
 ---
 
 # CS56&mdash;Advanced Applications Programming
