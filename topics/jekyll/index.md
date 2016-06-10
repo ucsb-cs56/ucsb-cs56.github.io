@@ -19,9 +19,8 @@ Jekyll is a software package that can be used in conjunction with github.com to 
 * There is no database to configure, and authorization is handled by existing github.com authorization mechanisms.
 * There is no "lock-in"; it is straightforward to migrate a Jekyll-based site to a platforms outside of github.com (for example, Heroku, or any host that supports Ruby.)
 
-# Jekyll tips
 
-## Creating pages
+# Creating pages
 
 * Create pages as index.md files in a directory with the name that you want the page to appear under.
     - For example, to make a page with the URL `site.github.io/topics/jekyll`, create the file `/topics/jeykll/index.md`
@@ -46,7 +45,7 @@ title: Jekyll
 ---
 ~~~
 
-## Nested lists
+# Nested lists
 
 * The default Markdown processor is [Kramdown](http://kramdown.gettalong.org/), which has [a few restrictions beyond standard Github-Flavored Markdown](http://kramdown.gettalong.org/syntax.html).
 * The one you may encounter first is that in standard Github-Flavored Markdown, nested lists may be indicated with any amount of indentation:
@@ -67,7 +66,20 @@ In Kramdown, you must indent four spaces to get a second level of list:
 * First level item 2
 ~~~
 
-## Configuration
+# Configuration
 
 * The file `_config.yml` in the root of the repository can be used to configure various Jekyll properties
     - As an example, `markdown: rdiscount` specifies a different Markdown processor to use instead of the default.
+
+# Layouts
+
+In Jekyll a  *layout* specifies the common features of a category of pages on your site.   For example, for a course web site, you might have different layouts for:
+* general course information pages
+* lab assignments
+* homework assignments
+* summaries of lecture notes
+
+Strictly speaking, layouts are optional.   It is possible to create a minimally functional site without providing layouts.  However, it is recommended to provide at least one default layout.   If you don't, while the pages produced will work in most browsers, pages will not be compliant HTML.   For example it is the layout that provides the template for putting in the `<head></head>` section that contains the page `<title></title>` element.   Thus, without a layout, specifying a `title: my title` in the [front matter](https://jekyllrb.com/docs/frontmatter/) will have no effect.
+
+Layouts are created in the `_layouts` subdirectory of the root of the site repository.
+
