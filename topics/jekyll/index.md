@@ -15,7 +15,7 @@ Jekyll is a software package that can be used in conjunction with github.com to 
 ## Creating pages
 
 * Create pages as index.md files in a directory with the name that you want the page to appear under.
- - For example, to make a page with the URL `site.github.io/topics/jekyll`, create the file `/topics/jeykll/index.md`
+ * For example, to make a page with the URL `site.github.io/topics/jekyll`, create the file `/topics/jeykll/index.md`
 * `.md` files must start with what Jekyll calls *Front Matter*.  
  * The minimal front matter is two consecutive lines of exactly three hyphens `---`
  * Use this minimal front matter until you have a reason to do something more specific
