@@ -1,8 +1,13 @@
 ---
 ---
 
-<table border="1" style="width:auto;"><tr><td><a href="https://UCSB-CS56-pconrad.github.io/topics/jekyll">web</a></td>
-<td><a href="https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io/blob/master/topics/jekyll/index.md">github</a></td><td><a href="https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io/edit/master/topics/jekyll/index.md">edit</a></td></tr></table>
+<table border="1" style="width:auto;">
+ <tr>
+  <td><a href="https://UCSB-CS56-pconrad.github.io/topics/jekyll">web</a></td>
+  <td><a href="https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io/blob/master/topics/jekyll/index.md">github</a></td>
+  <td><a href="https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io/edit/master/topics/jekyll/index.md">edit</a></td>
+ </tr>
+</table>
 
 # Jekyll
 
