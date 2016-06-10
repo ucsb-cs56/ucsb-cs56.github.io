@@ -77,6 +77,7 @@ In Kramdown, you must indent four spaces to get a second level of list:
 # Layouts
 
 In Jekyll a  *layout* specifies the common features of a category of pages on your site.   For example, for a course web site, you might have different layouts for:
+
 * general course information pages
 * lab assignments
 * homework assignments
@@ -86,7 +87,8 @@ Strictly speaking, layouts are optional.   It is possible to create a minimally 
 
 Layouts are created in the `_layouts` subdirectory of the root of the site repository.
 
-The jekyll documentation provides a good [tutorial on creating a `default.html` layout](http://jekyll.tips/guide/layouts/).  This is a good place to start, though your `default.html` layout can likely be much simpler than the one shown on that site.  Here is a much simpler example.     Here is some insight into what it contains
+The jekyll documentation provides a good [tutorial on creating a `default.html` layout](http://jekyll.tips/guide/layouts/).  This is a good place to start, though your `default.html` layout can likely be much simpler than the one shown on that site.  Here is a much simpler example.     Here is some insight into what it contains:
+
 * The `<!DOCTYPE html>` is the latest HTML 5 compliant document type
 * In the `head` element:
     * The `meta` elements provide for UTF-8 encoding, and proper scaling on small devices (e.g. mobile phone browsers).  
