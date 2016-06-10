@@ -19,3 +19,8 @@ Jekyll is a software package that can be used in conjunction with github.com to 
  - Use this minimal front matter until you have a reason to do something more specific
  - The front matter can be used to configure things such as the title of the page, and many other things.
  - The format of the front matter is Yaml (a syntax for key/value associations that includes JSON as a subset).
+
+# Configuration
+
+* The file `_config.yml` in the root of the repository can be used to configure various Jekyll properties
+ - As an example, `markdown: rdiscount` specifies a different Markdown processor to use instead of the default.
