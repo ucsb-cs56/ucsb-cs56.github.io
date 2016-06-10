@@ -38,7 +38,7 @@ Example of minimal front matter:
 ---
 ~~~
 
-If you want your pages to have an html '<title>' element, you need to specify at least one default layout (explained below), and the specify this
+If you want your pages to have an html `<title>` element, you need to specify at least one default layout (explained below), and the specify this
 layout along with the title:
 
 ~~~
