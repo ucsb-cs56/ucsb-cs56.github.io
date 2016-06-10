@@ -1,6 +1,8 @@
 ---
 ---
 
+This page maintained at: https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io/edit/master/topics/jekyll/index.md
+
 # Jekyll
 
 Jekyll is a software package that can be used in conjunction with github.com to publish web pages easily.   
