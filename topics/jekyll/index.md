@@ -1,5 +1,6 @@
 ---
 title: Jekyll
+layout: default
 ---
 
 <table border="1" style="width:auto;">
@@ -37,10 +38,12 @@ Example of minimal front matter:
 ---
 ~~~
 
-Example of just a title:
+If you want your pages to have an html '<title>' element, you need to specify at least one default layout (explained below), and the specify this
+layout along with the title:
 
 ~~~
 ---
+layout: default
 title: Jekyll
 ---
 ~~~
@@ -89,6 +92,7 @@ The jekyll documentation provides a good [tutorial on creating a `default.html` 
     * The `meta` elements provide for UTF-8 encoding, and proper scaling on small devices (e.g. mobile phone browsers).  
     * The `title` element now references `{{page.title}}` which brings in the title from the [front matter](https://jekyllrb.com/docs/frontmatter/) of your `.md` file.
 * In the `body` element, the `{{ content }}` inserts the contents of your `.md` file. 
+* To actually use this, you must insert `layout: default` into the [front matter](https://jekyllrb.com/docs/frontmatter/) of your `.md` files.
 
 ~~~
 <!DOCTYPE html>
