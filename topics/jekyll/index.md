@@ -1,7 +1,7 @@
 ---
 ---
 
-This page maintained at: https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io/edit/master/topics/jekyll/index.md
+[web page](https://UCSB-CS56-pconrad.github.io/topics/jekyll) [on github](https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io/edit/master/topics/jekyll/index.md)
 
 # Jekyll
 
