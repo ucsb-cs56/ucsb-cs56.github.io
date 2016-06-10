@@ -4,6 +4,7 @@
 # Jekyll
 
 Jekyll is a software package that can be used in conjunction with github.com to publish web pages easily.   
+
 * Content is authored in markdown, and kept in github.com repositories.
 * Content is published automatically to a site with the url ____.github.io every time you push changes to your repo.
 * There is no database to configure, and authorization is handled by existing github.com authorization mechanisms.
