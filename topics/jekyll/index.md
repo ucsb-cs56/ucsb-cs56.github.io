@@ -164,3 +164,11 @@ An example is:
 {{ article.published_at | date: "%r" }}
 <!-- 03:20:07 PM -->
 ~~~
+
+# Syntax of Templates
+
+The template used by Jekyll is called Liquid.
+
+The following page summarizes the syntax of things such as if statements, for loops, variable assignment, etc:
+
+<https://github.com/Shopify/liquid/wiki/Liquid-for-Designers>
