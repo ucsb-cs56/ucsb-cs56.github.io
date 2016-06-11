@@ -149,3 +149,18 @@ Then, edit the `_layouts/default.html` as shown to include this file:
   {% include nav.html %}
   {{content}}
 ~~~
+
+# Dates
+
+Dates in Jekyll are formatted using the "Liquid filter".
+
+More information is here: <https://help.shopify.com/themes/liquid/filters/additional-filters#date>
+
+An example is: 
+
+~~~
+12-hour time (%I:%M:%S %p)
+
+{{ article.published_at | date: "%r" }}
+<!-- 03:20:07 PM -->
+~~~
