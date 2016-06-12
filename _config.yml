@@ -1,3 +1,25 @@
+title: "UCSB CS56 pconrad"
+
+
+#kramdown:
+#  parse_block_html: true
+
+exclude: ['vendor', 'setup.sh', 'jekyll.sh']
+
+timezone: America/Los_Angeles
+
+collections:
+  topics:
+    output: true
+    permalink: /topics/:path/
+
+  textbooks:
+    output: true
+    permalink: /textbooks/:path/
+
+  chapters:
+    output: true
+    permalink: /chapters/:path/
 
 defaults:
   -
