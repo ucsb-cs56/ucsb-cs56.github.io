@@ -1,5 +1,6 @@
 ---
-title: Jekyll
+topic: Jekyll
+desc: Creating web pages on github-pages using Markdown
 layout: default
 ---
 

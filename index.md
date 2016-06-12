@@ -18,6 +18,25 @@ This site is maintained in this github repo: <https://github.com/UCSB-CS56-pconr
 </div><!-- about -->
 
 
+<div id="textbooks" data-role="collapsible" data-collapsed="false">
+  <h2>Textbooks</h2>
+    <ul>
+      {% assign textbooks = site.textbooks | sort: 'custom_sort_order' %}
+      {% for textbook in textbooks %}
+         <li><a href="{{textbook.url}}">{{ textbook.title }}</a>&mdash;{{textbook.desc}}</li>
+      {% endfor %}
+    </ul>
+</div>
+
+<div id="chapters" data-role="collapsible" data-collapsed="false">
+  <h2>Chapters</h2>
+    <ul>
+      {% for chapter in site.chapters %}
+         <li><a href="{{chapter.url}}">{{ chapter.textbook }} {{chapter.chapter}}</a> &mdash;{{chapter.desc}}</li>
+      {% endfor %}
+    </ul>
+</div>
+
 <div id="topics" data-role="collapsible" data-collapsed="false">
   <h2>Topics</h2>
   <ul>
@@ -25,14 +44,5 @@ This site is maintained in this github repo: <https://github.com/UCSB-CS56-pconr
      <li><a href="{{topic.url}}">{{ topic.topic }}</a>&mdash;{{topic.desc}}</li>
    {% endfor %}
   </ul>
-</div>
-
-<div id="textbooks" data-role="collapsible" data-collapsed="false">
-  <h2>Textbooks</h2>
-    <ul>
-      {% for textbook in site.textbooks %}
-         <li><a href="{{textbook.url}}">{{ textbook.title }}</a>&mdash;{{textbook.desc}}</li>
-      {% endfor %}
-    </ul>
 </div>
 
