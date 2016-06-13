@@ -16,3 +16,8 @@ Differences:
     * `ant compile` instead of `make executablename`
     * `ant clean` instead of `make clean`
 
+
+# References:
+
+* [Ant Users Manual](https://ant.apache.org/manual/)
+* [Ant Tutorial (Hello World)](https://ant.apache.org/manual/tutorial-HelloWorldWithAnt.html)
