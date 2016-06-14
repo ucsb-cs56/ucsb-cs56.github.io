@@ -1,6 +1,6 @@
 ---
-topic: ANT
-desc: A build tool for Java (similar to Make/Makefiles)
+topic: Ant
+desc: Apache Ant, a build tool for Java (similar to Make/Makefiles)
 ---
 
 TODO: Migrate content from [56 wiki ant page](https://foo.cs.ucsb.edu/56wiki/index.php/Ant to this page)
