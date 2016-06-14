@@ -35,4 +35,4 @@ Differences between Maven and Ant:
 
 * [Apache Maven home page](https://maven.apache.org/)
 * [Apache Maven FAQ](https://maven.apache.org/general.html)
-    
+* [Apache Maven in 5 minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)    
