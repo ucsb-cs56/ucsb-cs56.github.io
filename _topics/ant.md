@@ -3,11 +3,16 @@ topic: ANT
 desc: A build tool for Java (similar to Make/Makefiles)
 ---
 
-The short version:
+TODO: Migrate content from [56 wiki ant page](https://foo.cs.ucsb.edu/56wiki/index.php/Ant to this page)
+at [this edit link](https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io/edit/master/_topics/ant.md)
+
+In the meantime, consult that page as a reference as well.
+
+# The short version:
 
 * Ant is similar in purpose to Make/Makefiles for C/C++
 
-Differences:
+# Differences between Ant and make
 
 * XML syntax instead of ideosyncratic Makefile syntax (tabs? what?)
 * Built in Java, so its ostensibly portable like Java (Makefiles are very Unix centric)
