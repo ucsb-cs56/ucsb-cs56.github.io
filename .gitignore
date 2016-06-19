@@ -1,4 +1,4 @@
-.mw
+*.mw
 *~
 .bundle
 vendor
