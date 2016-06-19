@@ -17,14 +17,6 @@ This site is maintained in this github repo: <https://github.com/UCSB-CS56-pconr
 
 </div><!-- about -->
 
-<div id="info" data-role="collapsible" data-collapsed="false">
-  <h2>Course Information</h2>
-    <ul>
-      {% for item in site.info %}
-         <li><a href="{{item.url}}">{{item.title }}</a></li>
-      {% endfor %}
-    </ul>
-</div>
 
 <div id="textbooks" data-role="collapsible" data-collapsed="false">
   <h2>Textbooks</h2>
