@@ -4,9 +4,15 @@ desc: "Creating web sites (like this one) on github-pages using Markdown"
 layout: default
 ---
 
+
+
 # Jekyll
 
 Jekyll is a software package that can be used in conjunction with github.com to publish web pages easily.   
+
+The web site you are looking at now is created via Jekyll.
+
+More information about Jekyll is available at this page: <https://pconrad-webapps.github.io/topics/jekyll>
 
 * Content is authored in markdown, and kept in github.com repositories.
 * Content is published automatically to a site with the url ____.github.io every time you push changes to your repo.
