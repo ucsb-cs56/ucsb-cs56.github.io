@@ -15,7 +15,7 @@ really quick introduction to what Java looks like, and how it works.
 
 If you have worked with Java before, this Chapter is mainly just to
 remind you of some things--but its still worth reading through just to
-dust off the cobwebs of Winter Break--and who knows, there might be
+dust off the cobwebs of your knowledge.  Who knows, there might be
 something that is new, or presented in a new light.
 
 Chapter 1, page-by-page
