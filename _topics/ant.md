@@ -45,7 +45,7 @@ In the meantime, consult that page as a reference as well.
 The following assumes you have a `build` subdirectory with your classes, and a lib subdirectory with a `.jar` file
 for JUnit.  (Note: to get a `.jar` file into a git repo that has a `.gitignore` file for Java may require the `-f` flag on the `git add` command.)
 
-```xml
+```
   <path id="project.class.path">                                                               
          <pathelement location="build"/>                                                       
          <pathelement location="lib/junit-4.8.2.jar"/>    
@@ -97,11 +97,13 @@ Best bet: don't worry&mdash;be happy.
 *A:* The quick answer is that you can usually fix this by just adding `includeantruntime="False"` to your `javac` step.
 
 For example, change:
-```xml
+
+```
 <javac srcdir="${dir.src}" destdir="${dir.build}" includeantruntime="False" >
 ```
 to:
-```xml
+
+```
 <javac srcdir="${dir.src}" destdir="${dir.build}" includeantruntime="False" >
 ```
 
@@ -125,7 +127,7 @@ How can I fix this so that I can see the file and line number where, for example
 
 *A:* Inside your build.xml file, on the line that does the javac task, include these attributes: 
 
-```xml
+```
 <code>debug=true debuglevel="lines,source"</code>.
 ```
 As an example, here's before:
