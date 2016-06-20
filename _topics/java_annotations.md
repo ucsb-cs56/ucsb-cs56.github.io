@@ -20,8 +20,8 @@ Some of the annotations that we commonly see in CMPSC 56 include these that are 
 
 And these that are part of JUnit:
 
-* `@Before` for setup functions
-* `@Test` for unit tests
+* `@Before` for setup functions ([`org.junit.Before` javadoc](http://junit.sourceforge.net/javadoc/org/junit/Before.html))
+* `@Test` for unit tests [`org.junit.Test` javadoc](http://junit.sourceforge.net/javadoc/org/junit/Test.html)
 
 
 # Three pre-defined annotations: 
