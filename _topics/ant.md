@@ -45,6 +45,7 @@ In the meantime, consult that page as a reference as well.
 The following assumes you have a `build` subdirectory with your classes, and a lib subdirectory with a `.jar` file
 for JUnit.  (Note: to get a `.jar` file into a git repo that has a `.gitignore` file for Java may require the `-f` flag on the `git add` command.)
 
+
 ```
   <path id="project.class.path">                                                               
          <pathelement location="build"/>                                                       
@@ -101,6 +102,7 @@ For example, change:
 ```
 <javac srcdir="${dir.src}" destdir="${dir.build}" includeantruntime="False" >
 ```
+
 to:
 
 ```
@@ -114,6 +116,7 @@ The reasons for this are sort of obscure and have to do with an "improvement" to
 # I get "(Unknown Source)" in my stack traceback messages 
 
 *Q:* I'm trying to debug my code, and I'm getting an exception. Weird thing is, the JVM seems to know the exact line numbers inside the system classes, but not in my own code.  I'm getting "(Unknown Source)" next to my own code. What's up with that?  I'd really like to know where the exception is being thrown. Here's an example of what I'm getting:
+
 
 ```
     [junit] java.lang.StringIndexOutOfBoundsException: String index out of range: 0
@@ -130,6 +133,7 @@ How can I fix this so that I can see the file and line number where, for example
 ```
 <code>debug=true debuglevel="lines,source"</code>.
 ```
+
 As an example, here's before:
 
 ```
@@ -137,6 +141,7 @@ As an example, here's before:
 ```
 
 Here's after:
+
 ```
 <javac srcdir="src" destdir="build" includeantruntime="false" debug="true" debuglevel="lines,source">      
 ```
