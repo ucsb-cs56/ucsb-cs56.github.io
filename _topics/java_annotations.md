@@ -16,7 +16,7 @@ According to [this lesson on Java Annotations](https://docs.oracle.com/javase/tu
 Some of the annotations that we commonly see in CMPSC 56 include these that are built into Java 8:
 
 * pre-defined annotations, `@Override`, `@Deprecated` and `@SuppressWarnings` (more info below).
-* the `@FunctionalInterface` annotation, used in Java 8 with [Lambda expressions](https://ucsb-cs56-pconrad.github.io/topics/java_lambda_expressions/).
+* the `@FunctionalInterface` annotation, used in Java 8 with [Lambda expressions](java_lambda_expressions/).
 
 And these that are part of JUnit:
 
