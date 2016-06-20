@@ -21,4 +21,17 @@ Several [Java Annotations](/topics/java_annotations) are used by JUnit.  Some of
 
 # Testing for Exceptions
 
-* [JUnit's own tutorial on Exception testing](https://github.com/junit-team/junit4/wiki/Exception-testing)
+If your code is supposed to thrown an exception under some circumstance, this is something you should test.  For example, if a constructor for a rational number shown throw an `IllegalArgumentException` when the denominator is zero, you should test for that.
+
+The easiest way is to use a parameter to the `@Test` annotation, as illustrated here:
+
+```Java
+   @Test(expected = IllegalArgumentException.class)
+   public void test_denom_zero() {
+      Rational r = new Rational(1,0);
+   }
+```
+
+This only tests whether the expected exception is thrown. If you want your test to be more specific&mdash;for example, to check whether the content of the message in the exception object matches some expected text, there are more sophisticated techniques that can be used.  Those are explained in the following article from the junit-team's wiki:
+
+* [Tutorial on JUnit Exception testing](https://github.com/junit-team/junit4/wiki/Exception-testing)
