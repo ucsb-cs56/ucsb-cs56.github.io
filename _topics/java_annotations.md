@@ -43,5 +43,5 @@ See also, [Oracle lesson on pre-defined annotations](https://docs.oracle.com/jav
   
 # FunctionalInterface 
 
-The `@FunctionalInterface` annotation is typically used with Java 8 Lambda Expressions.  See: [Java 8 Lambda Expressions](https://ucsb-cs56-pconrad.github.io/topics/java_lambda_expressions/) for more information.
+The `@FunctionalInterface` annotation is typically used with Java 8 Lambda Expressions.  For more information, see [Java 8 Lambda Expressions](java_lambda_expressions).
 
