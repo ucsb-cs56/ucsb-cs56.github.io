@@ -18,9 +18,9 @@ There are a wide variety of kinds of tests, including unit tests, functional tes
 
 Unit testing tries to focus on a single unit of code, e.g. a single constructor or method, ideally isolating the testing of that unit from all other dependencies.    
 
-# JUnit: a Java Library for TDD
+# [JUnit](/topics/junit/): a Java Library for TDD
 
-The most widely used and influential TDD library is JUnit, originally developed by Kent Beck for doing TDD in Java programming.   JUnit has served as a model for unit testing libraries for many other programming languages.
+The most widely used and influential TDD library is  [JUnit](/topics/junit/), originally developed by Kent Beck for doing TDD in Java programming.   JUnit has served as a model for unit testing libraries for many other programming languages.
 
 # References on TDD
 
