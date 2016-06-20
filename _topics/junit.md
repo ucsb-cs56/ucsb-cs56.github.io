@@ -19,4 +19,6 @@ Several [Java Annotations](/topics/java_annotations) are used by JUnit.  Some of
 * `@Before` for setup functions ([`org.junit.Before` javadoc](http://junit.sourceforge.net/javadoc/org/junit/Before.html))
 * `@Test` for unit tests [`org.junit.Test` javadoc](http://junit.sourceforge.net/javadoc/org/junit/Test.html)
 
+# Testing for Exceptions
 
+* [JUnit's own tutorial on Exception testing](https://github.com/junit-team/junit4/wiki/Exception-testing)
