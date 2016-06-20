@@ -18,7 +18,7 @@ Some of the annotations that we commonly see in CMPSC 56 include these that are 
 * pre-defined annotations, `@Override`, `@Deprecated` and `@SuppressWarnings` (more info below).
 * the `@FunctionalInterface` annotation, used with [Java 8 Lambda expressions](/topics/java_lambda_expressions/).
 
-And these that are part of JUnit:
+And these that are part of [JUnit](/topics/junit/):
 
 * `@Before` for setup functions ([`org.junit.Before` javadoc](http://junit.sourceforge.net/javadoc/org/junit/Before.html))
 * `@Test` for unit tests [`org.junit.Test` javadoc](http://junit.sourceforge.net/javadoc/org/junit/Test.html)
