@@ -54,8 +54,8 @@ for JUnit.  (Note: to get a `.jar` file into a git repo that has a `.gitignore` 
 
 Using it:
 
-```xml
-  <java fork="true" classname="${fullPkg}.${mainClass}"  >
+```
+ <java fork="true" classname="${fullPkg}.${mainClass}" >
      <classpath refid="project.class.path" />   
   </java>          
 ```
