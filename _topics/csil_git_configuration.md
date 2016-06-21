@@ -5,9 +5,9 @@ desc: "Configuring your CSIL account to use git"
 
 This page has three sections:
 
-* [*How* to configure your CSIL account for git](./#how)
-* [*Why* you need to configure your CSIL account for git](./#why)
-* [*What about GUI* options for git?](./#what-about-a-gui-for-git)
+* [*How* to configure your CSIL account for git]({{page.url}}#how)
+* [*Why* you need to configure your CSIL account for git]({{page.url}}#why)
+* [*What about GUI* options for git?]({{page.url}}#what-about-a-gui-for-git)
 
 How
 ---
