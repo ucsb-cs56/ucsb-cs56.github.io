@@ -19,9 +19,9 @@ Note: If you have already used git on CSIL in a previous course (e.g. CS32 with 
 To set up your CSIL account for using command line git, type the following commands, substituting your real name (e.g. Chris Gaucho) in place of "Your Name" and your email address (e.g. cgaucho@umail.ucsb.edu) in place of "you@example.com".
 
 ```
-git-config --global-user-name "Your Name"
-git-config --global-user-email you@example.com
-git-config --global-push-default simple
+git config --global-user-name "Your Name"
+git config --global-user-email you@example.com
+git config --global-push-default simple
 ```
 
 You should only have to ever do these steps once for any given computer system. The values of these global configuration options are stored in a file called .gitconfig in your home directory. Take a look by cd'ing into your home directory, and using the more command to list the contents of .gitconfig:
