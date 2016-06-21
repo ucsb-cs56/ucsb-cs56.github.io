@@ -20,5 +20,5 @@ A somewhat simpler framework is the [Spark framework for Java](/topics/spark-jav
 
 You can read more about SparkJava at:
 
-* the [SparkJava page on this site](/topics/spark-java.md)
+* the [SparkJava page on this site](/topics/spark-java/)
 * [SparkJava's own website](http://sparkjava.com/)
