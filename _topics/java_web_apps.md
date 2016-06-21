@@ -19,5 +19,6 @@ for *dependency injection*.
 A somewhat simpler framework is the [Spark framework for Java](/topics/spark-java.md) (sometimes called SparkJava to differentiate it from the [popular cluster computing platform called Apache Spark](https://spark.apache.org/docs/1.1.0/index.html), with which it has nothing in common except the name)
 
 You can read more about SparkJava at:
+
 * the [SparkJava page on this site](/topics/spark-java.md)
 * [SparkJava's own website](http://sparkjava.com/)
