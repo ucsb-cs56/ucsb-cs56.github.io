@@ -30,5 +30,3 @@ the .gitignore to not ignore /target/site/apidocs, and then commited the result 
 see the generated javadoc here:
 
 <https://ucsb-cs56-pconrad.github.io/spark/target/site/apidocs/index.html>
-
-`(generated from fork of <https://github.com/perwendel/spark on 6/20/2016): <>
