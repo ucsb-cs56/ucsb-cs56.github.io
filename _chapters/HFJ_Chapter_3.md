@@ -5,10 +5,6 @@ textbook: HFJ
 desc: "Know Your Variables"
 ---
 
-Chapter 3: Know Your Variables
-==============================
-
-
 p. 49
 -----
 
