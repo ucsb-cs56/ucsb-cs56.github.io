@@ -35,4 +35,64 @@ In this step, we add a `property` definiton to your `build.xml` that defines a p
 
 Properties in ant `build.xml` files are similar to the assignments statements we see in Makefiles (e.g. `CXX=g++` or `CXX=clang`)
 
-Traditinonally, property definitions are put at the top of the build.xml, just after the opening 
+Traditinonally, property definitions are put at the top of the build.xml, indented just after the opening `<project>` tag.  However, in the cs56-rational-example, at [ex08/build.xml line 51](https://github.com/UCSB-CS56-M16/cs56-rational-example/blob/master/ex08/build.xml#L51), we see that we've added a property that is only used in the `javadoc` target immediately before the target.   We'll add our second property there.  It will look like this. Note that you *will have to replace `yourgithubid* with your own*.  I'm showing both the property you should already have, plus the new one.
+
+```xml
+  <property name="javadoc_absolute_path" location="javadoc"/>
+  <property name="public_javadoc_absolute_path" location="../lab00_javadoc_yourgithubid/javadoc"/>
+```
+
+Now that we have this, we can modify our javadoc target as follows:
+
+Before:
+
+```xml
+<target name="javadoc" depends="compile" description="generate javadoc">
+    <delete>
+      <fileset dir="javadoc" />
+    </delete>
+    <javadoc destdir="javadoc">
+      <fileset dir="src" >
+	<include name="*.java"/>
+      </fileset>
+      <classpath refid="project.class.path" />
+      <link href="http://docs.oracle.com/javase/8/docs/api/" />          
+    </javadoc>
+    <echo>
+      javadoc written to file://${javadoc_absolute_path}/index.html
+    </echo> 
+  </target>
+```
+
+We'll add one line to the `echo` task, and then some additional lines after it.  The rest remains the same.
+
+After: 
+
+``` xml
+<target name="javadoc" depends="compile" description="generate javadoc">
+    <delete>
+      <fileset dir="javadoc" />
+    </delete>
+    <javadoc destdir="javadoc">
+      <fileset dir="src" >
+	      <include name="*.java"/>
+      </fileset>
+      <classpath refid="project.class.path" />
+      <link href="http://docs.oracle.com/javase/8/docs/api/" />          
+    </javadoc>
+    <echo>
+      javadoc written to file://${javadoc_absolute_path}/index.html
+      copying to ${public_javadoc_absolute_path}/index.html
+    </echo> 
+    <delete>
+      <fileset dir="public_javadoc_absolute_path" />
+    </delete>
+    <copy todir="${public_javadoc_absolute_path}">
+       <fileset dir="javadoc" />
+     </copy>
+    <echo>
+      javadoc copied to ${public_javadoc_absolute_path}/index.html
+      TO PUBLISH: cd into that repo, then git commit -am "update javadoc"; git push origin gh-pages
+    </echo> 
+  </target>
+```
