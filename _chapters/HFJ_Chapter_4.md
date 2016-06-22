@@ -2,13 +2,8 @@
 title: Head First Java, 2nd Edition
 chapter: Chapter_4
 textbook: HFJ
-desc: "Know Your Variables"
+desc: "How Objects Behave"
 ---
-
-Chapter 4: How Objects Behave
-=============================
-
-
 
 The big picture (p. 71)
 -----------------------
