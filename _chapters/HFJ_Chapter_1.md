@@ -2,7 +2,7 @@
 title: Head First Java, 2nd Edition
 chapter: Chapter_1
 textbook: HFJ
-layout: default
+layout: chapter
 desc: Breaking The Surface
 ---
 

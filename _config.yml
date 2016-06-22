@@ -2,6 +2,12 @@ title: "UCSB CS56 pconrad"
 github_url: https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io
 github_repo: UCSB-CS56-pconrad.github.io
 
+on_campus: http://proquest.safaribooksonline.com
+off_campus: http://proquest.safaribooksonline.com.proxy.library.ucsb.edu:2048/
+hfj: book/programming/java/0596009208
+hfdp: book/software-engineering-and-development/patterns/0596007124 
+
+
 #kramdown:
 #  parse_block_html: true
 
@@ -34,3 +40,9 @@ defaults:
       type: topics
     values:
       layout: topic
+
+  - scope:
+      path: ""
+      type: chapters
+    values:
+      layout: chapter

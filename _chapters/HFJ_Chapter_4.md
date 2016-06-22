@@ -1,6 +1,6 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_3
+chapter: Chapter_4
 textbook: HFJ
 layout: default
 desc: "Know Your Variables"
@@ -76,7 +76,7 @@ encounter it (or someone asks you about it at a job interview.)
 The UML diagrams in this book are pretty simple to understand—they
 have the following structure:
 
-![HFH-Chapter-4-p72-GenericUML.gif](HFH-Chapter-4-p72-GenericUML.gif)
+![HFH-Chapter-4-p72-GenericUML.gif](/images/HFH-Chapter-4-p72-GenericUML.gif)
 
 When you encounter this type of diagram, I want you to be able to
 understand what it means. You may encounter diagrams like this in the
