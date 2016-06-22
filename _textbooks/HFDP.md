@@ -10,4 +10,4 @@ ebook_url: http://proquest.safaribooksonline.com/book/software-engineering-and-d
 
 Read this book online:
 * [On the UCSB campus]({{page.ebook_url}}) (or any UC campus)
-* [Off-campus with a UCSBNetID]({{page.ebook_url|replace "proquest.safaribooksonline.com","http://proquest.safaribooksonline.com.proxy.library.ucsb.edu:2048/")
+* [Off-campus with a UCSBNetID]({{page.ebook_url|replace "proquest.safaribooksonline.com","http://proquest.safaribooksonline.com.proxy.library.ucsb.edu:2048/"}})
