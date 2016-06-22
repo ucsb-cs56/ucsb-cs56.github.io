@@ -2,7 +2,6 @@
 title: Head First Java, 2nd Edition
 chapter: Chapter_2
 textbook: HFJ
-layout: default
 desc: "A Trip to Objectville"
 ---
 

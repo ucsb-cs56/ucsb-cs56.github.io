@@ -2,7 +2,6 @@
 title: Head First Java, 2nd Edition
 chapter: Chapter_3
 textbook: HFJ
-layout: default
 desc: "Know Your Variables"
 ---
 
