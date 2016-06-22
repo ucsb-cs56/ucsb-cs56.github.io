@@ -5,9 +5,18 @@ desc: Main textbook for learning Object-Oriented Programming
 custom_sort_order: 2
 ---
 
+<div>&nbsp;</div>
 
-Read this book online:
+{% include read_hfdp_online.html %}
 
-* [On the UCSB campus]({{on_campus}}/{{hfdp}}) (or any UC campus)
-* [Off-campus with a UCSBNetID]({{off_campus}}/{{hfdp}})
+<div id="chapters" data-role="collapsible" data-collapsed="false">
+  <h2>Reading Notes, by Chapter</h2>
+    <ul>
+      {% assign hfdp_chapters = site.chapters | where: "textbook", "HFDP" %}
+      {% for chapter in hfdp_chapters %}
+         <li><a href="{{chapter.url}}">{{ chapter.textbook }} {{chapter.chapter}}</a> &mdash;{{chapter.desc}}</li>
+      {% endfor %}
+    </ul>
+</div>
+
 

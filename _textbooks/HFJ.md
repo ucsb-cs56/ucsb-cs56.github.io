@@ -5,12 +5,17 @@ desc: Main textbook for learning Java
 custom_sort_order: 1
 ---
 
-<% include read_hfj_online.html %>
+<div>&nbsp;</div>
+
+{% include read_hfj_online.html %}
+
+
 
 <div id="chapters" data-role="collapsible" data-collapsed="false">
   <h2>Reading Notes, by Chapter</h2>
     <ul>
-      {% for chapter in site.chapters | where:"textbook","HFJ" %}
+      {% assign hfj_chapters = site.chapters | where: "textbook", "HFJ" %}
+      {% for chapter in hfj_chapters %}
          <li><a href="{{chapter.url}}">{{ chapter.textbook }} {{chapter.chapter}}</a> &mdash;{{chapter.desc}}</li>
       {% endfor %}
     </ul>
