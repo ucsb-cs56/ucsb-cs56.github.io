@@ -100,3 +100,17 @@ After:
     </echo> 
   </target>
 ```
+
+Now, when we run `ant javadoc`, we should see that the javadoc is copied to the sibling public repo.
+
+In that repo, if we do our usual workflow, we should be able to publish these changes online:
+
+``` 
+  git status
+  git add .
+  git status
+  git commit -m "update javadoc"
+  git push origin gh-pages
+```
+
+Try it.  If you have difficulties, ask your mentor/TA/instructor during lab, or post questions to Piazza.
