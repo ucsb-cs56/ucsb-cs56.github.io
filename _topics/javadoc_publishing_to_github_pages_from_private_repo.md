@@ -29,7 +29,11 @@ This *side-by-side* part is *crucial*, so read these instructions carefully
 Once you have your private repo (e.g. `lab00_jgaucho`) and your public repo (e.g. `lab00_javadoc_jgaucho`) side-by-side, you are
 ready to modify your `build.xml` file to publish the javadoc.  Here's how:
 
-# Step 1: Add a property `javadoc_dest`
+# Step 1: Set up public repo with gh-pages branch
+
+TODO: FILL IN THESE INSTRUCTIONS.   Put a test.html file in the directory, set the default branch, etc.
+
+# Step 2: Add a property `javadoc_dest`
 
 In this step, we add a `property` definiton to your `build.xml` that defines a property called `javadoc_dest`.   
 
