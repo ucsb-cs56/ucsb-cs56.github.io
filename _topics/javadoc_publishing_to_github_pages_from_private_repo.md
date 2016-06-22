@@ -29,3 +29,10 @@ This *side-by-side* part is *crucial*, so read these instructions carefully
 Once you have your private repo (e.g. `lab00_jgaucho`) and your public repo (e.g. `lab00_javadoc_jgaucho`) side-by-side, you are
 ready to modify your `build.xml` file to publish the javadoc.  Here's how:
 
+# Step 1: Add a property `javadoc_dest`
+
+In this step, we add a `property` definiton to your `build.xml` that defines a property called `javadoc_dest`.   
+
+Properties in ant `build.xml` files are similar to the assignments statements we see in Makefiles (e.g. `CXX=g++` or `CXX=clang`)
+
+Traditinonally, property definitions are put at the top of the build.xml, just after the opening 
