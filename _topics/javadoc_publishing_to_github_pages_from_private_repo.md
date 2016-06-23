@@ -97,11 +97,9 @@ Here is a minimalist (yet still 100% HTML 5 standards compliant) `hello.html` fi
 in the gh-pages repo (you can do this directly in the github.com interface by clicking on "Create File",
 and copy/pasting in this content:
 
-
 <div markdown="1" style="float:right; width:780px; clear:both;" >
 ![hello.html](images/hello.html_50.png)
 </div>
-
 
 ```
 <!DOCTYPE html>
@@ -146,7 +144,7 @@ is *crucial*, so read these instructions carefully
 
 Here's what that should look like.  Note that in the `git status` step, it notes that we are on the `gh-pages` branch instead of the `master` branch.
 
-```bash
+```
 -bash-4.3$ pwd
 /cs/faculty/pconrad/cs56
 -bash-4.3$ ls
