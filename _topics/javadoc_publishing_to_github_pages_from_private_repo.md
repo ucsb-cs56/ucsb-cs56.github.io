@@ -240,7 +240,8 @@ After:
      </copy>
     <echo>
       javadoc copied to ${public_javadoc_absolute_path}/index.html
-      TO PUBLISH: cd into that repo, then git commit -am "update javadoc"; git push origin gh-pages
+      TO PUBLISH: cd into that repo, then 
+      git commit -am "update javadoc"; git push origin gh-pages
     </echo> 
   </target>
 ```
