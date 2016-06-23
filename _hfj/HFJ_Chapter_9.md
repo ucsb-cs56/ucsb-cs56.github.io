@@ -1,6 +1,7 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_9
+chapter: 9
+sort_key: "09"
 textbook: HFJ
 desc:  "Life and Death of an Object"
 ---

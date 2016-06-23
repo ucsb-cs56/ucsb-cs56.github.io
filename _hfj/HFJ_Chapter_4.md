@@ -1,6 +1,7 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_4
+chapter: 4
+sort_key: "04"
 textbook: HFJ
 desc: "How Objects Behave"
 ---

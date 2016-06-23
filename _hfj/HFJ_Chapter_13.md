@@ -1,6 +1,7 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_13
+chapter: 13
+sort_key: "13"
 textbook: HFJ
 desc:  "Work on Your Swing"
 ---

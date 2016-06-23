@@ -1,6 +1,7 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_11
+chapter: 11
+sort_key: "11"
 textbook: HFJ
 desc:  "Risky Behavior"
 ---

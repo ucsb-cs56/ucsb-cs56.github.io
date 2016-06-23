@@ -1,6 +1,7 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_14
+chapter: 14
+sort_key: "14"
 textbook: HFJ
 desc:  "Saving Objects"
 ---

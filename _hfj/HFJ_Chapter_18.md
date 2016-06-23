@@ -1,6 +1,7 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_18
+chapter: 18
+sort_key: "18"
 textbook: HFJ
 desc:  "Distributed Computing"
 ---

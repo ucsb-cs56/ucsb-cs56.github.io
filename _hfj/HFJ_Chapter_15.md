@@ -1,6 +1,7 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_15
+chapter: 15
+sort_key: "15"
 textbook: HFJ
 desc:  "Make a Connection"
 ---

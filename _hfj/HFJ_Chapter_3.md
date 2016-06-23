@@ -1,6 +1,7 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_3
+chapter: 3
+sort_key: "03"
 textbook: HFJ
 desc: "Know Your Variables"
 ---

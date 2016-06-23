@@ -1,9 +1,10 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_1
+chapter: 1
+sort_key: "01"
 textbook: HFJ
 layout: chapter
-desc: Breaking The Surface
+desc: "Breaking The Surface"
 ---
 
 

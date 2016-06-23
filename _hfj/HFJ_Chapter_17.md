@@ -1,6 +1,7 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_17
+chapter: 17
+sort_key: "17"
 textbook: HFJ
 desc:  "Releasing Your Code"
 ---

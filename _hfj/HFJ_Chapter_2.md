@@ -1,6 +1,7 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_2
+chapter: 2
+sort_key: "02"
 textbook: HFJ
 desc: "A Trip to Objectville"
 ---

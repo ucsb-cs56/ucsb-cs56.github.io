@@ -1,6 +1,7 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_16
+chapter: 16
+sort_key: "16"
 textbook: HFJ
 desc:  "Collections and Generics: Data Structures"
 ---

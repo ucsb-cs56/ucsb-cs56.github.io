@@ -4,8 +4,8 @@ github_repo: UCSB-CS56-pconrad.github.io
 
 on_campus: http://proquest.safaribooksonline.com
 off_campus: http://proquest.safaribooksonline.com.proxy.library.ucsb.edu:2048/
-hfj: book/programming/java/0596009208
-hfdp: book/software-engineering-and-development/patterns/0596007124 
+hfj_url: book/programming/java/0596009208
+hfdp_url: book/software-engineering-and-development/patterns/0596007124 
 
 
 #kramdown:
@@ -24,9 +24,14 @@ collections:
     output: true
     permalink: /textbooks/:path/
 
-  chapters:
+  hfj:
     output: true
-    permalink: /chapters/:path/
+    permalink: /hfj/:path/
+
+  hfdp:
+    output: true
+    permalink: /hfdp/:path/
+
 
 defaults:
   -
@@ -43,6 +48,12 @@ defaults:
 
   - scope:
       path: ""
-      type: chapters
+      type: hfj
+    values:
+      layout: chapter
+
+  - scope:
+      path: ""
+      type: hfdp
     values:
       layout: chapter

@@ -1,6 +1,7 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_10
+chapter: 10
+sort_key: "10"
 textbook: HFJ
 desc:  "Numbers Matter"
 ---

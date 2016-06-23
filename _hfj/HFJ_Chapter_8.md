@@ -1,6 +1,7 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_8
+chapter: 8
+sort_key: "08"
 textbook: HFJ
 desc:  "Interfaces and Abstract Classes: Serious Polymorphism"
 ---

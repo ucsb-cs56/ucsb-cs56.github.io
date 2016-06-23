@@ -1,6 +1,7 @@
 ---
 title: Head First Java, 2nd Edition
-chapter: Chapter_5
+chapter: 5
+sort_key: "05"
 textbook: HFJ
 desc:  "Writing a Program: Extra-Strength Methods"
 ---
