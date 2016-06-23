@@ -8,6 +8,7 @@ on github.com where every repo that you create can automatically be seen by your
 
 To create a private repo for a Java assignment on github.com, follow this procedure.
 
+
 # Choosing a name
 
 * Unless you are told otherwise, the naming convention is `labxx_githubusername`
