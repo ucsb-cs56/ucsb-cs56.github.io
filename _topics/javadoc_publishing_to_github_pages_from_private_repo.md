@@ -144,6 +144,30 @@ is *crucial*, so read these instructions carefully
 * You should see the two directories/folders side by side in the same parent directory/folder
 * That way, we can use a relative path from with the private repo's directory  to access the public repo's files, for example, `../lab00_javadoc_jgaucho` as we demonstrate in the next step.
 
+Here's what that should look like.  Note that in the `git status` step, it notes that we are on the `gh-pages` branch instead of the `master` branch.
+
+```bash
+-bash-4.3$ pwd
+/cs/faculty/pconrad/cs56
+-bash-4.3$ ls
+lab00_jgaucho
+-bash-4.3$ git clone git@github.com:UCSB-CS56-M16/lab00_javadoc_jgaucho.git
+Cloning into 'lab00_javadoc_jgaucho'...
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+Checking connectivity... done.
+-bash-4.3$ ls
+lab00_javadoc_jgaucho  lab00_jgaucho
+-bash-4.3$ cd lab00_javadoc_jgaucho/
+-bash-4.3$ git status
+On branch gh-pages
+Your branch is up-to-date with 'origin/gh-pages'.
+nothing to commit, working directory clean
+-bash-4.3$ 
+```
+
 
 # Step 5: Modify `javadoc` target in private repo 
 
