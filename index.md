@@ -20,19 +20,11 @@ This site is maintained in this github repo: <https://github.com/UCSB-CS56-pconr
 
 <div id="textbooks" data-role="collapsible" data-collapsed="false">
   <h2>Textbooks</h2>
+  <p>Articles on individual chapters can be found on the pages for each textbook</p>
     <ul>
       {% assign textbooks = site.textbooks | sort: 'custom_sort_order' %}
       {% for textbook in textbooks %}
          <li><a href="{{textbook.url}}">{{ textbook.title }}</a>&mdash;{{textbook.desc}}</li>
-      {% endfor %}
-    </ul>
-</div>
-
-<div id="chapters" data-role="collapsible" data-collapsed="false">
-  <h2>Chapters</h2>
-    <ul>
-      {% for chapter in site.chapters %}
-         <li><a href="{{chapter.url}}">{{ chapter.textbook }} {{chapter.chapter}}</a> &mdash;{{chapter.desc}}</li>
       {% endfor %}
     </ul>
 </div>
