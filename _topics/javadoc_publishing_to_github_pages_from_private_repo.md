@@ -23,7 +23,7 @@ However, if our main repo is private, there's a problem: you can't
 publish to github pages from a private repo.
 
 So, our solution will be to create a separate public repo,
-side-by-side, with our private one.  Here's how to do it:
+side-by-side with our private one.  Here's how to do it:
 
 # Step 1: Set up public repo
 
