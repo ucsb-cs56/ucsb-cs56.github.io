@@ -228,22 +228,24 @@ After:
       <classpath refid="project.class.path" />
       <link href="http://docs.oracle.com/javase/8/docs/api/" />          
     </javadoc>
-    <echo>
-      javadoc written to file://${javadoc_absolute_path}/index.html
-      copying to ${public_javadoc_absolute_path}/index.html
-    </echo> 
-    <delete>
-      <fileset dir="public_javadoc_absolute_path" />
-    </delete>
-    <copy todir="${public_javadoc_absolute_path}">
-       <fileset dir="javadoc" />
-     </copy>
-    <echo>
-      javadoc copied to ${public_javadoc_absolute_path}/index.html
-      TO PUBLISH: cd into that repo, then 
-      git commit -am "update javadoc"; git push origin gh-pages
-    </echo> 
-  </target>
+    <echo>                                                                                       
+      javadoc written to file://${javadoc_absolute_path}/index.html                              
+      copying to ${public_javadoc_absolute_path}/index.html                                      
+    </echo>                                                                                      
+    <delete quiet="true">                                                                        
+      <fileset dir="${public_javadoc_absolute_path}" />                                          
+    </delete>                                                                                    
+    <mkdir dir="${public_javadoc_absolute_path}" />                                              
+    <copy todir="${public_javadoc_absolute_path}">                                               
+      <fileset dir="javadoc" />                                                                  
+    </copy>                                                                                      
+    <echo>                                                                                       
+      javadoc copied to ${public_javadoc_absolute_path}/index.html                               
+      TO PUBLISH: cd into that repo, then git add javadoc;                                       
+        git commit -am "update javadoc"; git push origin gh-pages                                
+    </echo>                                                                                      
+  </target>     
+
 ```
 
 Now, when we run `ant javadoc`, we should see that the javadoc is copied to the sibling public repo.
@@ -252,7 +254,7 @@ In that repo, if we do our usual workflow, we should be able to publish these ch
 
 ``` 
   git status
-  git add .
+  git add javadoc
   git status
   git commit -m "update javadoc"
   git push origin gh-pages
