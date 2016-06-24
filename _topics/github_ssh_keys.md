@@ -151,13 +151,13 @@ Look for the gear icon in upper right to take you to the settings screen.
 
 Click on the tool icon, and it should take you to a screen like this—you are looking for the SSH Keys menu item on the left:
 
-<div style='border:1px solid black;'>
+<div style='border:1px solid black;' markdown="1">
 ![ssh keys](http://i.imgur.com/xXESmRI.png)
 </div>
 
 Click on that, and you'll be taken to this screen, where you can upload a new public key:
 
-<div style='border:1px solid black;'>
+<div style='border:1px solid black;' markdown="1">
 ![ssh key upload](http://i.imgur.com/z8blAzI.png)
 </div>
 
