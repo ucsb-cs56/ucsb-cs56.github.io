@@ -38,3 +38,13 @@ This site is maintained in this github repo: <https://github.com/UCSB-CS56-pconr
   </ul>
 </div>
 
+
+<div id="resources" data-role="collapsible" data-collapsed="false">
+  <h2>Resources</h2>
+  <ul>
+   {% for topic in site.resources %}
+     <li><a href="{{topic.url}}">{{ topic.topic }}</a>&mdash;{{topic.desc}}</li>
+   {% endfor %}
+  </ul>
+</div>
+
