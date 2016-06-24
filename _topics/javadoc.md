@@ -5,7 +5,7 @@ desc: "Documentation generator for java"
 
 # References
 
-* [Oracle's reference for javadoc (in JDK SE 8)(http://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html)
+* [Oracle's reference for javadoc (in JDK SE 8)](http://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html)
 
 
 # Javadoc on github-pages
