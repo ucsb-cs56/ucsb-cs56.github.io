@@ -152,13 +152,13 @@ Look for the gear icon in upper right to take you to the settings screen.
 Click on the tool icon, and it should take you to a screen like this—you are looking for the SSH Keys menu item on the left:
 
 <div style='border:1px solid black;' markdown="1">
-![ssh keys](http://i.imgur.com/xXESmRI.png)
+<img src="http://i.imgur.com/xXESmRI.png" alt="ssh" />
 </div>
 
 Click on that, and you'll be taken to this screen, where you can upload a new public key:
 
 <div style='border:1px solid black;' markdown="1">
-![ssh key upload](http://i.imgur.com/z8blAzI.png)
+<img src="http://i.imgur.com/z8blAzI.png" alt="ssh" />
 </div>
 
 Once the key is uploaded, you're all set to be able to use github.com in the most streamlined way possible. What you do is simply use the SSH version of the URL instead of the https version of the URL when you first clone your repository.
