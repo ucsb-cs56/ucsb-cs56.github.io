@@ -10,6 +10,8 @@ This is a tutorial on how to:
 * upload your *public* key to github (either github.com, or github.ucsb.edu, as the case may be)
 * SO THAT you can use the ssh github clone URLs instead of the https ones.
 
+See also: [github's own tutorial on the same topic](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+
 # Why would I want to do that?
 
 Because it allows you to do push operations
@@ -198,3 +200,7 @@ but it runs on your Windows machine.  You get:
 * and, most importantly for us: `ssh-keygen` that works just like it does on Mac and Linux.
 
 So now, you can ssh-keygen away, even on Windows.
+
+# References:
+
+* <https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/>
