@@ -32,7 +32,10 @@ collections:
   hfdp:
     output: true
     permalink: /hfdp/:path/
-
+    
+  resources:
+    output: true
+    permalink: /resources/:path/
 
 defaults:
   -
@@ -58,3 +61,9 @@ defaults:
       type: hfdp
     values:
       layout: chapter
+      
+  - scope:
+      path: ""
+      type: resources
+    values:
+      layout: topic
