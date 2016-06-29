@@ -212,7 +212,11 @@ Before:
   </target>
 ```
 
-We'll add one line to the `echo` task, and then some additional lines after it.  The rest remains the same.
+We'll make three changes:
+* We change the `<link href=...` to use `https` instead of `http`.  Otherwise, links to the Oracle javadoc won't load due to http/https conflict (unless you open them in another page).
+* We add one line to the `echo` task with a message that we are copying the javadoc to another directory
+* We add some additional lines after that to copy the files to that other directory, and then give a message
+    that we need to push those changes to github.
 
 After: 
 
@@ -226,7 +230,7 @@ After:
 	      <include name="*.java"/>
       </fileset>
       <classpath refid="project.class.path" />
-      <link href="http://docs.oracle.com/javase/8/docs/api/" />          
+      <link href="https://docs.oracle.com/javase/8/docs/api/" />          
     </javadoc>
     <echo>                                                                                       
       javadoc written to file://${javadoc_absolute_path}/index.html                              
@@ -242,7 +246,7 @@ After:
     <echo>                                                                                       
       javadoc copied to ${public_javadoc_absolute_path}/index.html                               
       TO PUBLISH: cd into that repo, then git add javadoc;                                       
-        git commit -am "update javadoc"; git push origin gh-pages                                
+        git commit -m "update javadoc"; git push origin gh-pages                                
     </echo>                                                                                      
   </target>     
 
