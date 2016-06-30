@@ -3,10 +3,11 @@ topic: "Java: ArrayList to array"
 desc: "e.g. ArrayList&lt;Integer&gt; to int []"
 ---
 
-TODO: Clean up the text below
+# A Q/A from Piazza on this topic
 
-Pain with Primitives
-I'm trying to use the ArrayList.toArray(new int[0]) method to get an array of ints for my arithmetic methods (plus, minus, etc).
+## Question from Student: *Pain with Primitives*
+
+I'm trying to use the `ArrayList.toArray(new int[0])` method to get an array of ints for my arithmetic methods (plus, minus, etc).
  
 Specifically
 Polynomial plus(Polynomial p) {
