@@ -61,7 +61,7 @@ Here are some links to other discussions of pros/cons of sqlite:
 
 * [Oracle's JDBC Tutorial](https://docs.oracle.com/javase/tutorial/jdbc/)
 * [Tutorialspoint JDBC+Sqlite3 Tutorial](http://www.tutorialspoint.com/sqlite/sqlite_java.htm)
-* [Sqlite3 Shell Commands](https://www.sqlite.org/cli.html)
+* [Sqlite3 Shell Commands](https://www.sitepoint.com/getting-started-sqlite3-basic-commands/)
 
 ----
 
