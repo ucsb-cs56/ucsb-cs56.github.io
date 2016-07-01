@@ -39,13 +39,14 @@ The main "pro" of sqlite3 is that it is easy to set up:
 Some disadvantages:
 
 From <http://talks.php.net/show/sqlite_jan/4>:
-> * It's Slow
->     * Locks whole file for writing.
->     * No caching mechanism of it's own.
-> * Limited
->     * Database size restricted to 2GB in most cases.
->     * Not fully SQL92 compliant.
->     * Not very scalable.
+
+>    * It's Slow
+>        * Locks whole file for writing.
+>        * No caching mechanism of it's own.
+>    * Limited
+>        * Database size restricted to 2GB in most cases.
+>        * Not fully SQL92 compliant.
+>        * Not very scalable.
 
 But, for small applications in CMPSC56, it is likely that none of those things will matter.
 
