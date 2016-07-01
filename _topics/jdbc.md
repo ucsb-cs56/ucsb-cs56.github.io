@@ -24,7 +24,7 @@ Use ".open FILENAME" to reopen on a persistent database.
 sqlite> 
 ```
 
-Using `sqlite3` has certain disadvantages, as you'll discover.  The 
+Using `sqlite3` has certain disadvantages, as you'll discover.   
 
 # Pros/cons of sqlite3 vs. other options
 
@@ -55,9 +55,6 @@ Here are some links to other discussions of pros/cons of sqlite:
 * <https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems>
 * <https://www.sqlite.org/whentouse.html>
 
-* 
-* 
-* 
 
 # Resources
 
