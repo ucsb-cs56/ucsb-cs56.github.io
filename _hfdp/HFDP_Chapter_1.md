@@ -6,4 +6,5 @@ title: Welcome to Design Patterns
 layout: chapter
 ---
 
-TODO: Insert chapters notes here.
+
+TODO: Fill in HFDP_Chapter_1.md with notes for Chapter 1 of HFDP.
