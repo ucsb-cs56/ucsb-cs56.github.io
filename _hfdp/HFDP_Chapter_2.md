@@ -2,7 +2,7 @@
 textbook: HFDP
 chapter: 2
 sort_key: 02
-title: Welcome to Design Patterns
+title: "The Observer Pattern: Keeping your Objects in the know"
 layout: chapter
 ---
 
