@@ -13,5 +13,5 @@ The time to do that, in my view, is when you already know quite a bit about what
 But when you do, you may want to try one of these IDEs:
 
 * IntelliJ
-* [Eclipse](../eclipse)
+* [Eclipse](/topics/eclipse)
 * Netbeans
