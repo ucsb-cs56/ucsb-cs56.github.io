@@ -2,7 +2,7 @@
 textbook: HFDP
 chapter: 4
 sort_key: 04
-title: "The Factory Pattern: Baking with OO Goodness "
+title: "The Factory Pattern: Baking with OO Goodness"
 layout: chapter
 ---
 
