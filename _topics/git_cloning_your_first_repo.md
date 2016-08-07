@@ -89,7 +89,7 @@ cd into that directory and use the ls command to list the files.
 
 Now you can work in that direcctory.  When you are ready to commit changes, you'll use the typical git workflow:
 
-* 'git add filename`
+* `git add filename`
 * `git commit -m "description of what you did`
 * `git push origin master`
 
