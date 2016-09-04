@@ -24,3 +24,7 @@ These instructions assume you
 TODO: Insert the rest of the steps here.
 
 # Other things you may need to know about Android
+
+#ToDo
+
+Look into GenyMotion
