@@ -1,6 +1,7 @@
 ---
 topic: "github.ucsb.edu: creating private repos under an organization"
 desc: "for closed source class assignments"
+indent: true
 ---
 
 We use organizations such as <https://github.ucsb.edu/UCSB-CS56-F16> to set up a space
