@@ -29,11 +29,21 @@ This site is maintained in this github repo: <https://github.com/UCSB-CS56-pconr
     </ul>
 </div>
 
+<div id="tutorials" data-role="collapsible" data-collapsed="false">
+  <h2>Tutorials</h2>
+  <ul>
+   {% for t in site.tutorials %}
+     <li {% if t.indent %} class="indent" {% endif %} ><a href="{{t.url}}">{{ t.topic }}</a>&mdash;{{t.desc}}</li>
+   {% endfor %}
+  </ul>
+</div>
+
+
 <div id="topics" data-role="collapsible" data-collapsed="false">
   <h2>Topics</h2>
   <ul>
-   {% for topic in site.topics %}
-     <li {% if topic.indent %} class="indent" {% endif %} ><a href="{{topic.url}}">{{ topic.topic }}</a>&mdash;{{topic.desc}}</li>
+   {% for t in site.topics %}
+      <li {% if t.indent %} class="indent" {% endif %} ><a href="{{t.url}}">{{ t.topic }}</a>&mdash;{{t.desc}}</li>
    {% endfor %}
   </ul>
 </div>
