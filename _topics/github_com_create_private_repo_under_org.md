@@ -1,6 +1,7 @@
 ---
 topic: "github.com: creating private repos under an organization"
 desc: "for closed source class assignments"
+indent: true
 ---
 
 We use github.com organizations such as <https://github.com/UCSB-CS56-M16> and <https://github.com/UCSB-CS56-F16> to set up a space
