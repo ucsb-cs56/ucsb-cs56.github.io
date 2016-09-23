@@ -1,6 +1,7 @@
 ---
 topic: "git: overview"
 desc: "An introduction. git vs. github.com vs. github.ucsb.edu, repos, etc."
+indent: true
 ---
 
 A few basics facts about git, github.com, and github.ucsb.edu
