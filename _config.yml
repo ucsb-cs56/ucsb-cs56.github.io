@@ -20,6 +20,11 @@ collections:
   topics:
     output: true
     permalink: /topics/:path/
+    
+  tutorials:
+    output: true
+    permalink: /tutorials/:path/
+
 
   textbooks:
     output: true
@@ -49,7 +54,13 @@ defaults:
       type: topics
     values:
       layout: topic
-
+      
+  - scope:
+      path: ""
+      type: tutorials
+    values:
+      layout: topic
+      
   - scope:
       path: ""
       type: hfj
