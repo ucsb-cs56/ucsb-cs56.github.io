@@ -33,7 +33,7 @@ This site is maintained in this github repo: <https://github.com/UCSB-CS56-pconr
   <h2>Topics</h2>
   <ul>
    {% for topic in site.topics %}
-     <li><a href="{{topic.url}}">{{ topic.topic }}</a>&mdash;{{topic.desc}}</li>
+     <li {% if item.indent %} class="indent" {% endif %} ><a href="{{topic.url}}">{{ topic.topic }}</a>&mdash;{{topic.desc}}</li>
    {% endfor %}
   </ul>
 </div>
@@ -43,7 +43,7 @@ This site is maintained in this github repo: <https://github.com/UCSB-CS56-pconr
   <h2>Resources</h2>
   <ul>
    {% for topic in site.resources %}
-     <li><a href="{{topic.url}}">{{ topic.topic }}</a>&mdash;{{topic.desc}}</li>
+     <li {% if item.indent %} class="indent" {% endif %} ><a href="{{topic.url}}">{{ topic.topic }}</a>&mdash;{{topic.desc}}</li>
    {% endfor %}
   </ul>
 </div>
