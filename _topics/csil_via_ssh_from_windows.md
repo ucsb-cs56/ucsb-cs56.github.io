@@ -25,4 +25,6 @@ Once you have downloaded it, you want to use it to create a new session.  The [d
 * Select "ssh"
 * For "remote host", instead of `192.168.56.86` you'll enter `csil-15.cs.ucsb.edu` (actually, instead of `15`, choose any number between 01 and 48).
 * For "username", instead of `root`, you'll enter your CSIL username.
+* The first time you connect to a particular system, you may be asked 
+* It should then prompt you for your password.  (I do not recommend "saving the password".)
 
