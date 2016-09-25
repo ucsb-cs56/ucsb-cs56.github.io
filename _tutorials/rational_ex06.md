@@ -2,13 +2,15 @@
 topic: "Rational: ex06"
 desc: "understanding inheritance (from java.lang.Object), linking from our javadoc to Java standard libraries, negative rational numbers, multiplying rational numbers"
 indent: true
+code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex06
 ---
 
 <div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex06/</div>
 
-
-
 <em>Part of a [series of tutorial articles about a Rational class](/tutorials/rational/).</em>
+
+{% include code_examples.md %}
+
 
 # cs56-rational-example/ex06
 
