@@ -74,18 +74,20 @@ ex03 pconrad$
 ```
 
 Notice several things:
+
 * The `target` element contains a `depends="compile"` attribute that indicates that the `compile` target should be run first if either:
     * The .class files that the compile step creates don't exist
     * Any of the files that the `compile` target depends on have changed since it was last run.
-    * We can demonstrate that if the .class files don't exist, or have changed, the compile target is run first.   Also, we can show that any time the .class files have changed, the jar target gets run. Otherwise it does not.
+    * We can demonstrate that if the `.class` files don't exist, or have changed, the compile target is run first.   
+        Also, we can show that any time the `.class` files have changed, the jar target gets run. Otherwise it does not.
 
-* We put the jar file into a directory called "build".   Starting with ex04, we are going to
-  put all of the artifacts from compiling our code into this subdirectory, so that they are not
-  cluttering up the main directory.  We'll also put our code into a subdirectory called src.
-  This is more reflective of the common practices used on professional Java coding projects.
+* We put the jar file into a directory called `build`.   Starting with [Rational: ex04](/tutorials/rational_ex04/), we are going to
+    put all of the artifacts from compiling our code into this subdirectory, so that they are not
+    cluttering up the top level directory.  We'll also put our source code into a subdirectory called `src`.
+    This is more reflective of the common practices used on professional Java coding projects.
 
 * We've left something undone here: we really should add code into our `clean` target that
-  cleans up the .jar file as well as the .class files.   We'll take care of that in ex04 as well.
+  cleans up the `.jar` file as well as the `.class` files.   We'll take care of that in [Rational: ex04](/tutorials/rational_ex04/) as well.
 
 * Reference: [Ant Jar task documentation](https://ant.apache.org/manual/Tasks/jar.html)
 
@@ -154,7 +156,6 @@ getting to the point where we can write tests:
 
 We'll do each of those next.
 
-TODO: Each of those items.
 
 ## 1. Write some code that uses JUnit
 
