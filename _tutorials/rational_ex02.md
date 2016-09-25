@@ -253,7 +253,7 @@ Buildfile: /cs/faculty/pconrad/github/cs56-rational-example/ex02/build.xml
 
 run:
      [java] r.getNumerator()=5
-          [java] r.getDenominator()=7
+     [java] r.getDenominator()=7
 
 BUILD SUCCESSFUL
 Total time: 0 seconds
