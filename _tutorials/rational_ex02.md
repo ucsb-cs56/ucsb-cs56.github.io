@@ -260,7 +260,7 @@ Total time: 0 seconds
 -bash-4.3$
 ```
 
-To run the other Main, since it takes command line parameters, it is
+To run the other `main`, since it takes command line parameters, it is
 better to run it interactively the "old fashioned way".  It is
 possible to pass command line parameters into a build.xml file to run
 a program with command line parameters, but it isn't straightforward.
