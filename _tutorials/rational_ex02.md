@@ -1,12 +1,10 @@
 ---
 topic: "Rational: ex02"
-desc: "tbd"
+desc: "toString method, public getters"
 indent: true
 ---
 
 <em>Part of a [series of tutorial articles about a Rational class](/tutorials/rational/).</em>
-
-# cs56-rational-example/ex02
 
 In this example we introduce:
 
