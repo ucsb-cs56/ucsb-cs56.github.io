@@ -1,12 +1,16 @@
 ---
 topic: "Rational: ex07"
-desc: "tbd"
+desc: "Exceptions, testing for Exceptions with JUnit"
 indent: true
+code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex07
 ---
 
 <div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex07/</div>
 
 <em>Part of a [series of tutorial articles about a Rational class](/tutorials/rational/).</em>
+
+{% include code_examples.md %}
+
 
 # cs56-rational-example/ex07
 
