@@ -20,7 +20,13 @@ Having said that, if you follow the code examples in order, and look up the conc
 
 Link to javadocs: <http://ucsb-cs56-m16.github.io/cs56-rational-example>
 
-<div data-role="collapsible" data-collapsed="false">
+<style>
+div.tutorial-table * table { border-collapse: collapse; }
+div.tutorial-table * table * th { border: 1px solid black; padding: 4px; }
+div.tutorial-table * table * td { border: 1px solid black; padding: 4px; }
+</style>
+
+<div class="tutorial-table" data-role="collapsible" data-collapsed="false">
   <h2 markdown="1">`Rational` tutorials: table of contents</h2>
   <table>
    <tr>
