@@ -279,3 +279,5 @@ In the next tutorial, [Rational: ex04](/tutorials/rational_ex04/), we'll:
 * we'll adjust the `clean` target accordingly
 * we'll add a target to create javadoc
 * we'll discuss the idea of immutable objects
+
+<div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex03/</div>
