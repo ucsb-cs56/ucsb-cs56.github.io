@@ -1,6 +1,6 @@
 ---
 topic: "Rational: ex02"
-desc: "toString method, public getters"
+desc: "toString method, public getters, simple build.xml file for Ant, mutiple classes with main() in a single project"
 indent: true
 ---
 
