@@ -3,7 +3,11 @@ topic: "Rational"
 desc: "A class for rational numbers, and starting point for learning Java, and the Java toolchain"
 ---
 
+<div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational/</div>
+
+
 Based on <https://github.com/UCSB-CS56-M16/cs56-rational-example>
+
 
 
 This is a set of tutorial examples of a class for Rational Numbers.  
@@ -99,3 +103,6 @@ The code to support this tutorial is in the following github repository:
     * support files for continuous integration (.travis.yml)
     
 * To follow these examples, consult each README.md in each subdirectory (ex01/README.md) etc. in order, for further information.
+
+
+<div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational/</div>
