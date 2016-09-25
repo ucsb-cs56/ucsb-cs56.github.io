@@ -76,6 +76,7 @@ We next add getters.   We'll want to test those getters in some way.
 
 At this point, we are still doing testing "the hard way", which is
 to say, we are:
+
 * putting some code in a main that "should" do something
 * knowing "in our head" what the output "should" be
 * running by hand, and checking by hand whether the output is correct.
@@ -83,6 +84,7 @@ to say, we are:
 This is an "easy" way to do testing only in the sense that it doesn't
 require more than rudimentary skills in the Java language.  However,
 over the long run, its a lousy way to do testing:
+
 * It is error prone
 * It leads to code that has not been sufficiently and rigorously tested 
 * It is time consuming, especially when you consider the lost time from bugs that
