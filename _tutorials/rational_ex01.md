@@ -2,6 +2,7 @@
 topic: "Rational: ex01"
 desc: "private data members, public constructors"
 indent: true
+repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex01
 ---
 
 <div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex01/</div>
