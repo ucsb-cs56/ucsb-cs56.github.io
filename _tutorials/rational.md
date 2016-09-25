@@ -5,24 +5,17 @@ desc: "A class for rational numbers, and starting point for learning Java, and t
 
 Based on <https://github.com/UCSB-CS56-M16/cs56-rational-example>
 
-# cs56-rational-example
 
-This is a set of tutorial examples of a class for Rational Numbers.  Illustrates various concepts/techinques of Java Coding (a list of these appears below.)
+This is a set of tutorial examples of a class for Rational Numbers.  
 
-These examples are intended as support for a course in which there are also reading assignments and lectures; this repo is not intended to be a stand-alone curriculum for learning Java.  
+It illustrates various concepts/techinques of Java Coding (a list of these appears below.)
+
+These examples are intended as support for a course in which there are also reading assignments and lectures; this tutorial is not intended to be a stand-alone curriculum for learning Java.  
 
 Having said that, if you follow the code examples in order, and look up the concepts that are new to you at each step, that will probably go a long way towards learning some important basic concepts of Java programming.
 
 Link to javadocs: <http://ucsb-cs56-m16.github.io/cs56-rational-example>
 
-# Guide to this set of Examples
-
-* Top level directory contains 
-    * this `README.md` file
-    * subdirectories `ex01`, `ex02`, etc. one per example
-    * support files for continuous integration (.travis.yml)
-    
-* To follow these examples, consult each README.md in each subdirectory (ex01/README.md) etc. in order, for further information.
 
 # Basic description of the Rational class
 
@@ -84,3 +77,15 @@ Java Language Toolset Skills
 1. Packages (ex09 and beyond)
 1. Maven (ex09 and beyond)
 
+# Guide to the companion github repository.
+
+The code to support this tutorial is in the following github repository:
+
+<https://github.com/UCSB-CS56-M16/cs56-rational-example>
+
+* Top level directory contains 
+    * this `README.md` file
+    * subdirectories `ex01`, `ex02`, etc. one per example
+    * support files for continuous integration (.travis.yml)
+    
+* To follow these examples, consult each README.md in each subdirectory (ex01/README.md) etc. in order, for further information.
