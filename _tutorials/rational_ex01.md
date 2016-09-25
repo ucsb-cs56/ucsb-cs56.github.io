@@ -159,6 +159,6 @@ r1 = Rational@2a139a55
 ```
 
 To fix this, we need to override the toString method.  We'll do this
-in the next article, [Rational: ex02](rational_ex02/)
+in the next article, [Rational: ex02](/tutorials/rational_ex02/)
 
 <div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex01/</div>
