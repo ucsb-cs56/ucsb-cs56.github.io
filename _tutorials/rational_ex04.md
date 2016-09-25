@@ -2,12 +2,15 @@
 topic: "Rational: ex04"
 desc: "move source to /src and .class files to /build, adjustments to Ant build.xml, discuss immutable objects "
 indent: true
+code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex04
 ---
 
 <div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex04/</div>
 
 
 <em>Part of a [series of tutorial articles about a Rational class](/tutorials/rational/).</em>
+
+{% include code_examples.md %}
 
 
 # cs56-rational-example/ex04
