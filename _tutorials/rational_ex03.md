@@ -6,7 +6,7 @@ indent: true
 
 <em>Part of a [series of tutorial articles about a Rational class](/tutorials/rational/).</em>
 
-<div class="display-in-github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex03/</div>
+<div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex03/</div>
 
 # cs56-rational-example/ex03
 
