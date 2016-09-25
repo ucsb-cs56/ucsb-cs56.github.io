@@ -2,16 +2,14 @@
 topic: "Rational: ex01"
 desc: "private data members, public constructors"
 indent: true
-repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex01
+code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex01
 ---
 
 <div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex01/</div>
 
 <em>Part of a [series of tutorial articles about a Rational class](/tutorials/rational/).</em>
 
-{% if page.repo %}
-Code for this section of the tutorial can be found here: [{{page.repo}}]({{page.repo}})
-{% endif %}
+{% include code_examples.md %}
 
 # cs56-rational-example/ex01
 
