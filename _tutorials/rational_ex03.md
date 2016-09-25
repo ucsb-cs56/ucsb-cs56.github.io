@@ -47,6 +47,7 @@ us which class is the default main to run if we ask to "run the .jar file".
 ```
 
 To run this new target, we use:
+
 ```
 ex03 pconrad$ ant jar
 Buildfile: /Users/pconrad/github/UCSB-CS56-M16/cs56-rational-example/ex03/build.xml
