@@ -1,6 +1,6 @@
 ---
 topic: "Rational: ex06"
-desc: "tbd"
+desc: "understanding inheritance (from java.lang.Object), linking from our javadoc to Java standard libraries, negative rational numbers, multiplying rational numbers"
 indent: true
 ---
 
