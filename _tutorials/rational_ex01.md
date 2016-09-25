@@ -4,6 +4,9 @@ desc: "private data members, public constructors"
 indent: true
 ---
 
+<div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex01/</div>
+
+
 <em>Part of a [series of tutorial articles about a Rational class](/tutorials/rational/).</em>
 
 # cs56-rational-example/ex01
@@ -115,3 +118,4 @@ r1 = Rational@2a139a55
 To fix this, we need to override the toString method.  We'll do this
 in the next article, [Rational: ex02](rational_ex02/)
 
+<div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex01/</div>
