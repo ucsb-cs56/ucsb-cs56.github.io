@@ -2,11 +2,14 @@
 topic: "Rational: ex03"
 desc: "creating a jar file, automatic testing with junit, creating and publishing javadoc"
 indent: true
+code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex03
 ---
 
 <em>Part of a [series of tutorial articles about a Rational class](/tutorials/rational/).</em>
 
 <div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex03/</div>
+
+{% include code_examples.md %}
 
 # cs56-rational-example/ex03
 
