@@ -31,15 +31,15 @@ div.tutorial-table * table * td { border: 1px solid black; padding: 4px; }
   <table>
    <tr>
            <th>Section</th>
+           <th>Code <br>(github repo)</th>
            <th>Topics Covered</th>
-           <th>Code (github repo)</th>
    </tr>
    {% for t in site.tutorials %}
        {% if t.topic contains "Rational: "%} 
            <tr>
            <td><a href="{{t.url}}">{{ t.topic }}</a></td>
+           <td>{% if t.repo %} <a href="{{t.repo}}">code</a>  {% else %} &nbsp; {% endif %}</td>
            <td>{{t.desc}}</td>
-           <td>{% if t.repo %} <a href="{{t.repo}}">{{ t.repo }}</a>  {% else %} &nbsp; {% endif %}</td>
            </tr>
        {% endif %}
    {% endfor %}
