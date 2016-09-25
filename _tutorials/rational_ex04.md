@@ -27,7 +27,7 @@ In this example, we will add three new features to our build.xml file
 Before our adjustments, our directory structure looked like this:
 
 ```
-:ex04 pconrad$ ls
+ex04 pconrad$ ls
 Main.java	       		Rational.java		build			lib
 README.md						RationalTest.java	build.xml
 ex04 pconrad$
@@ -121,7 +121,7 @@ ex04 pconrad$
 
 ```
 
-The file <FULL_BUILD.md> shows what running each of those looks like after the build.xml file is adjusted.
+The file [FULL_BUILD.md](https://github.com/UCSB-CS56-pconrad/cs56-rational-ex04/blob/master/FULL_BUILD.md) shows what running each of those looks like after the build.xml file is adjusted.
 
 # Adding Javadoc
 
@@ -180,8 +180,7 @@ Total time: 1 second
 ex04 pconrad$
 ```
 
-If you point your browser to that url, you should see the documentation for the all of the files in the project, in javadoc format.
-
+If you actually run this code on your own account or machine, and point your browser to that url, you should see the documentation for the all of the files in the project, in javadoc format.  (Note that the first part of your url will be different: the `/Users/pconrad/` part is  specific to the context where I ran the code.)
 
 # Immutable objects
 
