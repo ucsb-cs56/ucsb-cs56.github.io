@@ -91,7 +91,7 @@ over the long run, its a lousy way to do testing:
   you don't notice at first glance.
 * It is not in line with "current best practices" in the software industry
 
-The smart way to do testing is to automate the testing with a testing framework.  We'll introduce that in [ex03](../ex03).   A key advantage of that approach is
+The smart way to do testing is to automate the testing with a testing framework.  We'll introduce that in [Rational: ex03](/tutorials/rational_ex03/).   A key advantage of that approach is
 that each time you write a test, you can be sure that from then on, *every* test is
 run *each and every* time you test your code.  You are less likely to miss
 things when you do it this way.
@@ -322,4 +322,7 @@ topics, or have questions while reviewing for the exam, be sure you ask (and not
     * the use of `<fileset dir="." includes="*.class"/>`
     * the meaning of `*.class` in the `fileset` syntax
   
+  
+Next tutorial: [Rational: ex03](/tutorials/rational_ex03/)
+
 <div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex02/</div>
