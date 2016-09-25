@@ -16,6 +16,16 @@ Having said that, if you follow the code examples in order, and look up the conc
 
 Link to javadocs: <http://ucsb-cs56-m16.github.io/cs56-rational-example>
 
+<div data-role="collapsible" data-collapsed="false">
+  <h2>`Rational` tutorials: table of contents</h2>
+  <ul>
+   {% for t in site.tutorials %}
+       {% if t.topic contains "Rational: "%} 
+           <li><a href="{{t.url}}">{{ t.topic }}</a>&mdash;{{t.desc}}</li>
+       {% endif %}
+   {% endfor %}
+  </ul>
+</div>
 
 # Basic description of the Rational class
 
