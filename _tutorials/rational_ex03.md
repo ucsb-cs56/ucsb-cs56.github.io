@@ -1,6 +1,6 @@
 ---
 topic: "Rational: ex03"
-desc: "tbd"
+desc: "creating a jar file, automatic testing with junit, creating and publishing javadoc"
 indent: true
 ---
 
