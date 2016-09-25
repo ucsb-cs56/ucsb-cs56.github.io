@@ -22,13 +22,22 @@ Link to javadocs: <http://ucsb-cs56-m16.github.io/cs56-rational-example>
 
 <div data-role="collapsible" data-collapsed="false">
   <h2 markdown="1">`Rational` tutorials: table of contents</h2>
-  <ul>
+  <table>
+   <tr>
+           <th>Section</th>
+           <th>Topics Covered</th>
+           <th>Code (github repo)</th>
+   </tr>
    {% for t in site.tutorials %}
        {% if t.topic contains "Rational: "%} 
-           <li><a href="{{t.url}}">{{ t.topic }}</a>&mdash;{{t.desc}}</li>
+           <tr>
+           <td><a href="{{t.url}}">{{ t.topic }}</a></td>
+           <td>{{t.desc}}</td>
+           <td>{% if t.repo %} <a href="{{t.repo}}">{{ t.repo }}</a>  {% else %} &nbsp; {% endif %}</td>
+           </tr>
        {% endif %}
    {% endfor %}
-  </ul>
+  </table>
 </div>
 
 # Basic description of the Rational class
