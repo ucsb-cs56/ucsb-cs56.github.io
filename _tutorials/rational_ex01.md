@@ -113,5 +113,5 @@ r1 = Rational@2a139a55
 ```
 
 To fix this, we need to override the toString method.  We'll do this
-in example [ex02](../ex02)
+in the next article, [Rational: ex02](rational_ex02/)
 
