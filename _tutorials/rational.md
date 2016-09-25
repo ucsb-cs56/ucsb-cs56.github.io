@@ -17,7 +17,7 @@ Having said that, if you follow the code examples in order, and look up the conc
 Link to javadocs: <http://ucsb-cs56-m16.github.io/cs56-rational-example>
 
 <div data-role="collapsible" data-collapsed="false">
-  <h2>`Rational` tutorials: table of contents</h2>
+  <h2 markdown="1">`Rational` tutorials: table of contents</h2>
   <ul>
    {% for t in site.tutorials %}
        {% if t.topic contains "Rational: "%} 
