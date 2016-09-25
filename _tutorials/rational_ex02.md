@@ -4,6 +4,9 @@ desc: "toString method, public getters, simple build.xml file for Ant, mutiple c
 indent: true
 ---
 
+<div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex02/</div>
+
+
 <em>Part of a [series of tutorial articles about a Rational class](/tutorials/rational/).</em>
 
 In this example we introduce:
@@ -313,3 +316,4 @@ topics, or have questions while reviewing for the exam, be sure you ask (and not
     * the use of `<fileset dir="." includes="*.class"/>`
     * the meaning of `*.class` in the `fileset` syntax
   
+<div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex02/</div>
