@@ -1,6 +1,7 @@
 ---
 topic: "Java: ArrayList to array"
 desc: "e.g. ArrayList&lt;Integer&gt; to int []"
+indent: true
 ---
 
 # A Q/A from Piazza on this topic

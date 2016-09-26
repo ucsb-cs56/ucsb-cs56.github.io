@@ -1,6 +1,7 @@
 ---
 topic: "Java: static analysis"
 desc: "Tools that analyze source code without running it"
+indent: true
 ---
 
 Let's start with the definition of static analysis, and then a pragmatic definition.

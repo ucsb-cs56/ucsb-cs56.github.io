@@ -1,6 +1,7 @@
 ---
 topic: "Java: JAR files"
 desc: "Creating and using .jar files"
+indent: true
 ---
 
 A `.jar` file is a *Java Archive*.
