@@ -1,6 +1,6 @@
 ---
 topic: "Java: Plaform Independent Newlines"
-desc: "\n isn't as portable as you might like"
+desc: "\\n isn't as portable as you might like"
 indent: true
 ---
 
