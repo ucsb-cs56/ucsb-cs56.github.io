@@ -18,5 +18,14 @@ good reason.
 And sometimes, it is just code that might "seem right", but is just
 plain wrong&nbsp;or at best, a questionable design choice.
 
-
+<div data-role="collapsible" data-collapsed="false">
+  <h2>More on Antipatterns</h2>
+  <ul>
+   {% for topic in site.topics %}
+       {% if topic.topic contains "Antipatterns: " %} 
+           <li><a href="{{topic.url}}">{{ topic.topic }}</a>&mdash;{{topic.desc}}</li>
+       {% endif %}
+   {% endfor %}
+  </ul>
+</div>
 
