@@ -22,7 +22,7 @@ plain wrong&nbsp;or at best, a questionable design choice.
   <h2>More on Antipatterns</h2>
   <ul>
    {% for topic in site.topics %}
-       {% if topic.topic contains "Antipatterns: " %} 
+       {% if topic.topic contains "Antipatterns: " or topic.topic contains "antipatterns: " %} 
            <li><a href="{{topic.url}}">{{ topic.topic }}</a>&mdash;{{topic.desc}}</li>
        {% endif %}
    {% endfor %}
