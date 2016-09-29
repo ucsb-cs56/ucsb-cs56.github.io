@@ -43,6 +43,7 @@ r1 = Rational@2a139a55
 The code to override the toString method looks like this:
 
 ```java
+    @Override
     public String toString() {
 	return num + "/" + denom;
     }
