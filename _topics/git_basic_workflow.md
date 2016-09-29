@@ -332,4 +332,4 @@ patient and stay tuned.
 
 # More Information
 
-* https://www.liquidlight.co.uk/blog/article/git-for-beginners-an-overview-and-basic-workflow/#stage-it
+* <https://www.liquidlight.co.uk/blog/article/git-for-beginners-an-overview-and-basic-workflow/#stage-it>
