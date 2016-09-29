@@ -330,3 +330,6 @@ change in one file. But, as we work with this over the weeks ahead,
 with much larger projects, the benefits will become clear. So, be
 patient and stay tuned.
 
+# More Information
+
+* https://www.liquidlight.co.uk/blog/article/git-for-beginners-an-overview-and-basic-workflow/#stage-it
