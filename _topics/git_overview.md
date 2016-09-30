@@ -7,9 +7,9 @@ indent: true
 A few basics facts about git, github.com, and github.ucsb.edu
 ----------------------------------------------------------------------------
 
-In addition to learning Java, one of the major goals of this course is to get really comfortable\
- with "version control", using a tool called "git" and a website called "github.com", and one ca\
-lled "github.ucsb.edu". Our first step is to "clone a github repo".
+In addition to learning Java, one of the major goals of this course is to get really comfortable 
+with "version control", using a tool called "git" and a website called "github.com", and one 
+called "github.ucsb.edu". Our first step is to "clone a github repo".
 
 
 ### What is git and what is a repo?
