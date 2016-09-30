@@ -234,7 +234,7 @@ To be able to reduce fractions, we'll need a gcd method.  That's a
 good candidate to be a static method of the Rational class.
 
 
-We'll take this on in the next article, [Rational: ex05](rational_ex05/).
+We'll take this on in the next article, [Rational: ex05](https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex05/). 
 
 
 
