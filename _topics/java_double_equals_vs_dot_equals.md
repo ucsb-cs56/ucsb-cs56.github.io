@@ -113,7 +113,6 @@ How we do this depends on the object.
 * Suppose we have a String, or a concatenation of String values that is unique for the object.  For example, for a `UCSBCourse` object, it might be `String dept` (e.g. `"CMPSC"`) and `String courseNum` (e.g. `"130A"`).   In that case, we could concatenate the strings, and take the `hashCode` of the resulting object.  Here we are relying on the `java.lang.String` implementation of `hashCode` to give us the properties we are looking for in a good `hashCode`.
 
 
-
 # Reading in HFJ
 
 * p. 86
