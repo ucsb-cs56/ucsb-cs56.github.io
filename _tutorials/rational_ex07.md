@@ -53,6 +53,7 @@ There are two main categories of Exceptions:
 * Unchecked Exceptions (these all extend [java.lang.RuntimeException](https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html))  
 
 There are signficant differences between Checked Exceptions and Unchecked Exceptions, in terms of:
+
 * The use case (i.e. why they are used by programmers, the circumstances in which they are useful)
 * How the code must be written to handle one versus the other.
 
