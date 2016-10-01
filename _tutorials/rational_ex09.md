@@ -1,11 +1,9 @@
 ---
 topic: "Rational: ex09"
-desc: "Work In Progress"
+desc: "== vs. .equals, hashCode()"
 indent: true
 code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex09
 ---
-
-Work in progress...
 
 <div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex09/</div>
 
@@ -135,57 +133,57 @@ compile:
 
 test:
     [junit] Testsuite: RationalTest
-        [junit] Tests run: 34, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
-	    [junit]
-	        [junit] Testcase: test_equals_1(RationalTest):	FAILED
-		    [junit]
-		        [junit] junit.framework.AssertionFailedError:
-			    [junit]	at RationalTest.test_equals_1(RationalTest.java:170)
-			        [junit]
-				    [junit]
-				        [junit] Testcase: test_equals_2(RationalTest):	FAILED
-					    [junit]
-					        [junit] junit.framework.AssertionFailedError:
-						    [junit]	at RationalTest.test_equals_2(RationalTest.java:177)
-						        [junit]
-							    [junit]
-							        [junit] Testcase: test_equals_3(RationalTest):	FAILED
-								    [junit]
-								        [junit] junit.framework.AssertionFailedError:
-									    [junit]	at RationalTest.test_equals_3(RationalTest.java:185)
-									        [junit]
-										    [junit]
-										        [junit] Testcase: test_equals_4(RationalTest):	FAILED
-											    [junit]
-											        [junit] junit.framework.AssertionFailedError:
-												    [junit]	at RationalTest.test_equals_4(RationalTest.java:193)
-												        [junit]
-													    [junit]
-													        [junit] Testcase: test_hashCode_1(RationalTest):	FAILED
-														    [junit]
-														        [junit] junit.framework.AssertionFailedError:
-															    [junit]	at RationalTest.test_hashCode_1(RationalTest.java:208)
-															        [junit]
-																    [junit]
-																        [junit] Testcase: test_hashCode_2(RationalTest):	FAILED
-																	    [junit]
-																	        [junit] junit.framework.AssertionFailedError:
-																		    [junit]	at RationalTest.test_hashCode_2(RationalTest.java:215)
-																		        [junit]
-																			    [junit]
-																			        [junit] Testcase: test_hashCode_3(RationalTest):	FAILED
-																				    [junit]
-																				        [junit] junit.framework.AssertionFailedError:
-																					    [junit]	at RationalTest.test_hashCode_3(RationalTest.java:223)
-																					        [junit]
-																						    [junit]
-																						        [junit] Testcase: test_hashCode_4(RationalTest):	FAILED
-																							    [junit]
-																							        [junit] junit.framework.AssertionFailedError:
-																								    [junit]	at RationalTest.test_hashCode_4(RationalTest.java:231)
-																								        [junit]
-																									    [junit]
-																									        [junit] Test RationalTest FAILED
+    [junit] Tests run: 34, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+    [junit]
+    [junit] Testcase: test_equals_1(RationalTest):	FAILED
+    [junit]
+    [junit] junit.framework.AssertionFailedError:
+    [junit]	at RationalTest.test_equals_1(RationalTest.java:170)
+    [junit]
+    [junit]
+    [junit] Testcase: test_equals_2(RationalTest):	FAILED
+    [junit]
+    [junit] junit.framework.AssertionFailedError:
+    [junit]	at RationalTest.test_equals_2(RationalTest.java:177)
+    [junit]
+    [junit]
+    [junit] Testcase: test_equals_3(RationalTest):	FAILED
+    [junit]
+    [junit] junit.framework.AssertionFailedError:
+    [junit]	at RationalTest.test_equals_3(RationalTest.java:185)
+    [junit]
+    [junit]
+    [junit] Testcase: test_equals_4(RationalTest):	FAILED
+    [junit]
+    [junit] junit.framework.AssertionFailedError:
+    [junit]	at RationalTest.test_equals_4(RationalTest.java:193)
+    [junit]
+    [junit]
+    [junit] Testcase: test_hashCode_1(RationalTest):	FAILED
+    [junit]
+    [junit] junit.framework.AssertionFailedError:
+    [junit]	at RationalTest.test_hashCode_1(RationalTest.java:208)
+    [junit]
+    [junit]
+    [junit] Testcase: test_hashCode_2(RationalTest):	FAILED
+    [junit]
+    [junit] junit.framework.AssertionFailedError:
+    [junit]	at RationalTest.test_hashCode_2(RationalTest.java:215)
+    [junit]
+    [junit]
+    [junit] Testcase: test_hashCode_3(RationalTest):	FAILED
+    [junit]
+    [junit] junit.framework.AssertionFailedError:
+    [junit]	at RationalTest.test_hashCode_3(RationalTest.java:223)
+    [junit]
+    [junit]
+    [junit] Testcase: test_hashCode_4(RationalTest):	FAILED
+    [junit]
+    [junit] junit.framework.AssertionFailedError:
+    [junit]	at RationalTest.test_hashCode_4(RationalTest.java:231)
+    [junit]
+    [junit]
+    [junit] Test RationalTest FAILED
 
 BUILD SUCCESSFUL
 Total time: 0 seconds
@@ -332,15 +330,15 @@ Phillips-Mac-mini:cs56-rational-ex09 pconrad$ ant run
 Buildfile: /Users/pconrad/github/UCSB-CS56-pconrad/cs56-rational-ex09/build.xml
 
 run:
-     [java] r.getNumerator()=5
-     [java] r.getDenominator()=7
-     [java] Integer.toHexString(r.hashCode())=50007
-     [java] Integer.toHexString(r2.getNumerator())=1234567
-     [java] Integer.toHexString(r2.getDenominator())=89abcdef
-     [java] Integer.toHexString(r2.hashCode())=4567cdef
-     [java] Integer.toHexString(r3.getNumerator())=89abcdef
-     [java] Integer.toHexString(r3.getDenominator())=1234567
-     [java] Integer.toHexString(r3.hashCode())=cdef4567
+    [java] r.getNumerator()=5
+    [java] r.getDenominator()=7
+    [java] Integer.toHexString(r.hashCode())=50007
+    [java] Integer.toHexString(r2.getNumerator())=1234567
+    [java] Integer.toHexString(r2.getDenominator())=89abcdef
+    [java] Integer.toHexString(r2.hashCode())=4567cdef
+    [java] Integer.toHexString(r3.getNumerator())=89abcdef
+    [java] Integer.toHexString(r3.getDenominator())=1234567
+    [java] Integer.toHexString(r3.hashCode())=cdef4567
 
 BUILD SUCCESSFUL
 Total time: 0 seconds
