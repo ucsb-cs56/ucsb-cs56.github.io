@@ -202,7 +202,7 @@ Take a look at these features of the code:
 
 That's all we are going to do in ex05.
 
-In the next article, [Rational: ex06](rational_ex06/), we'll look at:
+In the next article, [Rational: ex06](https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex06), we'll look at:
 
 * Adding links to the Java Standard Libraries into our javadoc
 * The situation with negative rational numbers, and negative parameters to our constructor
