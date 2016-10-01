@@ -13,3 +13,11 @@ Work in progress...
 
 {% include code_examples.md %}
 
+# == vs .equals, and hashCode()
+
+The next part of this tutorial concerns the difference between `==` and `.equals` and the implementation of the hashCode() function.
+
+Please first, read through the following:
+
+* [== vs .equals, and hashCode()](/topics/java_double_equals_vs_dot_equals/)
+* 
