@@ -1,5 +1,5 @@
 ---
-topic: "Java: == vs. .equals()"
+topic: "Java: == vs. .equals(), and hashCode()"
 desc: "the difference, and how to override .equals and .hashCode()"
 indent: true
 p86 : 4dot-methods-use-instance-variables-how-objects-behave/comparing_variables_open_parenthesis_pri
