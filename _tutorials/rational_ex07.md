@@ -256,7 +256,7 @@ i.e.
 
 All the while, retaining all of the other tests we already wrote.
 
-# What's next in [Rational: ex08](rational_ex08/)?
+# What's next in [Rational: ex08](https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex08/)?
 
 Next, we'll show how to write functions to multiply two rational numbers together.
 
