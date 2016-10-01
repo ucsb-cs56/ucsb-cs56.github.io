@@ -164,6 +164,7 @@ as shown here.
 This test will pass if an instance of `IllegalArgumentException` is thrown, and will fail if it is not thrown.
 
 Some notes:
+
 * This way of testing does not allow you to check whether the message in
   the exception is the expected one, i.e. whether it is `"denominator
   may not be zero"`, which would make sense, or `"Go Gauchos!"`, which
