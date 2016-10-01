@@ -17,6 +17,7 @@ code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex07
 
 
 In ex07, we'll look at Exceptions in Java by exploring how they can be used to enforce some assumptions we've been making about parameters to functions:
+
 * We've been "assuming" that folks won't pass a zero for the denominator of our Rational object.  If they do, bad things might happenincluding division by zero.
 * To prevent this we can throw a `java.lang.IllegalArgumentException` as soon as we detect that our assumption has been violated. The sooner you let the programmer know that something is wrong, the easier it will be for them to fix it.
 * We can use the same approach for our `gcd` method, to ensure that it is only used on positive integers (the only ones we have tested it on.)
