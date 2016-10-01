@@ -89,7 +89,29 @@ How we do it is application and context dependent.  But four things are always c
 
 # Overriding the hashCode function.
 
-TBD
+So, let's take a look at the javadoc for the `hashCode` function of `java.lang.Object`.
+
+It says: 
+
+> The general contract of hashCode is:
+>
+> * Whenever it is invoked on the same object more than once during an execution of a Java application, the hashCode method must consistently return the same integer, provided no information used in equals comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
+> * If two objects are equal according to the equals(Object) method, then calling the hashCode method on each of the two objects must produce the same integer result.
+> * It is not required that if two objects are unequal according to the equals(java.lang.Object) method, then calling the hashCode method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+>
+>
+
+We can summarize: 
+
+* `hashCode()` should be consistent in the same way that .equals() is consistent.
+* If `a.equals(b)` then it should be true that `a.hashCode()==b.hashCode()`
+* But it is ok for `c.hashCode()==d.hashCode()` to be true in some cases where `c.equals(d)` is `false`.
+
+How we do this depends on the object.   
+
+* Suppose we already have an integer that is unique for each object (e.g. `int perm` in the case of a `Student` object), then we can just return that integer.
+* Suppose we have a String, or a concatenation of String values that is unique for the object.  For example, for a `UCSBCourse` object, it might be `String dept` (e.g. `"CMPSC"`) and `String courseNum` (e.g. `"130A"`).   In that case, we could concatenate the strings, and take the hashCode of the resulting object.  Here we are relying on the `java.lang.String` implementation of hashCode to give us the properties we are looking for in a good hashCode.
+
 
 
 # Reading in HFJ
