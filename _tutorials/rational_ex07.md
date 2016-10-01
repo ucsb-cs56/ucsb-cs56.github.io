@@ -166,7 +166,7 @@ This test will pass if an instance of `IllegalArgumentException` is thrown, and 
 Some notes:
 * This way of testing does not allow you to check whether the message in
   the exception is the expected one, i.e. whether it is `"denominator
-  may not be zero", which would make sense, or `"Go Gauchos!"`, which
+  may not be zero"`, which would make sense, or `"Go Gauchos!"`, which
   while an admirable sentiment, is not what we are looking for here.
 * The wiki associated with the junit-team's github repo has an article
   that explains some [more sophisticated ways of testing exceptions](https://github.com/junit-team/junit4/wiki/Exception-testing)
