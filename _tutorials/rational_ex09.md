@@ -20,4 +20,8 @@ The next part of this tutorial concerns the difference between `==` and `.equals
 Please first, read through the following:
 
 * [== vs .equals, and hashCode()](/topics/java_double_equals_vs_dot_equals/)
-* 
+* p. 86 in HFJ
+  [on-campus]({{site.on_campus}}/{{site.hfj_url}}/{{page.p86}})
+  [off-campus]({{site.off_campus}}/{{site.hfj_url}}/{{page.p86}})	
+
+
