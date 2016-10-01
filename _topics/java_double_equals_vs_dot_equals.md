@@ -117,6 +117,6 @@ How we do this depends on the object.
 
 * p. 86
   [on-campus]({{site.on_campus}}/{{site.hfj_url}}/{{page.p86}})
-  [on-campus]({{site.off_campus}}/{{site.hfj_url}}/{{page.p86}})	
+  [off-campus]({{site.off_campus}}/{{site.hfj_url}}/{{page.p86}})	
 
 
