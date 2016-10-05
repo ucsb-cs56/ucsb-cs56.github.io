@@ -97,9 +97,9 @@ The changes are:
 1.  Using the syntax `**/*.class` and `**.jar` to make sure we delete the entire hierarchy of class and jar files from the whole directory tree.
 2.  Adding a line ` <delete dir="build" />` to get rid of the build directory altogether.
 
-# Changes to the .jar target
+## Changes to the `jar` target
 
-We changed the .jar target from this:
+We changed the `jar` target from this:
 
 
 ```xml
@@ -131,6 +131,14 @@ The changes are:
 1.   We used the `**/*.class` syntax to refer to all the classes in the entire directory tree.
 2.   We used the full name of the class `edu.ucsb.cs56.pconrad.rational.Rational` in the `Main-Class` attribute of the manifest, so that when we run the jar with `java -jar build/rational.jar`, it runs the correct main.
 
+## Changes to the `test` target and `javadoc` targets
+
+Here, the changes are simple:
+
+1. In the `test` target, we changed `*Test.java` to `**/*Test.java` in the place where we specify which source files to look for tests in.
+1. In the `javadoc` target, we changed `*.java` to `**/*.java` in the place where we specify which source files to generate our javadoc from.
+
+With those changes, our move to packages is complete.
 
 # Dealing with the inconvenience of these directory structures
 
