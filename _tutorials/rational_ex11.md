@@ -30,3 +30,7 @@ With this code:
       
 We'll add a file PlainArrayDemo.java to ex11 that demonstrates this:
 
+
+And perhaps also read from a file, using code such as one of these examples:
+
+<https://www.mkyong.com/java8/java-8-stream-read-a-file-line-by-line/>
