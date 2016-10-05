@@ -12,7 +12,7 @@ Rational [] terms = new Rational[5];
 ```
 
 at which point we have an array of 10 null references, each of which could be initialized to a Rational number.  For example,
-we can get the first ten five of this sequence:
+we can get the first five terms of this sequence:
 
 $$ 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} $$
 
@@ -28,3 +28,5 @@ With this code:
    }
 ```
       
+We'll add a file PlainArrayDemo.java to ex11 that demonstrates this:
+
