@@ -62,10 +62,10 @@ This is a work in progress; not all may be covered yet.  Will update this list w
 1. exceptions (IllegalArgumentException) (ex07)
 1. proper way to override equals and hashcode (ex09)
 1. equals vs. == (ex09)
-1. comparable interface (ex11 and beyond)
 1. creating an arraylist of rationals (ex11 and beyond)
-1. sorting an arraylist of rationals (ex11 and beyond)
 1. reading/writing rationals from/to a text file (ex11 and beyond)
+1. comparable interface (ex11 and beyond)
+1. sorting an arraylist of rationals (ex11 and beyond)
 1. incorporating rationals into other objects (ex11 and beyond)
 
 Java Language Toolset Skills
