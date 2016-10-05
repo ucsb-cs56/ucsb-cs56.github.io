@@ -14,12 +14,9 @@ Packages help prevent naming conflicts, and are an essential part of working wit
 
 
 1. Come up with a name for your package.  
-    * A package name is a series of legal java identifiers, separated by dots.
-    * Example: edu.ucsb.cs56.pconrad.rational
-    * The idea is to ensure that your package name is unique
-    * If you have your own domain name, you could use org.mydomainname.mypackage
-    * In this course, you'll typically be told in the instructions for the assignment what package name to use.
-2.  
+2. Put the package name at the top of every file
+3. Change the directory structure to match the package
+4. Adjust the build.xml file if needed.
 
 # 1. Come up with a name for your package
 
@@ -47,14 +44,56 @@ mkdir -p src/edu/ucsb/cs56/pconrad/rational
 
 Here, the -p indicates that you are creating an entire directory path all at once.
 
+We would then need to move our source fies into the package, e.g. with `mv`, or better yet `git mv` if we are working in a
+git repository:
+
+```
+git mv src/*.java src/edu/ucsb/cs56/pconrad/rational
+```
+
+After this, we'd do the commands to commit this change (though probably not until after the changes to the build.xml and testing our code.)
+
+```
+git status
+git commit -m "put code into a package"
+git push origin master
+```
+
+# 4. Adjust our build.xml
+
+TBD
+
 # Dealing with the inconvenience of these directory structures
 
 Working with a java project that uses packages can be annoying if you are constantly cd'ing between the top level directory (where you run the `ant compile` and `ant test` commands) and the directory where you edit.   
 
 There are several strategies to make this less annoying:
 
-1.  If you are using an old school editor such as vim or emacs in a single window: the [$T / $B]() trick works nicely.  (Follow the link for instructions.)
+1.   If you are using an old school editor such as vim or emacs in a single window:
 
+    *    The [$T / $B](/topics/t_and_b_env_vars/) trick works nicely.  (Follow the link for instructions.)
+    *    Or, just type the full filenames once (using tab completion), and then use the up arrow to recall those commands.
+         That is, instead of typing:
+         ```
+         cd src/edu/ucsb/cs56/pconrad/rational
+         emacs Rational.java
+         cd ../../../../../..
+         ant test
+         ```
+    
+         You would type:
+         ```
+         emacs src/edu/ucsb/cs56/pconrad/rational/Rational.java
+         ant test
+         ```
+         
+2.   Or, keep two terminal windows open.  In one, cd into the directory where your source code is.  In the other, stay in the directory where the build.xml file is.    Edit in the first window, and run ant in the second window.
+
+3.  Use editor features, editors, or IDEs that handles directory trees nicely:
+    * vim has [add-ons for directory trees](http://vim.wikia.com/wiki/Use_Vim_like_an_IDE)
+    * emacs has something called [dired mode](http://ergoemacs.org/emacs/file_management.html)
+    * [Sublime Text](https://www.sublimetext.com/) handles directory trees nicely out of the box.
+    * And there are also IDEs just as JBuilder if you are ready to take that plunge.
 
 # Reading about Packages in the textbook
 
