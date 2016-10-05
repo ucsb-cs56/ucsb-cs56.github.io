@@ -68,6 +68,69 @@ There are several adjustments to the build.xml.  This commit shows each of them:
 Let's discuss each in turn:
 
 
+## Adjustments to the `clean` target:
+
+We changed:
+
+```xml
+  <target name="clean" description="clean up the project">
+    <delete>
+      <fileset dir="build" includes="*.class"/>
+      <fileset dir="build" includes="*.jar"/>	
+    </delete>
+  </target>
+```
+
+to:
+
+```xml
+ <target name="clean" description="clean up the project">
+    <delete>
+      <fileset dir="build" includes="**/*.class"/>
+      <fileset dir="build" includes="**/*.jar"/>	
+    </delete>
+    <delete dir="build" />
+  </target>
+```
+
+The changes are: 
+1.  Using the syntax `**/*.class` and `**.jar` to make sure we delete the entire hierarchy of class and jar files from the whole directory tree.
+2.  Adding a line ` <delete dir="build" />` to get rid of the build directory altogether.
+
+# Changes to the .jar target
+
+We changed the .jar target from this:
+
+
+```xml
+ <target name="jar" depends="compile" description="create a jar file">
+    <jar destfile="build/rational.jar">
+      <fileset dir="build" includes="*.class"/>
+      <manifest>
+	<attribute name="Main-Class" value="Rational"/>
+      </manifest>
+    </jar>
+  </target>
+```
+
+to this:
+
+```xml
+ <target name="jar" depends="compile" description="create a jar file">
+    <jar destfile="build/rational.jar">
+      <fileset dir="build" includes="**/*.class"/>
+      <manifest>
+	<attribute name="Main-Class" value="edu.ucsb.cs56.pconrad.rational.Rational"/>
+      </manifest>
+    </jar>
+  </target>
+```
+
+The changes are:
+
+1.   We used the `**/*.class` syntax to refer to all the classes in the entire directory tree.
+2.   We used the full name of the class `edu.ucsb.cs56.pconrad.rational.Rational` in the `Main-Class` attribute of the manifest, so that when we run the jar with `java -jar build/rational.jar`, it runs the correct main.
+
 
 # Dealing with the inconvenience of these directory structures
 
