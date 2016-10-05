@@ -61,7 +61,13 @@ git push origin master
 
 # 4. Adjust our build.xml
 
-TBD
+There are several adjustments to the build.xml.  This commit shows each of them:
+
+<https://github.com/UCSB-CS56-pconrad/cs56-rational-ex10/commit/a75a2f0951463e1f17c22e6cc246f2aa90e77925>
+
+Let's discuss each in turn:
+
+
 
 # Dealing with the inconvenience of these directory structures
 
