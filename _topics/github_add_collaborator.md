@@ -1,9 +1,14 @@
 ---
-topic: "git: adding collaborators"
+topic: "github: adding collaborators"
 desc: "giving individual users access to a private repo"
 indent: true
 ---
 
+<div style="width: 80%; padding: 1em; margin: 1em; border: 5px solid green;" markdown="1">
+NOTE: The following instructions were originally written for a summer program (spis16-) at UCSD.
+
+When time permits, they should be rewritten from the perspective of CS56 at UCSB.  The basic steps, however, are the same.
+</div>
 
 The following instructions can be used to provide write access to a shared repo.  These instructions are
 written using  a private repo as an example, but they work equally well on public repos.
