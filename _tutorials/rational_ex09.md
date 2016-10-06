@@ -3,6 +3,7 @@ topic: "Rational: ex09"
 desc: "== vs. .equals, hashCode()"
 indent: true
 code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex09
+p86 : 4dot-methods-use-instance-variables-how-objects-behave/comparing_variables_open_parenthesis_pri
 ---
 
 <div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex09/</div>
