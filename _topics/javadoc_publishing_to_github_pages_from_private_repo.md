@@ -222,7 +222,7 @@ After:
 
 ``` xml
 <target name="javadoc" depends="compile" description="generate javadoc">
-    <delete>
+    <delete quiet="true">
       <fileset dir="javadoc" />
     </delete>
     <javadoc destdir="javadoc">
