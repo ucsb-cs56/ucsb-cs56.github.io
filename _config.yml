@@ -8,6 +8,9 @@ off_campus: http://proquest.safaribooksonline.com.proxy.library.ucsb.edu:2048/
 hfj_url: book/programming/java/0596009208
 hfdp_url: book/software-engineering-and-development/patterns/0596007124 
 
+legacy_wiki_url: https://foo.cs.ucsb.edu/56wiki
+legacy_wiki_name: "56wiki"
+
 
 #kramdown:
 #  parse_block_html: true
