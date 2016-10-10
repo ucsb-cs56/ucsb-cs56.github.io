@@ -7,6 +7,7 @@ on_campus: http://proquest.safaribooksonline.com
 off_campus: http://proquest.safaribooksonline.com.proxy.library.ucsb.edu:2048/
 hfj_url: book/programming/java/0596009208
 hfdp_url: book/software-engineering-and-development/patterns/0596007124 
+office_hours_page: https://ucsb-cs56-f16.github.io/info/office_hours/
 
 legacy_wiki_url: https://foo.cs.ucsb.edu/56wiki
 legacy_wiki_name: "56wiki"
