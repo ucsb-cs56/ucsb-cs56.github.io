@@ -100,8 +100,100 @@ We can traverse an ArrayList with either a traditional for loop, or the for-each
         }
 ```
 
-# Reading lines from a file to initialize an ArrayList
+# Reading lines from a file to initialize an ArrayList 
 
-And perhaps also read from a file, using code such as one of these examples:
+The "best way" to read from a file, line-by-line, in Java has changed signficantly over the years.   Both Java 7 and Java 8 introduced
+significant improvements in the I/O routines.  The old ways still work, but the new ways offer signficant advantages in terms of simplicity.
+
+Two small digressions before the main presentation about reading from a file:
+
+1. try with resources
+2. constructing from a string
+
+## "try with resources"
+
+The technique I'm showing here is not the "bleeding edge" of new Java functionality, but is more of a blend of some older approaches with one new innovation from Java 8: the "try with resources" construct.    
+
+Basically, the idea is that there are some kinds of resources that we should "close" when we are finished with them, including files.   (Files get automatically closed when a program exits, but in the meantime, if the file is kept open, there are certain performance penalties.)
+
+You can read more about this here:
+
+* <https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html>
+
+## A constructor for Rational objects that takes a String
+
+A useful constructor to implement is one that is the inverse of the toString method; that is one that takes the String representation of 
+an object as input, parses it, and then initializes an equivalent object.
+
+In this version, I've introduced tests cases in RationalTest and an implementation in Rational for a constructor that takes a String that is more or less of the same form at the output of toString.  In fact, it is a bit less restrictive in that is allows for whitespace around the numerator and denominator, though no other characters are permitted.    Also, it requires the numerator and denominator to present, which may differ from our toString output when denominator is 1; this is something we might address in a later version or as an exercise for the student.
+
+Look for these test cases and for the new constructor in RationalTest.java and Rational.java.
+
+Also note that we have factored out a helper method rationalize() where we've also introduced some missing functionality to move signs from denominator to numerator when needed (this was deliberately left out of some earlier examples, because it was left as an exercise for the student.)
+
+## The loop that reads
+
+Our program, [ReadFileOfRationals](https://github.com/UCSB-CS56-pconrad/cs56-rational-ex11/blob/master/src/edu/ucsb/cs56/pconrad/rational/ReadFileOfRationals.java), contains this main.  Note how we've tried to factor out
+code and details (such as the `USAGE` message, and the details of `readArray`) into constants and methods to keep the code short.
+
+Short methods are good.  They are easier to understand and maintain.  Strive for short methods.
+
+
+```java
+public static void main(String args[]) {
+
+	if (args.length != 1) {
+	    System.err.println("Error: Missing filename parameter");
+	    System.err.println(USAGE);
+	    System.exit(1);
+	}
+	
+	String filename = args[0];
+
+	ArrayList<Rational> numbers = readArrayListFromFile(filename);
+
+	System.out.println("numbers = " + numbers);
+   }
+```
+
+Here is our `readArrayFromList` method.  I've taken out this comment to make the lines easier to follow
+
+```
+public static ArrayList<Rational> readArrayListFromFile(String fileName) {
+
+	ArrayList<Rational> items = new ArrayList<Rational>();
+	
+	try (BufferedReader br =
+	     new BufferedReader(new FileReader(fileName))) {
+
+	    String line;
+	    while ((line = br.readLine()) != null) {
+		   // process "line" as input
+		   try {
+		      Rational r = new Rational(line);
+		      items.add(r);
+		   } catch (IllegalArgumentException iae) {
+		       System.err.println("Warning: ignored bad input line: " +
+				       line);
+		   }
+	    } // while
+
+	} catch (IOException e) {
+	    e.printStackTrace();
+	} // try with resources
+	
+	return items;
+```
+
+This is an example of a "try with resources" loop.  The short explanation is that 
+objects that implement "java.lang.AutoCloseable" are "automatically closed" at the end of a "try with resources construct".
+
+This allows the programmer to not have to worry about making sure that the appropriate `close()` method is called on every conceivable
+path through the code, which is a great simplification.   It makes it more likely that the programmer will "get it right".
+
+ 
+# More on advanced I/O techniques in Java
+
+This is only one of several ways to read from a file in Java.  The following web page has some nice examples of how to read a file line-by-line, using various techniques.   You are encouraged to explore all of them.
 
 <https://www.mkyong.com/java8/java-8-stream-read-a-file-line-by-line/>
