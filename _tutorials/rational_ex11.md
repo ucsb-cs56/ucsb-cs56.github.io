@@ -5,6 +5,11 @@ indent: true
 code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex11
 ---
 
+
+{% include rational_example_header.html %}
+
+
+
 We can create plain old Java Arrays of Rational objects with code such as this:
 
 ```java
