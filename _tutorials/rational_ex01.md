@@ -7,11 +7,8 @@ code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex01
 
 # cs56-rational-example/ex01
 
-<div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex01/</div>
+{% include rational_example_header.html %}
 
-<em>Part of a [series of tutorial articles about a Rational class](/tutorials/rational/).</em>
-
-{% include code_examples.md %}
 
 # Overview
 
