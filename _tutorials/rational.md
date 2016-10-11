@@ -62,23 +62,24 @@ This is a work in progress; not all may be covered yet.  Will update this list w
 1. exceptions (IllegalArgumentException) (ex07)
 1. proper way to override equals and hashcode (ex09)
 1. equals vs. == (ex09)
-1. creating an arraylist of rationals (ex11 and beyond)
-1. reading/writing rationals from/to a text file (ex11 and beyond)
-1. comparable interface (ex11 and beyond)
-1. sorting an arraylist of rationals (ex11 and beyond)
-1. incorporating rationals into other objects (ex11 and beyond)
+1. creating an arraylist of rationals (ex11)
+1. reading rationals from a text file (ex11)
+1. writing rationals to a text file (ex12 and beyond)
+1. comparable interface (ex12 and beyond)
+1. sorting an arraylist of rationals (ex12 and beyond)
+1. incorporating rationals into other objects (ex12 and beyond)
 
 Java Language Toolset Skills
 
 1. Compiling/Running by hand with `javac` and `java` (ex01)
 1. Ant (ex02)
-1. Running from a jar file (ex03)
+1. Running from a jar file (ex03, reviewed in ex11)
 1. JUnit jars (ex03)
 1. Javadoc (ex04)
 1. Adding line numbers to stack traces (ex05)
 1. Adding links to Java Standard Libraries in our javdoc (ex06)
 1. Packages (ex10)
-1. Maven (ex11 and beyond)
+1. Maven (ex12 and beyond)
 
 # Guide to the companion github repository.
 
