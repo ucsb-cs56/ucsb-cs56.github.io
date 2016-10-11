@@ -213,6 +213,7 @@ Before:
 ```
 
 We'll make three changes:
+
 * We change the `<link href=...` to use `https` instead of `http`.  Otherwise, links to the Oracle javadoc won't load due to http/https conflict (unless you open them in another page).
 * We add one line to the `echo` task with a message that we are copying the javadoc to another directory
 * We add some additional lines after that to copy the files to that other directory, and then give a message
