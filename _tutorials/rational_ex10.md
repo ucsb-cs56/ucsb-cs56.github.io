@@ -6,6 +6,11 @@ code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex10
 p587: 17dot-package-jars-and-deployment-release-your-code/587
 ---
 
+
+{% include rational_example_header.html %}
+
+
+
 # Packages
 
 Packages help prevent naming conflicts, and are an essential part of working with "real world" Java code.
