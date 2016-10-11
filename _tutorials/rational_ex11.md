@@ -33,8 +33,9 @@ With this code:
    }
 ```
       
-We'll add a file PlainArrayDemo.java to ex11 that demonstrates this:
+The file [PlainArrayDemo.java](https://github.com/UCSB-CS56-pconrad/cs56-rational-ex11/blob/master/src/edu/ucsb/cs56/pconrad/rational/PlainArrayDemo.java) in ex11 demonstrates this.
 
+We can also do the same with an ArrayList.
 
 And perhaps also read from a file, using code such as one of these examples:
 
