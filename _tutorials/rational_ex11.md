@@ -1,6 +1,6 @@
 ---
 topic: "Rational: ex11"
-desc: "Using java arrays and java.util.ArrayList with Rational; and running main() programs from a jar file"
+desc: "Using java arrays and java.util.ArrayList with Rational; running main() programs from a jar file; reading from file, constructing from string"
 indent: true
 code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex11
 ---
