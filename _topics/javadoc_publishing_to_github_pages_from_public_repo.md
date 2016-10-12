@@ -48,3 +48,5 @@ Since we no longer want to copy the javadoc files to another directory, we can r
   </echo> 
 </target>
 ```
+
+# Step 2: Modify .gitignore to Ignore the JavaDoc Directory
