@@ -1,6 +1,7 @@
 ---
 topic: "javadoc: publishing to github pages from a private repo"
 desc: "step-by-step instructions"
+indent: true
 ---
 
 Github offers convenient free web hosting via a service called "github pages" for sites that are
