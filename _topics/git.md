@@ -16,6 +16,5 @@ The commerical company *github* provides web-based software and cloud-based host
 The article [git: overview](/topics/git_overview/) explains more.  In addition there are several other articles about git/github listed below.
 
 {% if page.category_prefix %}
-   <h2> More on {{page.topic}}</h2>
    {% include category_index.html %}
 {% endif %}
