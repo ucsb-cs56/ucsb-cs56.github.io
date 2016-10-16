@@ -1,6 +1,7 @@
 ---
 topic: "Gradescope: Student Self-Submission"
 desc: "Scanning your assignment to PDF"
+indent: true
 ---
 
 You can scan your assignment to PDF from any iOS or Android device.
