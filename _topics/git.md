@@ -1,6 +1,6 @@
 ---
-topic: "git"
-desc: "git and github"
+topic: "git and github"
+desc: "version control, source code configuration and project collaboration tools"
 category_prefix: "git: "
 category_prefix_alt: "github: "
 ---
@@ -14,17 +14,6 @@ The commerical company *github* provides web-based software and cloud-based host
 * [github.ucsb.edu](https://github.ucsb.edu) is a private instance of *Github Enterprise* for UCSB.
 
 The article [git: overview](/topics/git_overview/) explains more.  In addition there are several other articles about git/github listed below.
-
-<div data-role="collapsible" data-collapsed="false">
-  <h2>More on git/github</h2>
-  <ul>
-   {% for topic in site.topics %}
-       {% if topic.topic contains "git: " or topic.topic contains "github: "%} 
-           <li><a href="{{topic.url}}">{{ topic.topic }}</a>&mdash;{{topic.desc}}</li>
-       {% endif %}
-   {% endfor %}
-  </ul>
-</div>
 
 {% if page.category_prefix %}
    <h2> More on {{page.topic}}</h2>
