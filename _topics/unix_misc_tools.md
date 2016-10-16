@@ -1,6 +1,7 @@
 ---
 topic: "Unix: Misc tools"
 desc: "Various useful command line tools you may not know about"
+indent: true
 ---
 
 There are a lot of useful tools that you can use at the Unix command line.  
