@@ -1,6 +1,8 @@
 ---
 topic: "git"
 desc: "git and github"
+category_prefix: "git: "
+category_prefix_alt: "github: "
 ---
 
 The software package known as *git* is an open source version control system.  
@@ -23,3 +25,8 @@ The article [git: overview](/topics/git_overview/) explains more.  In addition t
    {% endfor %}
   </ul>
 </div>
+
+{% if page.category_prefix %}
+   <h2> More on {{page.topic}}</h2>
+   {% include category_index.html %}
+{% endif %}
