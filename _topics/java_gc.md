@@ -46,7 +46,7 @@ And the system has the freedom to collect those objects in a different order fro
 collection.
 
 Having said that, there are some hacks we can do to try to "force" garbage collection to happen so that we can get a peek under the hood and
-see what is going on.  More on that at this article: [Java: Garbage Collection: Under the Hood](/topics/java_gc_under_the_hood.md/)
+see what is going on.  More on that at this article: [Java: Garbage Collection: Under the Hood](/topics/java_gc_under_the_hood/)
 
 ## Homework Exercises and Exam Questions related to Java Garbage Collection
 
