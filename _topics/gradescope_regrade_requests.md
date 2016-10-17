@@ -4,9 +4,22 @@ desc: "What to do if you have questions about the grading of a problem (e.g. you
 indent: true
 ---
 
-# Gradescope Regrade Requests
+# How to submit a regrade request
 
- 
+If you ask questions via Piazza or email about the grading of something that was returned through Gradescope (i.e. specific homework assignment problems or exam questions), those questions <b>will not be answered</b> in that forum.
+
+Instead you'll be referred back to Gradescope. 
+
+# Ask on the correct problem, in a timely fashion.
+
+Please put your regrade request ON THE SPECIFIC PROBLEM that you are asking about (Question 1, Question 2, etc.) 
+
+ALSO: There is a deadline for regrade requests.  This is typically announced when the grades are published, and except in cases where it is not feasible (e.g. at the very end of the quarter), you'll be given one week.
+
+Finally, you may want to review the rest of the information below before submitting your request.
+
+# How to submit an effective regrade request
+
 The TAs and I are happy to respond to regrade requests that are phrased politely.  We do sometimes make mistakes when grading.
  
 Keep in mind the sheer numbers here.  If you multiply the number of students in your section by the number of homeworks, and the number of 
