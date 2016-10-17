@@ -16,6 +16,9 @@ As the saying goes, [your mileage may vary!](https://en.wiktionary.org/wiki/your
 
 The code in this repo shows how we can peek under the hood a bit and see when objects become eligible for garbage collection.
 
+* <https://github.com/UCSB-CS56-pconrad/java-garbage-collection-demo>
+
+
 This shows how we can try to verify the answers for exam questions such as:
 
 * [Question 6 on Midterm Exam CS56-M16-E01](https://ucsb-cs56-f16.github.io/exam/e01/cs56_m16_e01/)
