@@ -6,6 +6,17 @@ indent: true
 
 # How to submit a regrade request
 
+If you have a question about something that was graded through Gradescope, there is a "Regrade Request" button that
+looks like this:
+
+![regrade request button](regrade_request_button.png)
+
+When you click it, you can enter a regrade request such as this one:
+
+![sample regrade request](regrade_request.png)
+
+# Always use the regrade request, not email or Piazza
+
 If you ask questions via Piazza or email about the grading of something that was returned through Gradescope (i.e. specific homework assignment problems or exam questions), those questions <b>will not be answered</b> in that forum.
 
 Instead you'll be referred back to Gradescope. 
