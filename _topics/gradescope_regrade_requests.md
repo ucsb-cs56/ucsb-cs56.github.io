@@ -6,7 +6,7 @@ indent: true
 
 # How to submit a regrade request
 
-If you have a question about something that was graded through Gradescope, there is a "Regrade Request" button that
+If you have a question about something that was graded through Gradescope, there is a "Request Regrade" button that
 looks like this:
 
 ![regrade request button](regrade_request_button.png)
