@@ -7,7 +7,7 @@ indent: true
 # How to submit a regrade request
 
 If you have a question about something that was graded through Gradescope, there is a "Request Regrade" button that
-looks like this:
+looks like this at the lower right hand corner of the screen on each problem:
 
 ![regrade request button](regrade_request_button.png)
 
@@ -15,19 +15,28 @@ When you click it, you can enter a regrade request such as this one:
 
 ![sample regrade request](regrade_request.png)
 
-# Always use the regrade request, not email or Piazza
+# Make your request on the page for the <em>specific</em> homework question that you have concerns about
+
+Be sure that you are <em>page for the on the correct problem</em> before you submit your regrade request. 
+
+As an example if you have an inquiry about question 3, part (b):
+
+* Navigate specifically to the page for question 3, part (b)
+* THEN click regrade request when you are on that page.
+
+Here's why this is important: if you about question 3, part (b) on the correct page, then when the TA or instructor reviews your regrade request, they are <em>shown your specific answer</em> to that question, and they are <em>given the opportunity to change your grade for that question</em>.     Presumably, that is what you are hoping will happen (i.e, that instructor will review your answer, and possible give you more points.)
+
+If you ask about question 3, part (b) but you do so on question 7, part (c), the TA/instructor can neither see the answer you gave, nor do they have an opportunity to change your grade.    So your regrade request will not be likely to be useful.  In fact, you'll likely get the following canned response: `Please resubmit your request on problem you are asking about.`
+
+# For work graded on Gradescope, always use the regrade request, not email or Piazza
 
 If you ask questions via Piazza or email about the grading of something that was returned through Gradescope (i.e. specific homework assignment problems or exam questions), those questions <b>will not be answered</b> in that forum.
 
 Instead you'll be referred back to Gradescope. 
 
-# Ask on the correct problem, in a timely fashion.
+# Please submit regrade requests in a timely fashion.
 
-Please put your regrade request ON THE SPECIFIC PROBLEM that you are asking about (Question 1, Question 2, etc.) 
-
-ALSO: There is a deadline for regrade requests.  This is typically announced when the grades are published, and except in cases where it is not feasible (e.g. at the very end of the quarter), you'll be given one week.
-
-Finally, you may want to review the rest of the information below before submitting your request.
+There is a deadline for regrade requests.  This is typically announced when the grades are published, and except in cases where it is not feasible (e.g. at the very end of the quarter), you'll be given one week.
 
 # How to submit an effective regrade request
 
