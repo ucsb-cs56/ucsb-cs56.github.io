@@ -36,7 +36,7 @@ to be at this very moment.  Any time you want to go there, just type <code>cd $T
 Now, define `B` (for bottom) as the botton of the place where your source lives, like this:
 
 ```
- export B=${T}/src/edu/ucsb/cs56/w16/drawings/${USER}
+ export B=${T}/src/edu/ucsb/cs56/drawings/${USER}
 ```
 
 Now, whenever you want to move into that directory, you can just type `cd $B`.  Try it now!
