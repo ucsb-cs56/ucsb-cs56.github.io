@@ -12,7 +12,10 @@ TODO: Fill in HFDP_Chapter_1.md with notes for Chapter 1 of HFDP.
 
 # Chapter 1: Intro to Design Patterns
 
+
 # It started with a simple SimUDuck app
+
+This page introduces the *SimUDuck* application.   This is a silly example, like so many of those used in the Head First books, but since it forms the basis of the rest of the chapter, its important to at least suspend our disbelief and "go with it".    Try to understand the premise of what the SimUDuck application is trying to accomplish: namely, realistic simulation of a variety of kinds of ducks swimming and quacking.
 
 # But now we need the ducks to FLY
 
