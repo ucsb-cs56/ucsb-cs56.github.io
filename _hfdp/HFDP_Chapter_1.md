@@ -19,6 +19,10 @@ This page introduces the *SimUDuck* application.   This is a silly example, like
 
 # But now we need the ducks to FLY
 
+The key point here is that "some behavior about the class needs to change".   The idea of *making the ducks fly* is a shorthand in this silly example for something that happens in real-life all the time: some user requirement gets added, or something changes, and a component of the software has to be able to do something that it didn't do before.
+
+The essence of design patterns, as we'll see, is designing the software in a way that makes it easier to make these changes&mdash;setting ourselves up for success&mdash;rather than making it difficult (setting ourselves up for failure.)
+
 # But something went horribly wrong...
 
 # Joe thinks about inheritance...
