@@ -11,3 +11,4 @@ TODO: Fill in HFDP_Chapter_1.md with notes for Chapter 1 of HFDP.
 
 {% include read_hfdp_online.html %}
 
+<div style="display:none;">https://ucsb-cs56-pconrad/hfdp/</div>
