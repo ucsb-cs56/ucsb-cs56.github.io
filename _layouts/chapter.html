@@ -13,7 +13,7 @@
     {% if page.textbook == "HFDP" %}{% include read_hfdp_online.html %}{% endif %}   
     {% if page.desc or page.chapter %}
       <h2>
-	{% if page.chapter %}{{page.chapter}}:&nbsp;{% endif %}
+	{% if page.chapter %}{{page.chapter}}:&nbsp;{% page.title %}{% endif %}
 	{% if page.desc %}{{page.desc}}{% endif %}
       </h2>
     {% endif %}
