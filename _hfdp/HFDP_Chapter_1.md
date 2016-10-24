@@ -1,8 +1,8 @@
 ---
 textbook: HFDP
-chapter: 1
+chapter: "1"
 sort_key: 01
-title: Welcome to Design Patterns
+title: "Welcome to Design Patterns"
 layout: chapter
 ---
 
