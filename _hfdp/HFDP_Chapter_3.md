@@ -26,6 +26,23 @@ Rather than modifying the class, we can "decorate" the object by wrapping it, an
 
 # The Open-Closed Principle
 
+
+The Open-Closed Principle is sort of a big deal in Object-Oriented programming, and in Software Engineering.  It's worth taking the time to try to understand it, so that you can impress job interviewers with your knowledge, and even more importantly, so that you can build better software.
+
+The Open Closed Principle was:
+
+* identified by Bertrand Meyer in his 1988 book [Object Oriented Software Construction](https://en.wikipedia.org/wiki/Object-Oriented_Software_Construction)
+* identified by Robert C. Martin as as one of the five "SOLID" principles identified by Bob Martin (it's the letter "O" in "SOLID").
+
+Those details aren't important ones to memorize&mdash;I'm including them so that you understand that this principle has been around a long time.   Yet, regrettably, lots of software is still written without taking it into account.
+
+This short article may help to shed some light on the Open-Closed principle from another perspective. (Note: the code in the article linked to here isn't Java code, but whatever language it is has syntax close enough to Java that you'll get the idea.)
+
+* <http://joelabrahamsson.com/a-simple-example-of-the-openclosed-principle/>
+
+
+
+
 # Meet the Decorator Pattern
 
 # Constructing a drink order with Decorators
