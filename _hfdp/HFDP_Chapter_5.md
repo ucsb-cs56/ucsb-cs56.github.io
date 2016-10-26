@@ -2,7 +2,7 @@
 textbook: HFDP
 chapter: 5
 sort_key: 05
-title: ""
+title: "The Singleton Pattern: One of a Kind Objects"
 layout: chapter
 ---
 
