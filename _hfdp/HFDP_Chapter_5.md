@@ -34,20 +34,29 @@ Also note that the little box in the upper right hand corner notes: later in the
 
 The "interview" on p. 174 is basically a "repeat" of the main points that you should have understood from the material on pp. 169-173.  So, if you read through it and it all makes sense, then good.  If it is still confusing, then go back and read through 169-173 again.
 
-# The Chocolate Factory
+# The Chocolate Factory (pp. 175-176)
 
-# Singleton Pattern defined
+This is an exercise (the problem is on p. 176, and the solution to the problem is on p. 188).
 
-# Houston, Hershey, PA we have a problem...
+Try the problem, and then check your answer.  This is a good way to see if you understand the code so far.
 
-# Dealing with multithreading
+And, this could turn into an exam question.
 
-# Can we improve multithreading?
+# Singleton Pattern defined p. 177
 
-# Meanwhile, back at the Chocolate Factory...
+# <s>Houston,</s> Hershey, PA, we have a problem... (pp. 178-179)
 
-# Congratulations!
 
-# Tools for your Design Toolbox
+# Dealing with multithreading (p. 180)
+
+# Can we improve multithreading? (p. 181-182)
+
+# Meanwhile, back at the Chocolate Factory... (p. 183, top)
+
+# Congratulations! (p. 183, bottom)
+
+# There are no dumb questions (p. 184-185)
+
+# Tools for your Design Toolbox (p. 186)
 
 <div style="display:none;"> https://ucsb-cs56-pconrad.github.io/hfdp/HFDP_Chapter_5/ </div>
