@@ -62,7 +62,8 @@ div.table-with-borders table { border-collapse: collapse; border: 1px solid grey
 div.table-with-borders table * { border-collapse: collapse; border: 1px solid grey; }
 div.table-with-borders table * td { padding: 4pt; }
 </style>
-<div class="table-with-borders">
+
+<div class="table-with-borders" markdown="1">
 
 | Well-formed | Errors |
 |-------------|--------|
