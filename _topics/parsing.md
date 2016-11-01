@@ -111,12 +111,11 @@ The more specific sense of parsing is a particular "phase" of this process, the 
 * parsing (applying a context free grammar and producing an AST)
 * evaluation/translation (processing the AST that resulting from parsing)
 
-Before we get into the three phases, let's look at things from a big picture standpoint.
+Before we get into the three phases, the *how* of parsing, let's look at *what* we need to be able to do from a big picture standpoint.
 
-# An overview of the general sense of the word *parsing*
+# *What* we need to be able to do when we parse.
 
-Before we get into the specific differences between the way in which *
-As an example, suppose our language is restricted to arithmetic expressions involving:
+As an example of the concerns that arise in parsing, suppose our language is restricted to arithmetic expressions involving:
 
 * the integer data type (e.g. `int` as in C/C++/Java), including integer constants (both positive and negative)
 * four basic arithmetic operators, `+`,`-`,`*`,`/` with the usual meanings (integer division for `/`), and usual precedence and associativity
