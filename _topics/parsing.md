@@ -59,7 +59,7 @@ Here are some examples of well-formed expressions, and expressions with errors.
 
 <style>
 div.table-with-borders table { border-collapse: collapse; border: 1px solid grey; }
-div.table-with-borders table * { border-collapse: collapse; border: 1px solid grey; }
+div.table-with-borders table * td { border-collapse: collapse; border: 1px solid grey; }
 div.table-with-borders table * td { padding: 4pt; }
 </style>
 
