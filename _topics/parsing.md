@@ -54,6 +54,13 @@ Let's use the example of integer arithmetic expressions with five operators: `+`
 
 Here are some examples of well-formed expressions, and expressions with errors.   
 
+<style>
+div.table-with-borders table { border-collapse: collapse; border: 1px solid grey; }
+div.table-with-borders table * { border-collapse: collapse; border: 1px solid grey; }
+div.table-with-borders table * td { padding: 4pt; }
+</style>
+<div class="table-with-borders">
+
 | Well-formed | Errors |
 |-------------|--------|
 | `2 + 2`     | `+ 2 2`  |
@@ -62,6 +69,8 @@ Here are some examples of well-formed expressions, and expressions with errors.
 | `0`             | `45 67`  |
 | `-7 + -8`       | ` *9 + 5` |
 | `--3`           | `3--`     |
+
+</div>
 
 Note that we sometimes call these "legal" and "illegal" expressions, though in this case the "law" is simply the rules for the language, and nothing to do with civil or criminal laws.
 
