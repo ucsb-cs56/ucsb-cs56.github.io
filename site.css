@@ -21,3 +21,20 @@ p.topic-summary {
 }
 
 .github-preview-only { display: none; }
+
+table.prev-next-links {
+    border-collapse: collapse;
+    border: 1px solid blue;
+}
+
+table.prev-next-links {
+    border-collapse: collapse;
+    border: 1px solid blue;
+}
+
+table.prev-next-links * td {
+    border-collapse: collapse;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+    padding: 3px;
+}

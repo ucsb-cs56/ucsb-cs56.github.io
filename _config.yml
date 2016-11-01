@@ -63,7 +63,7 @@ defaults:
       path: ""
       type: tutorials
     values:
-      layout: topic
+      layout: tutorial
       
   - scope:
       path: ""
