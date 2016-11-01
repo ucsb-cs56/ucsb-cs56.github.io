@@ -33,3 +33,12 @@ specific examples:
 3. Evalute ASTs to produce a result
     * Evaluating the AST is not necessarily part of *parsing* per se; it is typically considered separate concern
     * However, ASTs rarely exist outside the context of parsing, so explore them as part of the same tutorial.
+
+Here is a bit more on each of these topics
+
+# Checking Syntax
+
+# Producing an Abstract Syntax Tree (AST)
+
+# Evaluating an AST
+
