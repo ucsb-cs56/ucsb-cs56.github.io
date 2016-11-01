@@ -4,12 +4,15 @@ desc: "The formal definition of the difference"
 indent: true
 ---
 
+<div style="display:none;">https://ucsb-cs56-pconrad.github.io/topics/parsing_syntax_vs_semantic_errors/</div>
 
 In Java, there is a rule final variables cannot be changed after initial assignment.   For example:
 
 <style>
 table.code-table { border-collapse: collapse; border: 1px solid grey; }
-table.code-table * td, table.code-table * th { border-collapse: collapse; border: 1px solid grey; }
+table.code-table * td, table.code-table * th { 
+ border-collapse: collapse; border: 1px solid grey; padding: 1em;
+}
 </style>
 
 <table class="code-table">
