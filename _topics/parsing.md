@@ -97,11 +97,9 @@ Even though this error is reported by the compiler, strictly speaking, it isn't 
 
 This distinction between what *is* and *is not*, strictly speaking, a syntax error may be hard to *fully* understand until we explore more about *grammars*, *productions*, and *ASTs*, so if it isn't entirely clear now, don't worry too much about it.    For now, it is enough that you understand that there *is* a difference between the two.
 
-Later, once we've formally defined the idea of a context-free grammar, we'll be able to  formally specify the difference.
+Later, once we've formally defined the idea of a context-free grammar, we'll be able to formally specify the difference.  (See [this article](/topics/parsing_syntax_vs_semantic_errors/) if you just can't wait.)
 
 
-* Any error that can be detected *during* the process of applying the rules of a context-free grammar and constructing the resulting AST is considered a *syntax error*
-* *Semantic errors* are violations of the language specification that can only be discovered *after* the AST is created, either as the AST is checked, evaluated, or at a later stage when the resulting code is executed.  These are violations of rules that *cannot* be captured in a context-free grammar.
 
 
 # Producing an Abstract Syntax Tree (AST)
