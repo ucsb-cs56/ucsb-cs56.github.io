@@ -2,6 +2,7 @@
 topic: Parsing
 desc: "The basis of compilers, interpreters, evaluators, etc."
 category_prefix: "Parsing: "
+topic_index_top: true
 ---
 
 <div style="display:none;">https://ucsb-cs56-pconrad.github.io/topics/parsing/</div>
