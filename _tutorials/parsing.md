@@ -5,7 +5,7 @@ category_prefix: "Parsing: "
 topic_index_top: true
 ---
 
-<div style="display:none;">https://ucsb-cs56-pconrad.github.io/topics/parsing/</div>
+<div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing/</div>
 
 This series of articles is here to support programming assignments based on *parsing*. The series presents some of the basic concepts that are used in parsers and interpreters.   
 
