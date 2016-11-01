@@ -13,8 +13,10 @@ In Computer Science word *parsing* refers to any computation that:
 As an example, suppose our language is restricted to arithmetic expressions involving:
 
 * the integer data type (e.g. `int` as in C/C++/Java), including integer constants (both positive and negative)
-* four basic arithmetic operators, `+`,`-`,`*`,`/` with the usual meanings (integer division for `/`)
+* four basic arithmetic operators, `+`,`-`,`*`,`/` with the usual meanings (integer division for `/`), and usual precedence and associativity
+* a unary minus operator
 * a comparison operator, `==`, that returns `1` for true and 0 for false.
+* parentheses for grouping
 
 We want to be able to do three things.  Here's a quick overview, followed by a more detailed explanation with
 specific examples:
@@ -37,6 +39,70 @@ specific examples:
 Here is a bit more on each of these topics
 
 # Checking Syntax
+
+As an example of checking syntax, we want to be able to distinguish between well-formed expressions and those with errors.
+
+Let's use the example of integer arithmetic expressions with five operators: `+`,`-`,`*`,`/`,`==` and parentheses `(`, `)`
+* Later, we'll discuss how to formally specify the rules for such expressinos
+* For, we'll assume you are already familiar with those rules, at least informally, from using them in C/C++/Java code.
+
+Here are some examples of well-formed expressions, and expressions with errors.   
+
+| Well-formed | Errors |
+|-------------|--------|
+| `2 + 2`     | `+ 2 2`  |
+| `123 + 345 * 678`     | ` 3 45 + 6`  |
+| `(1+2)*678`     | `(( 1+2) * 678 `  |
+| `0`             | `45 67`  |
+| `-7 + -8`       | ` *9 + 5` |
+| `--3`           | `3--`     |
+
+Note that we sometimes call these "legal" and "illegal" expressions, though in this case the "law" is simply the rules for the language, and nothing to do with civil or criminal laws.
+
+Also note that from the standpoint of syntax, the following expressions are well-formed, even though they will result in an error (division by zero) when evaluated.  These are *not* syntax errors, but errors of meaning, i.e. *semantic errors* or *evalutor errors*.  
+
+| `7/0` | `7/(3-3)` | `123/( 4*5 - 20)` |
+
+As you can infer from the escalating complexity of the examples, expressions involving division by zero can get arbitrarily complex, which is why we don't try to detect such problems as part of the "syntax checking".   
+
+That's true, in general, about other kinds of semantic errors&mdash;for example, in Java, there is a rule final variables cannot be changed after initial assignment.   For example:
+
+<table>
+<tr><th>Bad Code</th><th>Compile error<br>(not a syntax error though)</th></tr>
+<tr>
+<td markdown=1>
+```java
+public class Bad {
+    private final int foo=3;
+    public void makeFooFive() {
+	foo=5;
+    }
+}
+```
+</td>
+<td>
+```
+$ javac Bad.java
+Bad.java:4: error: cannot assign a value to final variable foo
+	foo=5;
+	^
+1 error
+$ 
+```
+</td>
+</tr>
+</table>
+
+Even though this error is reported by the compiler, strictly speaking, it isn't a *syntax error*.    Leaving off the return type of a method, leaving out a semicolon, or parentheses/braces that aren't properly balanced are all syntax errors&mdash;but things that require subtle analysis of the relationships between remote parts of the code generally are *not*, stricty speaking, syntax errors.  
+
+This distinction between what *is* and *is not*, strictly speaking, a syntax error may be hard to *fully* understand until we explore more about *grammars*, *productions*, and *ASTs*, so if it isn't entirely clear now, don't worry too much about it.    For now, it is enough that you understand that there *is* a difference between the two.
+
+Later, once we've formally defined the idea of a context-free grammar, we'll be able to  formally specify the difference.
+
+
+* Any error that can be detected *during* the process of applying the rules of a context-free grammar and constructing the resulting AST is considered a *syntax error*
+* *Semantic errors* are violations of the language specification that can only be discovered *after* the AST is created, either as the AST is checked, evaluated, or at a later stage when the resulting code is executed.  These are violations of rules that *cannot* be captured in a context-free grammar.
+
 
 # Producing an Abstract Syntax Tree (AST)
 
