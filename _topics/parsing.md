@@ -80,7 +80,11 @@ Note that we sometimes call these "legal" and "illegal" expressions, though in t
 
 Also note that from the standpoint of syntax, the following expressions are well-formed, even though they will result in an error (division by zero) when evaluated.  These are *not* syntax errors, but errors of meaning, i.e. *semantic errors* or *evalutor errors*.  
 
+<div class="table-with-borders" markdown="1">
+
 | `7/0` | `7/(3-3)` | `123/( 4*5 - 20)` |
+
+</div>
 
 As you can infer from the escalating complexity of the examples, expressions involving division by zero can get arbitrarily complex, which is why we don't try to detect such problems as part of the "syntax checking".   
 
