@@ -6,6 +6,8 @@ indent: true
 
 <div style="display:none;">https://ucsb-cs56-pconrad.github.io/topics/parsing_syntax_vs_semantic_errors/</div>
 
+* [Main Parsing Article](/topics/parsing/)
+
 In Java, there is a rule final variables cannot be changed after initial assignment.   For example:
 
 <style>
