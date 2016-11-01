@@ -3,6 +3,7 @@ topic: "Parsing 02: Formal Language Specifications"
 desc: "How do we write the rules of a language? (FSAs, CFGs, etc.)"
 category_prefix: "Parsing: "
 topic_index_top: true
+indent: true
 ---
 
 <div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_02_formal_spec</div>
@@ -214,7 +215,7 @@ The actual tokens have been repeated below for convenience.
 |`.`              |`err`| `.`  |`println`|`(`     |
 |`"FIX THIS CODE"`|`)`  | `;`  |`}`      |        |
 
-![parsing_example](parsing_example.png)
+![parsing_example](/tutorials/parsing/parsing_example.png)
 
 As shown in the above example, parsing takes operator precedence into account.
 Specifically, the parser knew to parse `System.err.println(...)` effectively as `(System.err).println(...)`, as opposed ot the invalid `System.(err.println(...))`.
@@ -228,7 +229,7 @@ Instead, we'll use a much simpler arithmetic expression language for the purpose
 
 Consider the AST below, corresponding to the expression `3 * 4 + 2`:
 
-![interp_01](interp_01.png)
+![interp_01](/tutorials/parsing/interp_01.png)
 
 Evaluation starts at the top of the AST, which corresponds to the `+` node in this AST.
 The `+` node first finds the value of its left child, corresponding to the `*` node.
@@ -237,30 +238,30 @@ This leads evaluation to the `3` node.
 Because the constant `3` trivially evaluates to itself, evaluation returns `3` at this point.
 This is illustrated in the image below, which shows values returned from evaluation in red:
 
-![interp_02](interp_02.png)
+![interp_02](/tutorials/parsing/interp_02.png)
 
 Once the `3` node is complete, evaluation goes back to the `*` node, which gets the value of its right child.
 Evaluation then moves to the `4` node, which simply returns `4`.
 This is illustrated below:
 
-![interp_03](interp_03.png)
+![interp_03](/tutorials/parsing/interp_03.png)
 
 Evaluation now proceeds to the `*` node, which finally has the values of both of its child nodes.
 From here, it multiplies these values together, and returns the result.
 This is illustrated below:
 
-![interp_04](interp_04.png)
+![interp_04](/tutorials/parsing/interp_04.png)
 
 At this point, evaluation returns to the `+` node, which now has the value of its left child (`*`).
 Evaluation then proceeds to the right child, which returns the constant `2`, illustrated below:
 
-![interp_05](interp_05.png)
+![interp_05](/tutorials/parsing/interp_05.png)
 
 The `+` node finally has the values of both of its children, and subsequently adds them together.
 This result is then returned.
 This is illustrated below:
 
-![interp_06](interp_06.png)
+![interp_06](/tutorials/parsing/interp_06.png)
 
 Note that this entire process followed the general pattern of a recursive depth-first traversal.
 
