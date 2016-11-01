@@ -6,7 +6,11 @@ category_prefix: "Parsing: "
 
 This series of articles is here to support programming assignments based on *parsing*.
 
+<p style="font-size:80%;">
 Acknowledgments: this series or articles is joint work, a collaboration between Kyle Dewey and Phill Conrad.
+</p>
+
+# What is parsing?
 
 In Computer Science word *parsing* refers to any computation that:
 * as input, takes *sequences of characters* in some *formally specified language*
