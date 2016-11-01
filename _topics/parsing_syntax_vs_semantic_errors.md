@@ -7,7 +7,12 @@ indent: true
 
 In Java, there is a rule final variables cannot be changed after initial assignment.   For example:
 
-<table>
+<style>
+table.code-table { border-collapse: collapse; border: 1px solid grey; }
+table.code-table * td, table.code-table * th { border-collapse: collapse; border: 1px solid grey; }
+</style>
+
+<table class="code-table">
 <tr><th>Bad Code</th><th>Compile error<br>(not a syntax error though)</th></tr>
 <tr>
 <td markdown="1">
