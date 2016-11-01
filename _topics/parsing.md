@@ -45,7 +45,7 @@ specific examples:
     * Evaluating the AST is not necessarily part of *parsing* per se; it is typically considered separate concern
     * However, ASTs rarely exist outside the context of parsing, so explore them as part of the same tutorial.
 
-Here is a bit more on each of these topics
+Here is a bit more on each of these topics.
 
 # Checking Syntax
 
@@ -71,14 +71,28 @@ div.table-with-borders table * td { padding: 4pt; }
 | `123 + 345 * 678`     | ` 3 45 + 6`  |
 | `(1+2)*678`     | `(( 1+2) * 678 `  |
 | `0`             | `45 67`  |
-| `-7 + -8`       | ` *9 + 5` |
+| `-7 + -8`       | ` 9 % 5` |
 | `--3`           | `3--`     |
-
+| `1 + 2 == 3`    | `3 = = 6`   |
 </div>
 
 Note that we sometimes call these "legal" and "illegal" expressions, though in this case the "law" is simply the rules for the language, and nothing to do with civil or criminal laws.
 
+
+## Various kinds of errors
+
+We'll see later than there is a distinction between errors that occur at the level of individual characters and at the level of higher structures.     This distinction will become more clear as we progress, but for now, let's point out simply that these two errors are different from the others in the list above:
+
+## Tokenizer Errors
+
+` 9 % 5` is not well-formed because in this *particular* arithmetic language, we did not include the `%` operator.  We *could have*, but we *didn't.*  Therefore, the `%` character is an "illegal character".   
+
+As we'll see later, these kind of error comes up during *tokenizing*, in which we check whether each character is a legal character, and try to group adjacent related characters into larger groups called *tokens*.
+
+## Semantic Errors
+
 Also note that from the standpoint of syntax, the following expressions are well-formed, even though they will result in an error (division by zero) when evaluated.  These are *not* syntax errors, but errors of meaning, i.e. *semantic errors* or *evalutor errors*.  
+
 
 <div class="table-with-borders" markdown="1">
 
@@ -89,6 +103,16 @@ Also note that from the standpoint of syntax, the following expressions are well
 As you can infer from the escalating complexity of the examples, expressions involving division by zero can get arbitrarily complex, which is why we don't try to detect such problems as part of the "syntax checking".   
 
 For more on syntax vs. semantic errors, see: [Parsing: Syntax vs. Semantic Errors](/topics/parsing_syntax_vs_semantic_errors/)
+
+# Parsing: Grammars and ASTs
+
+A parser typically has two jobs.  The first, which we already covered above, is to determine whether an input string follows the rules of the language  
+
+The second job is to product an Abstract Syntax Tree (AST).  An AST is a tree structure that represents the meaning of some expression in a formal language.   
+
+Here are a few examples.
+
+TODO: Insert examples here.
 
 # Evaluating an AST
 
