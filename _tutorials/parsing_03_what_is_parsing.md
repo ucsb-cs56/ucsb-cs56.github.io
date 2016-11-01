@@ -28,7 +28,7 @@ The more specific sense of parsing is a particular "phase" of this process, the 
 
 Before we get into the three phases, the *how* of parsing, let's look at *what* we need to be able to do from a big picture standpoint.
 
-# *What* we need to be able to do when we parse.
+## *What* we need to be able to do when we parse.
 
 As an example of the concerns that arise in parsing, suppose our language is restricted to arithmetic expressions involving:
 
@@ -58,7 +58,7 @@ specific examples:
 
 Here is a bit more on each of these topics.
 
-# Checking Syntax
+## Checking Syntax
 
 As an example of checking syntax, we want to be able to distinguish between well-formed expressions and those with errors.
 
