@@ -21,7 +21,11 @@ For the "rest of the story", you'll need to wait for later courses such as:
 Acknowledgments: this series or articles is joint work, a collaboration between Kyle Dewey and Phill Conrad.
 </p>
 
+* [Parsing Tutorial, Part 01: Background](/topics/parsing_tutorial_part_01_background/)
+
 # Background
+
+
 
 The execution of a program is a complex problem requiring multiple distinct components working together.
 To illustrate this complexity, consider the snippet of Java code below:
