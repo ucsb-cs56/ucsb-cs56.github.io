@@ -1,6 +1,6 @@
 ---
 topic: "Parsing 01: Background"
-desc: "What is this all about?"
+desc: "What is this parsing stuff all about?"
 indent: true
 ---
 
