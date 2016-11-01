@@ -1,5 +1,5 @@
 ---
-topic: "Parsing 02: Formal Language Specifications"
+topic: "Parsing: (02) Formal Language Specifications"
 desc: "How do we write the rules of a language? (FSAs, CFGs, etc.)"
 category_prefix: "Parsing: "
 topic_index_top: true
