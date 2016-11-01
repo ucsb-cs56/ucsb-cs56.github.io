@@ -10,7 +10,7 @@ In Java, there is a rule final variables cannot be changed after initial assignm
 <table>
 <tr><th>Bad Code</th><th>Compile error<br>(not a syntax error though)</th></tr>
 <tr>
-<td markdown=1>
+<td markdown="1">
 ```java
 public class Bad {
     private final int foo=3;
@@ -20,7 +20,7 @@ public class Bad {
 }
 ```
 </td>
-<td>
+<td markdown="1">
 ```
 $ javac Bad.java
 Bad.java:4: error: cannot assign a value to final variable foo
