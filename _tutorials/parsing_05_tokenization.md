@@ -8,6 +8,10 @@ indent: true
 
 <div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_05_tokenization</div>
 
+<p style="font-size:80%;">
+Acknowledgments: this series or articles is joint work, a collaboration between Kyle Dewey and Phill Conrad.
+</p>
+
 ## Tokenization ##
 
 Tokenization involves converting larger sequences of characters into meaningful units (integers, operators, variables, keywords, etc.).
