@@ -38,7 +38,7 @@ The rules for tokens are typically expressed as a finite state automaton.
 
 Here is a finite automaton that corresponds to the tokens in our language:
 
-![fsa.png](fsa.png)
+![fsa.png](/tutorials/parsing/fsa.png)
 
 
 # How do the finite automata we are looking at related to Mealy and Moore Machines?
