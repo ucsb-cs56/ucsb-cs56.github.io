@@ -8,6 +8,10 @@ indent: true
 
 <div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_02_formal_spec</div>
 
+<p style="font-size:80%;">
+Acknowledgments: this series or articles is joint work, a collaboration between Kyle Dewey and Phill Conrad.
+</p>
+
 # Formal Language Specifications
 
 Before you can write code to tokenize, parse, and interpret, we need a set of rules for the language.  Here's how those rules are typically provided to you:
