@@ -7,6 +7,9 @@ indent: true
 ---
 
 <div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_04_grammars_and_asts/div>
+<p style="font-size:80%;">
+Acknowledgments: this series or articles is joint work, a collaboration between Kyle Dewey and Phill Conrad.
+</p>
 
 # Parsing: Grammars and ASTs
 
