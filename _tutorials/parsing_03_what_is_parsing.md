@@ -1,6 +1,6 @@
 ---
 topic: "Parsing: (03) What is parsing?"
-desc: "The general and specific sense of the word"
+desc: "The general and specific sense of the word, and explanation of three phases: tokenization, parsing, evaluation"
 category_prefix: "Parsing: "
 topic_index_top: true
 indent: true
