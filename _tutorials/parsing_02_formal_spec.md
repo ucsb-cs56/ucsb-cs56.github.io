@@ -40,6 +40,33 @@ Here is a finite automaton that corresponds to the tokens in our language:
 
 ![fsa.png](/tutorials/parsing/fsa.png)
 
+In this diagram, circles represent states. In the diagram, the states are labelled with numbers.   We'll refer to the state labelled with `0` as *state 0*, or simply `s0`.    Similarly, we can refer to `s1`, `s2`, etc.
+
+In a finite state machine, the number of states is always finite.  That's where the machine gets its name. So, we typically label the `n` finite states with the sequential integers 0 through `n-1`, though that's only a convention.  We can actually label them any way we want.
+
+There are two special kinds of states:
+
+* In this diagram, the circled labelled `0` is, by convention, the *start state*.  The machine always starts in this state.
+* The double circles are *accepting states*.    When the machine is in one of these states, if the end of the input is reached, we say that the machine has *accepted* a string in the language.  Our language is this case is the language consisting of *acceptable tokens*, which includes integers, the operators `+`,`-`,`*`,and `/`, and the two paren characters `(` and `)`.
+
+<strong>You can have non-accepting states other than the start state</strong>.  Although in this diagram, the only non-accepting state is the start state, that would not have to be the case.  We'll see examples of a non-accepting state that is *not* the start state later when we discuss how to handle tokens such as `==` and `!=`.
+
+<strong>Transitions: </strong> Each arrow from one circle to another represents a *transition* from one state to another.  Typically, a transition requires 
+us to read a character from the input (unless we allow lambda/epsilon transitions; see below).  The transitions are labelled with the character that we must read from the input in order to move from one state to another.
+
+<strong>Multiple labels on a transition are a shorthand for multiple transitions</strong>.  In some cases, e.g. the transition from `s0` to `s1` in this machine is labelled `0,1,2,3,4,5,6,7,8,9`.   That is a kind of shorthand; in fact, there are 10 different transitions, each representing one of those characters.   Putting all ten of them would make the diagram much more cluttered, so we typically don't write it that way, but *formally*, there are actually 10 different transition arcs from `s0` to `s1` in this fsa.
+
+<strong>Lambda transitions</strong> (Also called <strong>epsilon transitions</strong>).   Typically you can't move from one state to another without consuming a character from the input.  Sometimes it is convenient to allow a transition without reading a character.  These transitions are labelled with a special character representing the empty string.  Depending on the author/professsor, this character may be:
+
+* uppercase Greek lambda (&Lambda;), 
+* lowercase Greek lambda (&lambda;)
+* lowercase Greek epsilon (&epsilon;)
+
+The choice of letter is aribtrary.  
+
+<strong>How we use lambda transitions</strong>: In our case, we might consider that there is a transition on &Lambda; (upper case lambda) from every state back to the start state that is used if/when there is no other choice we can make.   If this transition goes from an accepting state, then we accept the token we've read so far.  If it goes from a non-accepting state, then we can emit an error token for any characters we've read, or just throw an exception indicating we read a bad token.
+
+<strong>Other kinds of unwritten transitions</strong> In addition to the lambda transitions, we might consider that in the start state, we have an unwritten transition for every character that does not otherwise have a transition.  Those transitions would represent the case where we see an illegal character in the input and want to emit an error token to signal this.
 
 # How do the finite automata we are looking at related to Mealy and Moore Machines?
 
