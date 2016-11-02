@@ -36,6 +36,11 @@ The rules for tokens are typically expressed as a finite state automaton.
 * *Other names*: finite state machine, finite automaton (the "state" is implied)
 * Finite state *automata* is the *plural form* (the "a" at the end is the plural form in Greek, automaton being a word borrowed into English from Greek.)
 
+Here is a finite automaton that corresponds to the tokens in our language:
+
+![fsa.png](fsa.png)
+
+
 # How do the finite automata we are looking at related to Mealy and Moore Machines?
 
 If you've never heard of Mealy and Moore machines, don't worry about this section.  If you have, here's how to relate what we are doing to what you already have learned, or are learning.
