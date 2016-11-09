@@ -27,8 +27,10 @@ additive-expression ::= multiplicative-expression ( ( '+' | '-' ) multiplicative
 multiplicative-expression ::= primary ( ( '*' | '/' ) primary ) *
 primary ::= '(' expression ')' | INTEGER | '-' primary
 ```
-We'll explain this further in a moment.  First, here, for comparison, is a modified grammar that also allows the six relational operators,  `==` , `!=` , `<` , `<=` , `>` , `>=`, and the exponentiation operator: `**`:
 
+If this is your first time seeing a context-free grammar for a language, this may look bewildering and confusing.  If so, be patient&mdash;there is more explanation below.
+
+Before we go into that though, here is one more example.  This example shows how the grammar above is modified to add  six relational operators,  `==` , `!=` , `<` , `<=` , `>` , `>=`, and the exponentiation operator: `**` into the language:
 
 ```
 expression ::= comparison-expression
@@ -39,6 +41,101 @@ multiplicative-expression ::= exponent-expression ( ( '*' | '/' ) exponent-expre
 exponent-expression ::= primary '**' exponent-expression | primary
 primary ::= '(' expression ')' | INTEGER | '-' primary
 ```
+
+
+# Top Down Parsing
+
+As you try to understand a grammar, there are two ways to think about it: top-down and bottom-up.
+
+Our parser is a top-down parser, so we'll start by explaning how top-down parsing works.   Some students find it easier to understand top-down parsing if they *first* look at bottom up parsing.  So if this explanation leaves your head spinning the first time you read it, just move on to the section below on "bottom-up" parsing, try to understand *that*, then re-read this section.
+
+Suppose we want to parse `2+3*5`.
+
+To parse this top-down, we start with the first non-terminal in our grammar&mdash;that is, the left hand side of the first line of the grammar.   That left hand side is the word `expression`.  That is the *start symbol* of our grammar.
+
+The start symbol is special because:
+
+* It is where parsing starts in a top-down parser
+* It gives a *name* to the thing we are parsing: in this case, we are parsing an `expression`
+
+In the code, you'll also see that the flow of control follows from the start symbol.  In the starter code for F16 lab06,
+the parsing starts on this line of code, [line 176 of Parser.java](https://github.com/UCSB-CS56-F16/lab06_starter_code/blob/master/src/edu/ucsb/cs56/pconrad/parsing/parser/Parser.java#L176):
+
+```java
+	final ParseResult<AST> rawResult = parseExpression(0);
+```
+
+The production for expression looks like this:
+
+```
+expression ::= additive-expression
+```
+
+And the code reflects this.  If you look inside the code for `parseExpression` in [Parser.java at line 144](https://github.com/UCSB-CS56-F16/lab06_starter_code/blob/master/src/edu/ucsb/cs56/pconrad/parsing/parser/Parser.java#L144), you see that it calls a method called `parseAdditiveExpression`:
+
+```java
+    private ParseResult<AST> parseExpression(final int pos) throws ParserException {
+        return parseAdditiveExpression(pos);
+    }
+```
+
+This process continues: you'll see that every one of the `parseXXXXX` methods has a structure that corresponds to the production in the grammar.   The things on the right hand side of a production are parsed by calls to `parseXXXXX` routines.
+
+Turning back to the basic idea of parsing the expression `2+3*5`.
+
+We start out with `expression` and then we have to keep breaking it down by applying productions, until we have determined
+the correct way to represent `2+3*5` as an AST.
+
+The tree we want is this one:
+
+
+
+* We start by rewriting `expression` as `additive-expression`.
+* Then we ask how we should rewrite `additive-expression.  
+  
+It turns out that the production in this case, the ones listed below, says that an `additive-expression` is either a `multiplicative-expression`, OR, its a   `multiplicative-expression` followed by zero or more repetitions of `+` or `-` and
+another multiplicative-expression
+
+```
+additive-expression ::= multiplicative-expression ( ( '+' | '-' ) multiplicative-expression ) *
+```
+
+Some of our choices are:
+
+* `multiplicative-expression` (just one), or as
+* `multiplicative-expression '+' multiplicative-expression`
+* `multiplicative-expression '-' multiplicative-expression`
+* or as some longer sequence of `multipliciative-expresssion ( '+' | '-' ) multipliciative-expresssion ( '+' | '-' ) ... multipliciative-expresssion`.
+
+We choose by looking at the sequence of tokens we have, and see which one is the best fit.  In this case, the best fit is:
+
+```
+additive-expression ::= multiplicative-expression '+' multiplicative-expression
+```
+
+# Bottom up
+
+Another way to parse, and/or to understand how a grammar is applied is to work bottom up.   
+
+Please note that the code in our
+parser *does not work this way*.  I'm *only* going into this because some students find it easier to understnand how a grammar works if they see it "bottom-up" as well as top-down.
+
+Note though, that the code in our parsing assignment is most definitely a top-down parser.   Writing code for bottom-up parsers is  considerably more challenging&mdash;you might do it in CMPSC160 or CMPSC162.
+
+
+To parse `2+3*5` bottom up:
+
+* We can start by saying: clearly 2 is an `INTEGER`, 3 is an `INTEGER` and `5` is an INTEGER.
+* Then we ask, how can we combine these into something at a higher level? Well, each of the INTEGER tokens can be converted
+into a `primary`.
+* Then we can combine `primary '*' primary` into a `multiplicative-expression`, by applying the production
+    ```
+    multiplicative-expression ::= primary ( ( '*' | '/' ) primary ) *
+    ```
+    
+And the process continues in this manner, trying to put together something that eventually combines all of the input into something that reduces down to `expression`.
+
+
 
 # Parsing: Grammars and ASTs
 
@@ -186,3 +283,10 @@ This is illustrated below:
 
 Note that this entire process followed the general pattern of a recursive depth-first traversal.
 
+# Real world grammars
+
+The two grammars above are relatively short and simple.    A grammar for a full language such as Java or Python ends up being quite long and complex.  However, you'll see that the grammar has essentially a very similar structure.  If you want to see some of those examples, here are links to them:
+
+* The full grammar for Java version 8: <http://docs.oracle.com/javase/specs/jls/se8/html/jls-19.html>
+* The full grammar for Python version 3.5.1: <https://docs.python.org/3/reference/grammar.html>
+* A full grammar for C++ (not sure what version): <http://www.externsoft.ch/download/cpp-iso.html>
