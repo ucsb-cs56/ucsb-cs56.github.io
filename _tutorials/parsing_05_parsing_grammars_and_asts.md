@@ -14,13 +14,6 @@ Acknowledgments: this series or articles is joint work, a collaboration between 
 </p>
 
 
----
-topic: "Parsing: (06) Parsing Phase"
-desc: "The specific phase where we apply grammar productions and construct an AST"
-category_prefix: "Parsing: "
-topic_index_top: true
-indent: true
----
 
 <div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_05_parsing_grammars_and_asts</div>
 <p style="font-size:80%;">
@@ -53,7 +46,8 @@ A more complex example is shown below, which uses the tokens from our running ex
 The actual tokens have been repeated below for convenience.
 
 <style>
-table { border-collapse: collapse; border:1px solid black;}
+table { border-collapse: collapse; border: none}
+table * th { border-collapse: collapse; border: none}
 table * td { border-collapse: collapse; border:1px solid black;}
 </style>
 
