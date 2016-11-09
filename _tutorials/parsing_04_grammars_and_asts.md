@@ -6,10 +6,39 @@ topic_index_top: true
 indent: true
 ---
 
-<div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_04_grammars_and_asts/div>
+<div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_04_grammars_and_asts
+</div>
+
 <p style="font-size:80%;">
 Acknowledgments: this series or articles is joint work, a collaboration between Kyle Dewey and Phill Conrad.
 </p>
+
+# Parsing: Grammars
+
+Grammars are expressions of the rules of a language.   A particular kind of grammar is called a "context-free grammar (CFG), and that's the kind we are going to need to do parsing.  
+
+We won't give a formal definition of what a CFG is since that's a topic for CMPSC138.  Instead, we'll provide a "good enough" definition for what we'll be doing with CFGs in this course.   We'll mostly do that by just giving examples, and explaining how to use those examples, rather than dwelling too much in the theory.  You'll get plenty of the theory in CMPSC138, CMPSC160 and CMPSC162.
+
+One way of expressing a CFG is with a notation called Extended Backus-Naur Form (EBNF).  Here's the EBNF for a grammar for simple arithmetic expressions with `+`,`-`,`*`,`/`, integers, unary minus, and parentheses:
+
+```
+expression ::= additive-expression
+additive-expression ::= multiplicative-expression ( ( '+' | '-' ) multiplicative-expression ) *
+multiplicative-expression ::= primary ( ( '*' | '/' ) primary ) *
+primary ::= '(' expression ')' | INTEGER | '-' primary
+```
+We'll explain this further in a moment.  First, here, for comparison, is a modified grammar that also allows the six relational operators,  `==` , `!=` , `<` , `<=` , `>` , `>=`, and the exponentiation operator: `**`:
+
+
+```
+expression ::= comparison-expression
+comparison-op ::= '==' | '!=' | '<' | '<=' | '>' | '>='
+comparison-expression ::= additive-expression ( comparison-op additive-expression ) *
+additive-expression ::= multiplicative-expression ( ( '+' | '-' ) multiplicative-expression ) *
+multiplicative-expression ::= exponent-expression ( ( '*' | '/' ) exponent-expression ) *
+exponent-expression ::= primary '**' exponent-expression | primary
+primary ::= '(' expression ')' | INTEGER | '-' primary
+```
 
 # Parsing: Grammars and ASTs
 
