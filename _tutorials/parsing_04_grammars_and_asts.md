@@ -23,9 +23,18 @@ We then turn it into a sequence of tokens:
 
 * `IntToken("2"), PlusToken(), IntToken("3"), TimesToken(), IntToken("5")`
 
-This is still not parsing.  Parsing is when we turn that sequence of tokens into an AST, like this one:
+This is still not parsing.  
+
+A parser typically has two jobs.  
+
+* The first is to determine whether an input string follows the rules of the language, which are expressed in a grammar (more on grammars in a moment.)
+* The second job is to product an Abstract Syntax Tree (AST).  An AST is a tree structure that represents the meaning of some expression in a formal language.   
+
+Here's an AST for  `2+3*5`.  Note how the tree reflects the operator precedence.
 
 <img src="https://docs.google.com/drawings/d/1QcV98bTNlpXJPkemqIRxcid_fut4lT7VPlAsq_vJi44/pub?w=300&amp;h=223">
+
+Now lets dive into how a parser works with a grammar to check syntax and produce an AST.
 
 # Parsing: Grammars
 
@@ -127,7 +136,7 @@ We choose by looking at the sequence of tokens we have, and see which one is the
 additive-expression ::= multiplicative-expression '+' multiplicative-expression
 ```
 
-# Bottom up
+# Bottom up parsing
 
 Another way to parse, and/or to understand how a grammar is applied is to work bottom up.   
 
@@ -149,21 +158,6 @@ into a `primary`.
     
 And the process continues in this manner, trying to put together something that eventually combines all of the input into something that reduces down to `expression`.
 
-
-
-# Parsing: Grammars and ASTs
-
-A parser typically has two jobs.  The first, which we already covered above, is to determine whether an input string follows the rules of the language  
-
-The second job is to product an Abstract Syntax Tree (AST).  An AST is a tree structure that represents the meaning of some expression in a formal language.   
-
-Here are a few examples.
-
-TODO: Insert examples here.
-
-# Evaluating an AST
-
-TODO: Insert examples of evaluating an AST here.
 
 ## Tokenization ##
 
