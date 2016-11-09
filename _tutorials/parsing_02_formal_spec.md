@@ -135,9 +135,9 @@ In the code, we would represent that with additional calls to `addState` and to 
 
 ```
  fsa.addState(8);  // a non-accepting state, so we only pass in the state number
-	fsa.addState(9, s->tf.makeEqualsToken());
+ fsa.addState(9, s->tf.makeEqualsToken());
  fsa.addState(10, s->tf.makeLessThanToken());
-	fsa.addState(11, s->tf.makeLessThanOrEqualsToken());
+ fsa.addState(11, s->tf.makeLessThanOrEqualsToken());
  fsa.addTransition('=',0,8);
  fsa.addTransition('=',8,9);
  fsa.addTransition('<',0,10);
