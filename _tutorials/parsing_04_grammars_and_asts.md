@@ -13,6 +13,20 @@ indent: true
 Acknowledgments: this series or articles is joint work, a collaboration between Kyle Dewey and Phill Conrad.
 </p>
 
+# Parsing: turn sequence of tokens into an AST
+
+In parsing, we turn a sequence of tokens into an Abstract Syntax Tree (AST).
+
+For example, `2+3*5` starts as sequence of five characters.  Or, if there is whitespace, perhaps 9 characters: `2 + 3 * 5`
+
+We then turn it into a sequence of tokens:
+
+* `IntToken("2"), PlusToken(), IntToken("3"), TimesToken(), IntToken("5")`
+
+This is still not parsing.  Parsing is when we turn that sequence of tokens into an AST, like this one:
+
+<img src="https://docs.google.com/drawings/d/1QcV98bTNlpXJPkemqIRxcid_fut4lT7VPlAsq_vJi44/pub?w=300&amp;h=223">
+
 # Parsing: Grammars
 
 Grammars are expressions of the rules of a language.   A particular kind of grammar is called a "context-free grammar (CFG), and that's the kind we are going to need to do parsing.  
