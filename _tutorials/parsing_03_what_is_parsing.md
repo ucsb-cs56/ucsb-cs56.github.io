@@ -19,6 +19,7 @@ Acknowledgments: this series or articles is joint work, a collaboration between 
 The word *parsing* can be confusing, because it is used in two different ways&mdash;a *general* sense, and a *specfic* sense.    
 
 In Computer Science, in a general, sense, the word *parsing* refers to any computation that:
+
 * as input, takes *sequences of characters* in some *formally specified language*
 * as output, produces an *organized data structure* that can be the basis of some computation.
 
