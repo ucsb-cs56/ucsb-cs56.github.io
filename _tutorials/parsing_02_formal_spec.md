@@ -68,6 +68,85 @@ The choice of letter is aribtrary.
 
 <strong>Other kinds of unwritten transitions</strong> In addition to the lambda transitions, we might consider that in the start state, we have an unwritten transition for every character that does not otherwise have a transition.  Those transitions would represent the case where we see an illegal character in the input and want to emit an error token to signal this.
 
+
+# Representing the finite automaton in code
+
+The finite state machine shown in the previous diagram corresponds to the code that can be found in the [F16 lab06 starter code, in the file Tokenizer.java, lines 31-55](https://github.com/UCSB-CS56-F16/lab06_starter_code/blob/master/src/edu/ucsb/cs56/pconrad/parsing/tokenizer/Tokenizer.java#L31)
+
+We can see, for example that the circles correspond to calls to the `addState` method:
+
+```java
+fsa.addState(0);
+	fsa.addState(1, s -> new IntToken(s) );
+	fsa.addState(2, s -> new PlusToken() );
+	fsa.addState(3, s -> new MinusToken() );
+	fsa.addState(4, s -> new TimesToken() );
+	fsa.addState(5, s -> new DivideToken() );
+	fsa.addState(6, s -> new LParenToken() );
+	fsa.addState(7, s -> new RParenToken());
+```
+
+The code above is the code as it appears in the F16 lab06 starter code.   Note that subsequent to publishing the starter code, your instructor realized that there was an opportunity to use the Factory Object (DefaultTokenFactory) to remove the dependency on the concrete product classes for the tokens.   So, a better way of writing this code, is arguably:
+
+```java
+        fsa.addState(0);
+        fsa.addState(1, s -> tf.makeIntToken(s) );
+        fsa.addState(2, s -> tf.makePlusToken() );
+        fsa.addState(3, s -> tf.makeMinusToken() );
+        // etc...
+```
+
+The transitions (the lines with arrows going from state to another, labelled with the character for the transition) correspond to the calls to the `addTransition` method.  Note that the lines labelled with multiple characters, e.g. `0,1,2,...9` are actually a shorthand for multiple transitions.  We handle that in the code with a for loop that
+makes multiple calls to `addTransition`:
+
+```java
+	fsa.addTransition(' ',0,0);
+	fsa.addTransition('\t',0,0);
+	fsa.addTransition('\n',0,0);
+	fsa.addTransition('\r',0,0);
+		
+	for (char c='0'; c<='9'; c++) {
+	    fsa.addTransition(c,0,1);
+	    fsa.addTransition(c,1,1);
+	}
+	fsa.addTransition('+',0,2);
+	fsa.addTransition('-',0,3);
+	fsa.addTransition('*',0,4);
+	fsa.addTransition('/',0,5);
+	fsa.addTransition('(',0,6);
+	fsa.addTransition(')',0,7);
+```
+
+# Extending the finite automaton to recognize new kinds of tokens.
+
+To be able to recognize new tokens, we may need to add new states and transitions to the fsa.  Here is a version of the fsa where we have extended it to also recognize three additional tokens:
+
+* the `==` token
+* the `<` token
+* the `<=` token
+
+Note that after recognizing the first `=` sign, we are in state 8, which is NOT an accepting state (this is shown by the single circle rather than the double circle).   That means that if we see any character next *other than* the expected one, which is a second `=` sign, we will emit an instance of `ErrorToken` and go back to the start state.
+
+<img src="https://docs.google.com/drawings/d/1JWiX15b1E_38O2lcvhSCtXSdetZZb42LOMjMyxhvGI8/pub?w=1541&amp;h=893">
+
+Each state transition can only handle a single character.  So for multiple character operators such as `==`, `<=`, `**`, etc. you will need multiple transitions, and possibly multiple states.     In the diagram above, you see that we have added four additional states (8,9,10,11) and four additional transitions to support the `==` and `<=` operators.   
+
+In the code, we would represent that with additional calls to `addState` and to `addTransition`.  Here are examples of those calls. 
+
+```
+ fsa.addState(8);  // a non-accepting state, so we only pass in the state number
+	fsa.addState(9, s->tf.makeEqualsToken());
+ fsa.addState(10, s->tf.makeLessThanToken());
+	fsa.addState(11, s->tf.makeLessThanOrEqualsToken());
+ fsa.addTransition('=',0,8);
+ fsa.addTransition('=',8,9);
+ fsa.addTransition('<',0,10);
+ fsa.addTransition('=',10,11);
+```
+
+Determining the remainder of the states and transitions is part of your work as a student.  You are encouraged to actually draw a diagram to plan out your states and transitions.  You do not need to turn in your diagram, but you are encouraged to have one.
+
+
 # How do the finite automata we are looking at related to Mealy and Moore Machines?
 
 If you've never heard of Mealy and Moore machines, don't worry about this section.  If you have, here's how to relate what we are doing to what you already have learned, or are learning.
