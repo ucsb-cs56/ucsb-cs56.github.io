@@ -246,7 +246,7 @@ The actual tokens have been repeated below for convenience.
 As shown in the above example, parsing takes operator precedence into account.
 Specifically, the parser knew to parse `System.err.println(...)` effectively as `(System.err).println(...)`, as opposed ot the invalid `System.(err.println(...))`.
 
-## <a name="interpreter_general_description"></a>Interpretation ##
+# Evaluation (also called "interpretation)
 
 Interpretation involves taking ASTs and recursively evaluating them to values.
 In a language like Java, this can get fairly complex, given the complexity of the overall language.
