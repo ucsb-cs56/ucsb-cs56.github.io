@@ -1,12 +1,12 @@
 ---
-topic: "Parsing: (05) Tokenization"
+topic: "Parsing: (04) Tokenization"
 desc: "Context Free Grammars, EBNF, and Abstract Syntax Trees"
 category_prefix: "Parsing: "
 topic_index_top: true
 indent: true
 ---
 
-<div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_05_tokenization</div>
+<div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_04_tokenization</div>
 
 <p style="font-size:80%;">
 Acknowledgments: this series or articles is joint work, a collaboration between Kyle Dewey and Phill Conrad.
