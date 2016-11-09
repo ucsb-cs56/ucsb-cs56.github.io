@@ -28,7 +28,7 @@ that other parts of the code rely on for correctness.  That is,
 whenever possible, every class Foo.java should have a FooTest.java
 that goes along with it.
 
-# Adding a JUnit task to make a `.jar` file
+# Adding an Ant task to make a `.jar` file
 
 We add the following section to our `build.xml` file to create
 a `.jar` file of our project.    This jar file is nothing more than 
