@@ -104,7 +104,7 @@ A breakdown of this term follows:
 To better understand what an AST is, consider the following example.
 This shows an AST which resulted from parsing the tokens `1`, `+`, `2`:
 
-![1+2](1+2.png)
+![1+2](/tutorials/parsing/1+2.png)
 
 As shown, `+` forms the root of the tree, and it has the child nodes `1` and `2`.
 Each of these is a leaf, which makes sense considering that integer constants simply evaluate to themselves without any other bits of code getting involved.
