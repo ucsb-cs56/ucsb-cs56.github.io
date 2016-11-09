@@ -102,7 +102,23 @@ A breakdown of this term follows:
 - **Tree**: The underlying representation for the code is that of a tree.
 
 To better understand what an AST is, consider the following example.
-This shows an AST which resulted from parsing the tokens `1`, `+`, `2`:
+
+This shows an AST which resulted from parsing the string `1+2`.
+
+* That string starts life as either `1+2`, or possibly `1 + 2` (the whitespace here doesn't matter).
+* The finite state automaton is used to turn this into a sequence of tokens, for example, instances of the classes:
+    * `IntToken("1")`, `PlusToken()`, `IntToken("2")`
+
+Then, the grammar is applied.  
+
+* The grammar starts with the non-terminal `expression`
+* We apply the production `expression ::= additive-expression`
+* The non-terminal `additive-expression` rewrites as: `multiplicative-expression ( ( '+' | '-' ) multiplicative-expression ) *`
+* We then see that `multiplicative-expression` rewrites as `primary ( ( '*' | '/' ) primary ) *`.  
+* In this case, the look-ahead will see that there is no `*` or `/`, so we use the first version of that production, namely simply `multiplicative-expression ::= primary`
+* Then, finally, one of the three options for `primary` is that `primary ::= INTEGER`
+
+The recognition of the `INTEGER` terminal symbol in the grammar corresponds to the `IntToken("1")` object in our code.  And from it, we construct an AST node for the 1.    We end up doing the same thing for the `2`, and then constructing an AST node for the `+` that has two children, the left and right operands of the `+` operation:
 
 ![1+2](/tutorials/parsing/1+2.png)
 
