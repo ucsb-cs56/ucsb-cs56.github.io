@@ -1,5 +1,5 @@
 ---
-topic: "Parsing: (07) Evaluation Phase"
+topic: "Parsing: (06) Evaluation Phase"
 desc: "The specific phase where we apply grammar productions and construct an AST"
 category_prefix: "Parsing: "
 topic_index_top: true
