@@ -6,14 +6,6 @@ topic_index_top: true
 indent: true
 ---
 
-<div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_05_grammars_and_asts
-</div>
-
-<p style="font-size:80%;">
-Acknowledgments: this series or articles is joint work, a collaboration between Kyle Dewey and Phill Conrad.
-</p>
-
-
 
 <div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_05_parsing_grammars_and_asts</div>
 <p style="font-size:80%;">
