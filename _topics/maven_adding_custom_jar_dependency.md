@@ -25,3 +25,4 @@ it will be explained on this page.
 # Links to candidate solutions:
 
 * <http://stackoverflow.com/questions/5692256/maven-best-way-of-linking-custom-external-jar-to-my-project>
+* <https://www.mkyong.com/maven/how-to-include-library-manully-into-maven-local-repository/>
