@@ -28,6 +28,7 @@ The problem with these candidate solutions is that many of them refer to Maven c
 
 My hope is that by reading several, and perhaps also reading other sources on Maven, we will eventually decode one of these enough to construct a solution.   I would like that solution to incorporate one of the Corgis jar files as an example.
 
+* <http://blog.valdaris.com/post/custom-jar/>
 * <http://stackoverflow.com/questions/5692256/maven-best-way-of-linking-custom-external-jar-to-my-project>
 * <https://www.mkyong.com/maven/how-to-include-library-manully-into-maven-local-repository/>
 * <https://softwarecave.org/2014/06/14/adding-external-jars-into-maven-project/>
