@@ -1,6 +1,7 @@
 ---
 topic: Maven
 desc: A build tool for Java plus a package manager
+category_prefix: "Maven: "
 ---
 
 The short version:
