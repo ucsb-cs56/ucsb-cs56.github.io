@@ -24,5 +24,11 @@ it will be explained on this page.
 
 # Links to candidate solutions:
 
+The problem with these candidate solutions is that many of them refer to Maven concepts that are not self-evident, and not fully explained within the sets of instructions below.
+
+My hope is that by reading several, and perhaps also reading other sources on Maven, we will eventually decode one of these enough to construct a solution.   I would like that solution to incorporate one of the Corgis jar files as an example.
+
 * <http://stackoverflow.com/questions/5692256/maven-best-way-of-linking-custom-external-jar-to-my-project>
 * <https://www.mkyong.com/maven/how-to-include-library-manully-into-maven-local-repository/>
+* <https://softwarecave.org/2014/06/14/adding-external-jars-into-maven-project/>
+* <https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html>
