@@ -32,3 +32,4 @@ My hope is that by reading several, and perhaps also reading other sources on Ma
 * <https://www.mkyong.com/maven/how-to-include-library-manully-into-maven-local-repository/>
 * <https://softwarecave.org/2014/06/14/adding-external-jars-into-maven-project/>
 * <https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html>
+* <https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html>
