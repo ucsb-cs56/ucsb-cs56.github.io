@@ -10,6 +10,7 @@ It appears that the way to generate to generate Javadoc with Maven is to:
 
 * make sure the javadoc plugin is in your pom.xml
 * use the command: `mvn javadoc:javadoc`
+* find the javadoc under `target/site/apidocs`
 
 More detail below.
 
