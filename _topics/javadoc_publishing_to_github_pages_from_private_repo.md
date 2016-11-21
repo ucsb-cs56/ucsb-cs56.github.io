@@ -4,7 +4,9 @@ desc: "step-by-step instructions"
 indent: true
 ---
 
-Github offers convenient free web hosting via a service called "github pages" for sites that are
+Github offers convenient
+free web hosting via a service called "github pages" for sites that are
+
 * open source, and 
 * contain only static html, css and javascript.   
 
