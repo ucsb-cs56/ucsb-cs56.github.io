@@ -71,6 +71,7 @@ Now that you have:
 Wecan move the `javadoc/` folder into your javadoc repo. If you feel confident, try doing this without help.  Remember that Unix commands are directory specific so you will need to be a a directory above the directory you wish to move folders into OR refer to the directory directly through ~/.
 
 If you _really_ need help then hover over the text below.
+
 >! `mv <legacy project repo>/javadoc <legacy project javadoc repo>`
 
 Continue with your normal Github workflow by going into the javadoc repo typing the following commands:
