@@ -91,7 +91,7 @@ The forked javadoc repo should now be able to show you the javadoc. To make sure
 
 E.g. For minesweeper:
 
-`https://ucsb-cs56-projects-javadoc.github.io/cs56-scrapers-ucsb-curriculum/javadoc/index.html`
+`https://ucsb-cs56-projects-javadoc.github.io/cs56-games-minesweeper/javadoc/index.html`
 
 Please make sure that your own javadoc link works before submitting a pull request. Here is a complete checklist/tl;dr for you to follow in case you want to double check the steps:
 
