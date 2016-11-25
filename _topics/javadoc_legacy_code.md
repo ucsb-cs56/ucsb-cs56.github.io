@@ -64,11 +64,9 @@ Now you should have a folder that holds your main legacy project called `<legacy
 
 Now that you have:
 
-1) Generated your `javadoc/` folder in your legacy project folder AND placed the javadoc into your gitignore.
-
-2) Forked your javadoc repo from [UCSB-CS56-Projects-Javadoc](https://github.com/UCSB-CS56-Projects-Javadoc).
-
-3) Cloned your forked javadoc repo AND set the default branch to `gh-pages`.
+  1. Generated your `javadoc/` folder in your legacy project folder AND placed the javadoc into your gitignore.
+  2. Forked your javadoc repo from [UCSB-CS56-Projects-Javadoc](https://github.com/UCSB-CS56-Projects-Javadoc).
+  3. Cloned your forked javadoc repo AND set the default branch to `gh-pages`.
 
 Wecan move the `javadoc/` folder into your javadoc repo. If you feel confident, try doing this without help.  Remember that Unix commands are directory specific so you will need to be a a directory above the directory you wish to move folders into OR refer to the directory directly through ~/.
 
@@ -97,14 +95,10 @@ E.g. For minesweeper:
 
 Please make sure that your own javadoc link works before submitting a pull request. Here is a complete checklist/tl;dr for you to follow in case you want to double check the steps:
 
-1) Generated your `javadoc/` folder in your legacy project folder AND placed the javadoc into your `.gitignore`.
-
-2) Forked your javadoc repo from [UCSB-CS56-Projects-Javadoc](https://github.com/UCSB-CS56-Projects-Javadoc).
-
-3) Cloned your forked javadoc repo AND set the default branch to `gh-pages`.
-
-4) Move the `javadoc/` folder from your main legacy code cloned repo to the cloned javadoc repo and push it to the `gh-pages` branch.
-
-5) Test the link in your forked repo before finally submitting a pull request to the main javadoc repo.
+  1. Generated your `javadoc/` folder in your legacy project folder AND placed the javadoc into your `.gitignore`.
+  2. Forked your javadoc repo from [UCSB-CS56-Projects-Javadoc](https://github.com/UCSB-CS56-Projects-Javadoc).
+  3. Cloned your forked javadoc repo AND set the default branch to `gh-pages`.
+  4. Move the `javadoc/` folder from your main legacy code cloned repo to the cloned javadoc repo and push it to the `gh-pages` branch.
+  5. Test the link in your forked repo before finally submitting a pull request to the main javadoc repo.
 
 You're done! Go get some recognition from your friends and tell your family.
