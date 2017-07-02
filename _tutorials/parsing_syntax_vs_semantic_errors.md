@@ -4,9 +4,8 @@ desc: "The formal definition of the difference"
 indent: true
 ---
 
-<div style="display:none;">https://ucsb-cs56-pconrad.github.io/topics/parsing_syntax_vs_semantic_errors/</div>
 
-* [Main Parsing Article](https://ucsb-cs56-pconrad.github.io/topics/parsing/)
+* [Main Parsing Article](tutorials/parsing_03_what_is_parsing/)
 
 In Java, there is a rule final variables cannot be changed after initial assignment.   For example:
 
