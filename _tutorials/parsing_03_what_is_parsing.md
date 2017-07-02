@@ -6,8 +6,6 @@ topic_index_top: true
 indent: true
 ---
 
-<div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_03_what_is_parsing</div>
-
 <p style="font-size:80%;">
 Acknowledgments: this series or articles is joint work, a collaboration between Kyle Dewey and Phill Conrad.
 </p>
