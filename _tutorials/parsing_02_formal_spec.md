@@ -155,10 +155,13 @@ If you've never heard of Mealy and Moore machines, don't worry about this sectio
 
 * *Mealy Machines* are finite state automata that optionally "emit" output with each transition.   The finite automata we are considering can be considered Mealy Machines, in that they "emit" tokens on the transition from an accepting state back to the start state.
 
-# Formal Rules for Parsing
+# Formal Rules for Parsing and ASTs
 
-TODO: Discussion of CFGs and the way in which those translate into code.
+For parsing, formal rules are specified in the form of Context Free Grammars (or CFGs).   
 
-# Formal Rules for ASTs
+There are various forms of CFGs, and getting into that is beyond the scope of this course.   For our purposes, it is enough to say that certain forms of CFGs can be converted into a type of parser known as a Recursive Descent Parser.   This conversion is fairly straightforward and intuitive.
 
-TODO: Discussion of ASTs and the way in which those translate into code.
+The Abstract Syntax Trees (ASTs) for this assignment are in the form of trees, where each parent node represents an operation, and the children represent the operands.   Binary operators have two children, and unary operators have a single child.   All of the leaves in an AST for this assignment should be literal ints.   By doing a post-orderal traversal of the tree, you can evaluate each of the results (bottom up), and arrive at the result of the entire expression.
+
+[Part 3](parsing_03_what_is_parsing/) and [Part 5](/tutorials/parsing_05_parsing_grammars_and_asts/) of this tutorial discuss CFGs and ASTs in more detail. 
+
