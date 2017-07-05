@@ -77,10 +77,16 @@ div.table-with-borders table * td { border-collapse: collapse; border: 1px solid
 div.table-with-borders table * td { padding: 4pt; }
 </style>
 
+
+<div class="table-with-borders" markdown="1">
+
+| `7/0` | `7/(3-3)` | `123/( 4*5 - 20)` |
+
+</div>
+
 <div class="table-with-borders" markdown="1">
 
 | Well-formed       | Errors |
-|-------------------|--------|
 | `2 + 2`           | `+ 2 2`  |
 | `123 + 345 * 678` | ` 3 45 + 6`  |
 | `(1+2)*678`       | `(( 1+2) * 678 `  |
@@ -91,11 +97,6 @@ div.table-with-borders table * td { padding: 4pt; }
 
 </div>
 
-<div class="table-with-borders" markdown="1">
-
-| `7/0` | `7/(3-3)` | `123/( 4*5 - 20)` |
-
-</div>
 
 
 Note that we sometimes call these "legal" and "illegal" expressions, though in this case the "law" is simply the rules for the language, and nothing to do with civil or criminal laws.
