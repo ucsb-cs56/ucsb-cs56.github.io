@@ -177,3 +177,25 @@ There are various forms of CFGs, and getting into that is beyond the scope of th
 
 The Abstract Syntax Trees (ASTs) for this assignment are in the form of trees, where each parent node represents an operation, and the children represent the operands.   Binary operators have two children, and unary operators have a single child.   All of the leaves in an AST for this assignment should be literal ints.   By doing a post-orderal traversal of the tree, you can evaluate each of the results (bottom up), and arrive at the result of the entire expression.
 
+This shows an AST which resulted from parsing the tokens `1`, `+`, `2`:
+
+![1+2](/tutorials/parsing/1+2.png)
+
+As shown, `+` forms the root of the tree, and it has the child nodes `1` and `2`.
+Each of these is a leaf, which makes sense considering that integer constants simply evaluate to themselves without any other bits of code getting involved.
+
+Here is one more example:
+
+Here's an AST for  `2+3*5`.  Note how the tree reflects the operator precedence.
+
+<img src="https://docs.google.com/drawings/d/1QcV98bTNlpXJPkemqIRxcid_fut4lT7VPlAsq_vJi44/pub?w=300&amp;h=223">
+
+# How do the FSA, the CFG and the AST all fit together?
+
+The whole rest of this tutorial will explain this all in much more detail.  For now, it is sufficient to get this basic idea: 
+* We start with a string, e.g. in Java, an instance of `String` such as `String input="2+3*5";`
+* We *tokenize* based on a finite state automaton to convert that `String` into a sequence of tokens, e.g. in Java, an instance of `ArrayList<Token>`.   Those tokens in this example are * `IntToken("2"), PlusToken(), IntToken("3"), TimesToken(), IntToken("5")`
+* We *parse* based on the rules of a Context Free Grammar (CFG), converting that `ArrayList<Token>` into an AST, e.g. the image here:
+   <img src="https://docs.google.com/drawings/d/1QcV98bTNlpXJPkemqIRxcid_fut4lT7VPlAsq_vJi44/pub?w=300&amp;h=223">
+* We *interpret* the AST by doing a post-order traversal of the tree, computing the result of each subtree (bottom up) by applying the operator in the root of the subtree to the operands in the children.
+
