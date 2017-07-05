@@ -84,6 +84,14 @@ div.table-with-borders table * td { padding: 4pt; }
 
 </div>
 
+
+<div class="table-with-borders" markdown="1">
+
+| `7/0` | `7/(3-3)` | `123/( 4*5 - 20)` |
+| `7/0` | `7/(3-3)` | `123/( 4*5 - 20)` |
+
+</div>
+
 <div class="table-with-borders" markdown="1">
 
 | Well-formed       | Errors |
