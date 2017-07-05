@@ -155,13 +155,25 @@ If you've never heard of Mealy and Moore machines, don't worry about this sectio
 
 * *Mealy Machines* are finite state automata that optionally "emit" output with each transition.   The finite automata we are considering can be considered Mealy Machines, in that they "emit" tokens on the transition from an accepting state back to the start state.
 
-# Formal Rules for Parsing and ASTs
+# Formal Rules for Parsing
 
-For parsing, formal rules are specified in the form of Context Free Grammars (or CFGs).   
+For parsing, formal rules are specified in the form of grammars.   Grammars are expressions of the rules of a language.   A particular kind of grammar is called a "context-free grammar (CFG), and that's the kind we are going to need to do parsing.  
+We won't give a formal definition of what a CFG is since that's a topic for CMPSC138.  Instead, we'll provide a "good enough" definition for what we'll be doing with CFGs in this course.   We'll mostly do that by just giving examples, and explaining how to use those examples, rather than dwelling too much in the theory.  You'll get plenty of the theory in CMPSC138, CMPSC160 and CMPSC162.
 
-There are various forms of CFGs, and getting into that is beyond the scope of this course.   For our purposes, it is enough to say that certain forms of CFGs can be converted into a type of parser known as a Recursive Descent Parser.   This conversion is fairly straightforward and intuitive.
+One way of expressing a CFG is with a notation called Extended Backus-Naur Form (EBNF).  Here's the EBNF for a grammar for simple arithmetic expressions with `+`,`-`,`*`,`/`, integers, unary minus, and parentheses:
+
+```
+expression ::= additive-expression
+additive-expression ::= multiplicative-expression ( ( '+' | '-' ) multiplicative-expression ) *
+multiplicative-expression ::= primary ( ( '*' | '/' ) primary ) *
+primary ::= '(' expression ')' | INTEGER | '-' primary
+```
+
+If this is your first time seeing a context-free grammar for a language, this may look bewildering and confusing.  If so, be patient&mdash;there is more explanation in [Part 5](/tutorials/parsing_05_parsing_grammars_and_asts/) of this tutorial.
+
+There are various forms of CFGs, and getting into that is beyond the scope of this course.   For our purposes, it is enough to say that certain forms of CFGs can be converted into a type of parser known as a Recursive Descent Parser.   This conversion is fairly straightforward and intuitive, and is also covered in [Part 5](/tutorials/parsing_05_parsing_grammars_and_asts/).
+
+# Formal Rules for ASTs
 
 The Abstract Syntax Trees (ASTs) for this assignment are in the form of trees, where each parent node represents an operation, and the children represent the operands.   Binary operators have two children, and unary operators have a single child.   All of the leaves in an AST for this assignment should be literal ints.   By doing a post-orderal traversal of the tree, you can evaluate each of the results (bottom up), and arrive at the result of the entire expression.
-
-[Part 3](parsing_03_what_is_parsing/) and [Part 5](/tutorials/parsing_05_parsing_grammars_and_asts/) of this tutorial discuss CFGs and ASTs in more detail. 
 
