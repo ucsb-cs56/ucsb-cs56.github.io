@@ -91,6 +91,13 @@ div.table-with-borders table * td { padding: 4pt; }
 
 </div>
 
+<div class="table-with-borders" markdown="1">
+
+| `7/0` | `7/(3-3)` | `123/( 4*5 - 20)` |
+
+</div>
+
+
 Note that we sometimes call these "legal" and "illegal" expressions, though in this case the "law" is simply the rules for the language, and nothing to do with civil or criminal laws.
 
 
