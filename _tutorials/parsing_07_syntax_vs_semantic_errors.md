@@ -1,9 +1,8 @@
 ---
-topic: "Parsing: Syntax vs. Semantic Errors"
+topic: "Parsing: (07) Syntax vs. Semantic Errors"
 desc: "The formal definition of the difference"
 indent: true
 ---
-
 
 * [Main Parsing Article](/tutorials/parsing_03_what_is_parsing/)
 
