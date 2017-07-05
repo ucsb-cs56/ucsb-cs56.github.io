@@ -5,7 +5,7 @@ indent: true
 ---
 
 
-* [Main Parsing Article](tutorials/parsing_03_what_is_parsing/)
+* [Main Parsing Article](/tutorials/parsing_03_what_is_parsing/)
 
 In Java, there is a rule final variables cannot be changed after initial assignment.   For example:
 
