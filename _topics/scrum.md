@@ -16,3 +16,15 @@ And they add that Scrum is:
 * Lightweight
 * Simple to understand
 * Difficult to master
+
+# Scrum Roles
+
+* Scrum Team
+* Product Owner
+* Scrum Master
+
+# Scrum Meetings ("Ceremonies")
+
+* Scrum ("standup")
+* Sprint Review
+* Sprint Retrospective ("retro")
