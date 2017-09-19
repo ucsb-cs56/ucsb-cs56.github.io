@@ -1,15 +1,16 @@
 ---
 topic: Agile
-desc: "Alternatives to traditional project management"
+desc: "A Software Development Methodology"
 ---
 
-* http://agilemanifesto.org/principles.html
+* <http://agilemanifesto.org/principles.html>
 
-* https://www.scrum.org/scrum-guide
+* <https://www.scrum.org/scrum-guide>
 
 * "A New Software Engineering", article by Ivar Jacobson and Ed Seidewitz, CACM Dec 201, Vol. 57 No 12., pp 49-54.  
 [http://dl.acm.org.proxy.library.ucsb.edu:2048/citation.cfm?doid=2692965.2677034 off-campus] [http://dl.acm.org/citation.cfm?doid=2692965.2677034 on-campus]
 
+* <https://project-management.com/10-key-principles-of-agile-software-development/>
 
 = User Stories =
 
