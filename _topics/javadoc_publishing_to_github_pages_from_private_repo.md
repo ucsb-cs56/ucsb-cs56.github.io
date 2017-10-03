@@ -10,12 +10,8 @@ free web hosting via a service called "github pages" for sites that are
 * open source, and 
 * contain only static html, css and javascript.   
 
-All you have to do is create a separate branch called `gh-pages`, and
-push to it.  You can even change the default branch from `master` to
-`gh-pages`, so that you really don't have to think about branches
-much, except during the initial setup of the repo.
-
-All of that that works perfectly for javadoc, at least for public
+All you have to do is change some default settings in your repo. 
+All of this works perfectly for javadoc... at least for public
 repos.
 
 <div markdown="1" style="float:right; width:780px" >
@@ -38,66 +34,32 @@ The repo doesn't need a `.gitignore`, but do give it a `README.md` to make it ea
 
 <div style="clear:both;">&nbsp;</div>
 
-<div markdown="1" style="float:right; width:780px" >
-![create-gh-pages-from-master.png](images/create-gh-pages-from-master-50.png)
-</div>
-
-# Step 2: Make gh-pages the default branch of the public repo
-
-Next, we'll set up the public repo to publish to the web.
-
-This involves creating a second branch, in addition to the `master` branch.  By convention, github will try to create publish a website with any branch of a github.com public repo with the special name `gh-pages`.   
-
-There is more than one way to do this, but by far the *easiest* is to do it *before* you clone the repo, directly
-in the github.com web page.
-
-Follow this sequence of steps as guided by the images at right.
-
-(a) Find the drop down box for the master branch, left hand side near top.
-
-(b) Click on it, and enter `gh-pages` to create a `gh-pages` branch from the `master` branch.
+# Step 2: Make master branch your Github pages source
 
 <div style="clear:both;" />
 <div markdown="1" style="float:right; width:780px;" >
-![Click on Settings](images/click_settings_50.png)
+![Select master on dropdown](images/github_pages_box.png)
 </div>
 
-(c) Now that the `gh-pages` branch has been created, we will make it the default branch.  Click Settings near the
-    upper right hand side of the page.  Note that this is the Settings for *this specific repo*, not
-    your github account Settings.
+Next, we'll set up the public repo to publish to the web.
 
-<div style="clear:both;" />
-<div markdown="1" style="float:right; width:780px; clear:both;" >
-![Click on Branches](images/side_menu_select_branches_50.png)
-</div>
+This involves changing some settings in your repo. 
 
-(d) In the Settings menu that comes up at left, select Branches
+(a) Find the settings tab at the top of your repo page.
 
-<div style="clear:both;" />
-<div markdown="1" style="float:right; width:780px;">
-![Click on default branch selector where master is showing](images/change_default_branch_master_is_showing-50.png)
-![Select gh-pages instead](images/change_default_branch_gh_pages_is_checked-50.png)
-</div>
+(b) Click on it, and scroll down to the "GitHub Pages" section
 
-(e) On the page that comes up, find the section for Default Branch.   Select the drop-down box where it indicates
-    `master`, and change it to `gh-pages`.
+(c) Click on the dropdown box under "Source" and select `master` as the branch for GitHub pages.
 
-<div style="clear:both;" />
-<div markdown="1" style="float:right; width:780px; clear:both;" >
-![Are you sure you want to change the default branch?](images/change_default_branch_are_you_sure_50.png)
-</div>
-
-(f) When the scary red box comes up, indicate "Yes" that you really do want to do this.
-
-<div style="clear:both;" />
+(d) Click "Save" and the page should reload. 
 
 # Step 3: Test it out with some web content.
 
-To see if it is working, we can put a small test file, `hello.html` in the public repo on the gh-pages
+To see if it is working, we can put a small test file, `hello.html` in the public repo on the master
 branch.
 
 Here is a minimalist (yet still 100% HTML 5 standards compliant) `hello.html` file.   Create this
-in the gh-pages repo (you can do this directly in the github.com interface by clicking on "Create File",
+in the master branch of the repo (you can do this directly in the github.com interface by clicking on "Create File",
 and copy/pasting in this content:
 
 <div markdown="1" style="float:right; width:780px; clear:both;" >
@@ -117,13 +79,13 @@ and copy/pasting in this content:
 ```
 
 
-Once you have committed this file your repo on the gh-pages branch, you should be able to navigate to
+Once you have committed this file your repo on the master branch, you should be able to navigate to
 this web address to see the content, as shown at right.
 
-* If the repo is <http://github.com/UCSB-CS56-M16/lab00_javadoc_jgaucho>, the web content will be at
-  <http://UCSB-CS56-M16.github.io/lab00_javadoc_jgaucho>.   
+* If the repo is <http://github.com/UCSB-CS56-F17/lab00_javadoc_jgaucho>, the web content will be at
+  <http://UCSB-CS56-F17.github.io/lab00_javadoc_jgaucho>.   
 * So to bring up the hello.html file, enter
-  this in your browser: <http://UCSB-CS56-M16.github.io/lab00_javadoc_jgaucho/hello.html>.  You should
+  this in your browser: <http://UCSB-CS56-F17.github.io/lab00_javadoc_jgaucho/hello.html>.  You should
   see your web page.  To make sure that it is yours you are seeing ( and not mine), modify the content
   (change it from `Hello, World!`, to `Hello, Kitty!`, or `Hello, Dr. Nick!`, or whatever.)
 
@@ -145,7 +107,7 @@ is *crucial*, so read these instructions carefully
 * You should see the two directories/folders side by side in the same parent directory/folder
 * That way, we can use a relative path from with the private repo's directory  to access the public repo's files, for example, `../lab00_javadoc_jgaucho` as we demonstrate in the next step.
 
-Here's what that should look like.  Note that in the `git status` step, it notes that we are on the `gh-pages` branch instead of the `master` branch.
+Here's what that should look like. 
 
 ```
 -bash-4.3$ pwd
@@ -163,8 +125,8 @@ Checking connectivity... done.
 lab00_javadoc_jgaucho  lab00_jgaucho
 -bash-4.3$ cd lab00_javadoc_jgaucho/
 -bash-4.3$ git status
-On branch gh-pages
-Your branch is up-to-date with 'origin/gh-pages'.
+On branch master
+Your branch is up-to-date with 'origin/master'.
 nothing to commit, working directory clean
 -bash-4.3$ 
 ```
@@ -250,8 +212,8 @@ After:
     <echo>                                                                                       
       javadoc copied to ${public_javadoc_absolute_path}/index.html                               
       TO PUBLISH: cd into that repo, then git add javadoc;                                       
-        git commit -m "update javadoc"; git push origin gh-pages                                
-    </echo>                                                                                      
+        git commit -m "update javadoc"; git push origin master                               
+    </echo>                                                                                     
   </target>     
 
 ```
@@ -265,7 +227,7 @@ In that repo, if we do our usual workflow, we should be able to publish these ch
   git add javadoc
   git status
   git commit -m "update javadoc"
-  git push origin gh-pages
+  git push origin master
 ```
 
 Once you've done this, visit this link (modifying as needed) to see the published javadoc:
