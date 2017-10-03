@@ -3,7 +3,7 @@ topic: "Gauchospace: Clickable URLs"
 desc: "In assignment submissions, urls should be clickable"
 ---
 
-0. Go to Gauchospace submisson page and click "Add submission"
+0. Go to the Gauchospace submisson page and click "Add submission"
 
    ![ScreenShot](https://raw.github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io/master/_topics/gauchospace_clickable_urls/step0.png)
 
