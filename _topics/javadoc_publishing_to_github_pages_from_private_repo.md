@@ -38,10 +38,6 @@ The repo doesn't need a `.gitignore`, but do give it a `README.md` to make it ea
 
 <div style="clear:both;">&nbsp;</div>
 
-<div markdown="1" style="float:right; width:780px" >
-![create-gh-pages-from-master.png](images/create-gh-pages-from-master-50.png)
-</div>
-
 # Step 2: Make master branch your Github pages source
 
 Next, we'll set up the public repo to publish to the web.
@@ -54,18 +50,17 @@ This involves changing some settings in your repo.
 
 <div style="clear:both;" />
 <div markdown="1" style="float:right; width:780px;" >
-![Select master on dropdown](images/select_master_dropdown.png)
+![Select master on dropdown](images/github_pages_box.png)
 </div>
 
 (c) Click on the dropdown box under "Source" and select `master` as the branch for GitHub pages.
 
-(d) Click "Save" and the page should reload. 
-
 <div style="clear:both;" />
-<div markdown="1" style="float:right; width:780px; clear:both;" >
-![Click on Branches](images/side_menu_select_branches_50.png)
+<div markdown="1" style="float:right; width:780px;" >
+![Select master on dropdown](images/select_master_dropdown.png)
 </div>
 
+(d) Click "Save" and the page should reload. 
 
 # Step 3: Test it out with some web content.
 
@@ -226,8 +221,8 @@ After:
     <echo>                                                                                       
       javadoc copied to ${public_javadoc_absolute_path}/index.html                               
       TO PUBLISH: cd into that repo, then git add javadoc;                                       
-        git commit -m "update javadoc"; git push origin gh-pages                                
-    </echo>                                                                                      
+        git commit -m "update javadoc"; git push origin master                               
+    </echo>                                                                                     
   </target>     
 
 ```
