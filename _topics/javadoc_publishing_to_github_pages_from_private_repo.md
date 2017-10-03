@@ -36,6 +36,11 @@ The repo doesn't need a `.gitignore`, but do give it a `README.md` to make it ea
 
 # Step 2: Make master branch your Github pages source
 
+<div style="clear:both;" />
+<div markdown="1" style="float:right; width:780px;" >
+![Select master on dropdown](images/github_pages_box.png)
+</div>
+
 Next, we'll set up the public repo to publish to the web.
 
 This involves changing some settings in your repo. 
@@ -43,11 +48,6 @@ This involves changing some settings in your repo.
 (a) Find the settings tab at the top of your repo page.
 
 (b) Click on it, and scroll down to the "GitHub Pages" section
-
-<div style="clear:both;" />
-<div markdown="1" style="float:right; width:780px;" >
-![Select master on dropdown](images/github_pages_box.png)
-</div>
 
 (c) Click on the dropdown box under "Source" and select `master` as the branch for GitHub pages.
 
