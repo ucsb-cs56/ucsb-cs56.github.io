@@ -10,12 +10,8 @@ free web hosting via a service called "github pages" for sites that are
 * open source, and 
 * contain only static html, css and javascript.   
 
-All you have to do is create a separate branch called `gh-pages`, and
-push to it.  You can even change the default branch from `master` to
-`gh-pages`, so that you really don't have to think about branches
-much, except during the initial setup of the repo.
-
-All of that that works perfectly for javadoc, at least for public
+All you have to do is change some default settings in your repo. 
+All of this works perfectly for javadoc... at least for public
 repos.
 
 <div markdown="1" style="float:right; width:780px" >
@@ -54,11 +50,6 @@ This involves changing some settings in your repo.
 </div>
 
 (c) Click on the dropdown box under "Source" and select `master` as the branch for GitHub pages.
-
-<div style="clear:both;" />
-<div markdown="1" style="float:right; width:780px;" >
-![Select master on dropdown](images/select_master_dropdown.png)
-</div>
 
 (d) Click "Save" and the page should reload. 
 
