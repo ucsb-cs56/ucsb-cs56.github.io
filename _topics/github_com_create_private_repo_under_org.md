@@ -12,8 +12,8 @@ To create a private repo for a Java assignment on github.com, follow this proced
 
 # Choosing a name
 
-* Unless you are told otherwise, the naming convention is `labxx_githubusername`
-* For example, `lab00_jgaucho`
+* Unless you are told otherwise, the naming convention is `labxx-githubusername`
+* For example, `lab00-jgaucho`
 
 Use EXACTLY that name, because that will be how your TAs find it to give you a grade.    
 
