@@ -151,8 +151,8 @@ there.  It will look like this. Note that you *will have to replace
 should already have, plus the new one.
 
 ```xml
-  <property name="javadoc_absolute_path" location="javadoc"/>
-  <property name="public_javadoc_absolute_path" location="../lab00_javadoc_yourgithubid/javadoc"/>
+  <property name="javadoc_path" location="javadoc"/>
+  <property name="public_javadoc_path" location="../lab00-javadoc-yourgithubid/javadoc"/>
 ```
 
 Now that we have this, we can modify our javadoc target as follows:
@@ -172,7 +172,7 @@ Before:
       <link href="http://docs.oracle.com/javase/8/docs/api/" />          
     </javadoc>
     <echo>
-      javadoc written to file://${javadoc_absolute_path}/index.html
+      javadoc written to file://${javadoc_path}/index.html
     </echo> 
   </target>
 ```
@@ -199,18 +199,18 @@ After:
       <link href="https://docs.oracle.com/javase/8/docs/api/" />          
     </javadoc>
     <echo>                                                                                       
-      javadoc written to file://${javadoc_absolute_path}/index.html                              
-      copying to ${public_javadoc_absolute_path}/index.html                                      
+      javadoc written to file://${javadoc_path}/index.html                              
+      copying to ${public_javadoc_path}/index.html                                      
     </echo>                                                                                      
     <delete quiet="true">                                                                        
-      <fileset dir="${public_javadoc_absolute_path}" />                                          
+      <fileset dir="${public_javadoc_path}" />                                          
     </delete>                                                                                    
-    <mkdir dir="${public_javadoc_absolute_path}" />                                              
-    <copy todir="${public_javadoc_absolute_path}">                                               
+    <mkdir dir="${public_javadoc_path}" />                                              
+    <copy todir="${public_javadoc_path}">                                               
       <fileset dir="javadoc" />                                                                  
     </copy>                                                                                      
     <echo>                                                                                       
-      javadoc copied to ${public_javadoc_absolute_path}/index.html                               
+      javadoc copied to ${public_javadoc_path}/index.html                               
       TO PUBLISH: cd into that repo, then git add javadoc;                                       
         git commit -m "update javadoc"; git push origin master                               
     </echo>                                                                                     
