@@ -67,7 +67,7 @@ After:
 
 ```xml
   <path id="project.class.path"> 
-    <pathelement location="src"/>
+    <pathelement location="build"/>
     <pathelement location="lib/junit-4.8.2.jar"/>
   </path>
 ```
