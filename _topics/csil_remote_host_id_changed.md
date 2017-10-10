@@ -1,6 +1,6 @@
 ---
 topic: "CSIL: Remote Host Id Changed"
-desc: "What to do if you get that man-in-the-middle attack message"
+desc: "The scary REMOTE HOST ID CHANGED message with mention of SOMETHING NASTY"
 indent: true
 ---
 
