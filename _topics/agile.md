@@ -12,7 +12,9 @@ desc: "A Software Development Methodology"
 
 * <https://project-management.com/10-key-principles-of-agile-software-development/>
 
-= User Stories =
+# User Stories
+
+See: [User Stories](/topics/user_stories)
 
 Some helpful links about user stories:
 
