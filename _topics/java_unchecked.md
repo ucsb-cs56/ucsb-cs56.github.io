@@ -48,7 +48,34 @@ VerySimpleChatServer.java:46: warning: [unchecked] unchecked call to add(E) as a
 169-231-163-224:src pconrad$ 
 ```
 
-The problem is that clientOutputStreams is an `ArrayList` when it should be an `ArrayList<E>` of some specific type, i.e .the type that `writer` is an instance of.
+Here's the same example run via an Ant build.xml:
+
+```
+169-231-163-224:hfj-chap15 pconrad$ ant compile
+Buildfile: /Users/pconrad/github/hfj-chap15/build.xml
+
+prepare:
+
+compile:
+    [javac] Compiling 8 source files to /Users/pconrad/github/hfj-chap15/build
+    [javac] /Users/pconrad/github/hfj-chap15/src/VerySimpleChatServer.java:46: warning: [unchecked] unchecked call to add(E) as a member of the raw type ArrayList
+    [javac]                 clientOutputStreams.add(writer);
+    [javac]                                        ^
+    [javac]   where E is a type-variable:
+    [javac]     E extends Object declared in class ArrayList
+    [javac] 1 warning
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+169-231-163-224:hfj-chap15 pconrad$ 
+```
+
+
+# What's the underlying problem?
+
+The underlying problem will vary dependig on your specific code. 
+
+In this particular example, the problem is that `clientOutputStreams` is an `ArrayList` when it should be an `ArrayList<E>` of some specific type, i.e .the type that `writer` is an instance of.
 
 
 
