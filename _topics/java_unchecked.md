@@ -13,6 +13,29 @@ compile:
     [javac] Note: Recompile with -Xlint:unchecked for details.
 ```
 
+# How do you `Recompile with -Xlint:unchecked` 
+
+The error message says to `Recompile with -Xlint:unchecked` but how?
+
+* If you are using plain old `javac`, you do it like this:
+   ```
+   javac -Xlint:unchecked foo.java
+   ```
+* If you are using Ant, you add a `<compilerarg value="-Xlint:unchecked"/>` element to your `javac` task, like this:
+
+   ```xml
+    <javac srcdir="${src.dir}"
+            destdir="${classes.dir}"
+            classpathref="libraries">
+       <compilerarg value="-Xlint:unchecked"/>
+     </javac> 
+   ```
+
+# Then what happens?
+
+Here's 
+
+
 # More information
 
 * <https://stackoverflow.com/questions/23749786/uses-unchecked-or-unsafe-operations>
