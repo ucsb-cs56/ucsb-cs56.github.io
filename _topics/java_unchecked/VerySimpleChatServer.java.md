@@ -6,14 +6,14 @@ layout:default
 
 {% highlight java linenos %}
 
- package chap15;
- import java.io.*;
- import java.net.*;
- import java.util.*;
+  package chap15;
+  import java.io.*;
+  import java.net.*;
+  import java.util.*;
 
 
- public class VerySimpleChatServer
- {
+  public class VerySimpleChatServer
+  {
     ArrayList clientOutputStreams;
     
     public class ClientHandler implements Runnable {
@@ -70,6 +70,6 @@ layout:default
             } catch (Exception ex) { ex.printStackTrace(); }
         }
     }
- }
+  }
 {% endhighlight %}
 
