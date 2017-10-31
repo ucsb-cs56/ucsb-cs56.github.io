@@ -90,10 +90,6 @@ In particular, `writer` is an instance of `PrintWriter`.  So we replace lines as
 
 With these changes, we get a clean compile.
 
-```
-
-
-
 
 
 # More information
