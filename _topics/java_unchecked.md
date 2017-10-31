@@ -13,3 +13,6 @@ compile:
     [javac] Note: Recompile with -Xlint:unchecked for details.
 ```
 
+# More information
+
+* <https://stackoverflow.com/questions/23749786/uses-unchecked-or-unsafe-operations>
