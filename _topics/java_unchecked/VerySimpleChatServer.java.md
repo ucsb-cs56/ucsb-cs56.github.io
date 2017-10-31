@@ -2,7 +2,9 @@
 layout:default
 ---
 
-```java
+`VerySimpleChatServer.java` from Chapter 15 of [Head First Java, 2nd Edition](/textbooks/HFJ/)
+
+{% highlight java linenos %}
 package chap15;
 import java.io.*;
 import java.net.*;
@@ -68,4 +70,5 @@ public class VerySimpleChatServer
         }
     }
 }
-```
+{% endhighlight %}
+
