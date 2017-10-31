@@ -34,7 +34,7 @@ The error message says to `Recompile with -Xlint:unchecked` but how?
 # Then what happens?
 
 Here's the output of runing via the first method (simple `javac`).   
-   * The file in question is available here: [VerySimpleChatServer.java](VerySimpleChatServer.java)
+   * The file in question is available here: [VerySimpleChatServer.java](VerySimpleChatServer.java.md)
    * That code comes from Chapter 15 of [Head First Java](/textbooks/HFJ/)
 
 ```
@@ -47,6 +47,9 @@ VerySimpleChatServer.java:46: warning: [unchecked] unchecked call to add(E) as a
 1 warning
 169-231-163-224:src pconrad$ 
 ```
+
+The problem is that clientOutputStreams is an `ArrayList` when it should be an `ArrayList<E>` of some specific type, i.e .the type that `writer` is an instance of.
+
 
 
 # More information
