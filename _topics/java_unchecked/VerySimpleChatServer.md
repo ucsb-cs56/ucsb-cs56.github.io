@@ -14,7 +14,7 @@ layout:default
 
   public class VerySimpleChatServer
   {
-    ArrayList clientOutputStreams;
+    ArrayList clientOutputStreams; // should be ArrayList<Writer>
     
     public class ClientHandler implements Runnable {
         BufferedReader reader;
@@ -45,7 +45,7 @@ layout:default
     }
     
     public void go() {
-        clientOutputStreams = new ArrayList();
+        clientOutputStreams = new ArrayList(); // should be new ArrayList<Writer>
         try {
             ServerSocket serverSock = new ServerSocket(5000);
             while(true) {
