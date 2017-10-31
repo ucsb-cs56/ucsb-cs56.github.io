@@ -13,7 +13,8 @@ ssh -X cgaucho@csil-12.cs.ucsb.edu
 
 # What about the `no $DISPLAY environment variable` error?
 
-If you find when you type idle3 to bring up IDLE that you get this message:
+If  try to run a program that uses a Java GUI, or any other type of graphics window,
+and you get this message:
 
 ```
 no display name and no $DISPLAY environment variable
