@@ -77,6 +77,23 @@ The underlying problem will vary dependig on your specific code.
 
 In this particular example, the problem is that `clientOutputStreams` is an `ArrayList` when it should be an `ArrayList<E>` of some specific type, i.e .the type that `writer` is an instance of.
 
+In particular, `writer` is an instance of `PrintWriter`.  So we replace lines as follows:
+
+
+```diff
+- line 9:  ArrayList clientOutputStreams;
++ line 9:  ArrayList<PrintWriter> clientOutputStreams;
+
+- line 40:   clientOutputStreams = new ArrayList();
++ line 40:   clientOutputStreams = new ArrayList<PrintWriter>();
+```
+
+With these changes, we get a clean compile.
+
+```
+
+
+
 
 
 # More information
