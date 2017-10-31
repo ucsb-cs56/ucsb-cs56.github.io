@@ -35,7 +35,7 @@ The error message says to `Recompile with -Xlint:unchecked` but how?
 
 Here's the output of runing via the first method (simple `javac`).   
    * The file in question is available here: [VerySimpleChatServer.java](VerySimpleChatServer.java)
-   * That code comes from Chapter 15 of [Head First Java](/textbooks/HFJ)
+   * That code comes from Chapter 15 of [Head First Java](/textbooks/HFJ/)
 
 ```
 169-231-163-224:src pconrad$ javac -Xlint:unchecked VerySimpleChatServer.java 
