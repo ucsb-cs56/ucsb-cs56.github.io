@@ -56,3 +56,6 @@ in which you are asked to determine the order in which objects become eligible f
 Note that the wording here is important&mdash;we say *"become eligible for garbage collection"* rather than "*get garbage collected*", because
 in fact, as we noted above, the JVM is free to implement garbage collection in many different ways.    
 
+# More information
+
+* <https://www.lucidchart.com/techblog/2017/10/30/the-dangers-of-garbage-collected-languages/?utm_content=buffer56941&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer>
