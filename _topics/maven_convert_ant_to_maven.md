@@ -33,7 +33,9 @@ Now, assuming that your CS56 project is set up in the normal way with Ant:
 3.  If you have tests, those go under `src/test/java/` then the full package name, e.g. `src/test/java/edu/ucsb/cs56/TestFoo.java`.    The Maven convention is to keep test code separate from regular code.
    Instead, you need to create a directory java sources to src/main/java,
 
-4. Create a `pom.xml` following this convention:
+4. Create a `pom.xml` following this convention.
+
+Be sure to change `YOUR_PROJECT_NAME_HERE` to the name of your project, and also fix the line with the name of the Main class that you want to run (look for `ClassWithTheMainInIt` in the example `pom.xml` below.)
 
 ```
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -60,6 +62,22 @@ Now, assuming that your CS56 project is set up in the normal way with Ant:
     
   </dependencies>
   
+  
+  <!-- Make jar file executable -->
+  <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-jar-plugin</artifactId>
+    <configuration>
+      <archive>
+        <manifest>
+          <!-- full package name of class with the main you want to run -->
+          <mainClass>edu.ucsb.cs56.FULL.PACKAGE.NAME.ClassWithTheMainInIt</mainClass>
+        </manifest>
+      </archive>
+    </configuration>
+  </plugin>
+
+
 </project>
 ```
 
