@@ -29,7 +29,35 @@ Now, assuming that your CS56 project is set up in the normal way with Ant:
 
 4. Create a `pom.xml` following this convention:
 
+```
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>edu.ucsb.cs56.projects.YOUR_PROJECT_NAME_HERE</groupId>
+  
+  <artifactId>YOUR_PROJECT_NAME_HERE</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>YOUR_PROJECT_NAME_HERE</name>
+  <url>http://maven.apache.org</url>
+  
+  <dependencies>
+    
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+  </dependencies>
+  
+</project>
+```
 
+Then, you should be able to at least do:
 
 # Resources:
 
