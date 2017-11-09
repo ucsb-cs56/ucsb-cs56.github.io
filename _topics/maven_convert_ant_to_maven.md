@@ -6,7 +6,7 @@ indent: true
 
 # Quick version
 
-First, practice using Maven with a "Hello World" type scratch project so that you understand how Maven works BEFORE trying to convert your first pre-existing Ant based project to Maven. 
+First, read the official Apache [Maven in 5 minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) guide, and practice using Maven with a "Hello World" type scratch project so that you understand how Maven works BEFORE trying to convert your first pre-existing Ant based project to Maven. 
 
 Now, assuming that your CS56 project is set up in the normal way with Ant:
 
