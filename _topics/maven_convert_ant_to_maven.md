@@ -61,22 +61,24 @@ Be sure to change `YOUR_PROJECT_NAME_HERE` to the name of your project, and also
     </dependency>
     
   </dependencies>
-  
-  
+    
   <!-- Make jar file executable -->
-  <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-jar-plugin</artifactId>
-    <configuration>
-      <archive>
-        <manifest>
-          <!-- full package name of class with the main you want to run -->
-          <mainClass>edu.ucsb.cs56.FULL.PACKAGE.NAME.ClassWithTheMainInIt</mainClass>
-        </manifest>
-      </archive>
-    </configuration>
-  </plugin>
-
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <!-- full package name of class with the main you want to run -->
+              <mainClass>edu.ucsb.cs56.FULL.PACKAGE.NAME.ClassWithTheMainInIt</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
 ```
