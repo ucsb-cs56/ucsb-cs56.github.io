@@ -91,8 +91,28 @@ mvn compile
    
    This may be because you have code that references JUnit under the `src/main/java` directory, when it should be under the `src/test/java` directory.   Disentangling these for a complex project may be complicated, but for many CS56 projects with comparatively little test coverage, it may not be that hard.   The idea is to move all the classes that reference JUnit into a parallel directory hierarchy under `src/test/java/...` where the `...` is the package name.
    
+   Start with the first file that is reporting an error.
    
-
+   Copy paste its full path name from the error message into the terminal, with an `ls` command to make sure you have the name right.
+   
+   ```
+   ls /Users/pconrad/github/lab06_starter_code/src/main/java/edu/ucsb/cs56/pconrad/parsing/parser/ParserTest.java
+   ```
+   
+   Then, use your up arrow to edit the command.   Remove the filename `ParserTest.java` from the end, replace `ls` with `mkdir -p` and replace `src/main/java` with `src/test/java`, like this:
+   
+   ```
+   mkdir -p /Users/pconrad/github/lab06_starter_code/src/test/java/edu/ucsb/cs56/pconrad/parsing/parser/
+   ```
+   
+   Then, again using copy/paste, `mv` the filename of the offending file into the directory you just created:
+   
+   ```
+   mv /Users/pconrad/github/lab06_starter_code/src/main/java/edu/ucsb/cs56/pconrad/parsing/parser/ParserTest.java /Users/pconrad/github/lab06_starter_code/src/test/java/edu/ucsb/cs56/pconrad/parsing/parser/
+   ```
+   
+   Run the compile again.  With luck and skill, the first file will no longer be on the list of complaints.  Repeat until you get them all.
+   
 # Resources:
 
 * This [Stack Overflow Answer](https://stackoverflow.com/questions/4029501/how-to-convert-ant-project-to-maven-project) has at least some good information, though still leaves a lot out.
