@@ -20,7 +20,13 @@ Now, assuming that your CS56 project is set up in the normal way with Ant:
       mv src/* src/main/java
       ```
       
-      You'll get a message that src/main/java can't be moved into itself, which is normal.
+      You'll get a message that src/main/java can't be moved into itself, which is normal, e.g.
+      
+      ```
+      mv: rename src/main to src/main/java/main: Invalid argument
+      ```
+      
+      But the rest of the files should be moved ok, and then the `edu/ucsb/cs56...` tree should be under `src/main/java`.
 
 2.  If you have a directory with resources, put those files in `src/main/resources`
 
