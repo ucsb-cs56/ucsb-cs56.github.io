@@ -1,5 +1,6 @@
 ---
 layout:default
+index: false
 ---
 
 `VerySimpleChatServer.java` from Chapter 15 of [Head First Java, 2nd Edition](/textbooks/HFJ/)
