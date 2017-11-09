@@ -54,7 +54,7 @@ Now, assuming that your CS56 project is set up in the normal way with Ant:
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.12</version>
       <scope>test</scope>
     </dependency>
     
