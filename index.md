@@ -43,7 +43,9 @@ This site is maintained in this github repo: <https://github.com/UCSB-CS56-pconr
   <h2>Topics</h2>
   <ul>
    {% for t in site.topics %}
-      <li {% if t.indent %} class="indent" {% endif %} ><a href="{{t.url}}">{{ t.topic }}</a>&mdash;{{t.desc}}</li>
+      {% if t.skip_index %}{% else %}
+        <li {% if t.indent %} class="indent" {% endif %} ><a href="{{t.url}}">{{ t.topic }}</a>&mdash;{{t.desc}}</li>
+      {% endif %}
    {% endfor %}
   </ul>
 </div>
