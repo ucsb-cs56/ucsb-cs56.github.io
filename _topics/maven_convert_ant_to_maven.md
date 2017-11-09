@@ -40,17 +40,23 @@ Be sure to change `YOUR_PROJECT_NAME_HERE` to the name of your project, and also
 ```
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  
+
   <modelVersion>4.0.0</modelVersion>
-  
-  <groupId>edu.ucsb.cs56.projects.YOUR_PROJECT_NAME_HERE</groupId>
-  
-  <artifactId>YOUR_PROJECT_NAME_HERE</artifactId>
+
+  <groupId>edu.ucsb.cs56.projects.YOUR_PROJECT_NAME</groupId>
+
+  <artifactId>YOUR_PROJECT_NAME</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>YOUR_PROJECT_NAME_HERE</name>
+  <name>YOUR_PROJECT_NAME</name>
   <url>http://maven.apache.org</url>
-  
+
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
   <dependencies>
     
     <dependency>
@@ -68,6 +74,7 @@ Be sure to change `YOUR_PROJECT_NAME_HERE` to the name of your project, and also
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
+        <version>3.0.2</version>
         <configuration>
           <archive>
             <manifest>
