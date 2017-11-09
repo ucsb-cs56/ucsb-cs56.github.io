@@ -65,6 +65,22 @@ Now, assuming that your CS56 project is set up in the normal way with Ant:
 
 Then, you should be able to at least do:
 
+```
+mvn compile
+```
+
+5.   If you get errors that some features are not supported in a given version of Java, 
+   you may need to modify the pom.xml to indicate the level of Java needed.  For example:
+
+   ```
+   [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project cs56Parser: Compilation failure
+   [ERROR] /Users/pconrad/github/lab06_starter_code/src/main/java/edu/ucsb/cs56/pconrad/parsing/tokenizer/Tokenizer.java:      [33,27] lambda expressions are not supported in -source 1.5 
+   [ERROR] (use -source 8 or higher to enable lambda expressions)
+   [ERROR] -> [Help 1]
+   [ERROR] 
+   ```
+   Here's how to fix that.
+
 # Resources:
 
 * This [Stack Overflow Answer](https://stackoverflow.com/questions/4029501/how-to-convert-ant-project-to-maven-project) has at least some good information, though still leaves a lot out.
