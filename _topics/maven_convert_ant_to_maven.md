@@ -79,7 +79,19 @@ mvn compile
    [ERROR] -> [Help 1]
    [ERROR] 
    ```
-   Here's how to fix that.
+   Here is an [article that explains how to set the version of the compiler](https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html).  Or, here's the quick version:  add this to your `pom.xml`:
+   
+6.  The next problem you may encounter is this one:
+
+   ```
+   [ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/pconrad/github/lab06_starter_code/src/main/java/edu/ucsb/cs56/pconrad/parsing/parser/ParserTest.java:[8,24] package org.junit does not exist
+   ```
+   
+   This may be because you have code that references JUnit under the `src/main/java` directory, when it should be under the `src/test/java` directory.   Disentangling these for a complex project may be complicated, but for many CS56 projects with comparatively little test coverage, it may not be that hard.   The idea is to move all the classes that reference JUnit into a parallel directory hierarchy under `src/test/java/...` where the `...` is the package name.
+   
+   
 
 # Resources:
 
