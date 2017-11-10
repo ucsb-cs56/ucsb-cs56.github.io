@@ -4,6 +4,20 @@ desc: "step-by-step instructions"
 indent: true
 ---
 
+<div style="margin: 1em outset red; background-color: #eef; padding: 1em; margin:1em;" markdown="1">
+
+# This page is out of date
+
+Please refer to the article [] instead.
+
+As of late summer 2017, github added new features to github-pages that make publishing javadocs much easier,
+for both public and private repos.  Accordingly, the process on this page, while it still works, is now 
+much more complicated than it needs to be.      
+
+The content here is archived only so that we can refer to it when evaluating older labs.  
+
+</div>
+
 Github offers convenient
 free web hosting via a service called "github pages" for sites that are
 
