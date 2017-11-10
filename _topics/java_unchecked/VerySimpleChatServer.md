@@ -1,6 +1,6 @@
 ---
 layout:default
-skip_index: true
+skipIndex:true
 ---
 
 `VerySimpleChatServer.java` from Chapter 15 of [Head First Java, 2nd Edition](/textbooks/HFJ/)
