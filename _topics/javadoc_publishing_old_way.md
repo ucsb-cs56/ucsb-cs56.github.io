@@ -4,11 +4,11 @@ desc: "step-by-step instructions"
 indent: true
 ---
 
-<div style="margin: 1em outset red; background-color: #eef; padding: 1em; margin:1em;" markdown="1">
+<div style="border: 1em outset red; background-color: #eef; padding: 1em; margin:1em;" markdown="1">
 
 # This page is out of date
 
-Please refer to the article [] instead.
+Please refer to the article [Javadoc: javadoc: publishing to github pages from a private repo](/topics/javadoc_publishing_to_github_pages_from_private_repo/) instead.
 
 As of late summer 2017, github added new features to github-pages that make publishing javadocs much easier,
 for both public and private repos.  Accordingly, the process on this page, while it still works, is now 
