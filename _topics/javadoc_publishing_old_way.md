@@ -1,5 +1,5 @@
 ---
-topic: "javadoc: publishing to github pages from a private repo"
+topic: "javadoc: publishing to github pages from a private repo (the old way)"
 desc: "step-by-step instructions"
 indent: true
 ---
