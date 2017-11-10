@@ -40,4 +40,5 @@ Here is some help:
 
 * https://www.codeproject.com/Articles/832744/Getting-Started-with-Code-Coverage-by-Jacoco
 * http://www.baeldung.com/jacoco
+* https://github.com/powermock/powermock/wiki/Code-coverage-with-JaCoCo
 
