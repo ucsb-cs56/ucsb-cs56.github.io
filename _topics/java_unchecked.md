@@ -21,7 +21,9 @@ The error message says to `Recompile with -Xlint:unchecked` but how?
    ```
    javac -Xlint:unchecked foo.java
    ```
-* If you are using Ant, you add a `<compilerarg value="-Xlint:unchecked"/>` element to your `javac` task, like this:
+   
+* If you are using Ant, you add a `<compilerarg value="-Xlint:unchecked"/>` element to your `javac`
+   task, like this:
 
    ```xml
     <javac srcdir="${src.dir}"
@@ -34,8 +36,9 @@ The error message says to `Recompile with -Xlint:unchecked` but how?
 # Then what happens?
 
 Here's the output of runing via the first method (simple `javac`).   
-   * The file in question is available here: [VerySimpleChatServer.java](VerySimpleChatServer/)
-   * That code comes from Chapter 15 of [Head First Java](/textbooks/HFJ/)
+
+* The file in question is available here: [VerySimpleChatServer.java](VerySimpleChatServer/)
+* That code comes from Chapter 15 of [Head First Java](/textbooks/HFJ/)
 
 ```
 169-231-163-224:src pconrad$ javac -Xlint:unchecked VerySimpleChatServer.java 
