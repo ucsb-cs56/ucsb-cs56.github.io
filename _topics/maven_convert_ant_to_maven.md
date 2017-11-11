@@ -151,17 +151,43 @@ Put this plugin in the `<plugins>` element of your `pom.xml`:
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.0.0-M1</version>
+        <configuration>
+          <reportOutputDirectory>docs</reportOutputDirectory>
+        </configuration>
+
       </plugin>
     </plugins>
  </project>
- ```
- 
+```
+
 The most commonly used maven goals for this plugin are these (more can be found [here](https://maven.apache.org/plugins/maven-javadoc-plugin/plugin-info.html)):
 
 | Goal | Description |
 |------|-------------|
 | `mvn javadoc:javadoc` | generates the Javadoc files for the project |
 | `mvn javadoc:test` | generates the *test* Javadoc files for the project |
+
+
+The configuration part in the `pom.xml` snippet above overrides the default for where  the generated javadoc goes, setting it to `docs`.  This is compatible with publishing the docs via github pages.   
+
+To make a link to that directory, you'll need a link to `http://OWNER.github.io/repo-name/docs/apidocs/index.html`  where `OWNER` is the name of the organization or user that owns the repo.
+
+In addition, you may want to customize the `mvn clean` goal so that it wipes out the docs/apidocs directory when `mvn clean` is run.  To do that, add this plugin as well:
+
+```xml
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <filesets>
+            <fileset>
+              <directory>docs/apidocs</directory>
+            </fileset>
+          </filesets>
+        </configuration>
+      </plugin>
+ ```
+ 
 
 # Resources:
 
