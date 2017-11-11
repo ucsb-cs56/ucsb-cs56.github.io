@@ -140,7 +140,7 @@ mvn compile
    
    Run the compile again.  With luck and skill, the first file will no longer be on the list of complaints.  Repeat until you get them all.
    
-7.  To generate javadoc, you'll need to include this plugin:
+7.  To generate javadoc, you'll need to include the [Maven javadoc plugin](https://maven.apache.org/plugins/maven-javadoc-plugin/index.html):
 
 ```
  <project>
