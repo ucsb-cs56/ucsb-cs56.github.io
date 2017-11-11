@@ -170,7 +170,7 @@ The most commonly used maven goals for this plugin are these (more can be found 
 
 The configuration part in the `pom.xml` snippet above overrides the default for where  the generated javadoc goes, setting it to `docs`.  This is compatible with publishing the docs via github pages.   
 
-To make a link to that directory, you'll need a link to `http://OWNER.github.io/repo-name/docs/apidocs/index.html`  where `OWNER` is the name of the organization or user that owns the repo.
+To make a link to that directory, you'll need a link to `http://OWNER.github.io/repo-name/apidocs/`  where `OWNER` is the name of the organization or user that owns the repo.
 
 In addition, you may want to customize the `mvn clean` goal so that it wipes out the docs/apidocs directory when `mvn clean` is run.  To do that, add this plugin as well:
 
