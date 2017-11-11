@@ -160,7 +160,7 @@ The most commonly used maven goals for this plugin are these (more can be found 
 
 | Goal | Description |
 |------|-------------|
-| `mvn javadoc:javadoc | generates the Javadoc files for the project |
+| `mvn javadoc:javadoc` | generates the Javadoc files for the project |
 | `mvn javadoc:test` | generates the *test* Javadoc files for the project |
 
 # Resources:
