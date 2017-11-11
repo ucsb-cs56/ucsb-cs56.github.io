@@ -1,6 +1,7 @@
 ---
 topic: "JUnit: Hamcrest Matcher style"
 desc: "A different style of writing assertions for Unit testing"
+indent: true
 ---
 
 Hamcrest Matchers are an alternative to the ordinary style of writing asserts for JUnit testing.
