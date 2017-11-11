@@ -140,7 +140,9 @@ mvn compile
    
    Run the compile again.  With luck and skill, the first file will no longer be on the list of complaints.  Repeat until you get them all.
    
-7.  To generate javadoc, you'll need to include the [Maven javadoc plugin](https://maven.apache.org/plugins/maven-javadoc-plugin/index.html):
+7.  To generate javadoc, you'll need to include the [Maven javadoc plugin](https://maven.apache.org/plugins/maven-javadoc-plugin/index.html).
+
+Put this plugin in the `<plugins>` element of your `pom.xml`:
 
 ```
  <project>
@@ -154,8 +156,13 @@ mvn compile
  </project>
  ```
  
- 
- 
+The most commonly used maven goals for this plugin are these (more can be found [here](https://maven.apache.org/plugins/maven-javadoc-plugin/plugin-info.html)):
+
+| Goal | Description |
+|------|-------------|
+| `mvn javadoc:javadoc | generates the Javadoc files for the project |
+| `mvn javadoc:test` | generates the *test* Javadoc files for the project |
+
 # Resources:
 
 * This [Stack Overflow Answer](https://stackoverflow.com/questions/4029501/how-to-convert-ant-project-to-maven-project) has at least some good information, though still leaves a lot out.
