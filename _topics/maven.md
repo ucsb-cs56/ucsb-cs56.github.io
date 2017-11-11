@@ -9,9 +9,7 @@ The short version:
 * Maven adds package management to the functions that you get with Ant.
 * By package management, I mean that instead of you having to manage the process of obtaining all the .jar files for third party library that
   your project may depend on (and the .jars that *those* files depend on, and so on...), maven manages that for you.
-* Maven is built on a different philosophy than Ant, explained in part [here](https://maven.apache.org/archives/maven-1.x/using/migrating.html).  
-
-
+* Maven is built on a different philosophy than Ant, explained below.
 
 # Similarities with Ant
 
@@ -59,4 +57,4 @@ The biggest drawback is that if/when you are trying to do something *very specif
 * [Apache Maven home page](https://maven.apache.org/)
 * [Apache Maven FAQ](https://maven.apache.org/general.html)
 * [Apache Maven in 5 minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)    
-* [Migrating to Maven](https://maven.apache.org/archives/maven-1.x/using/migrating.html).  
+ 
