@@ -169,6 +169,12 @@ multiplicative-expression ::= primary ( ( '*' | '/' ) primary ) *
 primary ::= '(' expression ')' | INTEGER | '-' primary
 ```
 
+The EBNF notation above is used when grammars are represented in plain text files.  When we have the freedom to use any symbols we want, grammars are sometimes also represented with a more compact, but equivalent mathematical notation.  Here's the same grammar in that style:
+
+$$ 
+E \rightarrow A 
+$$
+
 If this is your first time seeing a context-free grammar for a language, this may look bewildering and confusing.  If so, be patient&mdash;there is more explanation in [Part 5](/tutorials/parsing_05_parsing_grammars_and_asts/) of this tutorial.
 
 There are various forms of CFGs, and getting into that is beyond the scope of this course.   For our purposes, it is enough to say that certain forms of CFGs can be converted into a type of parser known as a Recursive Descent Parser.   This conversion is fairly straightforward and intuitive, and is also covered in [Part 5](/tutorials/parsing_05_parsing_grammars_and_asts/).
