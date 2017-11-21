@@ -1,6 +1,7 @@
 ---
 topic: "Testing: Jacoco via Maven"
 desc: "Setting up Jacoco test coverage, using Maven"
+indent: true
 ---
 
 First: read about using Maven at these pages:
