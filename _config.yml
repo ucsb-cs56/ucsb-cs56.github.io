@@ -14,6 +14,9 @@ office_hours_page: https://ucsb-cs56-f16.github.io/info/office_hours/
 legacy_wiki_url: https://foo.cs.ucsb.edu/56wiki
 legacy_wiki_name: "56wiki"
 
+curr_qtr: "W18"
+curr_qtr_web_url: "https://ucsb-cs56-w18.github.io"
+course: "CS56"
 
 #kramdown:
 #  parse_block_html: true
