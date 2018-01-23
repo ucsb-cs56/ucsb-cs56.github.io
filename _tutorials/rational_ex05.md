@@ -206,7 +206,6 @@ In the next article, [Rational: ex06](https://ucsb-cs56-pconrad.github.io/tutori
 
 * Adding links to the Java Standard Libraries into our javadoc
 * The situation with negative rational numbers, and negative parameters to our constructor
-* Multiplying rational numbers
 
 
 <div class="github-preview-only">On website: https://ucsb-cs56-pconrad.github.io/tutorials/rational_ex05/</div>
