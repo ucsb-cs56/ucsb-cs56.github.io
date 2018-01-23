@@ -256,7 +256,9 @@ That is the basis of a reasonable lab assignment.
 
 There are still many more topics to cover.   We will, in ex09 and beyond, cover:
 
-
+* ex09: `==` vs `.equals`, and `hashCode()`
+* ex10: packages
+* ex11: array vs. ArrayList, and running from a jar file
 
 
 
