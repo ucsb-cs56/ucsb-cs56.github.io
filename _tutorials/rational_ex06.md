@@ -129,12 +129,6 @@ Here is one set of rational choices (sorry for the pun):
 On this last point: it might be a bit "lazy" to not be concerned about whether the gcd method works properly for negative numbers. We can
 justify this laziness if we (a) determine that we don't *need* to use it on negative numbers, (b) protect ourselves by putting validation of the parameters into the function so that if someone did call it on a negative number, they'd find out that it isn't guaranteed to work on negative numbers.  We'll come back to that in ex07.
 
-TODO...
-
-# Multiplying rational numbers
-
-TODO...
-
 
 # Putting our javadoc online using github-pages
 
