@@ -17,7 +17,7 @@ Here's how, described as both a list of steps, and a list of images.  In this ex
 
 * The first pair partner is Alex Triton, github id `atriton`
 * The second pair partner is Chris La Jolla, github id `chrislajolla`
-* Alex has create a repo called spis16-lab02-Alex-Chris under the github organization ucsd-cse-spis-2016 and wants to give Chris access to this repo as well.
+* Alex has create a repo called spis16-lab02-Alex-Chris under the github organization {{site.curr_qtr_github_org}} and wants to give Chris access to this repo as well.
 
 These are the steps Alex should take to invite Chris as a collaborator:
 
@@ -97,7 +97,7 @@ under <b>Collaborators and Teams<b>, as shown here:
 Invitations can be issued for different levels of access.  
 
 * <b>Read</b> access means "Read Only".  It signifies that the contents of a private repo can be read, but not changed.
-   In SPIS, we use this for the FEEDBACK repos: Mentors and Instructors have write
+   In CS56, we use this for the FEEDBACK repos: Mentors and Instructors have write
    access to these repos, and we invite each student or pair with 
 
 * <b>Write</b> access means that the user can write to the repo, but cannot change the 
