@@ -4,30 +4,21 @@ desc: "giving individual users access to a private repo"
 indent: true
 ---
 
-<div style="width: 80%; padding: 1em; margin: 1em; border: 5px solid green;" markdown="1">
-NOTE: The following instructions were originally written for a summer program (spis16-) at UCSD.
-
-When time permits, they should be rewritten from the perspective of CS56 at UCSB.  The basic steps, however, are the same.
-</div>
 
 The following instructions can be used to provide write access to a shared repo.  These instructions are
 written using  a private repo as an example, but they work equally well on public repos.
 
 Here's how, described as both a list of steps, and a list of images.  In this example:
 
-* The first pair partner is Alex Triton, github id `atriton`
-* The second pair partner is Chris La Jolla, github id `chrislajolla`
-* Alex has create a repo called spis16-lab02-Alex-Chris under the github organization {{site.curr_qtr_github_org}} and wants to give Chris access to this repo as well.
+* The first pair partner is Chris Gaucho, github id `cgaucho`
+* The second pair partner is Lauren del Playa, github id `ldelplaya`
+* Chris has create a repo called lab02-cgaucho-ldelplaya under the github organization {{site.curr_qtr_github_org}} and wants to give Lauren access to this repo as well.
 
-These are the steps Alex should take to invite Chris as a collaborator:
+These are the steps Chris should take to invite Lauren as a collaborator:
 
 1. Navigate to the repo page, and click on <b>Settings</b> for the repo
 
-    ![spis16-lab02-Alex-Chris-repo-page-50.png](spis16-lab02-Alex-Chris-repo-page-click-Settings-50.png){: title="Click settings on repo page" }
-
 1. Select <b>Collaborators &amp; Teams</b> from the menu at the left side of the page.
-
-    ![spis16-lab02-Alex-Chris-repo-settings-50.png](spis16-lab02-Alex-Chris-repo-settings-click-collaborators-50.png){: title="click 'Collaborators &amp; teams' " }
 
 1. On the lower half of the page, in the "Add Collaborator" section, start typing in the github id
     of the pair partner that you want to add as a collaborator.
@@ -38,8 +29,7 @@ These are the steps Alex should take to invite Chris as a collaborator:
     Note: in some browsers, you have to *actually click* on the name that pops up&mdash;it is not
     sufficient to simply type in the full name.  Your experience may vary.
 
-    ![start-typing-chrislajol-then-name-will-pop-up-click-on-it-50.png](start-typing-chrislajol-then-name-will-pop-up-click-on-it-50.png){: title="Start typing pair partners name then click on it" }
-
+    ![add-ldelplaya99-as-collaborator-50.png](add-ldelplaya99-as-collaborator-50.png){: title="add ldelplaya99 as collaborator"}
 
 1.  When inviting a user to be a collaborator, the default permission
     level is <b>Write</b>.  If you are working with a pair partner,
@@ -51,46 +41,34 @@ These are the steps Alex should take to invite Chris as a collaborator:
     <b>Settings<b> menu for the repo.  (If that happens, there is
     information later on this page about how to fix that.)
 
-    ![change-permission-level-to-admin-50.png](change-permission-level-to-admin-50.png){: title="change-permission-level-to-admin-50.png" }
+
+    ![adjust-permissions-50.png](adjust-permissions-50.png){: title="adjust permissions"}
 
 
 # Accepting the invitation to Collaborate
 
-Suppose Alex has created the repo using the `atriton` account, and has invited `chrislajolla` as a collaborator.
+Suppose Chris has created the repo using the `cgaucho` account, and has invited `ldelplaya` as a collaborator.
 
-This is not sufficient for Chris to immediately have access.   Chris must first *accept* the invitation.
+This is not sufficient for Lauren to immediately have access.   Lauren must first *accept* the invitation.
 
 Since the repo in question is a private repo, it will not automatically appear as a repo
-that Chris has access to under Chris' github account.
+that Lauren has access to under Lauren' github account.
 
-Instead, when Alex invited Chris as a collaborator, an email similar to the following 
-was generated and send to whatever email Chris verified for Chris' github account.
-The email contains a link that Chris can click to review the invitation. 
+Instead, when Chris invited Lauren as a collaborator, an email similar to the following 
+was generated and send to whatever email Lauren verified for Lauren' github account.
+The email contains a link that Lauren can click to review the invitation. 
 
-![atriton-invites-chrislajolla-to-lab02-repo-50.png](atriton-invites-chrislajolla-to-lab02-repo-50.png){: title="atriton-invites-chrislajolla-to-lab02-repo-50.png" }
-
-At that URL, Chris should see something like this, where Chris can click to accept the invitation.
-
-![atriton-invited-you-to-collaborate-30.png](atriton-invited-you-to-collaborate-30.png){: title="atriton-invited-you-to-collaborate-30.png" }
-
-Chris should be redirected to the repo page, with the level of access to the repo authorized
-by Alex as shown in the image below.
-
-Note that if Alex provided <b>Admin</b> access, Chris will have full privileges over
-the repo.  If Alex only provided <b>Write</b> access (as in the example shown below), Chris's
+Note that if Chris provided <b>Admin</b> access, Lauren will have full privileges over
+the repo.  If Chris only provided <b>Write</b> access (as in the example shown below), Lauren's
 repo page will not have the <b>Setting</b> page.    To fix that, see the section "Changing access levels for collaborators", later on this page.
 
-![you-now-have-access-to-the-spis16-lab02-Alex-Chris-repo-50.png](you-now-have-access-to-the-spis16-lab02-Alex-Chris-repo-50.png){: title="you-now-have-access-to-the-spis16-lab02-Alex-Chris-repo-50.png" }
+# What if Lauren doesn't get an invitation email?
 
-# What if Chris doesn't get an invitation email?
-
-It isn't strictly necessary for Chris to find the invitation email.
-Instead, Alex can simply provide Chris with invitation url.
+It isn't strictly necessary for Lauren to find the invitation email.
+Instead, Chris can simply provide Lauren with invitation url.
 
 There is a place to copy the invitation url on the repo's settings page, 
-under <b>Collaborators and Teams<b>, as shown here:
-
-![copy-invite-link-30.png](copy-invite-link-30.png){: title="Copy invitation link" }
+under <b>Collaborators and Teams</b>.
 
 # Changing Access Levels for Collaborators
 
@@ -121,30 +99,6 @@ If you've been invited to a repo, you can check your level of access:
 
     If instead, when you try to do that, it tries to create a 
     "fork" of the repo, then you have read only access.    
-
-Here are some examples of what it looks like to invite a user with various kinds of access.
-These examples are found
-on the repository settings page under <b>Collaborators &amp; teams</b>.
-
-Here, `atriton` has invited `chrislajolla` with admin access:
-
-![atriton-has-invited-chrislajolla-with-admin-40.png](atriton-has-invited-chrislajolla-with-admin-40.png){: title="atriton-has-invited-chrislajolla-with-admin-40.png" }
-
-By contrast, here, `atriton` has invited `chrislajolla` with write access:
-
-![atriton-has-invited-chrislajolla-with-write-access-40.png](atriton-has-invited-chrislajolla-with-write-access-40.png){: title="atriton-has-invited-chrislajolla-with-write-access-40.png" }
-
-Here, `atriton` has a settings menu, indicating that `atriton` has admin access.
-
-![atriton-has-settings-menu-40.png](atriton-has-settings-menu-40.png){: title="atriton-has-settings-menu-40.png" }
-
-If `chrislajolla` has already accepted an invitation from `atriton` and has only <b>Write</b> access, `atriton` can change that by simply selecting a different level of access on the <b>Collaborators &amp; teams</b> tab on the repo settings page as shown below:
-
-![change-chrislajolla-to-have-admin-access-40.png](change-chrislajolla-to-have-admin-access-40.png){: title="change-chrislajolla-to-have-admin-access-40.png" }
-
-
-
-
 
 
 
