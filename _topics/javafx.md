@@ -6,6 +6,8 @@ category_prefix: "javafx: "
 
 JavaFX was introduced in 2008 as a replacement for Swing, which up to that time, had been the primary development platform for GUI development in Java.
 
+* Wikipedia Article: <https://en.wikipedia.org/wiki/JavaFX>
+
 There is some controversy as to whether JavaFX is a "dead" technology.   The basis of calling is "dead" seems to be more 
 around the notion that development of GUI apps on "desktop/laptop" type platforms is a dead-end&mdash;with the alternatives 
 being webapps (based on HTML5) and mobile apps, i.e. Android).
