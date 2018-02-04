@@ -6,4 +6,3 @@ category_prefix: "Course Policies: "
 
 This part of the website explains certain course policies.
 
-* [Course Policies: Answer Keys for Old Exams](/topics/course_policies_answer_keys/)
