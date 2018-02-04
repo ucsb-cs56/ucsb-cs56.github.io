@@ -64,6 +64,6 @@ Some background on how various kinds of students approach a curriculum, and how 
 short 19 minute film.  If you want to know what guides my choices as an instructor, the ideas in this 19 minute short film 
 (available in three parts on YouTube) is pretty much the foundation that guides all of my choices.
 
-https://www.youtube.com/watch?v=iMZA80XpP6Y
+[Teaching Teaching and Understanding Understanding (video)](https://www.youtube.com/watch?v=iMZA80XpP6Y)
 
 
