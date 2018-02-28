@@ -34,6 +34,16 @@ If you ask questions via Piazza or email about the grading of something that was
 
 Instead you'll be referred back to Gradescope. 
 
+## Why can't I just ask on Piazza?
+
+When you submit your concern through Gradescope, it will be presented to me in the context of each of the problems you are asking about, with an interface where I can consult the rubric, adjust your grade, etc.
+
+This isn't just a matter of me being picky, or me being lazy---it has to do with fairness. When I consider regrade requests, I don't consider them one student at a time.     I look at the entire collection of regrade requests for a problem or set of related problems, so that I can ensure fairness.  
+
+That's what doing it through Gradescope allows me to do---it groups regrade requests by problem, and allows me to see the big picture before adjusting anyone's grade.   Then, I can make sure that whatever adjustments I make to grades are made equitably.   
+
+I hope you can see why that's important.   Thanks for your cooperation.
+
 # Please submit regrade requests in a timely fashion.
 
 There is a deadline for regrade requests.  This is typically announced when the grades are published, and except in cases where it is not feasible (e.g. at the very end of the quarter), you'll be given one week.
