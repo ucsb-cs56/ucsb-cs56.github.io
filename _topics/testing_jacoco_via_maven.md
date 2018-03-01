@@ -36,8 +36,9 @@ To use JUnit in a Maven project, you need the JUnit dependency in your `pom.xml`
 
 # Next, add in a plug-in for Jacoco:
 
-There are many examples online of various ways to get Jacoco support in your pom.xml.  The one that worked best for me came from [this page](TBD), and is adapted below (I updated the version to the latest one I found for jacoco [here at Maven Central](TBD)):
+There are many examples online of various ways to get Jacoco support in your pom.xml.  
 
-```
-TBD
-```
+Here are a few:
+
+* <https://www.petrikainulainen.net/programming/maven/creating-code-coverage-reports-for-unit-and-integration-tests-with-the-jacoco-maven-plugin/>
+
