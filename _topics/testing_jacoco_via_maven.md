@@ -42,3 +42,4 @@ Here are a few:
 
 * <https://www.petrikainulainen.net/programming/maven/creating-code-coverage-reports-for-unit-and-integration-tests-with-the-jacoco-maven-plugin/>
 
+* <https://www.javaworld.com/article/2074515/core-java/unit-test-code-coverage-with-maven-and-jacoco.html>
