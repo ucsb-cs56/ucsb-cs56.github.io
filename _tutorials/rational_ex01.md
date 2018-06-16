@@ -5,6 +5,25 @@ indent: true
 code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex01
 ---
 
+<style>
+div.niceTable table * td {
+   border: 1px solid black;
+   border-collapse: collapse;
+}
+  
+div.niceTable table * td:first-child {
+   font-family: monospace;
+   white-space: pre;
+}
+  
+  
+div.niceTable table * th {
+   border: 1px solid black;
+   border-collapse: collapse;
+}
+  
+</style>
+
 # cs56-rational-example/ex01
 
 {% include rational_example_header.html %}
@@ -99,6 +118,10 @@ For more detail, consult these articles: [git](/topics/git/), [github](/topics/g
 # What are each of the files?
 
 Here's a brief over view of each of the files in the repo, and their purpose.
+
+
+
+<div class="niceTable"> 
 
 | Filename | Purpose |
 |-|-|
