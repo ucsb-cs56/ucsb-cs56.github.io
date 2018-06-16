@@ -105,6 +105,14 @@ While the `<pre>` tag can be used for source code (e.g. Java, C++, etc.), there 
 
 For example, the following is not legal HTML:
 
+```
+<pre>
+  cout << "Hello, World" << endl;
+</pre>
+```
+
+The problems are highlighted here (by the automatic syntax highlighing of Markdown):
+
 ```html
 <pre>
   cout << "Hello, World" << endl;
