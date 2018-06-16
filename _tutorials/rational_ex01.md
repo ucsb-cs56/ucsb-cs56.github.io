@@ -9,17 +9,21 @@ code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex01
 
 {% include rational_example_header.html %}
 
-
 # Overview
 
 In this first article, we will first explain what the `Rational` class is supposed to do, i.e. provide an abstraction for a rational number.     
 
-We'll show a class with a `main` method that can be a simple "driver" class&mdash;one that illustrates how to invoke the constructor
-for the `Rational` class, and then invoke one or more of the methods of the object instance.
+We'll then show some Java code with two classes: starter code for a `Rational` class, and a driver class 
 
-That main class will illustrate how to get simple integer parameters from the command line via the `args` parameter to main (the equivalent of `argc`/`argv` in C/C++).
+The code will be presented in a repository of source code ("repo") for short that is stored using the `git` version control system, a free and open source software package for version control. 
 
-We'll also provide a "stub" `Rational` class that has the minimum we need to get started:
+This `git` repo is hosted as open source on [github.com](https://github.com), a commerical company (acquired by Microsoft in 2018) that provides cloud-based hosting for `git` repositories, plus other web-based tools for software development.
+
+This lesson will not include a full discussion of git/github&mdash;just the briefest overview of the minimal information needed to make use of the code in this repo.
+
+## `Rational.java`: starter code for a Java class
+
+The starting point `Rational` class that has the minimum we need to get started, mostly in "stub" form:
 
 * private instance variables for `numerator` and `denominator`
 
@@ -35,6 +39,12 @@ We'll also provide a "stub" `Rational` class that has the minimum we need to get
 
 We'll see that the built in `toString()` method is not of much use.  In the next
 example, we'll override it to make something more useful.  (Note on overriding: See https://ucsb-cs56-pconrad.github.io/topics/java_overriding_vs_overloading/ )
+
+## `Main.java`: a sample "driver" class
+
+We'll also provide Java code for a "driver" class with a`main` method&mdash;one that illustrates how to invoke the constructor for the `Rational` class, and then invoke one or more of the methods of the object instance.
+
+That main class will illustrate how to get simple integer parameters from the command line via the `args` parameter to main (the equivalent of `argc`/`argv` in C/C++).
 
 
 # Basic description of the Rational class
