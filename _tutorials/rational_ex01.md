@@ -6,6 +6,11 @@ code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex01
 ---
 
 <style>
+div.niceTable table {
+   border-collapse: collapse;
+}
+
+
 div.niceTable table * td {
    border: 1px solid black;
    border-collapse: collapse;
@@ -121,7 +126,7 @@ Here's a brief over view of each of the files in the repo, and their purpose.
 
 
 
-<div class="niceTable"> 
+<div class="niceTable" markdown="1">  
 
 | Filename | Purpose |
 |-|-|
@@ -131,6 +136,7 @@ Here's a brief over view of each of the files in the repo, and their purpose.
 | README.md	| A file that describes the contents of the repo.  The `.md` extension indicates that this is a [Markdown](/topics/markdown/) file.   Markdown is a format that allows us to create web content; it is similar to HTML, but has a simplified syntax.   | 
 | Rational.java | Java code for the `Rational` class |
 
+</div>
 
 # Simple compiling and executing with `javac` and `java` commands:
 
