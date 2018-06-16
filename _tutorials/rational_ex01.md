@@ -78,6 +78,37 @@ We'll leave the "quotient" of two rational numbers as a very straightforward pro
 
 In the first few examples, not all of these rules may yet be in place.  We'll add those incrementally.  Also, as we proceed through the examples, we may make additional assumptions, set additional goals, and/or place additional restrictions.  Those will be noted in the tutorial that goes with each example.
 
+# Accessing the code from the github repo
+
+The example code that supports this lesson is in a repository ("repo" for short) at this link:
+
+* <{{page.code_repo}}>
+
+A detailed discussion of git and github is a topic for a different tutorial; for this lesson, we'll just go over the minimal 
+information you need to get started with the code.  
+
+* You can browse the code, as well as downloading it all in a .zip file at the link shown above.
+* On a system where `git` is installed (such as [CSIL](/topics/CSIL/), you can use this command to create a copy of the repository that has a link back to the original so that you can pull updates at any time:
+   
+   * <tt>git clone {{page.code_repo}}.git</tt>
+
+That will create a subdirectory containing the contents of the repo; `cd` into it and you can start working with the code.
+
+For more detail, consult these articles: [git](/topics/git/), [github](/topics/github).
+
+# What are each of the files?
+
+Here's a brief over view of each of the files in the repo, and their purpose.
+
+| Filename | Purpose |
+|-|-|
+| .gitignore	| Tells `git` which files should be ignored when updating the repo (e.g. temporary files, executable files). | 
+| LICENSE	| Open Source repos often have a license in them that specifies the copyright and any restrictions placed on how the code may be used. | 
+| Main.java | Java code for driver program; a class containing a `main` method. |
+| README.md	| A file that describes the contents of the repo.  The `.md` extension indicates that this is a [Markdown](/topics/markdown/) file.   Markdown is a format that allows us to create web content; it is similar to HTML, but has a simplified syntax.   | 
+| Rational.java | Java code for the `Rational` class |
+
+
 # Simple compiling and executing with `javac` and `java` commands:
 
 The following summary shows compiling and running the simplest possible way
