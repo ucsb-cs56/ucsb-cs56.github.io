@@ -1,7 +1,7 @@
 ---
 topic: "MacOS"
 desc: "Setting up an environment to do CS56 work on your own Mac (not ssh'ing into CSIL)"
-"category_prefix: "MacOS: "
+category_prefix: "MacOS: "
 ---
 
 For certain kinds of programs, i.e. graphics, and especially sound, 
