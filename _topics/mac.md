@@ -1,6 +1,7 @@
 ---
-topic: Mac OS
+topic: "MacOS"
 desc: "Setting up an environment to do CS56 work on your own Mac (not ssh'ing into CSIL)"
+"category_prefix: "MacOS: "
 ---
 
 For certain kinds of programs, i.e. graphics, and especially sound, 
@@ -14,7 +15,7 @@ What do you need to install on your Mac to be able to do this?
 * The JDK
 * `ant` and/or `mvn` (Maven)
 
-Instructions follow below.   Note that installing [Homebrew](/topics/mac_homebrew) may make some of this easier.
+Instructions follow below.   Note that installing [MacOS: Homebrew](/topics/mac_homebrew) may make some of this easier.
 
 # Install the JDK
 
