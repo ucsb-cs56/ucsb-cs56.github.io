@@ -37,6 +37,10 @@ You can use command line arguments to control which style is used, and to apply 
 
 For example:
 
+<style>
+  table * code { white-space: pre }  
+</style>
+
 | Command | Explanation |
 |-|-|
 | `astyle --style=google --recursive src` | Apply Google style to all files under the `src` directory (and all subdirectories of `src`) |
