@@ -1,6 +1,7 @@
 ---
 topic: "Code Style"
 desc: "formatting, indenting, names, and much more"
+category_prefix: "Code Style: "
 ---
 
 # References
