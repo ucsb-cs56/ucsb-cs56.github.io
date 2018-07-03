@@ -11,6 +11,11 @@ For audio or sound programs, this is especially true.
 
 What do you need to install on your Mac to be able to do this?
 
+* The JDK
+* `ant` and/or `mvn` (Maven)
+
+Instructions follow below.   Note that installing [Homebrew](/topics/mac_homebrew) may make some of this easier.
+
 # Install the JDK
 
 To see whether you already have the JDK installed, do this in a terminal window:
@@ -39,3 +44,4 @@ Apache Ant(TM) version 1.9.7 compiled on April 9 2016
 If instead, you get `command not found`, then install Apache Ant by following the instructions here:
 
 <https://www.mkyong.com/ant/how-to-apache-ant-on-mac-os-x/>
+
