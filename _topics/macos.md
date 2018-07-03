@@ -15,7 +15,7 @@ What do you need to install on your Mac to be able to do this?
 * The JDK
 * `ant` and/or `mvn` (Maven)
 
-Instructions follow below.   Note that installing [MacOS: Homebrew](/topics/mac_homebrew) may make some of this easier.
+Instructions follow below.   Note that installing [MacOS: Homebrew](/topics/macos_homebrew/) may make some of this easier.
 
 # Install the JDK
 
