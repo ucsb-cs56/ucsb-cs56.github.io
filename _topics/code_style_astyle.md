@@ -39,7 +39,7 @@ For example:
 
 <style>
   table * code { white-space: pre }  
-  table * td { margin-left: 1em; margin-right: 1em; }
+  table * td { padding-left: 1em; padding-right: 1em; }
   table * td { border: 1px solid black; }
   table { border-collapse: collapse; }
 </style>
