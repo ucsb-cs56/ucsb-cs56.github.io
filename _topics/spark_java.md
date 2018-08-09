@@ -18,6 +18,10 @@ other things, machine learning.    That's a whole other subject.
 * SparkJava API Documentation: <http://sparkjava.com/documentation.html>
 * javadoc (unofficial, see note below) <https://ucsb-cs56-pconrad.github.io/spark/target/site/apidocs/index.html>
 
+# Tutorials:
+
+* <https://www.baeldung.com/spark-framework-rest-api>
+
 # Note on the "unofficial" javadoc link above
 
 Annoyingly, the Spark Java project doesn't maintain up-to-date javadoc online.  Instead, they invite the user to 
