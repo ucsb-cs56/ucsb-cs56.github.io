@@ -4,7 +4,7 @@ desc: "Apache Ant, a build tool for Java (similar to Make/Makefiles)"
 category_prefix: "Ant: "
 ---
 
-TODO: Migrate content from [56 wiki ant page](https://foo.cs.ucsb.edu/56wiki/index.php/Ant to this page)
+TODO: Migrate content from [56 wiki ant page](https://foo.cs.ucsb.edu/56wiki/index.php/Ant) to this page
 at [this edit link](https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io/edit/master/_topics/ant.md)
 
 In the meantime, consult that page as a reference as well.
