@@ -60,6 +60,13 @@ In Maven, though, all of the names of things that follow `mvn` such as `mvn clea
 
 # Ant to Maven, a more complete look
 
+<style>
+  div.with-borders table * td { border: 1px solid black; 
+  border-collapse: collapse; 
+  }
+</style>
+
+<div class="with-borders">
 
 | What | How, with Ant | How with Maven | Comments |
 |-|-|-|-|
@@ -70,6 +77,8 @@ In Maven, though, all of the names of things that follow `mvn` such as `mvn clea
 | make javadoc | `ant javadoc` | `mvn site` or `mvn javadoc:javadoc` |
 | run the code | `ant run` | `mvn exec:java` |
 | make a jar file | `ant jar` | `mvn package` |
+
+</div>
 
 A bit more on each of those in a moment.  But first, directory structure
 
