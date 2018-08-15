@@ -71,4 +71,20 @@ In Maven, though, all of the names of things that follow `mvn` such as `mvn clea
 | run the code | `ant run` | `mvn exec:java` |
 | make a jar file | `ant jar` | `mvn package` |
 
-Now a bit more on each of those.
+A bit more on each of those in a moment.  But first, directory structure
+
+# Ant → Maven: directory structure
+
+In Ant, since the programmer indicates *how* to do every step, we can actually structure the directories any way we choose.  While there is a usual convention that is followed by many programmers, IDEs, etc. of having a top level directories called `src`, `build`, `lib`, etc., that is *not required*.  Indeed in the Rational tutorial, we started with a flat directory structure and moved a little at a time towards the standard directory structure.
+
+With Maven, *you must use the standard directory structure*.  All of the phases and goals and plug-ins for Maven are depending on that hard-coded directory structure.   If you deviate from it, bad things will happen.  
+
+In principle, it might be possible to override some of the defaults through configuration, but I *do not recommend this*. 
+
+That structure includes separating your `main` code from your `test` code.   So:
+* regular classes go in the directory tree under `src/main/java/package/.../package/File.java`  
+* test classes go in the directory tree under `src/test/java/package/.../package/FileTest.java`  
+
+More detail about this can be found in this article: [/topics/maven_convert_ant_to_maven/](Converting Ant projects to Maven)
+
+Note that in the repo for ex12 of the Rational tutorial, [cs56-rational-ex12](https://github.com/UCSB-CS56-pconrad/cs56-rational-ex12), the source has been separated according to this convention.
