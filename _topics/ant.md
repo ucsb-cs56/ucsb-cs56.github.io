@@ -166,3 +166,12 @@ Remember that you might need to do `ant clean` to force a recompile before you r
 
 *A:* Try googling the error message, or check here: http://bobcat.webappcabaret.net/javachina/faq/ant_01.htm
 
+# Tutorials
+
+= Tutorials =
+
+* [Writing a Simple Buildfile](http://ant.apache.org/manual/using.html) from Apache Ant website.
+* [Installing Ant on Mac OS X](http://stackoverflow.com/questions/3222804/how-can-i-install-apache-ant-on-mac-os-x)
+* [Ant Binary Download Page](http://ant.apache.org/bindownload.cgi)
+
+
