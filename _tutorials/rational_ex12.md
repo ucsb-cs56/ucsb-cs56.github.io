@@ -110,7 +110,13 @@ mvn jacoco:report
 
 Then, you can either:
 * Open: target/site/jacoco/index.html in a web browser, OR
-* Do `mvn site:deploy` and navigate to the web page for your repo, to the jacoco/index.html subdirectory.
+* Do `mvn site:deploy` and navigate to the web page for your repo, to the `jacoco/index.html` subdirectory.
 
-As an example, I've published the `docs` subdirectory of the <https://github.com/UCSB-CS56-pconrad/cs56-rational-ex12> repo to github page.  That means the URL should be <ucsb-cs56-pconrad.github.io/cs56-rational-ex12/jacoco/index.html>
+As an example, I've published the `docs` subdirectory of the <https://github.com/UCSB-CS56-pconrad/cs56-rational-ex12> repo to github pages.  
+
+That means the URL of the should be <https://ucsb-cs56-pconrad.github.io/cs56-rational-ex12/jacoco/index.html>
+
+You can review the test case coverage report there.
+
+As you can see, the test case coverage is only "so-so".  Example ex13 will show how it can be improved by adding additional tests.
 
