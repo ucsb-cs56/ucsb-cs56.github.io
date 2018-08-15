@@ -98,3 +98,19 @@ More detail about this can be found in this article: [/topics/maven_convert_ant_
 
 Note that in the repo for ex12 of the Rational tutorial, [cs56-rational-ex12](https://github.com/UCSB-CS56-pconrad/cs56-rational-ex12), the source has been separated according to this convention.
 
+# What about Test Case Coverage?
+
+Ok, the main reason we moved to Maven was for that "test case coverage" thing.
+
+To get it, use this:
+
+```
+mvn jacoco:report
+```
+
+Then, you can either:
+* Open: target/site/jacoco/index.html in a web browser, OR
+* Do `mvn site:deploy` and navigate to the web page for your repo, to the jacoco/index.html subdirectory.
+
+As an example, I've published the `docs` subdirectory of the <https://github.com/UCSB-CS56-pconrad/cs56-rational-ex12> repo to github page.  That means the URL should be <ucsb-cs56-pconrad.github.io/cs56-rational-ex12/jacoco/index.html>
+
