@@ -74,7 +74,7 @@ In Maven, though, all of the names of things that follow `mvn` such as `mvn clea
 | tidy up for a fresh start | `ant clean` | `mvn clean` |
 | compile the code | `ant compile` | `mvn compile` | 
 | test the code | `ant test` | `mvn test` | 
-| make javadoc | `ant javadoc` | `mvn site` or `mvn javadoc:javadoc` |
+| make javadoc | `ant javadoc` | `mvn site` or `mvn javadoc:javadoc` <br> followed by `mvn site:deploy` |
 | run the code | `ant run` | `mvn exec:java` |
 | make a jar file | `ant jar` | `mvn package` |
 
@@ -97,3 +97,4 @@ That structure includes separating your `main` code from your `test` code.   So:
 More detail about this can be found in this article: [/topics/maven_convert_ant_to_maven/](Converting Ant projects to Maven)
 
 Note that in the repo for ex12 of the Rational tutorial, [cs56-rational-ex12](https://github.com/UCSB-CS56-pconrad/cs56-rational-ex12), the source has been separated according to this convention.
+
