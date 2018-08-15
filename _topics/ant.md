@@ -62,7 +62,7 @@ Using it:
   </java>          
 ```
 
-# Get non-code resources into my JAR file ==
+# Get non-code resources into my JAR file
 
 e.g. images, configuration files, sample data, etc.
 
