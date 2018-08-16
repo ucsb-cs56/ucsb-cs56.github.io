@@ -19,6 +19,8 @@ curr_qtr_web_url: "https://ucsb-cs56-m18.github.io"
 course: "CS56"
 curr_qtr_github_org_url: "https://github.com/ucsb-cs56-m18"
 curr_qtr_github_org: ucsb-cs56-m18
+github_org_name: ucsb-cs56-m18
+github_org_url: https://github.com/ucsb-cs56-m18
 
 #kramdown:
 #  parse_block_html: true
