@@ -82,9 +82,13 @@ But, what if we also wanted a table of decimal approximations to these Rational 
 |2|0.500|1.000|1.500|2.000|
 |3|0.333|0.667|1.000|1.333|
 
-Or the prime factorization, like this
+Or LaTeX notation such as this:
 
-(TODO: Insert that here)
+| |1|2|3|4|
+|-|-|-|-|-|
+|1|1|2|3|4|
+|2|$$\frac{1}{2}$$|1|$$\frac{3}{2}$$|2|
+|3|$$\frac{1}{3}$$|$$\frac{2}{3}$$|1|$$\frac{4}{3}$$|
 
 Would we have to go back into the Rational class each time, and copy/paste all of that code?  That would be unpleasant, 
 and wasteful.   What we want instead, is a way to "plug in" a custom way of printing the Rational.
