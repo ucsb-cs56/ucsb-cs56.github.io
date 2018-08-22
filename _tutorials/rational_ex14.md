@@ -52,36 +52,29 @@ numerators, and the row headings are the denominators.
 |2|1/2|1|3/2|2|
 |3|1/3|2/3|1|4/3|
 
-
-
-# A table of Rationals
-
-We are going to implement a method
+So we might add a method to the `Rational` class with this signature to produce such a table:
 
 ```java
-  String tableOfRationalsMarkdown(int rows, int cols) { ...
+  public static String tableOfRationalsMarkdown(int rows, int cols)
 ```
 
-This method will produce a table such as this one for the call:
+You can imagine that this method might have a couple of nested for loops, and go through
+and for each of the entries, do something like this.  (This is just a portion of the code;
+the part that generates everything except the first two lines.)
 
-Rational.tableOfRationalsMarkdown(3,4)
-
-Numerators
-
+```java
+  for (int denom=1; denom<=rows; denom++) {                                  
+    result += "|" + denom;                                                 
+    for (int num=1; num<=cols; num++) {                                    
+      Rational r = new Rational(num,denom);                              
+      result += "|" + r.toString();                                                                     
+    }                                                                      
+    result += "|" + System.lineSeparator();
+  }
+  return result;
 ```
-| |1|2|3|4|
-|-|-|-|-|-|
-|1|1|2|3|4|
-|2|1/2|1|3/2|2|
-|3|1/3|2/3|1|4/3|
-```
-When rendered as Markdown, that looks like this:
 
-But what we'd really like to be able to do, is select how the numbers are formatted in a flexible way.
-
-For example, I'd also like to get a table like this one:
-
-
+But, what if we also wanted a table of decimal approximations to these Rational numbers, like this?
 
 | |1|2|3|4|
 |-|-|-|-|-|
@@ -89,8 +82,23 @@ For example, I'd also like to get a table like this one:
 |2|0.500|1.000|1.500|2.000|
 |3|0.333|0.667|1.000|1.333|
 
-```java
-Rational.tableOfRationalsMarkdown(int rows,int cols,Rational2String r2s)
-```
- 
+Or the prime factorization, like this
+
+(TODO: Insert that here)
+
+Would we have to go back into the Rational class each time, and copy/paste all of that code?  That would be unpleasant, 
+and wasteful.   What we want instead, is a way to "plug in" a custom way of printing the Rational.
+
+So, imagine that in addition the method we defined before, we also define this one:
+
+* `public static String tableOfRationalsMarkdown(int rows, int cols)`
+* `public static String tableOfRationalsMarkdown(int rows, int cols, Rational2String r2s)`
+
+The second version of the method takes an additional parameter of type `Rational2String`.  This is
+an object that implements the Rational2String interface, and allows us to "customize" the way
+that the Rational object is printed.  And it allows us to do that *without having to change the
+code for the Rational class!*
+
+
+
    
