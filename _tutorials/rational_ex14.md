@@ -40,5 +40,57 @@ What we want is:
    * Finally, we might render it in a way that it could be typeset with a Math typesetting system LaTeX.  
       For example if we want $$ \frac{3}{4} $$, we might produce the string `"\frac{3}{4}"`
 
-   
+# What would we use that for?
+
+Suppose we wanted to make tables of rational numbers like this one.  Here, the column headings are the
+numerators, and the row headings are the denominators.
+
+
+| |1|2|3|4|
+|-|-|-|-|-|
+|1|1|2|3|4|
+|2|1/2|1|3/2|2|
+|3|1/3|2/3|1|4/3|
+
+
+
+# A table of Rationals
+
+We are going to implement a method
+
+```java
+  String tableOfRationalsMarkdown(int rows, int cols) { ...
+```
+
+This method will produce a table such as this one for the call:
+
+Rational.tableOfRationalsMarkdown(3,4)
+
+Numerators
+
+```
+| |1|2|3|4|
+|-|-|-|-|-|
+|1|1|2|3|4|
+|2|1/2|1|3/2|2|
+|3|1/3|2/3|1|4/3|
+```
+When rendered as Markdown, that looks like this:
+
+But what we'd really like to be able to do, is select how the numbers are formatted in a flexible way.
+
+For example, I'd also like to get a table like this one:
+
+
+
+| |1|2|3|4|
+|-|-|-|-|-|
+|1|1.000|2.000|3.000|4.000|
+|2|0.500|1.000|1.500|2.000|
+|3|0.333|0.667|1.000|1.333|
+
+```java
+Rational.tableOfRationalsMarkdown(int rows,int cols,Rational2String r2s)
+```
+ 
    
