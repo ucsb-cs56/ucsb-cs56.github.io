@@ -104,9 +104,9 @@ And in raw Markdown plus HTML looks like this:
 
 Or LaTeX notation that, when formatted, produces this:
 
-![latex notation](latex.png)
+![latex notation](latex_25.png)
 
-<div class="display:none;" markdown="1">
+<div style="display:none;" markdown="1">
 
 ![latex notation](rational_ex14/latex_25.png)
 
