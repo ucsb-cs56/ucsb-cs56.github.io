@@ -84,13 +84,25 @@ But, what if we also wanted a table of decimal approximations to these Rational 
 
 Or HTML notation to give fractions, which when formatted, produces this:
 
+| |1|2|3|4|5|
+|-|-|-|-|-|-|
+|1|1|2|3|4|5|
+|2|<sup>1</sup>&frasl;<sub>2</sub>|1|<sup>3</sup>&frasl;<sub>2</sub>|2|<sup>5</sup>&frasl;<sub>2</sub>|
+|3|<sup>1</sup>&frasl;<sub>3</sub>|<sup>2</sup>&frasl;<sub>3</sub>|1|<sup>4</sup>&frasl;<sub>3</sub>|<sup>5</sup>&frasl;<sub>3</sub>|
+|4|<sup>1</sup>&frasl;<sub>4</sub>|<sup>1</sup>&frasl;<sub>2</sub>|<sup>3</sup>&frasl;<sub>4</sub>|1|<sup>5</sup>&frasl;<sub>4</sub>|
 
-And in raw HTML looks like this:
+And in raw Markdown plus HTML looks like this:
 
 ```html
+| |1|2|3|4|5|
+|-|-|-|-|-|-|
+|1|1|2|3|4|5|
+|2|<sup>1</sup>&frasl;<sub>2</sub>|1|<sup>3</sup>&frasl;<sub>2</sub>|2|<sup>5</sup>&frasl;<sub>2</sub>|
+|3|<sup>1</sup>&frasl;<sub>3</sub>|<sup>2</sup>&frasl;<sub>3</sub>|1|<sup>4</sup>&frasl;<sub>3</sub>|<sup>5</sup>&frasl;<sub>3</sub>|
+|4|<sup>1</sup>&frasl;<sub>4</sub>|<sup>1</sup>&frasl;<sub>2</sub>|<sup>3</sup>&frasl;<sub>4</sub>|1|<sup>5</sup>&frasl;<sub>4</sub>|
 ```
 
-Or LaTeX notation that, when formatted, produces this:
+Or LaTeX notation that, when formatted, produces this (if the fractions don't show up, try 
 
 | |1|2|3|4|
 |-|-|-|-|-|
