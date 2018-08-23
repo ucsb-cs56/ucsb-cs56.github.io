@@ -138,6 +138,32 @@ Let's show what each of those looks like.
 
 # Separate class in a separate file
 
+We could define a class that implements the `Rational2String`
+interface in separate file.  For example, see the file
+`BasicRational2String.java`.   
+
+Here's what that file looks like:
+
+```java
+package edu.ucsb.cs56.pconrad.rational;
+public class BasicRational2String implements Rational2String {
+    /**                                                                                            
+        Return a string representation of a Rational number                                        
+     */
+    @Override
+    public String r2s(Rational r) {
+        return r.toString();
+    }
+}
+```
+
+Here is an example of using that:
+
+```java
+        BasicRational2String br2s = new BasicRational2String();
+        String actual = Rational.markdownTable(3,4,br2s);
+```
+
 # Separate inner class (with a name) that we explicitly instantiate
 
 # Inline anonymous inner class
