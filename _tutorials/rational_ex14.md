@@ -108,7 +108,7 @@ Or LaTeX notation that, when formatted, produces this:
 
 <div class="display:none;" markdown="1">
 
-![latex notation](rational_ex14/latex.png)
+![latex notation](rational_ex14/latex_25.png)
 
 </div>
 
