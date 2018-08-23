@@ -102,9 +102,15 @@ And in raw Markdown plus HTML looks like this:
 |4|<sup>1</sup>&frasl;<sub>4</sub>|<sup>1</sup>&frasl;<sub>2</sub>|<sup>3</sup>&frasl;<sub>4</sub>|1|<sup>5</sup>&frasl;<sub>4</sub>|
 ```
 
-Or LaTeX notation that, when formatted, produces this (if the fractions don't show up, try 
+Or LaTeX notation that, when formatted, produces this:
 
 ![latex notation](latex.png)
+
+<div class="display:none;" markdown="1">
+
+![latex notation](rational_ex14/latex.png)
+
+</div>
 
 In raw UTF-8 (ASCII) LaTeX code (text), that looks like this:
 
