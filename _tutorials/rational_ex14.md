@@ -82,6 +82,14 @@ But, what if we also wanted a table of decimal approximations to these Rational 
 |2|0.500|1.000|1.500|2.000|
 |3|0.333|0.667|1.000|1.333|
 
+Or HTML notation to give fractions, which when formatted, produces this:
+
+
+And in raw HTML looks like this:
+
+```html
+```
+
 Or LaTeX notation that, when formatted, produces this:
 
 | |1|2|3|4|
