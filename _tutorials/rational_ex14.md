@@ -82,7 +82,7 @@ But, what if we also wanted a table of decimal approximations to these Rational 
 |2|0.500|1.000|1.500|2.000|
 |3|0.333|0.667|1.000|1.333|
 
-Or LaTeX notation such as this:
+Or LaTeX notation that, when formatted, produces this:
 
 | |1|2|3|4|
 |-|-|-|-|-|
@@ -90,7 +90,21 @@ Or LaTeX notation such as this:
 |2|$$\frac{1}{2}$$|1|$$\frac{3}{2}$$|2|
 |3|$$\frac{1}{3}$$|$$\frac{2}{3}$$|1|$$\frac{4}{3}$$|
 
-Would we have to go back into the Rational class each time, and copy/paste all of that code?  That would be unpleasant, 
+In raw UTF-8 (ASCII) LaTeX code (text), that looks like this:
+
+```
+| |1|2|3|4|
+|-|-|-|-|-|
+|1|1|2|3|4|
+|2|$$\frac{1}{2}$$|1|$$\frac{3}{2}$$|2|
+|3|$$\frac{1}{3}$$|$$\frac{2}{3}$$|1|$$\frac{4}{3}$$|
+```
+
+Each time we want a different format,  we *could* go back into the Rational class each time, 
+and copy/paste all of that for loop code, just to change the *one line* that produces the formatted
+string.  
+
+But that would be unpleasant, 
 and wasteful.   What we want instead, is a way to "plug in" a custom way of printing the Rational.
 
 So, imagine that in addition the method we defined before, we also define this one:
@@ -102,6 +116,25 @@ The second version of the method takes an additional parameter of type `Rational
 an object that implements the Rational2String interface, and allows us to "customize" the way
 that the Rational object is printed.  And it allows us to do that *without having to change the
 code for the Rational class!*
+
+# Then, what if we could define that new class inline?
+
+There are at least four ways of defining a new class for that plugin:
+
+1. Separate class in a separate file
+2. Separate inner class (with a name) that we explicitly instantiate
+3. Inline anonymous inner class
+4. Lambda expression
+
+Let's show what each of those looks like.
+
+# Separate class in a separate file
+
+# Separate inner class (with a name) that we explicitly instantiate
+
+# Inline anonymous inner class
+
+# Lambda expression
 
 
 
