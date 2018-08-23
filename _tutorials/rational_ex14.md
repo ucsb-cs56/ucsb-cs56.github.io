@@ -164,12 +164,53 @@ Here is an example of using that:
         String actual = Rational.markdownTable(3,4,br2s);
 ```
 
-# Separate inner class (with a name) that we explicitly instantiate
+# Separate named inner class that we explicitly instantiate
+
+The named inner class might look like this.  This code would appear INSIDE another class where
+`MyPlugin` is being used.
+
+```java
+  public class MyPlugin implements Rational2String {
+        public String r2s(Rational r) { return r.toString(); }
+    }
+```
+
+to use it, you'd write:
+
+```java
+        String actual = Rational.markdownTable(3,4,new MyPlugin());
+```
+
+Note that in the above line of code, the instance of the class `MyPlugin` is anonymous, but the class itself has a name.
 
 # Inline anonymous inner class
 
+```java
+   Rational2String r2s = new Rational2String() {
+                public String r2s(Rational r) { return r.toString(); }
+            };
+   String actual = Rational.markdownTable(3,4,r2s);
+```
+
+We could also write it like this:
+
+```java
+  String actual =
+            Rational.markdownTable(3, 4 ,new Rational2String() {
+                    public String r2s(Rational r) { return r.toString(); }
+                });
+ ```
+
 # Lambda expression
 
+We compress the entire anonymous instance of the anonymous inner class down to its essentials:
 
+`(r)` is the parameter to the `r2s` method (function).
+`->` says: we are mapping that `Rational r` to its return value
+`r.toString()` is the return value for the `r2s` method (function).
+
+```java
+ String actual = Rational.markdownTable(3, 4 , (r)->r.toString() );
+```
 
    
