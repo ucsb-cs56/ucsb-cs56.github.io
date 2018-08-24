@@ -185,7 +185,14 @@ public static ArrayList<Rational> readArrayListFromFile(String fileName) {
 	return items;
 ```
 
-This is an example of a "try with resources" loop.  The short explanation is that 
+Look at the two lines of code from the above example:
+
+```java
+try (BufferedReader br =
+	     new BufferedReader(new FileReader(fileName))) {
+```
+
+These two lines are an example of the start of a "try with resources" block.  The short explanation is that 
 objects that implement "java.lang.AutoCloseable" are "automatically closed" at the end of a "try with resources construct".
 
 This allows the programmer to not have to worry about making sure that the appropriate `close()` method is called on every conceivable
