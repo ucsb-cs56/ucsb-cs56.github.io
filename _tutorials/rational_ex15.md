@@ -16,23 +16,55 @@ You may want to review the material in tutorial [rational_ex11](/tutorials/ratio
 
 In this exercise, we are going to read a number of Rationals from a file (just as we did in [rational_ex11](/tutorials/rational_ex11/), but then we are going to sort them a few different ways.
 
-# What are the different ways we could sort rational numbers?
-
-Suppose we have a set of rational numbers in no particular order:
-
-TODO-INSERT-HERE
-
-One way to sort them is simply to sort them their place on the number line, using the traditional less-than and greater-then operations.
-
-TODO-INSERT-HERE
-
-Another way might be to put them in order first by their denominator, then by their numerator, like this:
-
-TODO-INSERT-HERE
+# Don't write your own sorts!
 
 The `java.util` package gives us several ways to sort things in very flexible ways *without having to write our own sorts*.
 
 But to work with it, we'll need to understand the `java.lang.Comparable<T>` interface, and the notion of a `java.util.Comparator<T>`.
+
+These powerful concepts allow us to sort lists of items in multiple different ways e.g. sorting `Student` objects by `name` and `perm`, or `MenuItems` by `name` or `category` or `price`.
+
+# tl;dr
+
+Here is the short version for folks who think the rest of this is too long, and therefore don't read it (tl;dr)
+
+* `java.lang.Comparable<T>` is an interface that objects (e.g. `Rational`, `Student`, `MenuItem`) directly implement themselves
+   * The method implemented is an instance method, `public int compareTo(T o)`
+   * Implement `Comparable<T>` when you want to use `java.util.Collections.sort(someList);` accoring to its "natural ordering"
+* `java.util.Comparator<T>` is a `@FunctionalInterface` for a stand-alone object that provides a `compare` function
+   * The method implemented is `public int compare(T o1, T o2)`
+   * It's an instance method, but here, it's an instance of the `Comparator` itself.
+   * This allows us to specify these objects with lambda expressions.
+   * Implement and instantiate a `Comparator<T>` class (either explictly, or implicitly using a lambda) when you want to
+       sort using the `	sort(Comparator<? super E> c)` method of `ArrayList<E>`
+
+
+# What are the different ways we could sort rational numbers?
+
+Suppose we have a set of rational numbers in no particular order:
+
+```
+[1/3, -2/3, 4/5, 7/2, 8/9, 2, 8, 1/9, -8/9, 3/7]
+```
+
+One way to sort them is simply to sort them their place on the number line, using the traditional less-than and greater-then operations.
+
+```
+[-8/9, -2/3, 1/9, 1/3, 3/7, 4/5, 8/9, 2, 7/2, 8]
+```
+
+Here are those same numbers as decimals, so that you can easily see that they are in the usual numerical order:
+
+```
+[-0.889,-0.667,0.111,0.333,0.429,0.800,0.889,2.000,3.500,8.000]
+```
+
+Another way might be to put them in order first by their denominator, then by their numerator, like this.   
+
+```
+[2, 8, 7/2, -2/3, 1/3, 4/5, 3/7, -8/9, 1/9, 8/9]
+```
+
 
 # First, `java.lang.Comparable<T>`
 
