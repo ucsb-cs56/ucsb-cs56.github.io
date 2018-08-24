@@ -12,7 +12,7 @@ available 24x7 on the public internet.
 
 
 
-# The Heroku Toolbelt 
+# The Heroku Toolbelt (aka Heroku CLI)
 
 The "Heroku Toolbelt" is a command-line interface to Heroku that you can install on Windows, Mac or Linux.
 
