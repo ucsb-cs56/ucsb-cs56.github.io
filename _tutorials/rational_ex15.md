@@ -94,3 +94,17 @@ Since the Rational class already has methods `lt` and `gt`, we can implement the
         assertTrue(new Rational(2,3).compareTo(new Rational(1,3)) > 0);
     }
 ```
+
+We then write the code by first changing the first line of `Rational.java` thus:
+
+```
+public class Rational implements Comparable<Rational> {
+```
+
+Note: `Comparable<Rational>`, not `Comparable<T>`.  `<T> is just a placeholder.  If you want to be able to compare `Rational` objects, then you implement `Comparable<Rational>`.
+   
+We then add an implementation of the method, using our existing `.gt` and `.equals` methods:
+
+```
+TODO
+```
