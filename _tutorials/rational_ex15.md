@@ -78,3 +78,19 @@ To put it another way: the contract of `compareTo` is that it returns an integer
 
 Since the Rational class already has methods `lt` and `gt`, we can implement the `public int compareTo(T o)` method quite easily.   But, first, of course, we should write some tests for it.
 
+```
+   @Test
+    public void test_compareTo_1_3_lt_2_3() {
+        assertTrue(new Rational(1,3).compareTo(new Rational(2,3)) < 0);
+    }
+
+    @Test
+    public void test_compareTo_2_3_eq_2_3() {
+        assertTrue(new Rational(2,3).compareTo(new Rational(2,3)) == 0);
+    }
+
+    @Test
+    public void test_compareTo_2_3_gt_1_3() {
+        assertTrue(new Rational(2,3).compareTo(new Rational(1,3)) > 0);
+    }
+```
