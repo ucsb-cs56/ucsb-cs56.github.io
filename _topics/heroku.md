@@ -60,7 +60,7 @@ To get a Java webapp running on Heroku (e.g. a SparkJava web app), here's the mi
 
 4.  You may also need to modify the main of whatever example you are working with to be sure that it picks up the port number from Heroku correctly.    The `sparkjava-01` example code does this.  BUT, any particular example Sparkjava app that you happen to find on the web on a tutorial website might or might not have that code.  
 
-   As an example, the tutorial from this repo
+   As an example, the tutorial from this repo <http://sparkjava.com/tutorials/application-structure>
    has a hard coded port:
    
    ```
