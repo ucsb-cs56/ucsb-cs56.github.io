@@ -25,11 +25,21 @@ To get a Java webapp running on Heroku (e.g. a SparkJava web app), here's the mi
    That `location-of-the-jar-file` will need to be replaced with the exact location of Jar file that has everything
    in it needed for your application.  Next, we need to describe how to create a suitable jar file with Maven.
    
+   The jar file produced by the sparkjava-01 example is: <br> `target/sparkjava-demo-01-1.0-jar-with-dependencies.jar`
+   
+   So the Procfile should look like this:
+   
+   ```
+   web: java $JAVA_OPTS -jar target/sparkjava-demo-01-1.0-jar-with-dependencies.jar 
+   ```
+   
+   The name of the jar that is produced by this, when you run `mvn package` might be different depending on other things that are in your `pom.xml`.  Instead of `target/sparkjava-demo-01-1.0-jar-with-dependencies.jar`, it may be something else.  And it's possibly, you won't have a suitable .jar at all. Do the next step first, then do `mvn package` then look in the `target` subdirectory for the jar.  (Oh, and make sure that `target` is in your `.gitignore`.)
+
+   
 3.  In your pom.xml, you need this.  You will need to modify the part that says `mainClass` to be the exact package and class
    name of the file that has the main for your web app.   What this does is to create an executable jar that has all the dependencies in it.  For more details, see: <https://www.baeldung.com/executable-jar-with-maven>
    
-    The name of the jar that is produced by this, when you run `mvn package` might be different depending on other things that are in your `pom.xml`.  The jar file produced by the sparkjava-01 example is: `target/sparkjava-demo-01-1.0-jar-with-dependencies.jar`
-
+    
    ```
       <!-- Make executable jar WITH dependencies -->
       <!-- See: https://www.baeldung.com/executable-jar-with-maven -->
