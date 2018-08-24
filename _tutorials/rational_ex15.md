@@ -106,5 +106,22 @@ Note: `Comparable<Rational>`, not `Comparable<T>`.  `<T> is just a placeholder. 
 We then add an implementation of the method, using our existing `.gt` and `.equals` methods:
 
 ```
+ @Override
+    public int compareTo(Rational o) {
+        if (this.equals(o))
+            return 0;
+        if (this.gt(o))
+            return 1;
+        else
+            return -1;
+    }
+
+```
+
+What does this allow us to do?  It allows us to go into the main of `ReadFileOfRationals` and demonstrate how to
+sort using the "natural ordering" provided by `compareTo`.   Here's what that code looks like:
+
+```
 TODO
 ```
+
