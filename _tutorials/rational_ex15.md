@@ -154,7 +154,7 @@ What does this allow us to do?  It allows us to go into the main of `ReadFileOfR
 sort using the "natural ordering" provided by `compareTo`.   Here's what that code looks like:
 
 ```
-TODO
+   java.util.Collections.sort(numbers);
 ```
 
 And to run it, we can first do `mvn package` to create a jar file:
