@@ -14,7 +14,9 @@ other things, machine learning.    That's a whole other subject.
 
 # References
 
+
 * Main web page for SparkJava: <http://sparkjava.com/>
+* Tutorials: <http://sparkjava.com/tutorials/>
 * SparkJava API Documentation: <http://sparkjava.com/documentation.html>
 * javadoc (unofficial, see note below) <https://ucsb-cs56-pconrad.github.io/spark/target/site/apidocs/index.html>
 * github repo: <https://github.com/perwendel/spark>
