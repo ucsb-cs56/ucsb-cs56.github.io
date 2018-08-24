@@ -40,11 +40,13 @@ But to work with it, we'll need to understand the `java.lang.Comparable<T>` inte
 
 It want to be able to sort objects of class `T`, and there is some *normal*, *natural* way to sort those objects, i.e. a single "obvious* way that folks might want to sort those things, then it is helpful for class `T` to implement the `java.lang.Comparable<T>` interface.
 
-The benefit is that we can then just use the `sort` method of `java.util.ArrayList<T>`.  For example, if `Rational` were to implement `java.lang.Comparable<Rational>` in a way that compares them based on their place on the number line of real numbers (i.e. the set that in Math classes we call &#8477; or for that matter, the set of rationals &#8474;), then we could write:
+The benefit is that we can then just use the method `java.util.Collections.sort`, which can be called on any `ArrayList<T>` as long as `T` implements the `java.util.Comparable<T>` interface.
+
+For example, if `Rational` were to implement `java.lang.Comparable<Rational>` in a way that compares them based on their place on the number line of real numbers (i.e. the set that in Math classes we call &#8477; or for that matter, the set of rationals &#8474;), then we could write:
 
 ```java
    ArrayList<Rational> nums = ReadFileOfRationals.readArrayListFromFile("rationals.txt");
-   nums.sort();   
+   java.util.Collections.sort(nums);   
 ```
 
 And the references in the `ArrayList<Rational>` referred to by `nums` would be sorted so that they point to `Rational` objects arranged in ascending order.
@@ -125,3 +127,31 @@ sort using the "natural ordering" provided by `compareTo`.   Here's what that co
 TODO
 ```
 
+And to run it, we can first do `mvn package` to create a jar file:
+
+```
+pconrad$ mvn package
+...
+(Lots of output from Maven not shown)
+...
+pconrad$ ls target/*.jar
+target/rational11-1.0-SNAPSHOT.jar
+pconrad$ 
+```
+
+Then, we can use a command of this form 
+
+* <tt>java -cp </tt><i>jarfile name-of-class arguments</i>
+
+Here, `-cp` stands for *classpath* and what follows is the name of a jar file that contains our classes.  If we have multiple such jar files, we can separate those files with colons, e.g. <tt>-cp file1.jar:file2.jar</tt>
+
+Here's how we use a command of that form to run the main class from `edu.ucsb.cs56.pconrad.rational.ReadFileOfRationals` to read rational numbers from the file `resources/rational1.txt`:
+
+```
+pconrad$ java -cp target/rational11-1.0-SNAPSHOT.jar edu.ucsb.cs56.pconrad.rational.ReadFileOfRationals resources/rational1.txt 
+numbers (before soring) = [2/3, 5/8, 9/10, -1/4]
+numbers (after soring) = [-1/4, 5/8, 2/3, 9/10]
+pconrad$ 
+```
+
+As you can see, we have sorted the array of Rationals!
