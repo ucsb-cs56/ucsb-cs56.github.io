@@ -150,7 +150,7 @@ Here's how we use a command of that form to run the main class from `edu.ucsb.cs
 ```
 pconrad$ java -cp target/rational11-1.0-SNAPSHOT.jar edu.ucsb.cs56.pconrad.rational.ReadFileOfRationals resources/rational1.txt 
 numbers (before soring) = [2/3, 5/8, 9/10, -1/4]
-numbers (after soring) = [-1/4, 5/8, 2/3, 9/10]
+numbers (after sorting) = [-1/4, 5/8, 2/3, 9/10]
 pconrad$ 
 ```
 
