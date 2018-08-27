@@ -123,7 +123,7 @@ There is a `plugin` for Maven to deploy Heroku apps.
 
 One note: it appears that you *need to be logged into a Heroku account* using the Heroku CLI on the machine where you are running Maven, or else this plugin will not work.
 
-Here's an example of the plugin configuration in the pom.xml to get this to work:
+Here's an example of the plugin configuration in the pom.xml to get this to work.  It is adapated from [this tutorial about using SparkJava with Heroku](https://sparktutorials.github.io/2015/08/24/spark-heroku.html)
 
 ```xml
      <plugin>
