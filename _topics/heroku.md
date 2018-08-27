@@ -111,8 +111,35 @@ To get a Java webapp running on Heroku (e.g. a SparkJava web app), here's the mi
 
 The "Heroku Toolbelt" is a command-line interface to Heroku that you can install on Windows, Mac or Linux.
 
-Installing this on CSIL, officially, is a bit of a problem, since, regrettably, Heroku does not make a regular "yum" style install for Fedora systems available.    For the time being, therefore, we are going to "work around" the Heroku toolbelt, and not use it at all.
+As of this writing (08/27/2018), the Heroku toolbelt is also available on the CSIL machines and the machines in Phelps 3525 (CSTL).
 
-Instead, we'll use the web interface.  As far as I know, we'll be able to do everything we need to do through that interface.
+* Use `heroku login` to login to your heroku account for your current CSIL shell session
+* Use the command `heroku` to list the available commands
+* Use `heroku logout` if you want to logout and login to a different heroku account.
 
-If you find something you can't get done, let me know.
+# Deploying Java apps to Heroku with Maven
+
+There is a `plugin` for Maven to deploy Heroku apps.   
+
+One note: it appears that you *need to be logged into a Heroku account* using the Heroku CLI on the machine where you are running Maven, or else this plugin will not work.
+
+Here's an example of the plugin configuration in the pom.xml to get this to work:
+
+```xml
+     <plugin>
+	<groupId>com.heroku.sdk</groupId>
+	<artifactId>heroku-maven-plugin</artifactId>
+	<version>0.4.4</version>
+	<configuration>
+          <jdkVersion>1.8</jdkVersion>
+          <!-- Use your own application name, the one from Heroku Dashboard -->
+	  <!-- Or use heroku create app-name, e.g. heroku create cs56-m18-lab03-phill -->
+          <appName>cs56-m18-lab03-phill</appName> 
+          <processTypes>
+            <!-- Tell Heroku how to launch your application -->
+            <!-- You might have to remove the ./ in front   -->
+            <web>java -jar ./target/sparkjava-demo-1.0-jar-with-dependencies.jar</web>
+          </processTypes>
+	</configuration>
+      </plugin>
+```
