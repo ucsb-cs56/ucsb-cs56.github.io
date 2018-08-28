@@ -44,8 +44,9 @@ The repo linked to is a clone of the repo <https://github.com/tipsy/spark-basic-
    * A `Procfile` that tells to run that jar on startup
    * Code to deploy to Heroku using the Heroku CLI
 
-This application is described in detail at [this page]<http://sparkjava.com/tutorials/application-structure> which you 
-are encouraged to read through, while also reading through the code. 
+This application is described in detail in the tutorial [Creating a library website with SparkJava](http://sparkjava.com/tutorials/application-structure).
+
+You are encouraged to create a fork of [my fork of that app]({{page.code_repo}}) (i.e. the one with the extra stuff to deploy easily on Heroku), clone it, and play around with the code as you read through the [Creating a library website with SparkJava](http://sparkjava.com/tutorials/application-structure) tutorial.
 
 As the introduction to that tutorial says (emphasis and bulletting added):
 
