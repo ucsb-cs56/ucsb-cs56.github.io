@@ -35,7 +35,7 @@ See also, [Oracle lesson on pre-defined annotations](https://docs.oracle.com/jav
   is perfect legal from a syntax point of view, but doesn't have the effect you intend.   Without `@Override`, the compiler can't
   warn you that your method isn't actually overriding anything.  Your code has a problem, but you won't know unless testing reveals it.
   
-* '@Deprecated` is used to indicate that a certain method is one that programmers should try to avoid using in new code, because it may go 
+* `@Deprecated` is used to indicate that a certain method is one that programmers should try to avoid using in new code, because it may go 
   away in a future release.   You might use `@Deprecated` if you are trying to refactor some legacy code and want to remove a particular method.  
   Marking it as deprecated will allow you to see a compiler warning each time it is used, so that you can, over time, systematically
   eliminate all uses of it from your code base, replacing it with some better method, while continuing to have the code work in the meantime.
