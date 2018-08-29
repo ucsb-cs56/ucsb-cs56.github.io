@@ -17,6 +17,18 @@ This site is maintained in this github repo: <https://github.com/UCSB-CS56-pconr
 
 </div><!-- about -->
 
+<div id="prev-offerings" data-role="collapsible" data-collapsed="true">
+<h2>Previous Offerings of CS56</h2>
+<div markdown="1">
+
+* [M18](https://ucsb-cs56-m18.github.io/)
+* [W18](https://ucsb-cs56-w18.github.io/)
+* [F17](https://ucsb-cs56-f17.github.io/)
+* [M16](https://ucsb-cs56-m16.github.io/)
+
+</div><!-- markdown -->
+</div><!-- collapsible -->
+
 
 <div id="textbooks" data-role="collapsible" data-collapsed="false">
   <h2>Textbooks</h2>
