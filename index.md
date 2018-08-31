@@ -21,7 +21,7 @@ This site is maintained in this github repo: <https://github.com/UCSB-CS56-pconr
 <h2>Previous Offerings of CS56</h2>
 <div markdown="1">
 
-[M18](https://ucsb-cs56-m18.github.io/)  [W18](https://ucsb-cs56-w18.github.io/) [F17](https://ucsb-cs56-f17.github.io/) [M16](https://ucsb-cs56-m16.github.io/) [W16](https://foo.cs.ucsb.edu/56wiki/index.php/Main_Page) [W15](https://foo.cs.ucsb.edu/56wiki/index.php/Main_Page) [S13](http://www.cs.ucsb.edu/~pconrad/cs56/) [S12](http://www.cs.ucsb.edu/~pconrad/cs56/) [W12](http://www.cs.ucsb.edu/~pconrad/cs56/) [W11](http://www.cs.ucsb.edu/~pconrad/cs56/) [S11](http://www.cs.ucsb.edu/~pconrad/cs56/)
+[M18](https://ucsb-cs56-m18.github.io/)  [W18](https://ucsb-cs56-w18.github.io/) [F17](https://ucsb-cs56-f17.github.io/) [M16](https://ucsb-cs56-m16.github.io/) [W16](https://foo.cs.ucsb.edu/56wiki/index.php/Main_Page) [W15](https://foo.cs.ucsb.edu/56wiki/index.php/Main_Page) [W14](https://foo.cs.ucsb.edu/56wiki/index.php/Template:W14Hdr) [S13](http://www.cs.ucsb.edu/~pconrad/cs56/) [S12](http://www.cs.ucsb.edu/~pconrad/cs56/) [W12](http://www.cs.ucsb.edu/~pconrad/cs56/) [W11](http://www.cs.ucsb.edu/~pconrad/cs56/) [S11](http://www.cs.ucsb.edu/~pconrad/cs56/)
 
 </div><!-- markdown -->
 </div><!-- collapsible -->
