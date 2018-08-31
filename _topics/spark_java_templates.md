@@ -31,12 +31,14 @@ What is both wonderful and awful about SparkJava is that it gives you a wide var
 The list is shown on this page: <http://sparkjava.com/documentation#views-and-templates>.  The ones that are marked as "mature" 
 are listed here.  I encourage you to choose one of these.
 
-* Velocity (very mature, feature rich, great IDE support)
-* Freemarker (very mature, feature rich, great IDE support)
-* Mustache (mature, decent IDE support)
-* Handlebars (mature, decent IDE support)
-* Jade (mature, decent IDE support)
-* Thymeleaf (mature, feature rich, decent IDE support)
+| Templating Engine | Link to some documentation | 
+|-|-|
+| Velocity  | [Velocity User Guide](http://velocity.apache.org/engine/1.7/user-guide.html) | 
+| Freemarker |   |
+| Mustache   |   |
+| Handlebars |   |
+| Jade       |   |
+| Thymeleaf  |   |
 
 There are five others marked as "we know very little about this"; I encourage you not to use those.
 
