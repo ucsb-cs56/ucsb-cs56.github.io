@@ -21,8 +21,8 @@ it's name:
 <div id="comments">
   {% raw %}{{{% endraw %}#each comments{% raw %}}}{% endraw %}
   <h2><a href="/posts/{{../permalink}}#{{id}}">{{title}}</a></h2>
-  <div>{{body}}</div>
-  {{/each}}
+  <div>{% raw %}{{{% endraw %}body{% raw %}}}{% endraw %}</div>
+  {% raw %}{{{% endraw %}/each{% raw %}}}{% endraw %}
 </div>
 ```
 
