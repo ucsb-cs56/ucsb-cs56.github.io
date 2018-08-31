@@ -34,7 +34,7 @@ are listed here.  I encourage you to choose one of these.
 | Templating Engine | Link to some documentation | 
 |-|-|
 | Velocity  | [Velocity User Guide](http://velocity.apache.org/engine/1.7/user-guide.html) | 
-| Freemarker |   |
+| Freemarker | [Freemarker Getting Started](https://freemarker.apache.org/docs/dgui_quickstart_basics.html)  |
 | Mustache   |   |
 | Handlebars |   |
 | Jade       |   |
