@@ -14,16 +14,17 @@ generate HTML.  The `{{}} characters look like the handlebars of a bicycle if yo
 it's name:
 
 
-{% raw %}
+
+```
 <h1>Comments</h1>
 
 <div id="comments">
-  {{#each comments}}
+  {% raw %}{{{% endraw %}#each comments{% raw %}}}{% endraw %}
   <h2><a href="/posts/{{../permalink}}#{{id}}">{{title}}</a></h2>
   <div>{{body}}</div>
   {{/each}}
 </div>
-{% endraw %}
+```
 
 What is both wonderful and awful about SparkJava is that it gives you a wide variety of choices for your templating engine.
 
