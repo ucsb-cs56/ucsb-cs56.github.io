@@ -1,6 +1,7 @@
 ---
-topic: "Spark Java"
+topic: "SparkJava"
 desc: "A micro framework for creating web applications in Java 8 with minimal effort"
+prefix: "SparkJava: "
 ---
 
 Spark is, according to its website (quote retrieved on 6/20/2016):
