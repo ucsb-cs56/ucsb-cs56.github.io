@@ -13,7 +13,8 @@ For example, here is a template written using the [Handlebars](https://handlebar
 generate HTML.  The `{{}} characters look like the handlebars of a bicycle if you look at them sideways; that's what gives Handlebars
 it's name:
 
-```
+
+{% raw %}
 <h1>Comments</h1>
 
 <div id="comments">
@@ -22,7 +23,7 @@ it's name:
   <div>{{body}}</div>
   {{/each}}
 </div>
-```
+{% endraw %}
 
 What is both wonderful and awful about SparkJava is that it gives you a wide variety of choices for your templating engine.
 
