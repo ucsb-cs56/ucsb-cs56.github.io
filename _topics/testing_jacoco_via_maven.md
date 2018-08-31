@@ -43,3 +43,12 @@ Here are a few:
 * <https://www.petrikainulainen.net/programming/maven/creating-code-coverage-reports-for-unit-and-integration-tests-with-the-jacoco-maven-plugin/>
 
 * <https://www.javaworld.com/article/2074515/core-java/unit-test-code-coverage-with-maven-and-jacoco.html>
+
+# Troubleshooting Jacoco
+
+1.  Make sure you have the latest version of the jacoco
+2.  Make sure you do `mvn test` then `mvn jacoco:report` then `mvn site:deploy`
+3.  Make sure that you `git add docs`, commit and push so that the latest version is online.
+4.  If you reset `<argLine>`, make sure that you add `${argLine}` inside your new setting.
+   * WRONG: `<argLine>-Xmx1024M </argLine>`  (If it were Java, this would be: `argLine="-Xmx1024M"` )
+   * CORRECT: `<argLine>-Xmx1024M ${argLine}</argLine>` (In Java, this would be: `argLine = "-Xmx1024M " + argLine`)
