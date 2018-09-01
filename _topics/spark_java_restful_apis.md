@@ -2,6 +2,7 @@
 topic: "SparkJava: RESTful APIs"
 desc: "Creating RESTful APIs with SparkJava"
 indent: True
+category_prefix: "SparkJava: "
 ---
 
 When we think of web apps, we normally think of a human end user interacting with the web app through a browser. 
