@@ -35,12 +35,18 @@ are listed here.  I encourage you to choose one of these.
 |-|-|
 | Velocity  | [Velocity User Guide](http://velocity.apache.org/engine/1.7/user-guide.html) | 
 | Freemarker | [Freemarker Getting Started](https://freemarker.apache.org/docs/dgui_quickstart_basics.html)  |
-| Mustache   |   |
+| Mustache   |  [Baeldung tutorial for Mustache using Java](https://www.baeldung.com/mustache) |
 | Handlebars | [Handlebars.java](https://jknack.github.io/handlebars.java/gettingStarted.html)  |
-| Jade       |   |
-| Thymeleaf  |   |
+| Jade       |  [Jade Syntax](https://naltatis.github.io/jade-syntax-docs/) |
+| Thymeleaf  | [Thymeleaf Tutorial](https://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html)  |
 
 There are five others marked as "we know very little about this"; I encourage you not to use those.
 
 Each template engine has its particular pros and cons.  Eventually, we may settle on one.   For now, as you explore various SparkJava
 tutorials, notice which of these template engines is being used.
+
+Some examples of tutorials and full webapp examples that use various templating engines:
+
+|Tutorial|Template Engine|Github Repo|
+|-|-|-|
+|[Library website](http://sparkjava.com/tutorials/application-structure)| Velocity | <https://github.com/tipsy/spark-basic-structure>|
