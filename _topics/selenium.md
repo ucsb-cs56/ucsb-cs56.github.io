@@ -48,7 +48,7 @@ Or, download a version for your Mac, Windows or Linux laptop.
 
 # Repo with sample code to test a web app using Java
 
-<https://github.com/guanguangua/sparkjava-01>
+<https://github.com/ucsb-cs56-pconrad/cs56-selenium-java-demo>
 
 Look in the file  `src/test/java/edu/ucsb/cs56/pconrad/SparkDemo01Test.java`
 
