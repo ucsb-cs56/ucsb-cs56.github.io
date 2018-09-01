@@ -36,7 +36,7 @@ are listed here.  I encourage you to choose one of these.
 | Velocity  | [Velocity User Guide](http://velocity.apache.org/engine/1.7/user-guide.html) | 
 | Freemarker | [Freemarker Getting Started](https://freemarker.apache.org/docs/dgui_quickstart_basics.html)  |
 | Mustache   |   |
-| Handlebars |   |
+| Handlebars | [Handlebars.java](https://jknack.github.io/handlebars.java/gettingStarted.html)  |
 | Jade       |   |
 | Thymeleaf  |   |
 
