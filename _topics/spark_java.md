@@ -1,5 +1,5 @@
 ---
-topic: "SparkJava"
+topic: "SparkJava: "
 desc: "A micro framework for creating web applications in Java 8 with minimal effort"
 category_prefix: "SparkJava: "
 ---
