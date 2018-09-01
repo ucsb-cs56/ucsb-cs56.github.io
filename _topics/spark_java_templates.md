@@ -2,6 +2,7 @@
 topic: "SparkJava: Templates"
 desc: "The various template engines you can use with SparkJava"
 indent: True
+category_prefix: "SparkJava: "
 ---
 
 Almost every web framework has some kind of *templating engine* built into it.
