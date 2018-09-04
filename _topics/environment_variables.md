@@ -17,10 +17,20 @@ Those values can be read from inside Java code in one of several ways.
 
 Here are some examples:
 
-# Example 1:
+# Example 1: Using `System`
 
 
-# Example 2:
+# Example 2: Using `ProcessBuilder`
+
+```java
+ static int getHerokuAssignedPort() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null) {
+            return Integer.parseInt(processBuilder.environment().get("PORT"));
+        }
+        return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
+    }
+```
 
 # Example 3: Multiple Environment Variables
 
