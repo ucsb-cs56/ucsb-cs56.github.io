@@ -19,6 +19,9 @@ Here are some examples:
 
 # Example 1: Using `System`
 
+```java
+String DB_USER = System.getenv("DB_USER");
+```
 
 # Example 2: Using `ProcessBuilder`
 
