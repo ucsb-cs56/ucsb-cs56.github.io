@@ -58,3 +58,25 @@ The biggest drawback is that if/when you are trying to do something *very specif
 * [Apache Maven FAQ](https://maven.apache.org/general.html)
 * [Apache Maven in 5 minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)    
  
+
+# Remove custom files (e.g. `logs`) in `mvn clean`
+
+* If you want `*.log` from the `logs` directory (or any other custom fileset or directory) to be deleted when you do `mvn clean`, here is how you can accomplish that: just "configure the `maven-clean-plugin`" in your pom.xml (as explained [here](https://maven.apache.org/plugins/maven-clean-plugin/examples/delete_additional_files.html)).  Be sure this goes in the `build` plugsin (not the `reporting` plugins, for example.)
+
+```xml
+   <!-- also remove logs on maven clean -->
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <filesets>
+            <fileset>
+              <directory>logs</directory>
+              <includes>
+                <include>**/*.log</include>
+              </includes>
+            </fileset>
+          </filesets>
+        </configuration>
+      </plugin>
+```
