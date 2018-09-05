@@ -41,4 +41,4 @@ It has since become a widely adopted model for building web services based on HT
 # References on RESTful APIs
 
 * Wikipedia article <https://en.wikipedia.org/wiki/Representational_state_transfer>
-
+* <https://en.wikipedia.org/wiki/Representational_state_transfer#Relationship_between_URL_and_HTTP_methods>
