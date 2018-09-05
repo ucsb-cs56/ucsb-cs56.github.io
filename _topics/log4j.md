@@ -75,7 +75,7 @@ Too little log output can be frustrating, since you don't know what's going on. 
 # `logs/` in `.gitignore`, and remove `logs` in `mvn clean`
 
 * Put `logs/` in your .gitignore to avoid having logs show up in github
-* If you want the `logs` directory (or any other custom directory) to be deleted when you do `mvn clean`, here is how you can accomplish that: just "configure the `maven-clean-plugin`" in your pom.xml (as explained [here](https://maven.apache.org/plugins/maven-clean-plugin/examples/delete_additional_files.html)):
+* If you want the `logs` directory (or any other custom directory) to be deleted when you do `mvn clean`, here is how you can accomplish that: just "configure the `maven-clean-plugin`" in your pom.xml (as explained [here](https://maven.apache.org/plugins/maven-clean-plugin/examples/delete_additional_files.html)).  Be sure this goes in the `build` plugsin (not the `reporting` plugins, for example.)
 
 ```xml
    <!-- also remove logs on maven clean -->
