@@ -43,7 +43,7 @@ To fix this, create a file called `log4j.properties` in the file `src/main/resou
 
 ```
 # Root logger option
-log4j.rootLogger=DEBUG, stdout, file
+log4j.rootLogger=DEBUG, stdout
 
 # Redirect log messages to console
 log4j.appender.stdout=org.apache.log4j.ConsoleAppender
@@ -51,13 +51,6 @@ log4j.appender.stdout.Target=System.out
 log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
 log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
 
-# Redirect log messages to a log file, support file rolling.
-log4j.appender.file=org.apache.log4j.RollingFileAppender
-log4j.appender.file.File=logs/log4j-application.log
-log4j.appender.file.MaxFileSize=5MB
-log4j.appender.file.MaxBackupIndex=10
-log4j.appender.file.layout=org.apache.log4j.PatternLayout
-log4j.appender.file.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
 ```
 
 Once you do this, you'll start seeing a lot more information in the output stream of your Sparkjava webapps.
@@ -72,28 +65,6 @@ For example:
 
 Too little log output can be frustrating, since you don't know what's going on.  But too much can be overwhelming, so it's possible to tailor the level of output using the settings in the `log4j.properties` file.
 
-# `logs/` in `.gitignore`, and remove `logs` in `mvn clean`
-
-* Put `logs/` in your .gitignore to avoid having logs show up in github
-* If you want the `logs` directory (or any other custom directory) to be deleted when you do `mvn clean`, here is how you can accomplish that: just "configure the `maven-clean-plugin`" in your pom.xml (as explained [here](https://maven.apache.org/plugins/maven-clean-plugin/examples/delete_additional_files.html)).  Be sure this goes in the `build` plugsin (not the `reporting` plugins, for example.)
-
-```xml
-   <!-- also remove logs on maven clean -->
-      <plugin>
-        <artifactId>maven-clean-plugin</artifactId>
-        <version>3.1.0</version>
-        <configuration>
-          <filesets>
-            <fileset>
-              <directory>logs</directory>
-              <includes>
-                <include>**/*.log</include>
-              </includes>
-            </fileset>
-          </filesets>
-        </configuration>
-      </plugin>
-```
 
 For more information, see:
 
