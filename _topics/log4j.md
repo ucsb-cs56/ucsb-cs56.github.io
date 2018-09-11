@@ -70,3 +70,4 @@ For more information, see:
 
 * <https://www.tutorialspoint.com/log4j/>
 * <https://www.mkyong.com/logging/log4j-hello-world-example/>
+* <https://www.tutorialspoint.com/log4j/log4j_logging_levels.htm>
