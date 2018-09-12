@@ -16,13 +16,14 @@ then, this page describes a solution for you.  (Note: this solution
 is [partially documented on the SparkJava documentation](http://sparkjava.com/documentation#static-files) but that
 version leaves out a few crucial details.)
 
-1.  Make a directory `/src/main/resources/public`
-2.  Put the image files in that directory.
+1.  Make a directory `src/main/resources/public/images` 
+   * You can use the command `mkdir -p src/main/resources/public/images` from your top level directory.
+2.  Put the image files in the directory: `src/main/resources/public/images`
 3.  Add this line to your code:
    staticFiles.location("/public"); // Static files
 4.  In your HTML code:
-   * if the file is `/src/main/resources/public/cat1.jpg`, 
-   * your `img` element should be: `<img src="/public/cat1.jpg">`
+   * if the file is `/src/main/resources/public/images/cat1.jpg`, 
+   * your `img` element should be: `<img src="/images/cat1.jpg">`
    Note: do not include the `/src/main/resources` part in your `src` attribute value.
 5. You *must* do `mvn compile` each time you make changes to the contents of `/src/main/resources/public`,   
    or for that matter, *any* file or directory under `/src/main/resources` if you want those changes to 
