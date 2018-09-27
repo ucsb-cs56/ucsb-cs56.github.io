@@ -5,27 +5,22 @@ indent: True
 category_prefix: "SparkJava: "
 ---
 
-Almost every web framework has some kind of *templating engine* built into it.
+Almost every web framework has some kind of *templating engine* built
+into it.
 
-A templating engine allows you to build a web page by iterating over a data structure.   A template is a mix of HTML, with stuff that looks
-a little like code.
+A templating engine allows you to build a web page by iterating over a
+data structure.  A template is a mix of HTML, with stuff that looks a
+little like code.
 
-For example, here is a template written using the [Handlebars](https://handlebarsjs.com/) template engine.  The stuff inside `{{}}` are the pieces of code that 
-generate HTML.  The `{{}} characters look like the handlebars of a bicycle if you look at them sideways; that's what gives Handlebars
-it's name:
+For example, here is a template written using the
+[Handlebars](https://handlebarsjs.com) template engine.
 
+The stuff inside the curly braces are commands that control the
+generation of content.  The curly brace characters look like the
+handlebars of a bicycle if you look at them sideways; that's what
+gives Handlebars it's name (same with Mustache, which is another
+template engine.)
 
-
-```
-<h1>Comments</h1>
-
-<div id="comments">
-  {% raw %}{{{% endraw %}#each comments{% raw %}}}{% endraw %}
-  <h2><a href="/posts/{{../permalink}}#{{id}}">{{title}}</a></h2>
-  <div>{% raw %}{{{% endraw %}body{% raw %}}}{% endraw %}</div>
-  {% raw %}{{{% endraw %}/each{% raw %}}}{% endraw %}
-</div>
-```
 
 What is both wonderful and awful about SparkJava is that it gives you a wide variety of choices for your templating engine.
 

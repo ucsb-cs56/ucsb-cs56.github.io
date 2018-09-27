@@ -1,9 +1,16 @@
+course: "CS56"
+qtr: "F18"
+quarter: "Fall 2018"
+piazza_course_page: https://piazza.com/class/jkq2p768nf6xb
+gauchospace_course_page: https://gauchospace.ucsb.edu/courses/course/view.php?id=31412
+github_org_name: ucsb-cs56-f18
+github_org_url: https://github.com/ucsb-cs56-f18
+
 title: "UCSB CS56 pconrad"
 github_url: https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io
 mentor_url: https://ucsb-cs56-pconrad-mentors.github.io
 github_repo: UCSB-CS56-pconrad.github.io
-gauchospace_course_page: https://gauchospace.ucsb.edu/courses/course/view.php?id=19139
-piazza_course_page: https://piazza.com/class/j80k1o0zsxg1j7
+
 
 on_campus: http://proquest.safaribooksonline.com
 off_campus: http://proquest.safaribooksonline.com.proxy.library.ucsb.edu:2048/
@@ -14,13 +21,13 @@ office_hours_page: https://ucsb-cs56-f16.github.io/info/office_hours/
 legacy_wiki_url: https://foo.cs.ucsb.edu/56wiki
 legacy_wiki_name: "56wiki"
 
-curr_qtr: "M18"
-curr_qtr_web_url: "https://ucsb-cs56-m18.github.io"
+curr_qtr: "F18"
+curr_qtr_web_url: "https://ucsb-cs56-f18.github.io"
 course: "CS56"
-curr_qtr_github_org_url: "https://github.com/ucsb-cs56-m18"
-curr_qtr_github_org: ucsb-cs56-m18
-github_org_name: ucsb-cs56-m18
-github_org_url: https://github.com/ucsb-cs56-m18
+curr_qtr_github_org_url: "https://github.com/ucsb-cs56-f18"
+curr_qtr_github_org: ucsb-cs56-f18
+github_org_name: ucsb-cs56-f18
+github_org_url: https://github.com/ucsb-cs56-f18
 
 #kramdown:
 #  parse_block_html: true
