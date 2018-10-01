@@ -30,3 +30,6 @@ RESTful APIS provide:
 Here are some examples of building RESTful APIs using SparkJava
 
 * <https://github.com/ucsb-cs56-pconrad/sparkjava-lombok-jackson-example>
+   * A very simple example of JUST a RESTful API
+* <https://github.com/ucsb-cs56-pconrad/sparkjava-rest-mlab-frontend>
+   * This one has a frontend along with a RESTful API
