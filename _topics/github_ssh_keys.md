@@ -114,7 +114,7 @@ The key's randomart image is:
 If you encounter problems using your CSIL SSH keys, try typing one or both of these command into your command shell:
 
 -   `chmod` `700` `~/.ssh/id_rsa`
--   `ssh-add` `~/.ssh/id_rsa`
+
 
 The first command changes the permissions on your private key, ensuring that you personally have all access. The second command adds your new private key to your SSH keyring.
 
