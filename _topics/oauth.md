@@ -14,5 +14,12 @@ A common way of delegating authentication is via a protocol called OAuth.
 This is the protocol that allows the "login with Facebook", "login with Google", etc. functionality
 you see on many websites.
 
-On this page, we'll describe some of the basic concepts of working with OAuth in Java.
+# OAuth in the context of CS56
 
+In CS56, we'll typically be dealing with OAuth in the context of using it in combination with [SparkJava web applications](/topics/spark_java/).
+
+That involves using a package called [Pac4j](/topics/pac4j/).  Pac4J is a library for authentication in Java that tries to provide a common interface to many different authentication mechanisms (not only OAuth).    There are then extensions to Pac4J for particular platforms, including SparkJava.
+
+Please see these links for more information on:
+* [Pac4J](/topics/pac4j/)
+* [SparkJava:Authentication](/topics/spark_java_authentication)
