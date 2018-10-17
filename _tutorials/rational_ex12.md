@@ -68,8 +68,8 @@ In Maven, though, all of the names of things that follow `mvn` such as `mvn clea
 
 <div class="with-borders">
 
-| What | How, with Ant | How with Maven | Comments |
-|-|-|-|-|
+| What | How, with Ant | How with Maven | 
+|------|---------------|----------------|
 | The file that controls everything | `build.xml` | `pom.xml` | 
 | tidy up for a fresh start | `ant clean` | `mvn clean` |
 | compile the code | `ant compile` | `mvn compile` | 
