@@ -1,6 +1,10 @@
 ---
-topic: "github-api"
+topic: "github: api"
 desc: "Java Api for Github"
+indent: true
 ---
 
-Main documentation is here: <http://github-api.kohsuke.org/>
+| Resource | Link |
+|----------|------|
+|Home Page|<http://github-api.kohsuke.org/>|
+|Javadoc|<http://github-api.kohsuke.org/apidocs/index.html>|
