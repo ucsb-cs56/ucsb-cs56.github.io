@@ -202,8 +202,59 @@ int compareTo(T o1, T o2);
 
 That method looks a lot like the `int compare(T o)` method, except that it is not a method of class `T`; instead, it's an instance method of some other class.  It may help to think of a `Comparator<T>` object as a kind of "plugin" or "add-on" that you use whenever you want to compare two objects of type `T`.  As the meme goes, this class  literally "has only one job".
 
-Here's what a Comparator class for comparing Dog objects by weight would look like:
+Here's what a Comparator class for comparing Dog objects by weight would look like.  
+
 
 ```java
+public class DogWeightComparator implements java.util.Comparator<Dog> {
+    @Override
+    public int compare(Dog o1, Dog o2) {
+        return Double.compare(o1.getWeight(),o2.getWeight());
+    }
+}
+```
+
+Side note: 
+* The example above of `DogWeightComparator.java` is an example of writing a class that implements `Comparator<Dog>` as a separate standalone class, in it's own file.  In practice, that is *almost never done*.
+* Instead, we typically make these little `Comparator` classes be inner classes, anonymous inner classes, or lambda expressions; but we'll get to that. One thing at a time!
+
+Ok, so with a `DogWeightComparator` class present, we can now write this code:
+
+```java
+import java.util.ArrayList;
+public class SortDogs2 {
+    
+    public static void main(String [] args) {
+        ArrayList<Dog> kennel = new ArrayList<Dog>();
+        
+        kennel.add(new Dog("Fido",15));
+        kennel.add(new Dog("Spot",20));
+        kennel.add(new Dog("Puddles",8));
+        kennel.add(new Dog("Doge",45));
+        kennel.add(new Dog("Catepillar",90));
+        
+        System.out.println("Not sorted: " + kennel);
+        java.util.Collections.sort(kennel);
+        System.out.println("Sorted by name " + kennel);
+        java.util.Collections.sort(kennel,new DogWeightComparator());
+        System.out.println("Sorted by weight " + kennel);       
+    }   
+}
 
 ```
+
+And when we run it, we get:
+
+```
+$ java SortDogs2
+Not sorted: [[Fido,15.0], [Spot,20.0], [Puddles,8.0], [Doge,45.0], [Catepillar,90.0]]
+Sorted by name [[Catepillar,90.0], [Doge,45.0], [Fido,15.0], [Puddles,8.0], [Spot,20.0]]
+Sorted by weight [[Puddles,8.0], [Fido,15.0], [Spot,20.0], [Doge,45.0], [Catepillar,90.0]]
+$ 
+```
+
+Now that we have a class that implements `Comparator<Dog>` we could nalso use the built in `sort` method of `java.util.ArrayList`.  That is:
+
+| Instead of | We could write |
+|-|-|
+|``|``|
