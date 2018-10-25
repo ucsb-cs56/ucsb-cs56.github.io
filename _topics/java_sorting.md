@@ -260,3 +260,20 @@ Now that we have a class that implements `Comparator<Dog>` we could nalso use th
 | Instead of | We could write |
 |-|-|
 |` java.util.Collections.sort(kennel,new DogWeightComparator());`|` kennel.sort(new DogWeightComparator());`|
+
+# Easier sorting with Lambda Expressions
+
+Lambda expressions give us a way to create a Comparator with much less bother.  
+
+* They are NOT more efficient in terms of memory, or run time or anything to do with computational efficiency
+* But they are are more efficient for the human programmer.
+
+They are a shorthand syntax.   The best way to understand what they are is to consider four options for creating a comparator, each one moving us close to lambda expresions in stages.
+
+! Stage | Explanation | Example Code |
+|-|-|-|
+| Stage 1| Comparator as a separate standalone class, like we did with `DogWeightComparator`, and instantiate it with `new DogWeightComparator()` when we need a comparator object. | See `DogWeightComparator` above |
+| Stage 2| Comparator as a named inner class.  The difference between this and Stage 1, is that we don't need a separate `.java` source file; and the inner class doesn't have to use getters; it can directly access the private data members of the class. | See `DogWeightInnerClass` below |
+| Stage 3 | We create an instance of an anonymous inner class.  This one is the most "mysterious"; it appears that we are doing something illegal, i.e. invoking a constructor on an interface, which we all "know" isn't permitted, right?  Except that we are actually, in that moment declaring a class (one with no name) and instantiating it, all at the same time.    I know: that sounds confusing.  It will make sense when we get there. | See `DogWeightAnonymousInnerClass` below |
+| Stage 4: We realize that most of the syntax we wrote in Stage 3 is unnecessary; that is, the compiler can figure out most of what we wrote, so a shorter syntax makes things easier. | See `DogWeightLambdas` below |
+
