@@ -257,4 +257,4 @@ Now that we have a class that implements `Comparator<Dog>` we could nalso use th
 
 | Instead of | We could write |
 |-|-|
-|``|``|
+|` java.util.Collections.sort(kennel,new DogWeightComparator());`|` kennel.sort(new DogWeightComparator());`|
