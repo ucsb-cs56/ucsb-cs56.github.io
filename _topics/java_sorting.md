@@ -4,6 +4,9 @@ desc: "Comparable, Comparators, and sorting ArrayLists and such"
 indent: true
 ---
 
+For code examples in this lesson, see: <https://github.com/UCSB-CS56-pconrad/java-sorting-and-comparators>
+
+
 # Don't write your own sort
 
 If you are writing your own sorting algorithm in Java, *unless* you are doing so for the purpose of *learning* how to write a sorting algorithm (e.g. Insertion Sort, Quicksort, Mergesort, etc.), then you are probably doing something wrong.
@@ -176,4 +179,3 @@ public class Dog implements Comparable<Dog>  {
 
 
 
-See: <https://github.com/UCSB-CS56-pconrad/java-sorting-and-comparators>
