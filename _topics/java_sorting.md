@@ -253,6 +253,8 @@ Sorted by weight [[Puddles,8.0], [Fido,15.0], [Spot,20.0], [Doge,45.0], [Catepil
 $ 
 ```
 
+# Using the `sort` method of `ArrayList`
+
 Now that we have a class that implements `Comparator<Dog>` we could nalso use the built in `sort` method of `java.util.ArrayList`.  That is:
 
 | Instead of | We could write |
