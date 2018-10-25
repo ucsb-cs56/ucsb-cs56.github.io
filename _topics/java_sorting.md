@@ -177,5 +177,33 @@ public class Dog implements Comparable<Dog>  {
 }
 {% endhighlight  %}
 
+Now our code compiles, and sorting works:
 
+```
+$ java SortDogs
+Not sorted: [[Fido,15.0], [Spot,20.0], [Puddles,8.0], [Doge,45.0], [Catepillar,90.0]]
+Sorted by name [[Catepillar,90.0], [Doge,45.0], [Fido,15.0], [Puddles,8.0], [Spot,20.0]]
+$ 
+```
 
+# Sorting in more than one way
+
+But, our `Dog` class has both `name` and `weight`.  What if we want to sort by weight instead of by name?
+
+The problem with sorting based on `Comparable` is that we can only define one way of sorting.    We typically choose, when we implement `Comparable`, the most "obvious" way of sorting our class.  The javadoc calls this the "natural order", though to be honest, there is nothing "natural" about it; it's just the way the programmer decides is the most "reasonable" way to be the default ordering for the class.   
+
+But, we typically want to sort in many different ways, and we may not even be able to anticipate all of them in advance.  We don't want to have to change the source code for the `Dog` class to be able to sort in new ways.  That's where `java.util.Comparator<T>` comes in.
+
+A class that implements the `Comparator<T>` interface is one that implements the method:
+
+```
+int compareTo(T o1, T o2);
+```
+
+That method looks a lot like the `int compare(T o)` method, except that it is not a method of class `T`; instead, it's an instance method of some other class.  It may help to think of a `Comparator<T>` object as a kind of "plugin" or "add-on" that you use whenever you want to compare two objects of type `T`.  As the meme goes, this class  literally "has only one job".
+
+Here's what a Comparator class for comparing Dog objects by weight would look like:
+
+```java
+
+```
