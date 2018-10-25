@@ -12,4 +12,4 @@ indent: true
    * Yellow means it is being missed by *branch coverage*; some branches are covered, and others are not.   
    * Think about the multiple paths through the code and be sure your tests are coverage all of them.
 
-For more on line vs. branch coverage, see: <>
+For more on line vs. branch coverage, see: <https://ucsb-cs56-pconrad.github.io/topics/testing/>
