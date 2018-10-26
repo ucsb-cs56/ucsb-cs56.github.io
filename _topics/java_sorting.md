@@ -309,3 +309,13 @@ public class SortDogs3 {
     }   
 }
 ```
+
+It still sorts!
+
+```
+$ java SortDogs3
+Not sorted: [[Fido,15.0], [Spot,20.0], [Puddles,8.0], [Doge,45.0], [Catepillar,90.0]]
+Sorted by name [[Catepillar,90.0], [Doge,45.0], [Fido,15.0], [Puddles,8.0], [Spot,20.0]]
+Sorted by weight [[Puddles,8.0], [Fido,15.0], [Spot,20.0], [Doge,45.0], [Catepillar,90.0]]
+$ 
+```
