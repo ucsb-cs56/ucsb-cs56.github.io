@@ -275,7 +275,7 @@ They are a shorthand syntax.   The best way to understand what they are is to co
 | Stage 1| Comparator as a separate standalone class, like we did with `DogWeightComparator`, and instantiate it with `new DogWeightComparator()` when we need a comparator object. | See `DogWeightComparator` above |
 | Stage 2| Comparator as a named static inner class.  The difference between this and Stage 1, is that we don't need a separate `.java` source file. | See `DogWeightInnerClass` below |
 | Stage 3 | We create an instance of an anonymous inner class.  This one is the most "mysterious"; it appears that we are doing something illegal, i.e. invoking a constructor on an interface, which we all "know" isn't permitted, right?  Except that we are actually, in that moment declaring a class (one with no name) and instantiating it, all at the same time.    I know: that sounds confusing.  It will make sense when we get there. | See `DogWeightAnonymousInnerClass` below |
-| Stage 4: We realize that most of the syntax we wrote in Stage 3 is unnecessary; that is, the compiler can figure out most of what we wrote, so a shorter syntax makes things easier. | See `DogWeightLambdas` below |
+| Stage 4: We realize that most of the syntax we wrote in Stage 3 is unnecessary; that is, the compiler can figure out most of what we wrote, so a shorter syntax makes things easier. | See `DogWeightLambda` below |
 
 # Stage 2: Using a named inner class (`DogWeightInnerClass`)
 
@@ -380,3 +380,51 @@ Sorted by name [[Catepillar,90.0], [Doge,45.0], [Fido,15.0], [Puddles,8.0], [Spo
 Sorted by weight [[Puddles,8.0], [Fido,15.0], [Spot,20.0], [Doge,45.0], [Catepillar,90.0]]
 $
 ```
+
+# Stage 4: Using Lambdas (`DogWeightLambda`)
+
+Here, finally, we see that we can make the declaration of the anonymous inner class much shorter.
+
+Instead, of:
+
+```
+   Comparator<Dog> sortByWeight= new Comparator<Dog>(){
+                @Override
+                public int compare(Dog o1, Dog o2) {
+                    return Double.compare(o1.getWeight(),o2.getWeight());
+                }               
+            };
+```
+
+We can write the single line of code:
+
+```
+        Comparator<Dog> sortByWeight = (o1,o2) ->  Double.compare(o1.getWeight(),o2.getWeight());
+```
+
+Here's how to interpret this:
+
+| New Syntax |  Replaces |  Explanation | 
+| `(o1, o2)` |  `(Dog o1, Dog o2)` | We need to give names to the variables that are parameters to the `compare` method.  But the types are implied.  Since it's a `Comparator<Dog>`, it is understood that the method we are defining is `compare`, and the types of the two parameters are both `Dog`. | 
+| ` -> ` | `return` | The `->` indicates that what follows is the expression that will come after the return |
+| `Double.compare(o1.getWeight(),o2.getWeight())` | (same) | We need to specify what the `compare` method returns, in terms of `o1` and `o2` |
+
+It's as simple as that.    To make a comparator, we just specify an expression of this form, where `T` is some type:
+
+<tt>Comparator&lt;T&gt; myComparator  = (o1, o2) -&gt; <em> expression </em>;</tt>
+
+If computing the return value is more complicated, we can also put a full block of code in braces after the `->`.  Here's an example 
+of what that would look like:
+
+```
+Comparator<T> myComparator  = (o1, o2) -> {
+    if (o1.equals(o2)) {
+        return 0;
+    } else if (o1.isLessThan(o2)) {
+        return -1;
+    } else {
+        return 1
+    }
+}
+```
+
