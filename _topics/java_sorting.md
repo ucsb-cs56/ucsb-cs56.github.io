@@ -448,10 +448,15 @@ We can write the single line of code:
 
 Here's how to interpret this:
 
-| New Syntax |  Replaces |  Explanation | 
+<div class="nice-table" markdown="1">
+
+| New Syntax |  Replaces |  Explanation |
+|------------|-----------|--------------|
 | `(o1, o2)` |  `(Dog o1, Dog o2)` | We need to give names to the variables that are parameters to the `compare` method.  But the types are implied.  Since it's a `Comparator<Dog>`, it is understood that the method we are defining is `compare`, and the types of the two parameters are both `Dog`. | 
 | ` -> ` | `return` | The `->` indicates that what follows is the expression that will come after the return |
 | `Double.compare(o1.getWeight(),o2.getWeight())` | (same) | We need to specify what the `compare` method returns, in terms of `o1` and `o2` |
+
+</div>
 
 It's as simple as that.    To make a comparator, we just specify an expression of this form, where `T` is some type:
 
