@@ -277,7 +277,7 @@ They are a shorthand syntax.   The best way to understand what they are is to co
 | Stage 3 | We create an instance of an anonymous inner class.  This one is the most "mysterious"; it appears that we are doing something illegal, i.e. invoking a constructor on an interface, which we all "know" isn't permitted, right?  Except that we are actually, in that moment declaring a class (one with no name) and instantiating it, all at the same time.    I know: that sounds confusing.  It will make sense when we get there. | See `DogWeightAnonymousInnerClass` below |
 | Stage 4: We realize that most of the syntax we wrote in Stage 3 is unnecessary; that is, the compiler can figure out most of what we wrote, so a shorter syntax makes things easier. | See `DogWeightLambdas` below |
 
-# Using a named inner class (`DogWeightInnerClass`)
+# Stage 2: Using a named inner class (`DogWeightInnerClass`)
 
 In the directory `DogWeightInnerClass`, we see that the file `SortDogs3.java` illustrates how we can move the compartor inside the class where we declare our main program, like this:
 
@@ -318,4 +318,65 @@ Not sorted: [[Fido,15.0], [Spot,20.0], [Puddles,8.0], [Doge,45.0], [Catepillar,9
 Sorted by name [[Catepillar,90.0], [Doge,45.0], [Fido,15.0], [Puddles,8.0], [Spot,20.0]]
 Sorted by weight [[Puddles,8.0], [Fido,15.0], [Spot,20.0], [Doge,45.0], [Catepillar,90.0]]
 $ 
+```
+
+But we can do better than this.
+
+# Stage 3:  Anonymous Inner Class Instance (`DogWeightAnonymousInnerClass`)
+
+In this example, we are almost at the stage of introducing Lambda Expressions; indeed, prior to Java 8, the syntax I'm about to show
+you was considered the "best" way of making Comparator objects.
+
+If we are only going to use our inner class once, rather than give it a name, and declare it far away from where it is used, we
+can declare it like this:
+
+```java
+        Comparator<Dog> sortByWeight= new Comparator<Dog>(){
+                @Override
+                public int compare(Dog o1, Dog o2) {
+                    return Double.compare(o1.getWeight(),o2.getWeight());
+                }               
+            };
+
+```
+
+Here's that code in context.  Note that we are importing `java.util.Comparator` on line 2 so that we don't have to specify the full package name each time we refer to a `Comparator`.  Also note how we use the `sortByWeight` object of type `Comparator<Dog>` on line xx as the parameter to `kennel.sort(sortByWeight)`
+
+{% highlight java linenos %}
+import java.util.ArrayList;
+import java.util.Comparator;
+public class SortDogs4 {
+
+    public static void main(String [] args) {
+        ArrayList<Dog> kennel = new ArrayList<Dog>();
+        
+        kennel.add(new Dog("Fido",15));
+        kennel.add(new Dog("Spot",20));
+        kennel.add(new Dog("Puddles",8));
+        kennel.add(new Dog("Doge",45));
+        kennel.add(new Dog("Catepillar",90));
+        
+        System.out.println("Not sorted: " + kennel);
+        java.util.Collections.sort(kennel);
+        System.out.println("Sorted by name " + kennel);
+
+        Comparator<Dog> sortByWeight= new Comparator<Dog>(){
+                @Override
+                public int compare(Dog o1, Dog o2) {
+                    return Double.compare(o1.getWeight(),o2.getWeight());
+                }               
+            };
+        kennel.sort(sortByWeight);
+        System.out.println("Sorted by weight " + kennel);       
+    }   
+}
+{% endhighlight %}
+
+It still sorts:
+
+```$ java SortDogs4
+Not sorted: [[Fido,15.0], [Spot,20.0], [Puddles,8.0], [Doge,45.0], [Catepillar,90.0]]
+Sorted by name [[Catepillar,90.0], [Doge,45.0], [Fido,15.0], [Puddles,8.0], [Spot,20.0]]
+Sorted by weight [[Puddles,8.0], [Fido,15.0], [Spot,20.0], [Doge,45.0], [Catepillar,90.0]]
+$
 ```
