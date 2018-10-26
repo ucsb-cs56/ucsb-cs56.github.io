@@ -273,7 +273,39 @@ They are a shorthand syntax.   The best way to understand what they are is to co
 ! Stage | Explanation | Example Code |
 |-|-|-|
 | Stage 1| Comparator as a separate standalone class, like we did with `DogWeightComparator`, and instantiate it with `new DogWeightComparator()` when we need a comparator object. | See `DogWeightComparator` above |
-| Stage 2| Comparator as a named inner class.  The difference between this and Stage 1, is that we don't need a separate `.java` source file; and the inner class doesn't have to use getters; it can directly access the private data members of the class. | See `DogWeightInnerClass` below |
+| Stage 2| Comparator as a named static inner class.  The difference between this and Stage 1, is that we don't need a separate `.java` source file. | See `DogWeightInnerClass` below |
 | Stage 3 | We create an instance of an anonymous inner class.  This one is the most "mysterious"; it appears that we are doing something illegal, i.e. invoking a constructor on an interface, which we all "know" isn't permitted, right?  Except that we are actually, in that moment declaring a class (one with no name) and instantiating it, all at the same time.    I know: that sounds confusing.  It will make sense when we get there. | See `DogWeightAnonymousInnerClass` below |
 | Stage 4: We realize that most of the syntax we wrote in Stage 3 is unnecessary; that is, the compiler can figure out most of what we wrote, so a shorter syntax makes things easier. | See `DogWeightLambdas` below |
 
+# Using a named inner class (`DogWeightInnerClass`)
+
+In the directory `DogWeightInnerClass`, we see that the file `SortDogs3.java` illustrates how we can move the compartor inside the class where we declare our main program, like this:
+
+```
+import java.util.ArrayList;
+public class SortDogs3 {
+    
+    static class DogWeightComparator implements java.util.Comparator<Dog> {
+        @Override
+        public int compare(Dog o1, Dog o2) {
+            return Double.compare(o1.getWeight(),o2.getWeight());
+        }
+    }
+    
+    public static void main(String [] args) {
+        ArrayList<Dog> kennel = new ArrayList<Dog>();
+        
+        kennel.add(new Dog("Fido",15));
+        kennel.add(new Dog("Spot",20));
+        kennel.add(new Dog("Puddles",8));
+        kennel.add(new Dog("Doge",45));
+        kennel.add(new Dog("Catepillar",90));
+        
+        System.out.println("Not sorted: " + kennel);
+        java.util.Collections.sort(kennel);
+        System.out.println("Sorted by name " + kennel);
+        java.util.Collections.sort(kennel,new DogWeightComparator());
+        System.out.println("Sorted by weight " + kennel);       
+    }   
+}
+```
