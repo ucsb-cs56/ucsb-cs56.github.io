@@ -4,6 +4,23 @@ desc: "Comparable, Comparators, and sorting ArrayLists and such"
 indent: true
 ---
 
+<style>
+div.nice-table table {
+     border-collapse: collapse;
+     border: 1px solid black;
+}
+
+div.nice-table table * td {
+    border: 1px solid black;
+}
+
+div.nice-table table * th {
+    border: 1px solid black;
+}
+
+
+</style>
+
 For code examples in this lesson, see: <https://github.com/UCSB-CS56-pconrad/java-sorting-and-comparators>
 
 
@@ -257,9 +274,13 @@ $
 
 Now that we have a class that implements `Comparator<Dog>` we could nalso use the built in `sort` method of `java.util.ArrayList`.  That is:
 
+<div class="nice-table">
+
 | Instead of | We could write |
 |-|-|
 |` java.util.Collections.sort(kennel,new DogWeightComparator());`|` kennel.sort(new DogWeightComparator());`|
+
+</div>
 
 # Easier sorting with Lambda Expressions
 
@@ -270,11 +291,7 @@ Lambda expressions give us a way to create a Comparator with much less bother.
 
 They are a shorthand syntax.   The best way to understand what they are is to consider four options for creating a comparator, each one moving us close to lambda expresions in stages.
 
-<style>
-div table.nice-table {
 
-}
-</style>
 
 <div class="nice-table">
 
