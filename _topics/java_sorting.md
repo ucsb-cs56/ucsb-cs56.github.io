@@ -272,15 +272,31 @@ $
 
 # Using the `sort` method of `ArrayList`
 
-Now that we have a class that implements `Comparator<Dog>` we could nalso use the built in `sort` method of `java.util.ArrayList`.  That is:
+Now that we have a class that implements `Comparator<Dog>` we could nalso use the built in `sort` method of `java.util.ArrayList`.  That is instead of: 
 
-<div class="nice-table">
+```java
+   java.util.Collections.sort(kennel,new DogWeightComparator());
+```
 
-| Instead of | We could write |
-|-|-|
-|` java.util.Collections.sort(kennel,new DogWeightComparator());`|` kennel.sort(new DogWeightComparator());`|
+We can write: 
 
-</div>
+```java
+   kennel.sort(new DogWeightComparator());
+```
+
+Note that if we `import java.util.Collections` then we can just write this for the first one:
+
+```java
+   Collections.sort(kennel, new DogWeightComparator());
+```
+
+An important thing to recognize is that if we invoke `Collections.sort(kennel);` without passing in a `Compartor<Dog>` object,
+we are using the "natural ordering", i.e. the `compareTo` method of `Dog`, and that `Dog` must implement `Comparable<Dog>` in that case.
+
+If we instead, use the `sort` method of `ArrayList` (e.g. `kennel.sort(comparator)`) than we have to pass in a suitable object
+of a class that implements `Comparator<Dog>`.
+
+At one level, that's all you need to know.   The rest, i.e. the stuff about Lambda Expressions, is all just stuff that makes writing the code easier.  It may not seem that way on first read; it may seem awfully complicated. But once you really *get* it, it's not complicated at all, and it makes your life so much easier if you spend a lot of time writing Java code.  So, let's dive in.
 
 # Easier sorting with Lambda Expressions
 
