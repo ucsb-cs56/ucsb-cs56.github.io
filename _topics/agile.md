@@ -1,6 +1,7 @@
 ---
 topic: Agile
 desc: "A Software Development Methodology"
+prefix: "Agile: "
 ---
 
 * <http://agilemanifesto.org/principles.html>
