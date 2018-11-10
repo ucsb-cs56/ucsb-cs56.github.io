@@ -2,6 +2,7 @@
 topic: "Agile: Team Norms"
 desc: "Groundrules set by a team that promote effective and harmonious teamwork and productivty"
 indent: true
+category_prefix: "Agile: "
 ---
 
 When an Agile team forms, it is customary to set **team norms** early in the team forming process.
