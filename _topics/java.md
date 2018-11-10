@@ -1,6 +1,6 @@
 ---
 topic: "Java"
 desc: "The language we are studying in CS56"
-category_prefix: "java: "
+category_prefix: "Java: "
 ---
 
