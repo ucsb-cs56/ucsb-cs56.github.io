@@ -35,3 +35,7 @@ Advanced Topics, once you have the basic idea:
 * The INVEST acronym for writing good stories: 
    * Indepenent, Negotiable, Valuable, Estimatable, Small, Testable
    * <https://help.rallydev.com/writing-great-user-story>
+
+
+# User Stories
+
