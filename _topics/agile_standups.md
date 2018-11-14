@@ -20,4 +20,5 @@ Each team should decide its own norms. You should decide on your own norms, but 
 * Avoid electronics (unless needed for reference)
 * Avoid side conversations
 
-Video demonstration: [Agile Simulation - Part 20 | The Daily Standup | Agile Videos](https://www.youtube.com/watch?v=q_R9wQY4G5I)
+Video demonstration: 
+* [Agile Simulation - Part 20 The Daily Standup Agile Videos](https://www.youtube.com/watch?v=q_R9wQY4G5I)
