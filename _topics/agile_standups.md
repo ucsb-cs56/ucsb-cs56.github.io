@@ -22,3 +22,4 @@ Each team should decide its own norms. You should decide on your own norms, but 
 
 Video demonstration: 
 * [Agile Simulation - Part 20 The Daily Standup Agile Videos](https://www.youtube.com/watch?v=q_R9wQY4G5I)
+* [The Daily Scrum is NOT a Status Meeting](https://www.youtube.com/watch?v=i7_RPceEIYE)
