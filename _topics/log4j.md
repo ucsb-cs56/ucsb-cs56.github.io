@@ -1,6 +1,7 @@
 ---
-topic: "Log4J"
+topic: "Log4J: "
 desc: "A logging framework for java"
+category_prefix: "Log4J: "
 ---
 
 Log4J is short for  [Apache Logging For Java](https://logging.apache.org/log4j)
