@@ -5,6 +5,9 @@ category_prefix: "Log4J: "
 indent: true
 ---
 
+
+See also: <http://www.springboottutorial.com/logging-with-spring-boot-logback-slf4j-and-log4j>
+
 Log4J is short for  [Apache Logging For Java](https://logging.apache.org/log4j)
 
 In a Spring Boot application, inside any class where you want to do logging, you need these two import statements:
