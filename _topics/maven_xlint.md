@@ -29,6 +29,7 @@ If you are using command line `javac`, the remedy to see the extra detail is to 
 messages.  But if you are using Maven, it may be difficult to know how to proceed.   Here's the magic sauce to get the extra detail in your `mvn compile` output:
 
 1.  In the `pom.xml`, locate the `<build>` section, and under it, the section for `<plugins>`.  If you don't have one already, create one:
+
    ```xml
    <build>
      <plugins>
@@ -36,6 +37,7 @@ messages.  But if you are using Maven, it may be difficult to know how to procee
      </plugins>
    </build>
    ```
+   
 2. In that section, put this `<plugin></plugin>` nested inside the `<plugins>..</pluging>` element.
 
    ```xml
