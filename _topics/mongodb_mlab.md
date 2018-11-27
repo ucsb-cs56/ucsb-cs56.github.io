@@ -73,6 +73,24 @@ for your MongoDB Deployment. Look for the text under
 mongodb://<dbuser>:<dbpassword>@YOURHOSTNAME.mlab.com:PORTNUMBER/DATABASE_NAME
 ```
 
+Fill in the values you can.  For example, from this URL
+
+```
+mongodb://<dbuser>:<dbpassword>@ds143932.mlab.com:43932/cs56-m18-demo
+```
+
+you'd fill in these fields:
+
+```
+{
+    "spring.data.mongodb.database":"cs56-m18-demo",
+    "spring.data.mongodb.host":"ds143932.mlab.com",
+    "spring.data.mongodb.password":"fill-in-password",
+    "spring.data.mongodb.port":"43932",
+    "spring.data.mongodb.username":"fill-in-username"
+}
+```
+
 Note that dbuser and dbpassword are in `<>` and not given to you yet. 
 The dbuser and dbpassword are things you’ll create in a step below.
 
@@ -104,4 +122,21 @@ Copy the password value and go back to mLab.
 * Click the tab called 'Users' 
 * Click the 'Add database user' button. 
 * Use `dbuser1` (for example) for user, and paste the password in the corresponding fields. 
+
+Now you should have a full set of credentials, something like this:
+
+```
+{
+    "spring.data.mongodb.database":"cs56-m18-demo",
+    "spring.data.mongodb.host":"ds143932.mlab.com",
+    "spring.data.mongodb.password":"weaf8jawel8f8waefjawe8fjlaw8fhalwifhaw3",
+    "spring.data.mongodb.port":"43932",
+    "spring.data.mongodb.username":"dbuser1"
+}
+```
+
+If later you want to access the database on another machine, and you don't 
+have access to the original credentials, you can also make additional users,
+`dbuser2`, etc.  If you are working on a team project with multiple team members,
+you could make these usernames match the individual users on the project.
 
