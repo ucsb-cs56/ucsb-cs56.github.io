@@ -7,6 +7,10 @@ indent: true
 
 Jackson is one of the most commonly used Java packages for dealing with JSON.
 
+# Documentation
+
+* <https://github.com/FasterXML/jackson-docs/wiki/Finding-Javadoc>
+
 # Tutorials
 
 * <https://www.journaldev.com/2324/jackson-json-java-parser-api-example-tutorial>
