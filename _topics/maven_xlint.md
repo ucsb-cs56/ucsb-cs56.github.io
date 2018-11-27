@@ -46,8 +46,6 @@ messages.  But if you are using Maven, it may be difficult to know how to procee
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
         <configuration>
-          <source>${java.version}</source>
-          <target>${java.version}</target>
           <compilerArgs>
             <arg>-Xlint:deprecation</arg>
             <arg>-Xlint:unchecked</arg>
