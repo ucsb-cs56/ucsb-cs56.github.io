@@ -20,4 +20,10 @@ fork this repo, add them, and do a pull request.
 * Go to <https://firebase.com> and login with your Google Credentials.
 * Create an app, and accept the terms.
 * That will put you at the Firebase Console
+* You'll see buttons for iOS, Android, and one that looks like this: `</>`.  
+   That last one means "webapp".
+   If you click it, you'll be shown some JavaScript code you can include in your app.
+   BUT BEWARE!  This JavaScript code contains your API Key.  You might not want that to end up
+   on Github.
+   
 
