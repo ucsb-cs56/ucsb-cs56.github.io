@@ -5,6 +5,9 @@ category_prefix	: "MongoDB: "
 indent: true
 ---
 
+This page shows how to set up your account on MLab to use MongoDB.
+
+For example Java code, see: <https://github.com/pconrad-webapps/simple-java-mlab-demo>
 
 # Step 1: Create an mLab account on mlab.com
 
