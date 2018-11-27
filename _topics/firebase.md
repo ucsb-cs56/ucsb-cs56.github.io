@@ -22,8 +22,8 @@ fork this repo, add them, and do a pull request.
 * That will put you at the Firebase Console
 * You'll see buttons for iOS, Android, and one that looks like this: `</>`.  
    That last one means "webapp".
-   If you click it, you'll be shown some JavaScript code you can include in your app.
-   BUT BEWARE!  This JavaScript code contains your API Key.  You might not want that to end up
-   on Github.
    
 
+This link has information about using Firebase with Java:
+
+* <https://firebase.google.com/docs/admin/setup>
