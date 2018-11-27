@@ -97,6 +97,10 @@ user creation form.
 ```
 
 Copy the password value and go back to mLab. 
+* Find the screen for your database where it has buttons labelled:
+
+   | Collections | Users | Stats | Backups | Tools |
+   
 * Click the tab called 'Users' 
 * Click the 'Add database user' button. 
 * Use `dbuser1` (for example) for user, and paste the password in the corresponding fields. 
