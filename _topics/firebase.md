@@ -17,4 +17,7 @@ fork this repo, add them, and do a pull request.
 
 # Getting Started
 
-* Create an account by logging in at <https://firebase.com> with your Google Credentials
+* Go to <https://firebase.com> and login with your Google Credentials.
+* Create an app, and accept the terms.
+* That will put you at the Firebase Console
+
