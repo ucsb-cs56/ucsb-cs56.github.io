@@ -14,3 +14,7 @@ fork this repo, add them, and do a pull request.
 # Tutorials
 
 * <https://www.tutorialspoint.com/firebase/>
+
+# Getting Started
+
+* Create an account by logging in at <https://firebase.com> with your Google Credentials
