@@ -1,7 +1,7 @@
 ---
 topic: "Heroku"
 desc: "A cloud computing platform"
-prefix: "Heroku:"
+category_prefix: "Heroku:"
 ---
 
 [Heroku](https://heroku.com) is a "platform as a service" (PAAS) cloud-computing platform.
