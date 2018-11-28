@@ -21,4 +21,7 @@ Possible Causes, and Solutions:
    * Solution: `heroku login`
 * Make sure that the correct heroku app is defined in your `pom.xml`
    * Solution: list your apps with `heroku apps` then check the value of `<appName>` in the `heroku-maven-plugin`
+* No remote is defined for heroku
+   * To check, type `git remote -v` and see if a remote for `heroku` is listed.  If not:
+   * To add it, use `heroku git:remote --app app-name` (replace `app-name` with the name of your app)
          
