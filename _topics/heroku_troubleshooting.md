@@ -17,3 +17,8 @@ Failed to deploy application: Could not find app name: No 'heroku' remote found.
 
 Possible Causes, and Solutions:
 
+* Make sure you are logged into the heroku cli
+   * Solution: `heroku login`
+* Make sure that the correct heroku app is defined in your `pom.xml`
+   * Solution: list your apps with `heroku apps` then check the value of `<appName>` in the `heroku-maven-plugin`
+         
