@@ -23,7 +23,10 @@ fork this repo, add them, and do a pull request.
 * You'll see buttons for iOS, Android, and one that looks like this: `</>`.  
    That last one means "webapp".
    
+# Firebase with Java
 
-This link has information about using Firebase with Java:
+These links has information about using Firebase with Java:
 
 * <https://firebase.google.com/docs/admin/setup>
+* <https://github.com/firebase/firebase-admin-java>
+
