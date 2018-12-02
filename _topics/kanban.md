@@ -27,3 +27,6 @@ of github:
 If you want to reference the slides from the videos, they are here: 
 * [From User Story Mapping to Kanban in Github](https://docs.google.com/presentation/d/1UD5qIm5njZFF2s8OvCJdJPnsR_VvnavcZRP9cXRqRNw/edit?usp=sharing), a presentation by Phill Conrad and John Cutler
 
+# For further study
+
+* <https://help.github.com/articles/configuring-automation-for-project-boards/>
