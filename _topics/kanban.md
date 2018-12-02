@@ -10,7 +10,8 @@ Kanban is a system for visualizing work in progress.
 
 A classic Kanban board is a whiteboard or a wall, with columns, and post-it notes, as in the image below:
 
-![Kanban Board](kanban_board.png)
+![Kanban Board](726px-Kanban_board_example.jpg)
 
+Image Credit: <a href="https://commons.wikimedia.org/wiki/User:Dr_ian_mitchell">Dr ian mitchell</a>, <a href="https://commons.wikimedia.org/wiki/File:Kanban_board_example.jpg">Kanban board example</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5/legalcode" rel="license">CC BY-SA 2.5</a>
 
 
