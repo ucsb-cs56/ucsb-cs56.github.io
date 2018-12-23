@@ -116,8 +116,6 @@ defaults:
 
 include:
   - _pages
-exclude:
-  - .sass-cache
-  - Gemfile
-  - LICENSE
-  - .bundle
+exclude: [vendor]
+
+  

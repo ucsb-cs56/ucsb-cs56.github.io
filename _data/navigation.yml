@@ -40,11 +40,15 @@ offerings:
 
 offering_links:
   - title: Hwk
-    url: /hwk/
+    url: /hwk_list/
   - title: Lab
-    url: /hwk/
-  - title: OfcHrs
+    url: /lab_list/
+  - title: Calendar
+    url: /info/calendar/
+  - title: OfcHrs	
     url: /info/office_hours/
+  - title: Syllabus
+    url: /info/syllabus/	
   - title: ucsb-cs56-f18
     url: https://github.com/ucsb-cs56-f18
 
