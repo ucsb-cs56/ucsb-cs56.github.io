@@ -13,7 +13,7 @@ in the [Dept. of Computer Science](http://www.cs.ucsb.edu) at
 
 Older materials can be found at the [56wiki](https://foo.cs.ucsb.edu/56wiki) site.
 
-This site is maintained in this github repo: <https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io>
+This site is maintained in this github repo: <https://github.com/ucsb-cs56/ucsb-cs56.github.io>
 
 </div><!-- about -->
 
