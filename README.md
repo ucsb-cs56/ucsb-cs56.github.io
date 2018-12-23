@@ -9,6 +9,10 @@ This version is intended to replace <https://ucsb-cs56-pconrad.github.io>.
 
 It uses the new Jekyll theme approach to make these sites easier to maintain.
 
+The theme currently being used can be find in the jekyll-theme value in `_config.yml`
+
+The navigation is set by the values in `_data/navigation.yml`
+
 Jekyll status on Travis-CI: [![Build Status](https://travis-ci.org/ucsb-cs56/ucsb-cs56.github.io.svg?branch=master)](https://travis-ci.org/ucsb-cs56/ucsb-cs56.github.io)
 
 * Travis-ci: https://travis-ci.org/ucsb-cs56/ucsb-cs56.github.io
