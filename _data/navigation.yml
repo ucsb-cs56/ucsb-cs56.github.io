@@ -14,7 +14,7 @@ production_url: https://ucsb-cs56.github.io
 # they come from, / for main site, and /f18, /s19, etc for child sites.
 
 main:
-  - title: UCSB CS56 pconrad
+  - title: UCSB CS56
     url: /
     baseurl: /
   - title: CS56 F18
