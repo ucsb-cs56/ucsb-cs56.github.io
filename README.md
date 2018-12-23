@@ -1,4 +1,3 @@
-
 # ucsb-cs56.github.io
 
 Jekyll-based website for CS56
