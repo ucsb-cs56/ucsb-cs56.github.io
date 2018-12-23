@@ -13,14 +13,16 @@ production_url: https://ucsb-cs56.github.io
 # For items that should be relative urls, put the baseurl of the site
 # they come from, / for main site, and /f18, /s19, etc for child sites.
 
+brand:
+   title: UCSB CS56
+   url: /
+   baseurl: /
+
 main:
-  - title: UCSB CS56
-    url: /
-    baseurl: /
-  - title: CS56 F18
+  - title: F18
     url: /
     baseurl: /f18
-  - title: CS56 S19
+  - title: S19
     url: /
     baseurl: /s19
   - title: Office Hours
