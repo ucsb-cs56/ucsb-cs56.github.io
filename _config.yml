@@ -1,0 +1,110 @@
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+
+remote_theme: pconrad/ucsb-cs-try1
+
+url: https://ucsb-cs56.github.io # the base hostname & protocol for your site
+baseurl: /  # the subpath of your site, e.g. "/blog"
+
+
+course: "CS56"
+qtr: "F18"
+quarter: "Fall 2018"
+piazza_course_page: https://piazza.com/class/jkq2p768nf6xb
+gauchospace_course_page: https://gauchospace.ucsb.edu/courses/course/view.php?id=31412
+github_org_name: ucsb-cs56-f18
+github_org_url: https://github.com/ucsb-cs56-f18
+
+title: "UCSB CS56 pconrad"
+github_url: https://github.com/UCSB-CS56-pconrad/UCSB-CS56-pconrad.github.io
+mentor_url: https://ucsb-cs56-pconrad-mentors.github.io
+github_repo: UCSB-CS56-pconrad.github.io
+
+
+on_campus: http://proquest.safaribooksonline.com
+off_campus: http://proquest.safaribooksonline.com.proxy.library.ucsb.edu:2048/
+hfj_url: book/programming/java/0596009208
+hfdp_url: book/software-engineering-and-development/patterns/0596007124 
+office_hours_page: https://ucsb-cs56-f16.github.io/info/office_hours/
+
+legacy_wiki_url: https://foo.cs.ucsb.edu/56wiki
+legacy_wiki_name: "56wiki"
+
+curr_qtr: "F18"
+curr_qtr_web_url: "https://ucsb-cs56-f18.github.io"
+course: "CS56"
+curr_qtr_github_org_url: "https://github.com/ucsb-cs56-f18"
+curr_qtr_github_org: ucsb-cs56-f18
+github_org_name: ucsb-cs56-f18
+github_org_url: https://github.com/ucsb-cs56-f18
+
+#kramdown:
+#  parse_block_html: true
+
+exclude: ['vendor', 'setup.sh', 'jekyll.sh']
+
+timezone: America/Los_Angeles
+
+collections:
+  topics:
+    output: true
+    permalink: /topics/:path/
+    
+  tutorials:
+    output: true
+    permalink: /tutorials/:path/
+
+
+  textbooks:
+    output: true
+    permalink: /textbooks/:path/
+
+  hfj:
+    output: true
+    permalink: /hfj/:path/
+
+  hfdp:
+    output: true
+    permalink: /hfdp/:path/
+    
+  resources:
+    output: true
+    permalink: /resources/:path/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
+  - scope:
+      path: ""
+      type: topics
+    values:
+      layout: topic
+      
+  - scope:
+      path: ""
+      type: tutorials
+    values:
+      layout: tutorial
+      
+  - scope:
+      path: ""
+      type: hfj
+    values:
+      layout: chapter
+
+  - scope:
+      path: ""
+      type: hfdp
+    values:
+      layout: chapter
+      
+  - scope:
+      path: ""
+      type: resources
+    values:
+      layout: topic
