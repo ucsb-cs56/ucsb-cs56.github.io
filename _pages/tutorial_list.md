@@ -1,0 +1,16 @@
+---
+title: Tutorials
+permalink: "/tutorial_list/"
+---
+
+## Tutorials
+
+<ul>
+   {% for t in site.tutorials %}
+     <li {% if t.indent %} class="indent" {% endif %} ><a href="{{t.url}}">{{ t.topic }}</a>&mdash;{{t.desc}}</li>
+   {% endfor %}
+</ul>
+
+
+
+

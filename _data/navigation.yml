@@ -25,6 +25,8 @@ main_dropdown:
        url: /topic_list/
      - title: Resources
        url: /resource_list/
+     - title: Tutorials
+       url: /tutorial_list/
 
 offerings:
    title: F18
