@@ -41,16 +41,21 @@ offerings:
 offering_links:
   - title: Hwk
     url: /hwk_list/
+    description: "Homework Assignments"
   - title: Lab
     url: /lab_list/
-  - title: Calendar
+    description: "Lab Assignments"
+  - title: Cal
     url: /info/calendar/
+    description: "Assignment Calendar"
   - title: OfcHrs	
     url: /info/office_hours/
-  - title: Syllabus
-    url: /info/syllabus/	
+    description: "Office Hours"
+  - title: Syl
+    url: /info/syllabus/
+    description: "Syllabus"    
   - title: ucsb-cs56-f18
     url: https://github.com/ucsb-cs56-f18
-
+    description: "Github Organization ucsb-cs56-f18"    
 
 
