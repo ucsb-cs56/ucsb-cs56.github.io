@@ -18,29 +18,35 @@ home:
    url: /
    baseurl: /
 
-offerings:
-  - title: F18
-    url: /
-    baseurl: /f18
-  - title: S19
-    url: /
-    baseurl: /s19
+main_dropdown:
+   title: resources
+   items:
+     - title: Topics
+       url: /topic_list/
+     - title: Resources
+       url: /resource_list/
 
-main:
-  - title: F18
-    url: /
-    baseurl: /f18
-  - title: S19
-    url: /
-    baseurl: /s19
-  - title: Office Hours
-    url: /info/office_hours/	 
-    baseurl: /f18
-  - title: Gauchospace
-    url: https://gauchospace.ucsb.edu/courses/course/view.php?id=31412
-  - title: Piazza
-    url: https://piazza.com/class/jkq2p768nf6xb
-  - title: ucsb-cs56-f18 github org
+offerings:
+   title: F18
+   url: /	
+   baseurl: /f18
+   items:
+      - title: F18
+        url: /
+        baseurl: /f18
+      - title: S19
+        url: /
+        baseurl: /s19
+
+offering_links:
+  - title: Hwk
+    url: /hwk/
+  - title: Lab
+    url: /hwk/
+  - title: OfcHrs
+    url: /info/office_hours/
+  - title: ucsb-cs56-f18
     url: https://github.com/ucsb-cs56-f18
-  - title: ucsb-cs56-webapps
-    url: https://github.com/ucsb-cs56-webapps
+
+
+

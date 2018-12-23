@@ -1,0 +1,20 @@
+---
+title: Topics
+permalink: "/topic_list/"
+---
+
+## Topics
+
+<ul>
+{%- for t in site.topics -%}
+   {%- if t.skipIndex -%}
+   {%- else -%}
+     <li {% if t.indent %} class="indent" {% endif %} >
+        <a href="{{t.url}}">{{ t.topic }}</a>&mdash;{{t.desc}}
+     </li>
+   {%- endif -%}
+{%- endfor -%}
+</ul>
+
+
+
