@@ -77,6 +77,12 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: pages
+    values:
+      layout: "default"
 
   - scope:
       path: ""
@@ -107,3 +113,11 @@ defaults:
       type: resources
     values:
       layout: default
+
+include:
+  - _pages
+exclude:
+  - .sass-cache
+  - Gemfile
+  - LICENSE
+  - .bundle
