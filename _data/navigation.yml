@@ -19,7 +19,7 @@ home:
    baseurl: /
 
 main_dropdown:
-   title: resources
+   title: Resources
    items:
      - title: Topics
        url: /topic_list/
@@ -45,13 +45,13 @@ offering_links:
   - title: Lab
     url: /lab_list/
     description: "Lab Assignments"
-  - title: Cal
+  - title: Calendar
     url: /info/calendar/
     description: "Assignment Calendar"
   - title: OfcHrs	
     url: /info/office_hours/
     description: "Office Hours"
-  - title: Syl
+  - title: Syllabus
     url: /info/syllabus/
     description: "Syllabus"    
   - title: ucsb-cs56-f18
