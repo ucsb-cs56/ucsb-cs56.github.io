@@ -33,7 +33,7 @@ Future offering: [S19](https://ucsb-cs56.github.io/s19/)
 {% include collapse-button.html label="Textbooks" id="textbooks" %}
 <div class="collapse" id="textbooks">
 <div class="card card-body" markdown="1">
-{%- import textbooks_list.html -%}
+{%- include textbooks_list.html -%}
 </div>
 </div>
 
@@ -41,20 +41,20 @@ Future offering: [S19](https://ucsb-cs56.github.io/s19/)
 {% include collapse-button.html label="Tutorials" id="tutorials" %}
 <div class="collapse" id="tutorials">
 <div class="card card-body" markdown="1">
-{%- import tutorials_list.html -%}
+{%- include tutorials_list.html -%}
 </div>
 </div>
 
 {% include collapse-button.html label="Topics" id="topics" %}
 <div class="collapse" id="topics">
 <div class="card card-body" markdown="1">
-{%- import topics_list.html -%}
+{%- include topics_list.html -%}
 </div>
 </div>
 
 {% include collapse-button.html label="Resources" id="resources" %}
 <div class="collapse" id="resources">
 <div class="card card-body" markdown="1">
-{%- import resources_list.html -%}
+{%- include resources_list.html -%}
 </div>
 </div>
