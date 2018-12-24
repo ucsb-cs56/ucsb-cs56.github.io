@@ -2,7 +2,7 @@
 
 Jekyll-based website for CS56
 
-Website: https://ucsb-cs56.github.io
+Website: <https://ucsb-cs56.github.io>
 
 This version is intended to replace <https://ucsb-cs56-pconrad.github.io>.
 
