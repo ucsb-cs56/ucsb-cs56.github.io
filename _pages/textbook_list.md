@@ -5,7 +5,7 @@ permalink: "/tutorial_list/"
 
 ## Textbooks
 
-{%- include textbook_list.html -%}
+{%- include textbooks_list.html -%}
 
 
 
