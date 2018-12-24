@@ -3,9 +3,9 @@ title: Tutorials
 permalink: "/tutorial_list/"
 ---
 
-## Tutorials
+## Textbooks
 
-{%- include tutorial_list.html -%}
+{%- include textbook_list.html -%}
 
 
 
