@@ -5,6 +5,6 @@ permalink: "/topic_list/"
 
 ## Topics
 
-{%- include topic_list.html -%}
+{%- include topics_list.html -%}
 
 
