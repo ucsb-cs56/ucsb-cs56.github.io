@@ -120,3 +120,4 @@ exclude: [vendor]
 
 head_scripts:
    - /static/js/select_section.js
+   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
