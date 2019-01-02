@@ -31,6 +31,7 @@ $( document ).ready(function() {
 	    var offering = JSON.stringify(o);
 	    console.log("offering="+offering);
 	    localStorage.setItem("offering",offering);
+	    window.location = o.url;
 	}
     );
 });
