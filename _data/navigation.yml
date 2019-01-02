@@ -30,6 +30,7 @@ main_dropdown:
      - title: Textbooks
        url: /textbook_list/       
 
+
 offering_menus:
   -
     term: F18
@@ -76,7 +77,6 @@ offering_menus:
              url: https://github.com/ucsb-cs56-f18
            - title: ucsb-cs56-webapps
              url: https://github.com/ucsb-cs56-webapps
-
   -
     term: S19
     baseurl: /s19
@@ -122,4 +122,5 @@ offering_menus:
              url: https://github.com/ucsb-cs56-s19
            - title: ucsb-cs56-webapps
              url: https://github.com/ucsb-cs56-webapps
+
 
