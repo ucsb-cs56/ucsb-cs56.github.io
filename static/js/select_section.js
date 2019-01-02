@@ -1,26 +1,36 @@
 
 
+function toggle_nav_items(o) {
+    /*  o has form { "text": "W19 Mirza", "url": "..."} */
+    $("#offerings-dropdown").text(o.text);
+    $(".nav-item").each( function() {
+	var term=$(this).data("term");
+	if (term) {
+	    if (term==o.text) {
+		$(this).removeClass("d-none");
+	    } else {
+		$(this).addClass("d-none");
+	    }
+	}
+    });
+}
 
 $( document ).ready(function() {
-    console.log("select_section.js");
     var offering = localStorage.getItem("offering");
-    console.log("offering=" + offering);
-
+    if (offering!==null) {
+	var o = JSON.parse(offering);
+	toggle_nav_items(o);
+    }
     $(".offerings-dropdown-item").click(
 	function(){
-	    console.log("offering was clicked");
-	    var elem = $(this);
-	    var text = elem.text();
-	    var url = elem.data("url");
-	    console.log("text: " + text);
-	    console.log("url: " + url);
-	    var offering = {
-		"text" : text,
-		"url" : url
+	    var o = {
+		"text" : $(this).text(),
+		"url" : $(this).data("url")
 	    };
-	    localStorage.setItem("offering",
-				 JSON.stringify(offering));
+	    toggle_nav_items(o);
+	    var offering = JSON.stringify(o);
+	    console.log("offering="+offering);
+	    localStorage.setItem("offering",offering);
 	}
     );
-    
 });
