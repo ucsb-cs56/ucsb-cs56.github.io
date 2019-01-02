@@ -2,7 +2,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
 
-remote_theme: pconrad/ucsb-cs-jekyll-theme-try2
+remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme-DEV
 
 url: https://ucsb-cs56.github.io # the base hostname & protocol for your site
 baseurl: /  # the subpath of your site, e.g. "/blog"
@@ -118,4 +118,5 @@ include:
   - _pages
 exclude: [vendor]
 
-  
+head_scripts:
+   - /static/js/select_section.js
