@@ -1,11 +1,11 @@
 ---
-title: Tutorials
-permalink: "/tutorial_list/"
+title: Textbooks
+permalink: "/textbook_list/"
 ---
 
 ## Textbooks
-
-{%- include textbooks_list.html -%}
+y
+{% include textbooks_list.html %}
 
 
 

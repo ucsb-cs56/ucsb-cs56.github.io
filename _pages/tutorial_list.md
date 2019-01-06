@@ -5,7 +5,7 @@ permalink: "/tutorial_list/"
 
 ## Tutorials
 
-{%- include tutorials_list.html -%}
+{% include tutorials_list.html %}
 
 
 
