@@ -3,7 +3,7 @@ title: UCSB CS56 pconrad
 ---
 
 # CS56&mdash;Advanced Applications Programming
-
+ 
 {% include collapse-button.html label="About this course" id="about" %}
 <div class="collapse" id="about">
  <div class="card card-body" markdown="1">
