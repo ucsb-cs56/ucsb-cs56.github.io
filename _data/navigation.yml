@@ -36,14 +36,32 @@ offering_menus:
     baseurl: /f18
     items: 
       - title: Hwk
-        url: /hwk_list/
+        url: /hwk/
         description: "Homework Assignments"
+      - title: Labs
+        url: /lab/
+        description: "Lectures"
+      - title: Lectures
+        url: /lectures/
+        description: "Lectures"
+      - title: Info
+        url: /info/
+        description: "Information Pages"
   -
     term: S19
     baseurl: /s19
     items:
       - title: Hwk
-        url: /hwk_list/
+        url: /hwk/
         description: "Homework Assignments"
+      - title: Labs
+        url: /lab/
+        description: "Lectures"
+      - title: Lectures
+        url: /lectures/
+        description: "Lectures"
+      - title: Info
+        url: /info/
+        description: "Information Pages"
 
 
