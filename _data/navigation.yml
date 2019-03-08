@@ -30,6 +30,7 @@ main_dropdown:
      - title: Textbooks
        url: /textbook_list/       
 
+
 offering_menus:
   -
     term: F18
@@ -38,30 +39,49 @@ offering_menus:
       - title: Hwk
         url: /hwk/
         description: "Homework Assignments"
-      - title: Labs
+      - title: Lab
         url: /lab/
-        description: "Lectures"
-      - title: Lectures
-        url: /lectures/
-        description: "Lectures"
-      - title: Info
-        url: /info/
-        description: "Information Pages"
+        description: "Lab Assignments"
+      - title: Lecture
+        url: /lecture/
+        description: "Lecture"
+      - title: Exam
+        url: /exam/
+        description: "Exams"
+      - title: Cal
+        url: /info/calendar/
+        description: "Assignment Calendar"
+      - title: Github
+        dropdown:
+           - title: ucsb-cs56-f18
+             url: https://github.com/ucsb-cs56-f18
+           - title: ucsb-cs56-webapps
+             url: https://github.com/ucsb-cs56-webapps
+offering_menus:
   -
     term: S19
     baseurl: /s19
-    items:
+    items: 
       - title: Hwk
         url: /hwk/
         description: "Homework Assignments"
-      - title: Labs
+      - title: Lab
         url: /lab/
-        description: "Lectures"
-      - title: Lectures
-        url: /lectures/
-        description: "Lectures"
-      - title: Info
-        url: /info/
-        description: "Information Pages"
+        description: "Lab Assignments"
+      - title: Lecture
+        url: /lecture/
+        description: "Lecture"
+      - title: Exam
+        url: /exam/
+        description: "Exams"
+      - title: Cal
+        url: /info/calendar/
+        description: "Assignment Calendar"
+      - title: Github
+        dropdown:
+           - title: ucsb-cs56-s19
+             url: https://github.com/ucsb-cs56-f18
+           - title: ucsb-cs56-webapps
+             url: https://github.com/ucsb-cs56-webapps
 
 
