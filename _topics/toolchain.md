@@ -14,3 +14,6 @@ The Toolchain we'll use in CS56 includes:
 * Maven (the `mvn` command)
 * Git (the `git` command)
 * An editor or IDE (`vim`, `emacs`, `VS Code`, `IntelliJ`, etc.)
+
+Also may be useful:
+* Spring CLI (Downloaded from <https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-cli>
