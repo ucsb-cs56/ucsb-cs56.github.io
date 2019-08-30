@@ -27,10 +27,12 @@ direct observation, and conversations with recent graduates at interships and jo
 * Technical Debt
 * Thin Slice
 
-# Skills
+# Git Skills
 
-* Advanced git skills
-   * Interactive rebase (`git rebase -i`)
-   * Fixup commit (`git commit --fixup sha`)
-   * Proper use of (`git reset --hard sha`)
-   * Proper use of (`git clean`)
+* branches and pull requests
+* Amending a commit (`git commit --amend`)
+* Proper use of `git push -f`
+* Interactive rebase (`git rebase -i`)
+* Fixup commit (`git commit --fixup sha`)
+* Proper use of `git reset --hard sha`
+* Proper use of `git clean`
