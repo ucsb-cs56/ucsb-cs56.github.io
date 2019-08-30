@@ -13,9 +13,11 @@ direct observation, and conversations with recent graduates at interships and jo
 # Practices
 
 * Acceptance Criteria
+* Code Review
 * Continuous Integration / Continuous Delivery
 * Grooming
 * Pairing (including strong-style pairing) and Mobbing
+* Retrospectives (retros)
 * Stories
 * Standup
 
