@@ -19,13 +19,15 @@ direct observation, and conversations with recent graduates at interships and jo
 * Stories
 * Standup
 
-# Terminology
+# Concepts/Terminology
 
 * Database Migrations
 * Minimum Viable Product
+* Product Manager (not the same as Project Manger)
 * Spike
 * Technical Debt
 * Thin Slice
+* User Interface (UI) and User Experience (UX)
 
 # Git Skills
 
