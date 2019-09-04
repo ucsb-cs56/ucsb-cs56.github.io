@@ -40,3 +40,7 @@ direct observation, and conversations with recent graduates at interships and jo
 * Fixup commit (`git commit --fixup sha`)
 * Proper use of `git reset --hard sha`
 * Proper use of `git clean`
+
+# Unix Skills
+* Manipulating environment variables
+* Using grep to search files
