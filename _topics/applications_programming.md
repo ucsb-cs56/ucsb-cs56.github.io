@@ -41,6 +41,9 @@ direct observation, and conversations with recent graduates at interships and jo
 * Fixup commit (`git commit --fixup sha`)
 * Proper use of `git reset --hard sha`
 * Proper use of `git clean`
+* Proper use of `git stash` and `git stash pop`
+* Proper use of `git pull --rebase origin master`
+* Proper use of `git rebase --onto base target`
 
 # Unix Skills
 * Manipulating environment variables
