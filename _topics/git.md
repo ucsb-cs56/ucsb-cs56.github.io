@@ -22,3 +22,7 @@ TODO: Refactor this into a better place later
 Did you know that when browsing files in github.com, you can type a ? and bring up a whole bunch of amazing short cut keys?
 
 For example T is "fuzzy file search".  Have fun exploring all the rest.
+
+# Resources
+
+* [YouTube Video: Introduction to Git with Scott Chacon of GitHub](https://www.youtube.com/watch?reload=9&v=ZDR433b0HJY)
