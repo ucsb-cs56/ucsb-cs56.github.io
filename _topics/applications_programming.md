@@ -20,6 +20,7 @@ direct observation, and conversations with recent graduates at interships and jo
 * Retrospectives (retros)
 * Stories
 * Standup
+* [Teamwork](/topics/teamwork) including *Team Alliances*
 
 # Concepts/Terminology
 
