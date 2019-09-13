@@ -44,6 +44,8 @@ direct observation, and conversations with recent graduates at interships and jo
 * Proper use of `git stash` and `git stash pop`
 * Proper use of `git pull --rebase origin master`
 * Proper use of `git rebase --onto base target`
+* A decorated graph: `git log --oneline --graph --decorate --all`
+   * And a config `git config --global alias.lol 'log --oneline --graph --decorate --all'`
 
 # Unix Skills
 * Manipulating environment variables
