@@ -14,6 +14,10 @@ direct observation, and conversations with recent graduates at interships and jo
 
 * Acceptance Criteria
 * Code Review
+* Dev/QA/Test/Prod separation
+   * In Spring Boot, these are called [profiles](https://stackabuse.com/spring-boot-profiles-for-dev-and-prod-environments/)
+   * In Rails, they are set via the `RAILS_ENV` environment variable
+   * In Python Flask, it's the `FLASK_ENV=development` or `FLASK_ENV=production` variable. 
 * Continuous Integration / Continuous Delivery
 * Grooming
 * Pairing (including strong-style pairing) and Mobbing
