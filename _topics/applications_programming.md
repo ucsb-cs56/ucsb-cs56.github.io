@@ -19,6 +19,7 @@ direct observation, and conversations with recent graduates at interships and jo
    * In Rails, they are set via the `RAILS_ENV` environment variable
    * In Python Flask, it's the `FLASK_ENV=development` or `FLASK_ENV=production` variable. 
 * Continuous Integration / Continuous Delivery
+   * [CI/CD for SpringBoot on TravisCI](https://sivalabs.in/2018/01/ci-cd-springboot-applications-using-travis-ci/)
 * Grooming
 * Pairing (including strong-style pairing) and Mobbing
 * Retrospectives (retros)
