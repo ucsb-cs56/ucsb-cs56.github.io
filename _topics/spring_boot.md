@@ -14,3 +14,11 @@ See <http://pconrad-webapps.github.io/topics/spring_boot/>
 * Spring Sessions <https://docs.spring.io/spring-session/docs/2.1.6.BUILD-SNAPSHOT/reference/html5/>
 
 * Spring OAuth2 Client <https://spring.io/guides/tutorials/spring-boot-oauth2/>
+
+
+# Some very basic examples
+
+* The code you get if you use Spring Boot Initializr and take all of the defaults
+   * <https://github.com/pconrad/spring-boot-initialzr-vanilla>
+* A very simple, minimal, SpringBoot webapp
+   * <https://github.com/pconrad/spring-boot-minimal-webapp>
