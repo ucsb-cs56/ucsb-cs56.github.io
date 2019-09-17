@@ -15,6 +15,10 @@ See <http://pconrad-webapps.github.io/topics/spring_boot/>
 
 * Spring OAuth2 Client <https://spring.io/guides/tutorials/spring-boot-oauth2/>
 
+# Tutorial Collections
+
+* Mkyong's Tutorial Collection: <https://www.mkyong.com/tutorials/spring-boot-tutorials/>
+
 
 # Some very basic examples
 
