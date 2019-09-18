@@ -16,10 +16,7 @@ you see on many websites.
 
 # OAuth in the context of CS56
 
-In CS56, we'll typically be dealing with OAuth in the context of using it in combination with [SparkJava web applications](/topics/spark_java/).
+In CS56, we'll typically be dealing with OAuth in the context of using it in combination with SpringBoot Authorization,
+and with [Github OAuth](https://developer.github.com/v3/guides/basics-of-authentication/)
 
-That involves using a package called [Pac4j](/topics/pac4j/).  Pac4J is a library for authentication in Java that tries to provide a common interface to many different authentication mechanisms (not only OAuth).    There are then extensions to Pac4J for particular platforms, including SparkJava.
-
-Please see these links for more information on:
-* [Pac4J](/topics/pac4j/)
-* [SparkJava:Authentication](/topics/spark_java_authentication)
+TODO: Fill in more detail and links to some examples.
