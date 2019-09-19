@@ -1,6 +1,7 @@
 ---
 topic: "Selenium"
 desc: "Remote Control of a Browser (e.g. for end-to-end testing of webapps, web scraping)"
+category_prefix: "Selenium: "
 ---
 
 Selenium is a software framework that allows you to do "remote control" of a web browser (e.g. Chrome, Firefox) from a program written
