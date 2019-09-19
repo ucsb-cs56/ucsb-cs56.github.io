@@ -20,3 +20,5 @@ To use selenium, you need two things:
 Look in the file  `src/test/java/edu/ucsb/cs56/pconrad/SparkDemo01Test.java`
 
 
+# Resources
+* [Find Element and FindElements in Selenium WebDriver](https://www.guru99.com/find-element-selenium.html)
