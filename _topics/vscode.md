@@ -14,4 +14,8 @@ You'll likely need to add some "extensions" for the programming languages that y
 
 # Tips and Tricks
 
-* Multiline Editing: (copied [from here](https://stackoverflow.com/a/30039968)) On Windows, you hold Ctrl+Alt while pressing the up ↑ or down ↓ arrow keys to add cursors. On Mac and Linux, the equivalents are ⌥ Opt+⌘ Cmd+↑/↓ and Shift+Alt+↑/↓, respectively.
+* Multiline Editing: (copied [from here](https://stackoverflow.com/a/30039968))
+   * On Windows, you hold Ctrl+Alt while pressing the up ↑ or down ↓ arrow keys to add cursors. 
+   * On Mac, ⌥ Opt+⌘ Cmd+↑/↓
+   * On Linux, Shift+Alt+↑/↓
+
