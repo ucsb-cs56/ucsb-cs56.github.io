@@ -3,6 +3,7 @@ topic: "Parsing: (00) Some sample code to refer to"
 desc: "Some code you can run, compile, and consult as go through the tutorial"
 indent: true
 topic_index_top: true
+hidden: true
 ---
 
 <div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_00_sample_code</div>

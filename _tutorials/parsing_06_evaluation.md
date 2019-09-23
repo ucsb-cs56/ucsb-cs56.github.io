@@ -4,6 +4,7 @@ desc: "The specific phase where we apply grammar productions and construct an AS
 category_prefix: "Parsing: "
 topic_index_top: true
 indent: true
+hidden: true
 ---
 
 <div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_06_evaluation

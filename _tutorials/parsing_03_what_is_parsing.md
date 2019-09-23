@@ -4,6 +4,7 @@ desc: "The general and specific sense of the word, and explanation of three phas
 category_prefix: "Parsing: "
 topic_index_top: true
 indent: true
+hidden: true
 ---
 
 <p style="font-size:80%;">

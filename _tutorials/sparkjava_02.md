@@ -3,6 +3,7 @@ topic: "SparkJava: 02"
 desc: "Deploying the Library Tutorial App on Heroku"
 indent: true
 code_repo: https://github.com/ucsb-cs56-pconrad/spark-basic-structure
+hidden: true
 ---
 
 <style>

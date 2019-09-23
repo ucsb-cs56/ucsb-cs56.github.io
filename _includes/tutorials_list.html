@@ -1,0 +1,8 @@
+<ul>
+  {% for t in site.tutorials %}
+    {% if t.hidden %}
+    {% else %}
+      <li {% if t.indent %} class="indent" {% endif %} ><a href="{{t.url}}">{{ t.topic }}</a>&mdash;{{t.desc}}</li>
+    {% endif %}
+  {% endfor %}
+</ul>

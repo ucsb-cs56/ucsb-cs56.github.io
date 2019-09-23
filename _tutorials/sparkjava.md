@@ -1,6 +1,7 @@
 ---
 topic: "SparkJava"
 desc: "Creating webapps with the Spark framework for java"
+hidden: true
 ---
 
 <div class="github-preview-only">

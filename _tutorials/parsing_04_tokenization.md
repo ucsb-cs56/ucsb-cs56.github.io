@@ -4,6 +4,7 @@ desc: "Context Free Grammars, EBNF, and Abstract Syntax Trees"
 category_prefix: "Parsing: "
 topic_index_top: true
 indent: true
+hidden: true
 ---
 
 <div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_04_tokenization</div>

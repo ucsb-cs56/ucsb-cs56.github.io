@@ -4,6 +4,7 @@ desc: "How do we write the rules of a language? (FSAs, CFGs, etc.)"
 category_prefix: "Parsing: "
 topic_index_top: true
 indent: true
+hidden: true
 ---
 
 <div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_02_formal_spec</div>
