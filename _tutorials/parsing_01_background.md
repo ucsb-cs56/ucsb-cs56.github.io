@@ -3,6 +3,7 @@ topic: "Parsing: (01) Background"
 desc: "What is this parsing stuff all about?"
 indent: true
 topic_index_top: true
+hidden: true
 ---
 
 <div style="display:none;">https://ucsb-cs56-pconrad.github.io/tutorials/parsing_01_background</div>

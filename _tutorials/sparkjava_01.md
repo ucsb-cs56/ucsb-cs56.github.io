@@ -3,6 +3,7 @@ topic: "SparkJava: 01"
 desc: "Getting Started, Hello World"
 indent: true
 code_repo: https://github.com/ucsb-cs56-pconrad/sparkjava-01
+hidden: true
 ---
 
 <style>
