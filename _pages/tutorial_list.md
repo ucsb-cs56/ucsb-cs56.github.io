@@ -1,6 +1,6 @@
 ---
 title: Tutorials
-permalink: "/tutorial_list/"
+permalink: "/tutorials/"
 ---
 
 ## Tutorials
