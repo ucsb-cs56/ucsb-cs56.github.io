@@ -42,9 +42,9 @@ offering_menus:
       - title: Lab
         url: /lab/
         description: "Lab Assignments"
-      - title: Lecture
-        url: /lecture/
-        description: "Lecture"
+      - title: Lectures
+        url: /lectures/
+        description: "Lectures"
       - title: Exam
         url: /exam/
         description: "Exams"
