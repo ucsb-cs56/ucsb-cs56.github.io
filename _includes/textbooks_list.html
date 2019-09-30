@@ -1,0 +1,29 @@
+
+<h2>Textbooks Used This Quarter</h2>
+<ul>
+  {% assign textbooks = site.textbooks | sort: 'custom_sort_order' %}
+  {% for textbook in textbooks %}
+  {% if textbook.used_this_quarter %}
+  <li>
+    <a href="{{textbook.url | relative_url }}">{{ textbook.title }}</a>&mdash;{{textbook.desc}}
+
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+
+<h2>Other Textbooks</h2>
+<ul>
+  {% assign textbooks = site.textbooks | sort: 'custom_sort_order' %}
+  {% for textbook in textbooks %}
+  {% if textbook.used_this_quarter %}
+  {% else %}
+  <li>
+    
+    <a href="{{textbook.url | relative_url }}">{{ textbook.title }}</a>&mdash;{{textbook.desc}}
+
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>

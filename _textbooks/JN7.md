@@ -1,24 +1,23 @@
 ---
-title: Head First Java, 2nd Edition
+title: "Java in a Nutshell, 7th Edition"
 layout: default
-desc: Main textbook for learning Java
-custom_sort_order: 1
+desc: "Supplemental text for updates to Java 6 thru Java 11"
+custom_sort_order: 2
 used_this_quarter: true
 ---
 
 <div>&nbsp;</div>
 
-{% include read_hfj_online.html %}
+{% include read_jn7_online.html %}
 
 <div id="chapters" data-role="collapsible" data-collapsed="false">
   <h2>Reading Notes, by Chapter</h2>
     <ul>
-      {% assign hfj_chapters = site.hfj | sort: 'sort_key' %}
-      {% for chapter in hfj_chapters %}
+      {% assign jn7_chapters = site.jn7 | sort: 'sort_key' %}
+      {% for chapter in jn7_chapters %}
          <li><a href="{{chapter.url}}">Chapter {{chapter.chapter}}</a>&mdash;{{chapter.desc}}</li>
       {% endfor %}
     </ul>
 </div>
 
 
-Other chapters may be available here:  <https://foo.cs.ucsb.edu/56wiki/index.php/HFJ>

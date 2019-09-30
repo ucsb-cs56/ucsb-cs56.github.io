@@ -2,7 +2,8 @@
 title: Head First Design Patterns
 layout: default
 desc: Main textbook for learning Object-Oriented Programming
-custom_sort_order: 2
+custom_sort_order: 3
+used_this_quarter: false
 ---
 
 <div>&nbsp;</div>
