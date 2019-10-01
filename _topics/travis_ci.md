@@ -17,4 +17,6 @@ of Java, means running JUnit tests.
 This article assumes you already know how to work with Java programming and JUnit, and focuses on getting your code to work 
 with Travis-CI.
 
-# TODO: Continue from here.
+# Resources
+
+* <https://sivalabs.in/2018/01/ci-cd-springboot-applications-using-travis-ci/>
