@@ -35,3 +35,7 @@ These work best if you have loaded a JSON formatter extension to your browser su
 or [JSONView for Firefox](https://addons.mozilla.org/en-US/firefox/addon/jsonview/)
 since those will allow you to see the JSON in an easily readable format.
 
+# More information
+
+* <https://www.callicoder.com/spring-boot-actuator/>
+* <https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html#production-ready-endpoints>
