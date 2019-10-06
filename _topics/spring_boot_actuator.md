@@ -39,3 +39,4 @@ since those will allow you to see the JSON in an easily readable format.
 
 * <https://www.callicoder.com/spring-boot-actuator/>
 * <https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html#production-ready-endpoints>
+* Injecting git commit information: <https://www.baeldung.com/spring-git-information>
