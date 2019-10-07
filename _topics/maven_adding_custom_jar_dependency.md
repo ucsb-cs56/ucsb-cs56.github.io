@@ -9,7 +9,7 @@ One of the main advantages of Maven is not having to deal with jar files directl
 If you depend on JUnit, you just add it as a dependency in your `pom.xml`,  you just add the magic words to specify
 `JUnit` as a dependency in your `pom.xml`, and the jar gets automatically downloaded and added to your classpath.
 
-Same with SparkJava, Apache Commons, or whatever.   Pretty much anything that is a standard 3rd party java library.
+Same with all the parts of Spring Framework, Apache Commons, or whatever.   Pretty much anything that is a standard 3rd party java library.
 
 But what is the thing you need is NOT standard?  Maybe its too new to have been put into Maven Central?
 
