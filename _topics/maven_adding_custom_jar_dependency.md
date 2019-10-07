@@ -18,15 +18,12 @@ Examples:
 * The Virginia Tech Corgis library
 * One CS56 legacy code project using code from another
 
-This is still not a problem for which I have a clear well-documented recipe.  I've working on curated a list of 
-links to possible solutions, in the hope that out of that a solution will emerge.  Stay tuned&mdash;when I come up with one,
-it will be explained on this page.
+This is the best solution I've found:
 
-# Links to candidate solutions:
+* https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html
 
-The problem with these candidate solutions is that many of them refer to Maven concepts that are not self-evident, and not fully explained within the sets of instructions below.
 
-My hope is that by reading several, and perhaps also reading other sources on Maven, we will eventually decode one of these enough to construct a solution.   I would like that solution to incorporate one of the Corgis jar files as an example.
+# Other resources
 
 * <https://devcenter.heroku.com/articles/local-maven-dependencies>
 * <http://blog.valdaris.com/post/custom-jar/>
