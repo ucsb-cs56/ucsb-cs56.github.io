@@ -165,7 +165,7 @@ The most commonly used maven goals for this plugin are these (more can be found 
 | Goal | Description |
 |------|-------------|
 | `mvn javadoc:javadoc` | generates the Javadoc files for the project |
-| `mvn javadoc:test` | generates the *test* Javadoc files for the project |
+| `mvn javadoc:test-javadoc` | generates the *test* Javadoc files for the project |
 
 
 The configuration part in the `pom.xml` snippet above overrides the default for where  the generated javadoc goes, setting it to `docs`.  This is compatible with publishing the docs via github pages.   
