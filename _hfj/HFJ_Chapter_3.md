@@ -218,4 +218,4 @@ A key idea here is that when you have an array of object references,
 creating the array and creating the objects that the elements of the
 array point to are two separate steps.
 
-There is more on this topic in the [reading notes for Chapter 4](/chapters/HFJ_Chapter_4)
+There is more on this topic in the [reading notes for Chapter 4](/hfj/HFJ_Chapter_4)
