@@ -19,3 +19,11 @@ You'll likely need to add some "extensions" for the programming languages that y
    * On Mac, ⌥ Opt+⌘ Cmd+↑/↓
    * On Linux, Shift+Alt+↑/↓
 
+# Mac OS Specific
+
+On MacOS, if you want to be able to type `code .` at the Terminal command line
+to open vscode in the current directory, here's what you need to do:
+* Open the Command Palette (⇧⌘P) and type `shell command` to find the `Shell Command: Install 'code' command in PATH command` option
+* Select that option, and behind the scenes, it will do the needed stuff to update your path.
+* You will need to open a new Terminal window to see that take effect.
+* Source: <https://code.visualstudio.com/docs/setup/mac>
