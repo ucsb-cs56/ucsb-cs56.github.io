@@ -32,6 +32,10 @@ If not, download and install a version for Mac OS from here:
 
 <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>
 
+# Installing OpenJDK 11 on Mac
+
+* <https://dzone.com/articles/installing-openjdk-11-on-macos>
+
 # Install Apache Ant
 
 Next, see if you have Apache Ant installed:
