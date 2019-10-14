@@ -11,9 +11,9 @@ code_repo: https://github.com/UCSB-CS56-pconrad/cs56-rational-ex14
 # Lambdas: An admittedly contrived example
 
 My purpose here is to introduce lambdas in order to prepare us for 
-* using Lambdas with the [SparkJava Web Framework]() 
-* using Lambdas with the [Finite State Automaton Lexical Analizer](https://github.com/ucsb-cs56-pconrad/ucsb-cs56-parsing-arithmetic-expressions/blob/master/src/edu/ucsb/cs56/pconrad/parsing/tokenizer/Tokenizer.java#L33) that is part of the [Parsing Tutorial](https://ucsb-cs56-pconrad.github.io/tutorials/parsing/) 
-* job interview questions about [Java Lambdas](https://ucsb-cs56-pconrad.github.io/topics/java_lambda_expressions/) and Functional Programming in Java, in general, for example [Streams](https://ucsb-cs56-pconrad.github.io/topics/java_streams/)
+
+* using Lambdas in sorting (ex14)
+* job interview questions about [Java Lambdas](https://ucsb-cs56.github.io/topics/java_lambda_expressions/) and Functional Programming in Java, in general, for example [Streams](https://ucsb-cs56.github.io/topics/java_streams/)
 
 Having said that, the example shown here is admittedly a bit contrived.
 
