@@ -2,6 +2,7 @@
 topic: "javafx: XQuartz on Mac"
 desc: "when JavaFX doesn't work over X11 forwarding on Mac, how to fix it"
 category_prefix: "javafx: "
+indent: true
 ---
 
 When using X11 forwarding over XQuartz on Mac, JavaFX programs sometimes result in the
