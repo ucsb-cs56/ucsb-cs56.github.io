@@ -34,7 +34,12 @@ If not, download and install a version for Mac OS from here:
 
 # Installing OpenJDK 11 on Mac
 
+This article tells you how to deal with having multiple versions of Java on your Mac, and what to do with the "tarball" file that you might find when you download OpenJDK 11 for Mac, since there are no obvious installation instructions.  Unfortunately, the link to the tarball takes you to a page where the distribution is NO LONGER AVAILABLE.  More on that below.
 * <https://dzone.com/articles/installing-openjdk-11-on-macos>
+
+So if the link in that article does not have OpenJDK 11 for Mac, who does?
+
+Stay tuned...
 
 # Install Apache Ant
 
