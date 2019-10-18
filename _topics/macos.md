@@ -39,7 +39,9 @@ This article tells you how to deal with having multiple versions of Java on your
 
 So if the link in that article does not have OpenJDK 11 for Mac, who does?
 
-Stay tuned...
+This worked for me.  Note that it requires [brew](https://ucsb-cs56.github.io/topics/macos_homewbrew/), a package manager for MacOS.
+* <https://installvirtual.com/install-openjdk-11-mac-using-brew/>
+
 
 # Install Apache Ant
 
