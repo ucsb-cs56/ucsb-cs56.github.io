@@ -40,5 +40,9 @@ One way of handling this is to define an *Environment Variable*.
 * When running on localhost, this is a Unix, MacOS, or Windows Environment Variable.
 * When running on Heroku, this is a Config Variable.
 
-Names of environment variables are, by convention, all upper case and use snake case (underscores).  The environment variables used 
-by Spring Boot is called 
+Names of environment variables are, by convention, all upper case and use snake case (underscores).  
+
+The environment variable used 
+by Spring Boot to override `application.properties` values is called `SPRING_APPLICATION_JSON`.  It shoudl be set equal to a JSON string that defines keys/values for each application property that needs to be override or supplement the values in the `application.properties` file.
+
+An example of this is illustrated in the repo: <https://github.com/ucsb-cs56-pconrad/spring-boot-app-config>
