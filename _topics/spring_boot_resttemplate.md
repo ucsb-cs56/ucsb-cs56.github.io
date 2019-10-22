@@ -17,3 +17,19 @@ Here is a tutorial on the REST client built into Spring Boot called `RestTemplat
 This one covers the Maven dependencies that need to be in the `pom.xml`
 
 * <https://www.baeldung.com/how-to-use-resttemplate-with-basic-authentication-in-spring>
+
+# Setting Headers 
+
+Many APIs (including, for example, <https://developer.ucsb.edu>) require setting headers.
+
+For example, <https://developer.ucsb.edu> requires you to set: 
+
+```
+accept: application/json
+ucsb-api-version: 1.0
+ucsb-api-key: value-specific-to-each-api-user
+```
+
+How do you set these headers?  This article explains:
+
+* <https://stackoverflow.com/questions/32623407/add-my-custom-http-header-to-spring-resttemplate-request-extend-resttemplate/32623548>
