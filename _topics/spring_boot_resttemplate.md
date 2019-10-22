@@ -11,4 +11,4 @@ What code can you use?
 Here is a tutorial on the REST client built into Spring Boot called `RestTemplate`:
 
 * <https://howtodoinjava.com/spring-boot2/resttemplate/spring-restful-client-resttemplate-example/>
-
+* <https://www.baeldung.com/rest-template>
