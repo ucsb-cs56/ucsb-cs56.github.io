@@ -12,3 +12,4 @@ Here is a tutorial on the REST client built into Spring Boot called `RestTemplat
 
 * <https://howtodoinjava.com/spring-boot2/resttemplate/spring-restful-client-resttemplate-example/>
 * <https://www.baeldung.com/rest-template>
+* <https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html>
