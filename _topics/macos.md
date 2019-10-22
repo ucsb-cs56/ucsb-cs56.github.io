@@ -42,6 +42,19 @@ So if the link in that article does not have OpenJDK 11 for Mac, who does?
 This worked for me.  Note that it requires [brew](https://ucsb-cs56.github.io/topics/macos_homewbrew/), a package manager for MacOS.
 * <https://installvirtual.com/install-openjdk-11-mac-using-brew/>
 
+Note: after installing Java 11, you may want to do:
+
+```
+brew upgrade maven
+```
+
+And then do:
+
+```
+mvn --version
+```
+
+To make sure that Maven is using Java 11 and not still using Java 8 or earlier.
 
 # Install Apache Ant
 
