@@ -5,4 +5,7 @@ category_prefix: "Spring Boot: "
 indent: true
 ---
 
-Scott: please paste link
+
+
+How to get information about the user logged in via OAuth:
+https://www.baeldung.com/spring-security-oauth-principal-authorities-extractor 
