@@ -9,7 +9,11 @@ Jackson is one of the most commonly used Java packages for dealing with JSON.
 
 # Example Code
 
+* <https://github.com/ucsb-cs56-pconrad/jackson-baeldung-demo>
+   * This goes along with this tutorial: <https://www.baeldung.com/jackson-object-mapper-tutorial>
+
 * <https://github.com/ucsb-cs56-pconrad/simple-json-jackson-demo>
+
 
 # Documentation
 
