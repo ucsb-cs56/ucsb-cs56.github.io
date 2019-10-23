@@ -18,6 +18,15 @@ because you still have to run `mvn:package` or `spring-boot:run` which packages 
 in the `jar` file or `target` directory. However, no actual Java source get recompiled to make the changes that you make
 in `application.properties` take effect.
 
+# Examples of things that go in `application.properties`
+
+The most common thing you'll see in `application.properties` are these two lines:
+
+```
+server.port: ${PORT:8081}
+logging.level.org.springframework.web: DEBUG
+```
+
 # What about `application.yml`
 
 Note that some applications will use `src/main/resources/application.yml` which serves the same function, but uses
