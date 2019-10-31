@@ -1,6 +1,7 @@
 ---
-topic: "OAuth"
+topic: "OAuth: "
 desc: "The way we implement the 'login with Google, Facebook, or Github' thing you see on some websites"
+category_prefix: "OAuth: "
 ---
 
 When implementing a login feature (i.e. usernames/passwords, and a "logged in" vs "not logged in" status), we have two choices:
