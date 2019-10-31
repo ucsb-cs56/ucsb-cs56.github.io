@@ -2,6 +2,7 @@
 topic: "OAuth: Authorizing GitHub Third Party Apps"
 desc: "Gradescope, and GitHub OAuth Apps you build yourself"
 category_prefix: "OAuth: "
+indent: true
 ---
 
 Sometimes, you may want to use  GitHub OAuth for third party apps with an organization, such as:
