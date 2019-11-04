@@ -39,3 +39,70 @@ A few useful ones for this course:
 * [Android](https://github.com/github/gitignore/blob/master/Android.gitignore)
 * [Java](https://github.com/github/gitignore/blob/master/Java.gitignore)
 * [Maven](https://github.com/github/gitignore/blob/master/Maven.gitignore)
+
+# A candidate `.gitignore` for CS56 Maven Projects
+
+```
+# Emacs/vim
+
+*~
+*.swp
+
+# VSCode
+
+.vscode
+.classpath
+.project
+.settings/
+
+
+# MacOS
+
+.DS_Store
+
+# CS56 specific: Secrets files
+
+localhost.json
+heroku.json
+
+# Maven (from: https://github.com/github/gitignore/blob/master/Maven.gitignore)
+
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# https://github.com/takari/maven-wrapper#usage-without-binary-jar
+.mvn/wrapper/maven-wrapper.jar
+
+# Java (from: https://github.com/github/gitignore/blob/master/Java.gitignore)
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+```
