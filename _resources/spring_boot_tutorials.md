@@ -42,3 +42,28 @@ In addition to the subdirectory, e.g. `spring-boot-crud` for example, you need t
   That refers to `../parent-boot-2`, so you need that entire subdirectory inside your repo, as a sibling of `spring-boot-crud`.
   
   But wait, there's more...
+
+* You may find that the `pom.xml` in, for example, `../parent-boot-2`, refers to a `<parent>` element such as this one:
+
+  ```
+    <parent>
+        <groupId>com.baeldung</groupId>
+        <artifactId>parent-modules</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+   ```
+    
+   That one happens to be defined in the `pom.xml` at the top level of the repo.  So you need that pom.xml, plus the 
+   two subdirectories: the tutorial you are interested in, and the one that defines it's parent.
+   
+   But there is still more!
+   
+* You may need some other files.  I found that I needed these for `spring-boot-crud`
+
+  * The entire `custom-pmd` subdirectory
+  * The file `custom-pmd-0.0.1.jar` (this one you may have to commit with `git add -f` since `.jar` is in the `.gitignore` or should be.)
+  * `baeldung-pmd-rules.xml`.
+  
+  What is this `pmd` stuff?  Glad you asked.  It appears to be a source code analyzer, as explained in [this article on PMD](https://www.baeldung.com/pmd).  As explained there, "PMD is a source code analyzer to find common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth." My guess is that the `custom-pmd-0.0.1.jar` is enforcing some custom source control
+  rules that Baeldung.com has for their organization's code.
+
