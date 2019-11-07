@@ -12,3 +12,5 @@ indent: true
    * <https://www.baeldung.com/spring-security-oauth-principal-authorities-extractor>
 * Logout 
    * <https://www.baeldung.com/logout-spring-security-oauth>
+* Testing
+   * <https://medium.com/@mark.hoogenboom/testing-a-spring-boot-application-secured-by-oauth-e40d1e9a6f60>
