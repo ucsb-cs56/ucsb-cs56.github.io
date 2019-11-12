@@ -42,6 +42,11 @@ If you were successful at connecting to Postgres on localhost, but then have tro
    postgres://usowuzp:2a805d7c9d@ec2-174-129-252-226.compute-1.amazonaws.com:5432/ll05td
    ```
    
+   If you don't see this then see item 2 below for how to provision the database.
+   
+2. If you don't see the Heroku Postgres Add on, then under the "Resources" tab, go to the search bar for Add-Ons, and type in Postgres.  Heroku Postgres should come up as an option.  Select it, and click to provision it at the "Hobby/Dev" level (the Free tier.)
+
+
 
  
    
