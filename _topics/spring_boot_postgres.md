@@ -47,9 +47,15 @@ If you were successful at connecting to Postgres on localhost, but then have tro
 2. If you don't see the Heroku Postgres Add on, then under the "Resources" tab, go to the search bar for Add-Ons, and type in Postgres.  Heroku Postgres should come up as an option.  Select it, and click to provision it at the "Hobby/Dev" level (the Free tier.)
 
 
+3. In the `src/main/resources/application.properties` file, you should see the following:
 
- 
-   
+```
+spring.datasource.url=${JDBC_DATABASE_URL}
+spring.datasource.username=${JDBC_DATABASE_USERNAME}
+spring.datasource.password=${JDBC_DATABASE_PASSWORD}
+```
+
+Note that as explained in the [Heroku Documentation on connecting to JDBC Databases from Heroku](https://devcenter.heroku.com/articles/connecting-to-relational-databases-on-heroku-with-java#using-the-jdbc_database_url-in-a-spring-boot-app) the `JDBC_DATABASE_URL`, `JDBC_DATABASE_USERNAME`, and `JDBC_DATABASE_PASSWORD` are defined from the values in the `DATABASE_URL` whenever the Heroku "Dyno" (server) starts up whenever Heroku detects a Java Application.
 
 
 # Disabling contexutal LOB exception
