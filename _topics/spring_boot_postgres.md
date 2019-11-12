@@ -36,7 +36,11 @@ that include these keywords may be relevant.
 The following error sometimes occurs when using relational databases with Hibernate.
 
 ```
-Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+Disabling contextual LOB creation as createClob() method threw error : 
+java.lang.reflect.InvocationTargetException
 ```
+
+The following article explains that this error is usually harmless, and how to supress the exception message by
+a line of configuration in your `applicaion.properties`:
 
 * <https://stackoverflow.com/questions/4588755/disabling-contextual-lob-creation-as-createclob-method-threw-error>
