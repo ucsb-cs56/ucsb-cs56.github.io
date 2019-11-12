@@ -16,6 +16,13 @@ The main reason we prefer Postgres in CMPSC 56 is that it comes for free with th
 
 No other database system comes in the free tier and is so easy to provision.
 
+# What are Hibernate, JPA, JDBC
+
+Hibernate, JPA and JDBC are parts of the "middleware" that connect your Spring Boot application to 
+a relational database.   A deeper discussion is beyond the scope of this short article, but is is helpful
+to at least have that context, so that if/when you run into problems, you are aware that searches
+that include these keywords may be relevant.
+
 # Postgres Spring Boot Tutorials
 
 * <https://dzone.com/articles/bounty-spring-boot-and-postgresql-database>
@@ -23,3 +30,13 @@ No other database system comes in the free tier and is so easy to provision.
 
 
 
+
+# Disabling contexutal LOB exception
+
+The following error sometimes occurs when using relational databases with Hibernate.
+
+```
+Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+```
+
+* <https://stackoverflow.com/questions/4588755/disabling-contextual-lob-creation-as-createclob-method-threw-error>
