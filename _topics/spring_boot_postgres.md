@@ -19,7 +19,7 @@ No other database system comes in the free tier and is so easy to provision.
 # Postgres Spring Boot Tutorials
 
 * <https://dzone.com/articles/bounty-spring-boot-and-postgresql-database>
-
+* <http://blog.michalszalkowski.com/java/spring-boot-switch-from-h2-to-postgresql/>
 
 
 
