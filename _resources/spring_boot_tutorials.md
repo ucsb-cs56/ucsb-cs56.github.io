@@ -67,3 +67,12 @@ In addition to the subdirectory, e.g. `spring-boot-crud` for example, you need t
   What is this `pmd` stuff?  Glad you asked.  It appears to be a source code analyzer, as explained in [this article on PMD](https://www.baeldung.com/pmd).  As explained there, "PMD is a source code analyzer to find common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth." My guess is that the `custom-pmd-0.0.1.jar` is enforcing some custom source control
   rules that Baeldung.com has for their organization's code.
 
+
+# mkyong
+
+There is another giant repo of spring boot tutorials here:
+
+* <https://github.com/mkyong/spring-boot.git>
+
+It has the same property as the baedlung.com tutorials, that all of them are in one giant repo.
+
