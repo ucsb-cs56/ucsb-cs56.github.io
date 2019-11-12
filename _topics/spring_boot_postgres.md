@@ -29,6 +29,22 @@ that include these keywords may be relevant.
 * <http://blog.michalszalkowski.com/java/spring-boot-switch-from-h2-to-postgresql/>
 
 
+# Trouble connecting to Postgres on Heroku
+
+If you were successful at connecting to Postgres on localhost, but then have trouble when running on Heroku:
+
+1. Check that you actually provisioned the "Heroku Postgres Add-On" for your application.
+
+   If you did, then on the "Settings" tab of the dashboard of your app, when you click on 
+   "Reveal&nbsp;Config&nbsp;Vars", you should see a value for `DATABASE_URL` such as this one (fictional and shortened):
+   
+   ```
+   postgres://usowuzp:2a805d7c9d@ec2-174-129-252-226.compute-1.amazonaws.com:5432/ll05td
+   ```
+   
+
+ 
+   
 
 
 # Disabling contexutal LOB exception
