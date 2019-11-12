@@ -76,3 +76,16 @@ There is another giant repo of spring boot tutorials here:
 
 It has the same property as the baedlung.com tutorials, that all of them are in one giant repo.
 
+I was successful at running the [spring-data-jpa-postgres tutorial](https://www.mkyong.com/spring-boot/spring-boot-spring-data-jpa-postgresql/) described here on a Mac running Postgres by making this change in `application.properties`:
+
+Comment out:
+
+```
+#spring.datasource.url=jdbc:postgresql://192.168.1.4:5432/postgres
+```
+
+Add:
+
+```
+spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+```
