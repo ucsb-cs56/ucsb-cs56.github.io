@@ -27,6 +27,7 @@ that include these keywords may be relevant.
 
 * <https://dzone.com/articles/bounty-spring-boot-and-postgresql-database>
 * <http://blog.michalszalkowski.com/java/spring-boot-switch-from-h2-to-postgresql/>
+* <http://clouddatafacts.com/heroku/heroku-spring-boot-psql/spring_boot_psql_short.html#clone-the-source-code/>
 
 
 # Trouble connecting to Postgres on Heroku
