@@ -5,6 +5,10 @@ category_prefix: "Heroku:"
 indent: true
 ---
 
+# `heroku login` tries to open browser, but you are on CSIL
+
+Try: `heroku login -i`
+
 # When using `mvn heroku:deploy`: `Could not find app name: No 'heroku' remote found.` 
 
 Symptom: You use `mvn heroku:deploy` and see:
