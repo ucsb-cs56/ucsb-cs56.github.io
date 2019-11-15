@@ -42,6 +42,29 @@ So if the link in that article does not have OpenJDK 11 for Mac, who does?
 This worked for me.  Note that it requires [brew](https://ucsb-cs56.github.io/topics/macos_homewbrew/), a package manager for MacOS.
 * <https://installvirtual.com/install-openjdk-11-mac-using-brew/>
 
+Here's the short version:
+
+```
+brew update
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk11
+```
+
+To check if you now have Java 11, open a new Terminal window and do:
+
+```
+java -version
+```
+
+If it worked, you should see something like this:
+
+```
+# java -version
+openjdk version "11.0.2" 2019-01-15
+OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.2+9)
+OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.2+9, mixed mode)
+```
+
 Note: after installing Java 11, you may want to do:
 
 ```
