@@ -14,3 +14,4 @@ indent: true
    * <https://www.baeldung.com/logout-spring-security-oauth>
 * Testing
    * <https://medium.com/@mark.hoogenboom/testing-a-spring-boot-application-secured-by-oauth-e40d1e9a6f60>
+      * Github Code that goes with this article: <https://github.com/mark-hoogenboom/spring-boot-oauth-testing>
