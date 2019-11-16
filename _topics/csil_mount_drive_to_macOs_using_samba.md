@@ -1,6 +1,6 @@
 ---
-topic: "CSIL: Via MacOS"
-desc: "Remotely Mount CSIL drive to your MacOS system"
+topic: "CSIL: Mount CSIL drive Via MacOS"
+desc: "Remotely Mount your CSIL drive to your MacOS system using via cifs/smb using SAMBA"
 indent: true
 ---
 
