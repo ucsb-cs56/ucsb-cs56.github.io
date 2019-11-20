@@ -54,6 +54,9 @@ offering_menus:
       - title: OfcHrs
         url: /info/office_hours/
         description: "Office Hours"
+      - title: Projects
+        url: /info/projects/
+        description: "Projects"
       - title: Github
         dropdown:
            - title: ucsb-cs56-f19
