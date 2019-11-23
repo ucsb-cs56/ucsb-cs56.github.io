@@ -19,4 +19,5 @@ desc: "Various sources for datasets to build applications with"
 * Program Compilation/Execution: <https://docs.jdoodle.com/compiler-api/compiler-api>
 * College Scorecard <https://collegescorecard.ed.gov/data/documentation/>
 * Tides <https://tidesandcurrents.noaa.gov/api/>
-
+   * List of Station Ids: <https://tidesandcurrents.noaa.gov/tide_predictions.html?gid=1393>
+   * Santa Barbara is: 9411340, Gaviota is: 9411399
