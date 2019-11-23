@@ -10,3 +10,8 @@ desc: "Various sources for datasets to build applications with"
 # Other Lists of Datasets
 
 * <https://github.com/caesar0301/awesome-public-datasets>
+
+# JSON APIs
+
+* Earthquakes: <https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php>
+* Weather: <https://www.weather.gov/documentation/services-web-api>
