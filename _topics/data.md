@@ -17,4 +17,5 @@ desc: "Various sources for datasets to build applications with"
 * Weather: <https://www.weather.gov/documentation/services-web-api>
 * UCSB Data: <https://developer.ucsb.edu/>
 * Program Compilation/Execution: <https://docs.jdoodle.com/compiler-api/compiler-api>
+* College Scorecard <https://collegescorecard.ed.gov/data/documentation/>
 
