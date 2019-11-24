@@ -43,3 +43,4 @@ So, while Redis may have some advantages over SQL databases for this purpose, fo
 
 * <https://www.baeldung.com/spring-session-jdbc>
 * <https://www.javainuse.com/spring/springboot_session>
+* <https://docs.spring.io/spring-session/docs/current/reference/html5/guides/boot-redis.html>
