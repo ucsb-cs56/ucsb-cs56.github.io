@@ -22,6 +22,13 @@ ones are more useful, and some tips on how to accomplish these goals.
 * <https://stackoverflow.com/questions/49359812/download-csv-using-spring-boot-and-apache-commons>
 * <https://www.baeldung.com/java-csv>
 
+
 # Articles about uploading CSV files
 
 TODO
+
+# Articles about testing for file upload/download
+
+* <https://www.roytuts.com/junit-testing-of-file-upload-and-download-in-spring-rest-controllers/>
+  * Note that this tutorial uses Gradle instead of Maven, but it still may be helpful
+* <https://dzone.com/articles/springboot-rest-service-download-files>
