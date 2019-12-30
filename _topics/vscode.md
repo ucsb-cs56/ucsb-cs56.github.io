@@ -18,6 +18,35 @@ You'll likely need to add some "extensions" for the programming languages that y
    * On Windows, you hold Ctrl+Alt while pressing the up ↑ or down ↓ arrow keys to add cursors. 
    * On Mac, ⌥ Opt+⌘ Cmd+↑/↓
    * On Linux, Shift+Alt+↑/↓
+   
+   
+# Settings for Java Formatting
+
+If you want to use the "fluent" format for code such as:
+
+```java
+@Override
+  protected void configure(HttpSecurity http) throws Exception {
+    http
+        .authorizeRequests()
+        .antMatchers("/", "/greeting", "/login**", "/webjars/**", "/error**", "/searchResults**", "/search/**")
+        .permitAll()
+        .anyRequest()
+        .authenticated()
+        .and()
+        .oauth2Login()
+        .loginPage("/login")
+        .and()
+        .logout()
+        .deleteCookies("remove")
+        .invalidateHttpSession(true)
+        .logoutUrl("/logout")
+        .logoutSuccessUrl("/")
+        .permitAll();
+  }
+```
+
+then check out this post: <https://github.com/redhat-developer/vscode-java/issues/1126>
 
 # Mac OS Specific
 

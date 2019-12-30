@@ -6,4 +6,5 @@ indent: true
 ---
 
 See:
+* <https://ucsb-cs56.github.io/topics/log4j_spring_boot/>
 * <https://www.baeldung.com/spring-boot-logging>
