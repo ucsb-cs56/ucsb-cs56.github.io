@@ -33,8 +33,8 @@ main_dropdown:
 
 offering_menus:
   -
-    term: F19
-    baseurl: /f19
+    term: W20
+    baseurl: /w20
     items: 
       - title: Hwk
         url: /hwk/
@@ -42,9 +42,9 @@ offering_menus:
       - title: Lab
         url: /lab/
         description: "Lab Assignments"
-      - title: Lectures
+      - title: Lecture
         url: /lectures/
-        description: "Lectures"
+        description: "Lecture"
       - title: Exam
         url: /exam/
         description: "Exams"
@@ -54,13 +54,17 @@ offering_menus:
       - title: OfcHrs
         url: /info/office_hours/
         description: "Office Hours"
+      - title: Projects
+        url: /info/projects/
+        description: "Projects"
       - title: Github
         dropdown:
-           - title: ucsb-cs56-f19
-             url: https://github.com/ucsb-cs56-f19
+           - title: ucsb-cs56-w20
+             url: https://github.com/ucsb-cs56-w20
+          
   -
-    term: S19
-    baseurl: /s19
+    term: F19
+    baseurl: /f19
     items: 
       - title: Hwk
         url: /hwk/
@@ -69,7 +73,7 @@ offering_menus:
         url: /lab/
         description: "Lab Assignments"
       - title: Lecture
-        url: /lecture/
+        url: /lectures/
         description: "Lecture"
       - title: Exam
         url: /exam/
@@ -77,10 +81,17 @@ offering_menus:
       - title: Cal
         url: /info/calendar/
         description: "Assignment Calendar"
+      - title: OfcHrs
+        url: /info/office_hours/
+        description: "Office Hours"
+      - title: Projects
+        url: /info/projects/
+        description: "Projects"
       - title: Github
         dropdown:
-           - title: ucsb-cs56-s19
-             url: https://github.com/ucsb-cs56-s19
+           - title: ucsb-cs56-f19
+             url: https://github.com/ucsb-cs56-f19
+          
   -
     term: F18
     baseurl: /f18
@@ -92,7 +103,7 @@ offering_menus:
         url: /lab/
         description: "Lab Assignments"
       - title: Lecture
-        url: /lecture/
+        url: /lectures/
         description: "Lecture"
       - title: Exam
         url: /exam/
@@ -106,10 +117,29 @@ offering_menus:
              url: https://github.com/ucsb-cs56-f18
            - title: ucsb-cs56-webapps
              url: https://github.com/ucsb-cs56-webapps
-
-
- 
-
+  -
+    term: S19
+    baseurl: /s19
+    items: 
+      - title: Hwk
+        url: /hwk/
+        description: "Homework Assignments"
+      - title: Lab
+        url: /lab/
+        description: "Lab Assignments"
+      - title: Lecture
+        url: /lectures/
+        description: "Lecture"
+      - title: Exam
+        url: /exam/
+        description: "Exams"
+      - title: Cal
+        url: /info/calendar/
+        description: "Assignment Calendar"
+      - title: Github
+        dropdown:
+           - title: ucsb-cs56-s19
+             url: https://github.com/ucsb-cs56-s19
 
 
 
