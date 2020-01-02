@@ -23,6 +23,8 @@ Did you know that when browsing files in github.com, you can type a ? and bring 
 
 For example T is "fuzzy file search".  Have fun exploring all the rest.
 
+* Code Navigation: <https://help.github.com/en/github/managing-files-in-a-repository/navigating-code-on-github>
+
 # Resources
 
 * [YouTube Video: Introduction to Git with Scott Chacon of GitHub](https://www.youtube.com/watch?reload=9&v=ZDR433b0HJY)
