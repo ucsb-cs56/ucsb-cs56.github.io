@@ -20,7 +20,8 @@ You can monitor how close you are getting with:
 heroku pg:info --app APP
 ```
 
-# Dumping a backup of the database to a file
+# Dumping a Heroku Postgres database
 
-The postgres command to dump a database is documented here: <https://www.postgresql.org/docs/9.1/backup-dump.html>
+This is documented here: <https://devcenter.heroku.com/articles/heroku-postgres-import-export>
+
 
