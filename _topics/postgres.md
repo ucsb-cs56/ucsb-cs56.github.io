@@ -22,6 +22,21 @@ heroku pg:info --app APP
 
 # Dumping a Heroku Postgres database
 
-* This is documented here: <https://devcenter.heroku.com/articles/heroku-postgres-import-export>, but
-   * NOTE that you may need the `--app APP` suffix on the commands such as `heroku pg:backups:capture`
+You can dump the contents of a postgres database on Heroku to a special binary format used by the `pgdump` tool.
+
+This is documented here: <https://devcenter.heroku.com/articles/heroku-postgres-import-export>, but
+* NOTE that you may need the `--app APP` suffix on the commands such as `heroku pg:backups:capture`
+
+The file that is downloaded is called `latest.dump`, and it's in an ideosyncratic binary format.
+
+That can be converted to a text `.sql` file with the process documented here: <https://stackoverflow.com/questions/21429335/how-do-i-convert-a-binary-pgdump-compressed-to-a-plain-sql-file>
+
+For example:
+
+```
+pg_restore -f latest.sql latest.dump 
+```
+
+That requires you to have postgres installed on your local machine so that you have the `pg_restore` command available.
+
 
