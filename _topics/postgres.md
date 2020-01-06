@@ -22,6 +22,6 @@ heroku pg:info --app APP
 
 # Dumping a Heroku Postgres database
 
-This is documented here: <https://devcenter.heroku.com/articles/heroku-postgres-import-export>
-
+* This is documented here: <https://devcenter.heroku.com/articles/heroku-postgres-import-export>, but
+   * NOTE that you may need the `--app APP` suffix on the commands such as `heroku pg:backups:capture`
 
