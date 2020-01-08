@@ -11,8 +11,5 @@ in the drop down menu on Gradescope for submission directly from GitHub.
 This page may be of some help: 
 * <https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/requesting-organization-approval-for-oauth-apps>
 
-There is some flow by which someone has to request third party access to Gradescope to the course organization, e.g ucsb-cs56-w20, and then 
-an owner of the organization has to approve that access.
-
-We've seen it work before, a few times, but we've never taken the time to document how to make it work.  This time we are going to try
-to actually write down if we see it working.
+I think what needs to happen is that someone that has used OAuth to authorize Gradescope needs to go under Settings,
+then Applications, then OAuth, then find Gradescope, and then either authorize or "request authorization" for ucsb-cs56-w20
