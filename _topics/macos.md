@@ -89,7 +89,10 @@ Apache Ant(TM) version 1.9.7 compiled on April 9 2016
 169-231-88-206:~ pconrad$
 ```
 
-If instead, you get `command not found`, then install Apache Ant by following the instructions here:
+If instead, you get `command not found`, then install Apache Ant in one of the following ways:
 
-<https://www.mkyong.com/ant/how-to-apache-ant-on-mac-os-x/>
+* `brew install ant`
+   * This requires Homebrew, which is described here: [/topics/homebrew](/topics/homebrew)
+* These instructions: <https://www.mkyong.com/ant/how-to-apache-ant-on-mac-os-x/>
+   * A student in W20 reported that these didn't work well, and that `brew install ant` worked better.
 
