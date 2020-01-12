@@ -2,6 +2,7 @@
 topic: "Webapps: Webapps vs. Websites (Static Web Sites/Pages)"
 desc: "What's the difference between a web app and a web site/page"
 category_prefix: "webapps: "
+indent: true
 ---
 
 This page explains the difference between:
