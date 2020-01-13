@@ -80,7 +80,7 @@ To make this easier to study from, we've divided it into two sections:
 
 # All elements 
 
-## (0) modelVersion (required)
+## (0) `modelVersion` (required)
 
 The `modelVersion` refers to the version of the Project Object Model.  As of Winter Quarter 2020, the current version is `4.0.0`.  So this element should always be:
 
@@ -89,7 +89,7 @@ The `modelVersion` refers to the version of the Project Object Model.  As of Win
   <modelVersion>4.0.0</modelVersion>
 ```
 
-## (1) parent (optional)
+## (1) `parent` (optional)
 
 If a large number of `pom.xml` project files share common elements, in
 order to promote the principle of "Don't Repeat Yourself", it is
@@ -121,7 +121,7 @@ The documentation for the Maven POM notes that just as in Java we have a concept
 
 The Super POM is documented here: <https://maven.apache.org/pom.html#The_Super_POM>.
 
-## (2) groupId (required)
+## (2) `groupId` (required)
 
 Together, the `groupId` and `artifactId` (item (3)) give a unique name to the project you a building.   The `groupId` provides additional scope.  For example,
 we might use `edu.ucsb.cs56.w20` as our groupId.   
@@ -139,7 +139,7 @@ Together, the `groupId`, `artifactId`, and `version` form what is called the `co
 
 For the syntax, and more info, see: <https://maven.apache.org/pom.html#Maven_Coordinates>
 
-## (3) artifactId (required)
+## (3) `artifactId` (required)
 
 The artifact id identifies what you are building.   For example, `lab02`
 
