@@ -17,10 +17,11 @@ What do you need to install on your Windows to be able to do this?
 
 (Note: I recommend git for windows, not "github for windows".  "git for windows" provides the "Git Bash Shell" as well as the command line git tools that we use in CMPSC 56.)
 
-# Install the JDK
+# Install the JDK for Java 11
 
 As of W20, we do not have current "tested" instructions for installing the Java 11 JDK on Windows. As/when that changes, we'll update this page.
 
+We strongly encourage you not to install a later version than Java 11.  Java 11 is a "long-term support" version of Java, while versions such as 12, 13, etc. are considered more experimental.
 
 # Install Apache Ant
 
