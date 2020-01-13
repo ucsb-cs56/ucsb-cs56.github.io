@@ -11,6 +11,17 @@ For audio or sound programs, this is especially true.
 
 What do you need to install on your Windows to be able to do this?
 
+There are 2 options for working in a Windows environment.
+  * "Natively" - directly in the Windows OS and filesystem 
+  * On the Windows Subsystem for Linux (WSL) - a tool that basically creates a separate Linux environment alongside your Windows environment. Kind of like a more lightweight VM, with access to local storage.
+    * Any files you create within the WSL are still stored in your local filesystem, and can be found by entering `\\wsl$` into the filepath bar in a File Explorer window
+    
+# Getting started with WSL
+
+If you don't have the WSL activated on your computer already, follow the directions at the following link to set it up. There will be a variety of Linux distributions from which to choose. If you don't have a preference, choose Ubuntu. It is the most popular, so most online documentation and discussion about the WSL will usually be about the Ubuntu distro.
+    * https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+
 # Install git for Windows
 
 * Download link: <https://git-scm.com/download/win>
