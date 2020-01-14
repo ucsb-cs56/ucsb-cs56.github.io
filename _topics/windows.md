@@ -31,3 +31,24 @@ As of W20, we do not have current "tested" instructions for installing Apache An
 
 As of W20, we do not have current "tested" instructions for installing Apache Maven on Windows. As/when that changes, we'll update this page.
 
+# Windows Subsytem Linux (WSL)
+Windows 10 comes with a new thing called Windows Subsystem Linux (WSL) which is a sorta Linux VM inside of windows. 
+
+* To get started follow this guide by Microsoft: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+* To install the Java JDK <br />
+`sudo apt-get update` <br />
+`sudo apt-get install default-jdk` <br />
+ To verify Java JDK has been installed <br />
+ `java -version`
+
+* To install Ant <br />
+`sudo apt install ant` <br />
+To check  <br />
+`ant -version`
+
+* To install Maven<br />
+`sudo apt install maven`<br />
+To check <br />
+`mvn -version`
+
