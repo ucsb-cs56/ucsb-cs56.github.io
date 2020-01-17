@@ -6,7 +6,6 @@ textbook: HFJ
 desc:  "Inheritance and Polymorphism: Better Living in Objectville"
 ---
 
-Up to [[HFJ]]&mdash;Back to [[HFJ:Chapter 6]]&mdash;Forward to [[HFJ:Chapter 8]]
 
 
 
