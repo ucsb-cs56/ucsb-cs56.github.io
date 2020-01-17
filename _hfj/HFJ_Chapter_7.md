@@ -7,8 +7,6 @@ desc:  "Inheritance and Polymorphism: Better Living in Objectville"
 ---
 
 
-
-
 # Chapter 7: Inheritance and Polymorphism: Better Living in Objectville
 
 
