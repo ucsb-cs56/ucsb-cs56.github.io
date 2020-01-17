@@ -7,11 +7,6 @@ desc:  "Interfaces and Abstract Classes: Serious Polymorphism"
 ---
 
 
-
-Up to [[HFJ]]&mdash;Back to [[HFJ:Chapter 7]]&mdash;Forward to [[HFJ:Chapter 9]]
-
-----
-
 # Chapter 8: Interfaces and Abstract Classes: Serious Polymorphism =
 
 
