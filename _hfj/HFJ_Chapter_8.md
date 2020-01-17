@@ -7,7 +7,7 @@ desc:  "Interfaces and Abstract Classes: Serious Polymorphism"
 ---
 
 
-# Chapter 8: Interfaces and Abstract Classes: Serious Polymorphism =
+# Chapter 8: Interfaces and Abstract Classes: Serious Polymorphism 
 
 
 
