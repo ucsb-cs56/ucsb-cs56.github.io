@@ -10,7 +10,7 @@ Up to [[HFJ]]&mdash;Back to [[HFJ:Chapter 6]]&mdash;Forward to [[HFJ:Chapter 8]]
 
 
 
-= Chapter 7: Inheritance and Polymorphism: Better Living in Objectville =
+# Chapter 7: Inheritance and Polymorphism: Better Living in Objectville
 
 
 # The big picture (p. 165 )
