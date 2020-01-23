@@ -30,10 +30,10 @@ On page 236, we see the division between stack and heap in Java, in terms of whe
 
 On page 237 we see the idea of "stack frames" (also known as "activation records" or "call frames"), which I'm hoping you've seen before in CS8, CS16, CS24 and/or CS32&mdash;but if not, here's your chance to get caught up.
 
-Page 238 focuses on the distinction between the reference variable and the object it points to&mdash;the case of a variable on the '''stack''' ''referring to'' (or ''pointing to'') an object on the '''heap'''.
+Page 238 focuses on the distinction between the reference variable and the object it points to&mdash;the case of a variable on the *stack* "referring to" (or "pointing to") an object on the *heap*.
 
 
-I will definitely put questions on the exam about the material on these two pages.  Understanding what is on the '''stack''' and what is on the '''heap''' is crucial for understanding how to write efficient code, not only in Java, but in just about every modern programming language.
+I will definitely put questions on the exam about the material on these two pages.  Understanding what is on the *stack* and what is on the *heap* is crucial for understanding how to write efficient code, not only in Java, but in just about every modern programming language.
 
 I am hopeful that you've encountered these ideas before in CS16, CS24 and possibly CS32&mdash;so that what is new here is just the Java portion of this material.    So let's compare this with what we know about C++:
 
@@ -79,7 +79,7 @@ Note also that we can have:
 
 Finally, note that:
 * For any given instance variable, there can be either 0, 1 or many instances of it on the heap at any given time.
-  * That's pretty self-explanatory.  If <code>name</code> is an instance variable for a Dog object, I can have zero, one, or many Dog objects, each with its own name  (e.g.  "Fido", "Rover" and "Spot").
+  * That's pretty self-explanatory.  If `name` is an instance variable for a Dog object, I can have zero, one, or many Dog objects, each with its own name  (e.g.  "Fido", "Rover" and "Spot").
 * There can also be 0, 1, or many instances of a local variable or parameter on the stack at any point in time.
   * This one may be trickier to see.    Clearly, if a given function is not active at the moment, its local variables are not on the stack.  And if only one copy is active, then one copy of each of its local variables is on the stack.   What is the situation where there can be many copies of the same local variable or parameter on the stack at once? 
   * The answer I'm looking for does NOT have to do with multiple people running the same program, or the same person invoking multiple copies of the the same program, or even with multiple processes or threads.    Each process or thread will have its own stack, so that doesn't count.   I'm looking for a situation where multiple copies of the same variable are on the same stack at the same time.   
@@ -126,8 +126,6 @@ I use the words interchangeably for two reasons:
    It does not matter if the class is useful in practice&mdash;the purpose of this question is to test your understanding of how Java works.
 
 
-
-{{ExamQStart}}
 3. Write a Java class with a main method that illustrates that it is possible for there to be two or more instances of a given local variable or parameter (say <code>n</code>)  on the stack at the same time.
 
    You should have a line of code <code>System.out.println("now");</code> that will be printed at the precise moment when there are two instances of the local variable or parameter <code>n</code> in memory.
