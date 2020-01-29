@@ -19,7 +19,7 @@ This turns off X11 forwarding to `github.com` ssh connections.
 
 # Help! I committed changes to my local master when they should have been on a feature branch
 
-Suppose you intended to create a feature branch called `gc-myFeature` and put three commits on it.
+Suppose you intended to create a feature branch called `cg-myFeature` and put three commits on it.
 
 But you forgot!  You put those three commits on the `master` branch instead!  And you do NOT want to push those
 directly to `master`&mdash;instead, you want to:
@@ -40,5 +40,31 @@ The important thing to rememebr is what a branch **is**.
 
 How? 
 
-First, do a `git log` command.  That will show you a list of all the commits.
+First, do a  `git status` followed by a `git log` command at the shell prompt in your local repo.   
+
+
+Suppose that looks like this:
+
+```
+
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 2 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+nothing to commit, working tree clean
+$ git log
+Author: Chris Gaucho <cgaucho@umail.ucsb.edu>
+Date:   Tue Jan 28 11:33:29 2020 -0800
+    cg - added file for team questions
+commit 0d066b54aacd684f11642c1881a5755e25fae037
+Author: Chris Gaucho <cgaucho@umail.ucsb.edu>
+Date:   Tue Jan 28 11:29:31 2020 -0800
+    cg - added file for qa questions
+commit fd91befce9897845d996ccdb17cebeb948529368 (origin/cg-myFeature)
+Author: ldelplaya <59632440+ldelplaya@users.noreply.github.com>
+Date:   Tue Jan 28 11:11:54 2020 -0800
+    Initial commit
+$
+```
 
