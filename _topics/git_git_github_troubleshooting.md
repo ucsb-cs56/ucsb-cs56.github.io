@@ -85,5 +85,5 @@ So, here's what we do.
 |`git push -f origin cg-myFeature ` | This does a "force push" on the `cg-myFeature` branch.  This forces GitHub's pointer for that branch to be pointing to the commit we insist on.  This is something you should only do when you are pretty confident that your local branch is pointing to the correct spot, and that the branch on GitHub is not.  | 
 | `git status` | It's a good idea to do a git status now, as well as checking things on GitHub to be sure they look sane |
 | `git checkout master` | Now we are going to fix our local master branch |
-| `git reset --hard origin/master` | This says: make the current branch (which happens to be our local `master`) point wherever `origin/master` points.  That's going to make our local branch be in sync with master.
-
+| `git reset --hard origin/master` | This says: make the current branch (which happens to be our local `master`) point wherever `origin/master` points.  That's going to make our local branch be in sync with master.|
+| git status | You should now see the message: <br> `On Branch Master` <br> `Your branch is up-to-date with 'origin/master'`<br><br>`nothing to commit, working tree clean` |
