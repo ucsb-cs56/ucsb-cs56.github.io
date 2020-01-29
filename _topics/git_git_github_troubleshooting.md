@@ -68,3 +68,19 @@ Date:   Tue Jan 28 11:11:54 2020 -0800
 $
 ```
 
+Also go to the repo on GitHub (i.e. the website, and under commits, find out what the SHA (that long hexadecimal number) is for the latest up-to-date commit on master.  Suppose that number is: `c547d12`.  (Note that the full number is longer, but you can typically shorten SHAs on GitHub to the first seven digits and it works fine.)
+
+What we want, is to end up with the commits shown above (i.e. the last commit being `0d066b5`, which has the message `cg - added file for team questions`) to be on the branch `cg-myFeature`, and for our local master to be back pointing to c547d12`).
+
+So, here's what we do.
+
+| Command | Explanation |
+|---------|---------------|
+|`git fetch` | This updates the branch pointers for all our `origin/master`, `origin/branch`, `origin/branch2`, etc. for all the branches that exists on `origin`.  It doesn't pull anything; it just makes sure our local repo knows where all the pointers are.  We'll need that later.
+|`git checkout cg-myFeature`   | This puts us on the feature branch |
+|`git reset --hard 0d066b5`  | This should move the feature branch point to be pointing at the last commit that we want to be on the feature branch.  At this point, both `master` and `cg-myFeature` point to that last commit |
+|`git push -f cg-myFeature ` | This does a "force push" on the `cg-myFeature` branch.  This forces GitHub's pointer for that branch to be pointing to the commit we insist on.  This is something you should only do when you are pretty confident that your local branch is pointing to the correct spot, and that the branch on GitHub is not.  | 
+| `git status` | It's a good idea to do a git status now, as well as checking things on GitHub to be sure they look sane |
+| `git checkout master` | Now we are going to fix our local master branch |
+| `git reset --hard origin/master | This says: make the current branch (which happens to be our local `master`) point wherever `origin/master` points.  That's going to make our local branch be in sync with master.
+
