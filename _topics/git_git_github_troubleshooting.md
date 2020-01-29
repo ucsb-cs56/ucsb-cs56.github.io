@@ -22,13 +22,23 @@ This turns off X11 forwarding to `github.com` ssh connections.
 Suppose you intended to create a feature branch called `gc-myFeature` and put three commits on it.
 
 But you forgot!  You put those three commits on the `master` branch instead!  And you do NOT want to push those
-directly to `master`&mdash;instead, you want to put those commits on the `gc-myFeature` branch instead, and you
-want your local `master` branch to go back to being in sync with the `master` of the `origin`.  Why? Because you want
-to do a pull request for your new commits.
+directly to `master`&mdash;instead, you want to:
+
+* put those commits on the `gc-myFeature` branch, and 
+* get your local `master` branch back in sync with the `master` of the `origin`.  
+
+Why? 
+
+* Because you want to do a **pull request** for your new commits.  
+* You do **not** want them to just go to `master` directy.
 
 What can you do?
 
 The important thing to rememebr is what a branch **is**.  
 
 * A branch is nothing more, and nothing less, than a pointer to a commit.
+
+How? 
+
+First, do a `git log` command.  That will show you a list of all the commits.
 
