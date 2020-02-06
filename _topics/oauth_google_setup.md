@@ -16,5 +16,6 @@ your Google OAuth application:
 "spring.security.oauth2.client.registration.google.client-id":"ENTER-GOOGLE-ID",
 "spring.security.oauth2.client.registration.google.client-secret":"ENTER-GOOGLE-SECRET"
 ```
+    - **NOTE**: If you want Heroku to also support Google OAuth, you'll need to do the same in `heroku.json`, hopefully with a set of production credentials from a production Google OAuth app.
 3. Run `source env.sh` to update your environment.
 4. Run `mvn -P localhost spring-boot:run` and see that your application is now configured to support Google OAuth!.
