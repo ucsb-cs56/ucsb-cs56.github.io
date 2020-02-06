@@ -72,6 +72,15 @@ Note that:
     </profiles>
 ```    
 
+# How can I tell which profile(s) is/are active?
+
+This command tells you which profile(s) are active:
+
+```
+mvn help:active-profiles
+```
+
+
 # More on Profiles
 
 * <https://devcenter.heroku.com/articles/using-a-custom-maven-settings-xml#defining-the-maven_settings_path-config-variable>
