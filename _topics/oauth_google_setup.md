@@ -1,3 +1,11 @@
+---
+topic: "OAuth: Google Setup"
+desc: "Setting up a Google OAuth App to obtain client id and client secret"
+category_prefix: "OAuth: "
+indent: true
+---
+
+
 # How to set up Google OAuth
 
 1. Navigate to <https://developers.google.com/identity/sign-in/web/sign-in> to create a Google OAuth Application.
