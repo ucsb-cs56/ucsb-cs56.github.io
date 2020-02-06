@@ -71,3 +71,7 @@ Note that:
         </profile>
     </profiles>
 ```    
+
+# More on Profiles
+
+* <https://devcenter.heroku.com/articles/using-a-custom-maven-settings-xml#defining-the-maven_settings_path-config-variable>
