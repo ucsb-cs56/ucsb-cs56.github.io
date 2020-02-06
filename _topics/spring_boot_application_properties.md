@@ -55,3 +55,7 @@ The environment variable used
 by Spring Boot to override `application.properties` values is called `SPRING_APPLICATION_JSON`.  It shoudl be set equal to a JSON string that defines keys/values for each application property that needs to be override or supplement the values in the `application.properties` file.
 
 An example of this is illustrated in the repo: <https://github.com/ucsb-cs56-pconrad/spring-boot-app-config>
+
+# More on `application.properties`
+
+* <https://www.tutorialspoint.com/spring_boot/spring_boot_application_properties.htm>
