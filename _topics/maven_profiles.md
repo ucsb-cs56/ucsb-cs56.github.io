@@ -75,3 +75,4 @@ Note that:
 # More on Profiles
 
 * <https://devcenter.heroku.com/articles/using-a-custom-maven-settings-xml#defining-the-maven_settings_path-config-variable>
+* <http://maven.apache.org/guides/introduction/introduction-to-profiles.html>
