@@ -68,6 +68,12 @@ OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.2+9, mixed mode)
 Note: after installing Java 11, you may want to do:
 
 ```
+brew install maven
+```
+
+Or if you already have Maven installed:
+
+```
 brew upgrade maven
 ```
 
