@@ -85,9 +85,86 @@ mvn --version
 
 To make sure that Maven is using Java 11 and not still using Java 8 or earlier.
 
+# What if I Maven reports it is using Java 13
+
+I recently got a new Mac and followed the instructions above.  I ended up with Java 11 as my default java compiled:
+
+```
+pconrad@Phillips-MacBook-Pro ~ % javac --version
+javac 11.0.6
+pconrad@Phillips-MacBook-Pro ~ % 
+```
+
+But I was frustrated the Maven was reporting that it was using Java 13:
+
+```
+pconrad@Phillips-MacBook-Pro ~ % mvn --version
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+Maven home: /usr/local/Cellar/maven/3.6.3_1/libexec
+Java version: 13.0.2, vendor: N/A, runtim: /usr/local/Cellar/openjdk/13.0.2+8_2/libexec/openjdk.jdk/Contents/Home
+Default locale: en_US, platform encoding: UTF-8
+OS name: "mac os x", version: "10.15.1", arch: "x86_64", family: "mac"
+pconrad@Phillips-MacBook-Pro ~ % 
+```
+
+So I went back and looked at the messages during the `brew install maven`, and saw this:
+
+```
+pconrad@169-231-117-34 ~ % brew install maven
+==> Installing dependencies for maven: openjdk
+==> Installing maven dependency: openjdk
+==> Downloading https://homebrew.bintray.com/bottles/openjdk-13.0.2+8_2.catalina
+==> Downloading from https://akamai.bintray.com/65/65adca036393f528e3830cab8b0aa
+######################################################################## 100.0%
+==> Pouring openjdk-13.0.2+8_2.catalina.bottle.tar.gz
+==> Caveats
+For the system Java wrappers to find this JDK, symlink it with
+  sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+
+openjdk is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have openjdk first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find openjdk you may need to set:
+  export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+
+==> Summary
+🍺  /usr/local/Cellar/openjdk/13.0.2+8_2: 631 files, 314.6MB
+==> Installing maven
+==> Downloading https://www.apache.org/dyn/closer.cgi?path=maven/maven-3/3.6.3/b
+==> Downloading from http://apache.spinellicreations.com/maven/maven-3/3.6.3/bin
+######################################################################## 100.0%
+🍺  /usr/local/Cellar/maven/3.6.3_1: 87 files, 10.7MB, built in 8 seconds
+==> Caveats
+==> openjdk
+For the system Java wrappers to find this JDK, symlink it with
+  sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+
+openjdk is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have openjdk first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+
+For compilers to find openjdk you may need to set:
+  export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+
+pconrad@169-231-117-34 ~ %
+```
+
+It appears that Maven brings in Java 13 as a dependency.  Not ideal if we are trying to target Java 11.
+
+However, my hope is that if we configure our `pom.xml` files to use Java 11, perhaps this won't be an issue.
+
+I will also see if I can figure out a way to get Maven to actually point to the Java 11 software as its default Java implementation.
+
 # Install Apache Ant
 
-Next, see if you have Apache Ant installed:
+If you need to install Apache Ant for any reason, first check to see if you already have it:
 
 ```
 169-231-88-206:~ pconrad$ ant -version
