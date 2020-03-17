@@ -25,6 +25,12 @@ For example T is "fuzzy file search".  Have fun exploring all the rest.
 
 * Code Navigation: <https://help.github.com/en/github/managing-files-in-a-repository/navigating-code-on-github>
 
+# Windows
+
+If you find that when you type `git status` you see every single file is modified, it might be because of line endings.
+
+Type `git config --global core.autocrlf true` to fix it
+
 # Resources
 
 * [YouTube Video: Introduction to Git with Scott Chacon of GitHub](https://www.youtube.com/watch?reload=9&v=ZDR433b0HJY)
