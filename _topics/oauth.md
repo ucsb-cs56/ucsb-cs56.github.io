@@ -8,16 +8,12 @@ When implementing a login feature (i.e. usernames/passwords, and a "logged in" v
 * Roll our own authentication, storing the usernames/passwords ourselves.
 * Delegate that to some other identify provider.
 
-The second choice is almost always preferable.    Maintaining a database of usernames/passwords is an invitation to be hacked.  And, even
-if your webapp is nothing special, people have a bad habit of reusing passwords across many different websites.
+The second choice is almost always preferable.  Maintaining a database
+of usernames/passwords is an invitation to be hacked.  And, even if
+your webapp is nothing special, people have a bad habit of reusing
+passwords across many different websites.
 
 A common way of delegating authentication is via a protocol called OAuth.   
 This is the protocol that allows the "login with Facebook", "login with Google", etc. functionality
 you see on many websites.
 
-# OAuth in the context of CS56
-
-In CS56, we'll typically be dealing with OAuth in the context of using it in combination with SpringBoot Authorization,
-and with [Github OAuth](https://developer.github.com/v3/guides/basics-of-authentication/)
-
-TODO: Fill in more detail and links to some examples.
