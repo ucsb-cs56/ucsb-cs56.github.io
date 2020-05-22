@@ -40,5 +40,13 @@ the Maven that is built into Heroku is only available during the "build" phase. 
 the release phase.
 
 
+# The wrapper downloader
+
+The wrapper downloader (e.g. `.mvn/wrapper/MavenWrapperDownloader.java`) is a file that helps the `mvnw` command to work properly.  You can see an example in this pull request:
+
+* <https://github.com/ucsb-cs56-w20/open-lab-scheduler/pull/155/files>
+
+You may also need a file called `.mvn/wrapper/maven-wrapper.properties`.
+
 
 
