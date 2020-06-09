@@ -33,4 +33,4 @@ The norms illustrated in the video, while common, are just examples.
 
 # See Also
 
-* {% include link.md href="/topics/teams/" text="Teams" %}
+* {% include link.md href="/topics/teamwork/" text="Teamwork" %}
