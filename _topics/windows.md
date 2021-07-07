@@ -80,3 +80,6 @@ As of W20, we do not have current "tested" instructions for installing Apache An
 
 As of W20, we do not have current "tested" instructions for installing Apache Maven on Windows. As/when that changes, we'll update this page.
 
+# Git setup for line endings
+To fix line endings in git for windows, use the following: `git config --global core.autocrlf true`
+
